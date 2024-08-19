@@ -1,10 +1,16 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 import { Home, Menu, Search } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
+  const pathname = usePathname();
+
   const navItems = [
     {
       title: "About",
@@ -34,6 +40,10 @@ export function Navbar() {
       title: "Contact",
       href: "/contact",
     },
+    {
+      title: "Policies",
+      href: "/policies",
+    },
   ];
 
   return (
@@ -50,7 +60,12 @@ export function Navbar() {
           <Link
             key={item.title}
             href={item.href}
-            className="text-muted-foreground hover:text-foreground"
+            className={cn(
+              "hover:text-foreground",
+              pathname === item.href
+                ? "text-foreground"
+                : "text-muted-foreground",
+            )}
           >
             {item.title}
           </Link>
@@ -76,7 +91,12 @@ export function Navbar() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground"
+                className={cn(
+                  "hover:text-foreground",
+                  pathname === item.href
+                    ? "text-foreground"
+                    : "text-muted-foreground",
+                )}
               >
                 {item.title}
               </Link>
