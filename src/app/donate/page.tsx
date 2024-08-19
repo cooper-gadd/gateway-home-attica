@@ -99,34 +99,16 @@ export default function Donate() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Donate Today</CardTitle>
+            <CardTitle>Make a Better Tomorrow!</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               If you would like to support the work that we do, please consider
               donating to our cause. Your donation will help us to continue to
               provide free resources to the community and to support our team of
-              volunteers. Thank you for making a better tomorrow for Gateway
-              Home!
+              volunteers. Thank you for your support!
             </CardDescription>
           </CardHeader>
           <CardFooter>
             <Button>Donate Now</Button>
-          </CardFooter>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <CardTitle>Wish Lists</CardTitle>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              If you would like to support the work we do, please consider
-              purchasing items from the wish lists below. Your donation will
-              help us to continue to provide free resources to the community and
-              to support our team of volunteers.
-            </CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <div className="flex items-center gap-4">
-              <Button>Amazon</Button>
-              <Button>Walmart</Button>
-            </div>
           </CardFooter>
         </Card>
         <Card>
@@ -144,6 +126,23 @@ export default function Donate() {
             <div className="flex items-center gap-4">
               <Button>Form</Button>
               <Button>Purchase</Button>
+            </div>
+          </CardFooter>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle>Wish Lists</CardTitle>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              If you would like to support the work we do, please consider
+              purchasing items from the wish lists below. Your donation will
+              help us to continue to provide free resources to the community and
+              to support our team of volunteers.
+            </CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <div className="flex items-center gap-4">
+              <Button>Amazon</Button>
+              <Button>Walmart</Button>
             </div>
           </CardFooter>
         </Card>
