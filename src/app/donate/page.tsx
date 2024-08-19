@@ -95,7 +95,7 @@ export default function Donate() {
   ];
 
   return (
-    <div className="flex flex-1 flex-col gap-4 bg-muted/40 p-4 md:gap-8 md:p-8">
+    <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card>
           <CardHeader className="pb-3">

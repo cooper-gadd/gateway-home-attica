@@ -31,11 +31,11 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen w-full flex-col">
+          <div className="flex min-h-screen w-full flex-col bg-muted/40">
             <Navbar />
             {children}
           </div>
