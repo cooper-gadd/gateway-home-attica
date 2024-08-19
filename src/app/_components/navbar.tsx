@@ -1,10 +1,27 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { Home, Menu, Search } from "lucide-react";
+import {
+  CircleUser,
+  Home,
+  Mail,
+  Map,
+  Menu,
+  Phone,
+  Printer,
+  Search,
+} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -27,10 +44,6 @@ export function Navbar() {
     {
       title: "Donate",
       href: "/donate",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
     },
   ];
 
@@ -103,6 +116,45 @@ export function Navbar() {
             />
           </div>
         </form>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="secondary" size="icon" className="rounded-full">
+              <CircleUser className="h-5 w-5" />
+              <span className="sr-only">Toggle contact us menu</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuLabel>Contact Us</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/search/?api=1&query=91 Main Street, Attica, NY 14011"
+            >
+              <DropdownMenuItem className="flex items-center gap-4">
+                <Map className="h-5 w-5" />
+                91 Main Street, Attica, NY 14011
+              </DropdownMenuItem>
+            </a>
+            <a href="tel:585-708-4331">
+              <DropdownMenuItem className="flex items-center gap-4">
+                <Phone className="h-5 w-5" />
+                585-708-4331
+              </DropdownMenuItem>
+            </a>
+            <a href="fax:5857084333">
+              <DropdownMenuItem className="flex items-center gap-4">
+                <Printer className="h-5 w-5" />
+                585-708-4333
+              </DropdownMenuItem>
+            </a>
+            <a href="mailto:info@gatewayhomeattica.org">
+              <DropdownMenuItem className="flex items-center gap-4">
+                <Mail className="h-5 w-5" />
+                info@gatewayhomeattica.org
+              </DropdownMenuItem>
+            </a>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   );
