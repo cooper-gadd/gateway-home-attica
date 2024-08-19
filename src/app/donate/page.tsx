@@ -99,12 +99,13 @@ export default function Donate() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Donate Now</CardTitle>
+            <CardTitle>Donate Today</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               If you would like to support the work that we do, please consider
               donating to our cause. Your donation will help us to continue to
               provide free resources to the community and to support our team of
-              volunteers.
+              volunteers. Thank you for making a better tomorrow for Gateway
+              Home!
             </CardDescription>
           </CardHeader>
           <CardFooter>
@@ -130,12 +131,13 @@ export default function Donate() {
         </Card>
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Brick Program</CardTitle>
+            <CardTitle>Legacy Brick Sale</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Buy a brick! The engraved bricks will be a permanent memorial to
               our residents, volunteers, families and businesses that wish to
               support Gateway Home. The bricks will be placed in the walkway at
-              the entrance of Gateway Home.
+              the entrance of Gateway Home. Please fill out the form below to
+              get started.
             </CardDescription>
           </CardHeader>
           <CardFooter>
