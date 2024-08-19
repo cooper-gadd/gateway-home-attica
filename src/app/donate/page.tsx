@@ -191,6 +191,46 @@ export default function Donate() {
           of the resident care items.
         </CardFooter>
       </Card>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle>Privacy Policy</CardTitle>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              We use the information you provide about yourself online through
+              our website only to complete your request. We do not share this
+              information with outside parties except to the extent necessary to
+              complete your request. We use return email addresses to answer the
+              email we receive. Such addresses are not used for any other
+              purpose and are not shared with outside parties. We never use or
+              share the personally identifiable information provided to us
+              online in ways unrelated to the ones described above without also
+              providing you an opportunity to opt-out or otherwise prohibit such
+              unrelated uses.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle>Security Policy</CardTitle>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              Your payment and personal information is always safe. Our Secure
+              Sockets Layer (SSL) software is the industry standard and among
+              the best software available today for secure commerce
+              transactions. It encrypts all of your personal information,
+              including credit card number, name, and address, so that it cannot
+              be read over the internet.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle>Refund Policy</CardTitle>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              No Refunds.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      </div>
     </div>
   );
 }

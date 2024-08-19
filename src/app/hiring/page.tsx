@@ -8,31 +8,84 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-export default function Employment() {
+export default function Hiring() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <Card>
         <CardHeader className="pb-3">
           <CardTitle>We&apos;re Hiring</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            We are currently in need of an overnight Care Aide and Per Diem
-            Nurses.
+            Contact us if you are interested in a position.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          Call Sue Herman or Sara Brunner at{" "}
-          <a href="tel:585-708-4331">585-708-4331</a> or email us at{" "}
-          <a href="mailto:info@gatewayhomeattica.org">
-            info@gatewayhomeattica.org
-          </a>{" "}
-          if you are interested in a position.
+          <p>
+            <strong>Phone: </strong>
+            <a href="tel:585-708-4331">585-708-4331</a>
+          </p>
+          <p>
+            <strong>Email: </strong>
+            <a href="mailto:info@gatewayhomeattica.org">
+              info@gatewayhomeattica.org
+            </a>
+          </p>
         </CardContent>
       </Card>
-      <Tabs defaultValue="Care-Aide">
+      <Tabs defaultValue="Volunteer">
         <TabsList>
+          <TabsTrigger value="Volunteer">Volunteer</TabsTrigger>
           <TabsTrigger value="Care-Aide">Care Aide</TabsTrigger>
           <TabsTrigger value="RN/LPN">RN/LPN</TabsTrigger>
         </TabsList>
+        <TabsContent value="Volunteer">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle>Volunteer</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                  Gateway Home Needs your Help!
+                </p>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                  There are many opportunities to help Gateway Home in different
+                  ways:
+                </p>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                  <li>
+                    Use your experience or be trained by us to care for our
+                    residents physical needs
+                  </li>
+                  <li>
+                    Give Support to the emotional needs of our residents and
+                    their families. Listen and offer a helping hand!
+                  </li>
+                  <li>
+                    Fundraising for the benefit of Gateway Home means that our
+                    mission to help others can be accomplished. Many hands make
+                    light work!
+                  </li>
+                  <li>
+                    Grounds keeping and housekeeping are necessary to maintain a
+                    clean, quality home Environment. Just another way you can
+                    help!
+                  </li>
+                  <li>
+                    Maintenance and Building Repair. All types of carpentry,
+                    electrical and/or plumbing repairs are needed to make our
+                    Home the best it can be and one of which we all can be proud
+                    of.
+                  </li>
+                  <li>
+                    Not sure what to do? Just ask, we can help you find a way
+                    for you to feel accomplished and satisfied in knowing you
+                    have made a difference in someone’s life!
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
         <TabsContent value="Care-Aide">
           <Card>
             <CardHeader className="pb-3">

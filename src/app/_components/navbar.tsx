@@ -13,10 +13,6 @@ export function Navbar() {
 
   const navItems = [
     {
-      title: "About",
-      href: "/about",
-    },
-    {
       title: "Events",
       href: "/events",
     },
@@ -25,12 +21,8 @@ export function Navbar() {
       href: "/blog",
     },
     {
-      title: "Volunteer",
-      href: "/volunteer",
-    },
-    {
-      title: "Employment",
-      href: "/employment",
+      title: "Hiring",
+      href: "/hiring",
     },
     {
       title: "Donate",
@@ -39,10 +31,6 @@ export function Navbar() {
     {
       title: "Contact",
       href: "/contact",
-    },
-    {
-      title: "Policies",
-      href: "/policies",
     },
   ];
 
