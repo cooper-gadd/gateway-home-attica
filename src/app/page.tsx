@@ -9,28 +9,62 @@ import {
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        Gateway Home Mission Statement
-      </h1>
-      <p className="leading-7 [&:not(:first-child)]:mt-6">
-        Gateway Home is established to give “comfort care” to people who are
-        medically determined to be in their last stages of life (three months or
-        less). Our organization will provide both medical and spiritual care to
-        support the residents as they pass from this life to the next. Gateway
-        Home staff and volunteers are committed to provide dignified care,
-        comfort, and support for our residents and their families. Gateway Home
-        is a nonprofit organization, and does not charge for services provided.
-        Funding is accomplished through donations, bequests, and community
-        support. Admission is based solely on need.
-      </p>
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle>Gateway Home Attica</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Mission Statement
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          Gateway Home is established to give “comfort care” to people who are
+          medically determined to be in their last stages of life (three months
+          or less). Our organization will provide both medical and spiritual
+          care to support the residents as they pass from this life to the next.
+          Gateway Home staff and volunteers are committed to provide dignified
+          care, comfort, and support for our residents and their families.
+          Gateway Home is a nonprofit organization, and does not charge for
+          services provided. Funding is accomplished through donations,
+          bequests, and community support. Admission is based solely on need.
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle>Resident Care</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            All the needs of the resident are provided for 24 hours a day, 7
+            days per week.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              The care provided is through trained, licensed, professional,
+              medical support staff and is supplemented with trained dedicated
+              volunteers.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Gateway Home provides support for up to two residents and their
+              families at a time.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Referrals are through medical professionals, clergy, family,
+              friends or other health care agencies.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Care is provided in the form of physical, spiritual and emotional
+              needs for the residents.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
       <div>
-        <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-          Supporters
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-gray-300">Platinum Angel</CardTitle>
+              <CardTitle className="text-gray-300">
+                Platinum Angel Supporters
+              </CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2022 Annual Campaign Angel
                 Supporters
@@ -38,7 +72,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <li>Ralph Janes</li>
-              <li>Attica Package Co.</li>
+              <li>Attica Package Company Inc.</li>
               <li>Jane A.C. Schmieder, Attorney</li>
               <li>Attica Lyons Club</li>
               <li>Wyoming Correctional Facility- Employee Benefit Fund</li>
@@ -48,7 +82,9 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-yellow-400">Gold Angel</CardTitle>
+              <CardTitle className="text-yellow-400">
+                Gold Angel Supporters
+              </CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2022 Annual Campaign Angel
                 Supporters
@@ -67,7 +103,9 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-gray-200">Silver Angel</CardTitle>
+              <CardTitle className="text-gray-200">
+                Silver Angel Supporters
+              </CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2022 Annual Campaign Angel
                 Supporters
@@ -89,7 +127,9 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-amber-600">Bronze Angel</CardTitle>
+              <CardTitle className="text-amber-600">
+                Bronze Angel Supporters
+              </CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2022 Annual Campaign Angel
                 Supporters

@@ -86,7 +86,7 @@ export default function Donate() {
       item: "Folding chairs",
       details: "With seat cushions.",
     },
-    { category: "Miscellaneous", item: "Easy up tents", details: "" },
+    { category: "Miscellaneous", item: "Easy up tents", details: "10 x 10" },
     {
       category: "Miscellaneous",
       item: "Items and Baskets",
@@ -124,10 +124,10 @@ export default function Donate() {
         </Card>
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Baskets for Actions</CardTitle>
+            <CardTitle>Raffle Baskets</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Either create your own basket, or donate financially to a basket
-              that we will create for you.
+              that we will create from you.
             </CardDescription>
           </CardHeader>
           <CardFooter>
@@ -139,8 +139,7 @@ export default function Donate() {
         <CardHeader className="px-7">
           <CardTitle>Wish List</CardTitle>
           <CardDescription>
-            If you would like to support the work we do, please consider
-            purchasing items from the wish list below. Please consider
+            We are always in need of the following items. Please consider
             patronizing our kind partner, Attica Pharmacy for many of the
             resident care items. We also have an Amazon and Walmart Wish List
             for your convenience.
