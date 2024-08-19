@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardHeader,
@@ -15,7 +16,7 @@ export default function Hiring() {
         <CardHeader className="pb-3">
           <CardTitle>We&apos;re Hiring</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Contact us if you are interested in a position.
+            Contact us if you have any questions.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -84,6 +85,9 @@ export default function Hiring() {
                 </ul>
               </div>
             </CardContent>
+            <CardFooter>
+              <Button>Apply Now</Button>
+            </CardFooter>
           </Card>
         </TabsContent>
         <TabsContent value="Care-Aide">
@@ -192,12 +196,15 @@ export default function Hiring() {
                   procedures requiring the knowledge/skill of a licensed nurse.
                   <strong>The On-call nurse is available at all times.</strong>
                 </p>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                  All employees must adhere to the Gateway Home confidentiality
+                  policy. Anyone not adhering to this policy faces immediate
+                  dismissal.
+                </p>
               </div>
             </CardContent>
             <CardFooter>
-              All employees must adhere to the Gateway Home confidentiality
-              policy. Anyone not adhering to this policy faces immediate
-              dismissal.
+              <Button>Apply Now</Button>
             </CardFooter>
           </Card>
         </TabsContent>
@@ -263,12 +270,15 @@ export default function Hiring() {
                   scheduled to come in for resident care – or find someone who
                   can.
                 </p>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                  All employees must adhere to the Gateway Home confidentiality
+                  policy. Anyone not adhering to this policy faces immediate
+                  dismissal.
+                </p>
               </div>
             </CardContent>
             <CardFooter>
-              All employees must adhere to the Gateway Home confidentiality
-              policy. Anyone not adhering to this policy faces immediate
-              dismissal.
+              <Button>Apply Now</Button>
             </CardFooter>
           </Card>
         </TabsContent>

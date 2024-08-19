@@ -18,44 +18,44 @@ import {
 
 export default function Donate() {
   const wishList = [
-    { category: "Food/Household", item: "Cookie mixes", details: "" },
-    { category: "Food/Household", item: "Cake mixes", details: "" },
+    { category: "Food", item: "Cookie mixes", details: "" },
+    { category: "Food", item: "Cake mixes", details: "" },
     {
-      category: "Food/Household",
+      category: "Household",
       item: "Storage bags of all sizes",
       details: "",
     },
-    { category: "Food/Household", item: "Clear shipping tape", details: "" },
+    { category: "Food", item: "Clear shipping tape", details: "" },
     {
-      category: "Food/Household",
+      category: "Food",
       item: "Coffee",
-      details: "regular & decaf, bags or cans or K-cups",
+      details: "Bags, cans or K-cups of regular & decaf.",
     },
     {
-      category: "Food/Household",
+      category: "Food",
       item: "Juices",
-      details: "in cans or bottles",
+      details: "Cans or bottles.",
     },
-    { category: "Food/Household", item: "Canned soda", details: "" },
-    { category: "Food/Household", item: "Canned soups", details: "" },
-    { category: "Food/Household", item: "Butter", details: "" },
-    { category: "Food/Household", item: "Bottled water", details: "" },
-    { category: "Food/Household", item: "Paper napkins", details: "" },
-    { category: "Food/Household", item: "Paper towels", details: "" },
-    { category: "Food/Household", item: "Toilet paper", details: "" },
-    { category: "Food/Household", item: "Kleenex", details: "" },
+    { category: "Food", item: "Canned soda", details: "" },
+    { category: "Food", item: "Canned soups", details: "" },
+    { category: "Food", item: "Butter", details: "" },
+    { category: "Food", item: "Bottled water", details: "" },
+    { category: "Household", item: "Paper napkins", details: "" },
+    { category: "Household", item: "Paper towels", details: "" },
+    { category: "Household", item: "Toilet paper", details: "" },
+    { category: "Household", item: "Kleenex", details: "" },
     {
-      category: "Food/Household",
+      category: "Household",
       item: "Tall kitchen garbage bags",
       details: "13 gallon",
     },
     {
-      category: "Food/Household",
+      category: "Household",
       item: "Small garbage bags",
       details: "4 gallon",
     },
     {
-      category: "Food/Household",
+      category: "Household",
       item: "Swiffer solution & dry cloths",
       details: "",
     },
@@ -79,18 +79,18 @@ export default function Donate() {
       category: "Miscellaneous",
       item: "Gift Cards",
       details:
-        "Tops, Dollar General, Walmart, Home Depot, Aldi’s, Tim Horton’s, Local Restaurants",
+        "Tops, Dollar General, Walmart, Home Depot, Aldi’s, Tim Horton’s, Local Restaurants, etc.",
     },
     {
       category: "Miscellaneous",
       item: "Folding chairs",
-      details: "with seat cushions",
+      details: "With seat cushions.",
     },
     { category: "Miscellaneous", item: "Easy up tents", details: "" },
     {
       category: "Miscellaneous",
       item: "Items and Baskets",
-      details: "for basket auctions",
+      details: "For basket auctions.",
     },
   ];
 
@@ -99,12 +99,10 @@ export default function Donate() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Make a Better Tomorrow!</CardTitle>
+            <CardTitle>Financial Donations</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              If you would like to support the work that we do, please consider
-              donating to our cause. Your donation will help us to continue to
-              provide free resources to the community and to support our team of
-              volunteers. Thank you for your support!
+              Your financial support is critical to our mission. Your donation
+              will help us provide the best possible care for our residents.
             </CardDescription>
           </CardHeader>
           <CardFooter>
@@ -115,35 +113,25 @@ export default function Donate() {
           <CardHeader className="pb-3">
             <CardTitle>Legacy Brick Sale</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Buy a brick! The engraved bricks will be a permanent memorial to
-              our residents, volunteers, families and businesses that wish to
-              support Gateway Home. The bricks will be placed in the walkway at
-              the entrance of Gateway Home. Please fill out the form below to
-              get started.
+              The engraved bricks will be a permanent memorial to our residents,
+              volunteers, families and businesses that wish to support Gateway
+              Home.
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <div className="flex items-center gap-4">
-              <Button>Form</Button>
-              <Button>Purchase</Button>
-            </div>
+            <Button>Buy a Brick</Button>
           </CardFooter>
         </Card>
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Wish Lists</CardTitle>
+            <CardTitle>Baskets for Actions</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              If you would like to support the work we do, please consider
-              purchasing items from the wish lists below. Your donation will
-              help us to continue to provide free resources to the community and
-              to support our team of volunteers.
+              Either create your own basket, or donate financially to a basket
+              that we will create for you.
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <div className="flex items-center gap-4">
-              <Button>Amazon</Button>
-              <Button>Walmart</Button>
-            </div>
+            <Button>Buy a Basket</Button>
           </CardFooter>
         </Card>
       </div>
@@ -152,9 +140,10 @@ export default function Donate() {
           <CardTitle>Wish List</CardTitle>
           <CardDescription>
             If you would like to support the work we do, please consider
-            purchasing items from the wish list below. Your donation will help
-            us to continue to provide free resources to the community and to
-            support our team of volunteers.
+            purchasing items from the wish list below. Please consider
+            patronizing our kind partner, Attica Pharmacy for many of the
+            resident care items. We also have an Amazon and Walmart Wish List
+            for your convenience.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -187,8 +176,10 @@ export default function Donate() {
           </Table>
         </CardContent>
         <CardFooter>
-          Please consider patronizing our kind partner, Attica Pharmacy for many
-          of the resident care items.
+          <div className="flex items-center gap-4">
+            <Button>Amazon</Button>
+            <Button>Walmart</Button>
+          </div>
         </CardFooter>
       </Card>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
