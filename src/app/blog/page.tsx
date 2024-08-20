@@ -319,6 +319,15 @@ export default function Blog() {
                   className="rounded-lg"
                 />
               </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/bricks.jpg"
+                  width={500}
+                  height={100}
+                  alt="Bricks"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
