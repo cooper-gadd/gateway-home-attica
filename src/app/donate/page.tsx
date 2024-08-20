@@ -223,7 +223,7 @@ export default function Donate() {
           </div>
         </CardFooter>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <Card>
           <CardHeader className="pb-3">
             <CardTitle>Privacy Policy</CardTitle>
@@ -251,14 +251,6 @@ export default function Donate() {
               transactions. It encrypts all of your personal information,
               including credit card number, name, and address, so that it cannot
               be read over the internet.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <CardTitle>Refund Policy</CardTitle>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              No Refunds.
             </CardDescription>
           </CardHeader>
         </Card>
