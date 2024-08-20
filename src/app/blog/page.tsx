@@ -51,6 +51,113 @@ export default function Blog() {
           makers, and to the golfers! Gateway Home is better for knowing each of
           you.
         </CardContent>
+        <CardFooter className="flex flex-col">
+          <Carousel className="w-3/4 max-w-lg lg:w-full">
+            <CarouselContent>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/sponsors.jpg"
+                  width={500}
+                  height={100}
+                  alt="Sponsors"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/pink-ladies.jpg"
+                  width={500}
+                  height={100}
+                  alt="Pink Ladies"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/couple.jpg"
+                  width={500}
+                  height={100}
+                  alt="Couple"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/ladies.jpg"
+                  width={500}
+                  height={100}
+                  alt="Ladies"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/car.jpg"
+                  width={500}
+                  height={100}
+                  alt="Car"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/putting-contest.jpg"
+                  width={500}
+                  height={100}
+                  alt="Putting Contest"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/club-car.jpg"
+                  width={500}
+                  height={100}
+                  alt="Club Car"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/sue-sara.jpg"
+                  width={500}
+                  height={100}
+                  alt="Sue and Sara"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/shots.jpg"
+                  width={500}
+                  height={100}
+                  alt="Shots"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/19-shot.jpg"
+                  width={500}
+                  height={100}
+                  alt="19 Shot"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
+                <Image
+                  src="/images/blog/7th-annual-golfing-for-gateway/grill.jpg"
+                  width={500}
+                  height={100}
+                  alt="Grill"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </CardFooter>
       </Card>
       <Card>
         <CardHeader className="pb-3">
@@ -158,7 +265,7 @@ export default function Blog() {
         <CardFooter className="flex flex-col">
           <Carousel className="w-3/4 max-w-lg lg:w-full">
             <CarouselContent>
-              <CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
                 <Image
                   src="/images/blog/gateway-home-dedicates-brick-walkways/doug-speaking.jpg"
                   width={500}
@@ -167,7 +274,7 @@ export default function Blog() {
                   className="rounded-lg"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
                 <Image
                   src="/images/blog/gateway-home-dedicates-brick-walkways/sara-speaking.jpg"
                   width={500}
@@ -176,7 +283,7 @@ export default function Blog() {
                   className="rounded-lg"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
                 <Image
                   src="/images/blog/gateway-home-dedicates-brick-walkways/doug-sara.jpg"
                   width={500}
@@ -185,7 +292,7 @@ export default function Blog() {
                   className="rounded-lg"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
                 <Image
                   src="/images/blog/gateway-home-dedicates-brick-walkways/doug-donna.jpg"
                   width={500}
@@ -194,7 +301,7 @@ export default function Blog() {
                   className="rounded-lg"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
                 <Image
                   src="/images/blog/gateway-home-dedicates-brick-walkways/sara.jpg"
                   width={500}
@@ -203,7 +310,7 @@ export default function Blog() {
                   className="rounded-lg"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="flex flex-col items-center justify-center">
                 <Image
                   src="/images/blog/gateway-home-dedicates-brick-walkways/sue.jpg"
                   width={500}
