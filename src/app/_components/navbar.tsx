@@ -154,7 +154,10 @@ export function Navbar() {
                 info@gatewayhomeattica.org
               </DropdownMenuItem>
             </a>
-            <a href="https://www.facebook.com/gatewayhomeattica/">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/gatewayhomeattica/"
+            >
               <DropdownMenuItem className="flex items-center gap-4">
                 <Facebook className="h-5 w-5" />
                 Gateway Home
