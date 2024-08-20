@@ -160,7 +160,7 @@ export default function Blog() {
             <CarouselContent>
               <CarouselItem>
                 <Image
-                  src="/images/brick-walkway-dedication/doug-speaking.jpg"
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/doug-speaking.jpg"
                   width={500}
                   height={100}
                   alt="Doug Speaking"
@@ -169,7 +169,7 @@ export default function Blog() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/images/brick-walkway-dedication/sara-speaking.jpg"
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/sara-speaking.jpg"
                   width={500}
                   height={100}
                   alt="Sara Speaking"
@@ -178,7 +178,7 @@ export default function Blog() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/images/brick-walkway-dedication/doug-sara.jpg"
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/doug-sara.jpg"
                   width={500}
                   height={100}
                   alt="Doug and Sara"
@@ -187,7 +187,7 @@ export default function Blog() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/images/brick-walkway-dedication/doug-donna.jpg"
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/doug-donna.jpg"
                   width={500}
                   height={100}
                   alt="Doug and Donna"
@@ -196,7 +196,7 @@ export default function Blog() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/images/brick-walkway-dedication/sara.jpg"
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/sara.jpg"
                   width={500}
                   height={100}
                   alt="Sara"
@@ -205,7 +205,7 @@ export default function Blog() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src="/images/brick-walkway-dedication/sue.jpg"
+                  src="/images/blog/gateway-home-dedicates-brick-walkways/sue.jpg"
                   width={500}
                   height={100}
                   alt="Sue"
