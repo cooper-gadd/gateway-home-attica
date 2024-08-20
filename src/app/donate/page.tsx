@@ -60,25 +60,25 @@ export default function Donate() {
       item: "Swiffer solution & dry cloths",
       details: "",
     },
-    { category: "Resident Care", item: "Lip Balm", details: "" },
-    { category: "Resident Care", item: "Non-Latex Gloves", details: "L & XL" },
-    { category: "Resident Care", item: "Distilled Water", details: "" },
+    { category: "Resident Care", item: "Lip balm", details: "" },
+    { category: "Resident Care", item: "Non-Latex gloves", details: "L & XL" },
+    { category: "Resident Care", item: "Distilled water", details: "" },
     {
       category: "Resident Care",
-      item: "Disposable Oral Mouth Swabs",
+      item: "Disposable oral mouth swabs",
       details: "",
     },
-    { category: "Resident Care", item: "Baby Wipes", details: "" },
-    { category: "Resident Care", item: "Slip Resistant Socks", details: "" },
+    { category: "Resident Care", item: "Baby wipes", details: "" },
+    { category: "Resident Care", item: "Slip resistant socks", details: "" },
     { category: "Miscellaneous", item: "Postage stamps", details: "" },
     {
       category: "Miscellaneous",
-      item: "Brother Printer Ink",
+      item: "Brother printer ink",
       details: "LC30333PKS",
     },
     {
       category: "Miscellaneous",
-      item: "Gift Cards",
+      item: "Gift cards",
       details:
         "Tops, Dollar General, Walmart, Home Depot, Aldi’s, Tim Horton’s, Local Restaurants, etc.",
     },
@@ -90,7 +90,7 @@ export default function Donate() {
     { category: "Miscellaneous", item: "Easy up tents", details: "10 x 10" },
     {
       category: "Miscellaneous",
-      item: "Items and Baskets",
+      item: "Items and baskets",
       details: "For basket auctions.",
     },
   ];
@@ -102,8 +102,7 @@ export default function Donate() {
           <CardHeader className="pb-3">
             <CardTitle>Financial Donations</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Your financial support is critical to our mission. Your donation
-              will help us provide the best possible care for our residents.
+              Your financial support is crucial to our mission.
             </CardDescription>
           </CardHeader>
           <CardFooter>
@@ -123,8 +122,7 @@ export default function Donate() {
           <CardHeader className="pb-3">
             <CardTitle>Legacy Brick Sale</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Make a lasting impact at Gateway Home. Act fast, limited
-              availability.
+              Purchase a brick to be placed in our walkway.
             </CardDescription>
           </CardHeader>
           <CardFooter>
@@ -144,8 +142,7 @@ export default function Donate() {
           <CardHeader className="pb-3">
             <CardTitle>Raffle Baskets</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Either create your own basket, or donate financially to a basket
-              that we will create from you.
+              Create your own basket, or donate funds for us to create one.
             </CardDescription>
           </CardHeader>
           <CardFooter>
