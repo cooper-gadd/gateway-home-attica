@@ -13,6 +13,55 @@ export default function Blog() {
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <Card>
         <CardHeader className="pb-3">
+          <CardTitle>3rd Annual Junkyard Reunion</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            By Sara Brunner
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          The Junkyard Reunion was an absolute HOOT! A wonderful success put on
+          by some awesome folks. Thank you to Angela and Steve Zymowski who did
+          the legwork on this and managed a fabulous event. Thank you to the
+          Folsom Trailblazers, Vintage Cow, and Beer Justice Brewing for the
+          incredible food! Thank you to Ken Barrett Chevrolet and ProX Window
+          and Door for their generous sponsorship. All of our beautiful basket
+          donors! Lastly, all of you who attended, brought cars, tried for
+          baskets, and ate some phenomenal food! We couldn’t do what we do
+          without each of you!
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle>7th Annual Golfing for Gateway</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            By Sara Brunner
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          We had a phenomenal day on the course today in our 7th Annual Golfing
+          for Gateway event! Thank you to Quiet Times for hosting us, thank you
+          to the planning crew, to the volunteers, to the donors and basket
+          makers, and to the golfers! Gateway Home is better for knowing each of
+          you.
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle>
+            3rd Annual Judy Russell Memorial Golf Tournament
+          </CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            By Sara Brunner
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          Thanks to the Russell family for another successful Judy Russell
+          Memorial golf tournament! We would also like to sincerely thank every
+          golfer, sponsor, volunteer, and basket donation. Our community rocks!!
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader className="pb-3">
           <CardTitle>Gateway Home Dedicates Brick Walkways</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             By Brain Quinn
@@ -115,55 +164,6 @@ export default function Blog() {
             className="rounded-lg"
           />
         </CardFooter>
-      </Card>
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle>3rd Annual Junkyard Reunion</CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            By Sara Brunner
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          The Junkyard Reunion was an absolute HOOT! A wonderful success put on
-          by some awesome folks. Thank you to Angela and Steve Zymowski who did
-          the legwork on this and managed a fabulous event. Thank you to the
-          Folsom Trailblazers, Vintage Cow, and Beer Justice Brewing for the
-          incredible food! Thank you to Ken Barrett Chevrolet and ProX Window
-          and Door for their generous sponsorship. All of our beautiful basket
-          donors! Lastly, all of you who attended, brought cars, tried for
-          baskets, and ate some phenomenal food! We couldn’t do what we do
-          without each of you!
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle>7th Annual Golfing for Gateway</CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            By Sara Brunner
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          We had a phenomenal day on the course today in our 7th Annual Golfing
-          for Gateway event! Thank you to Quiet Times for hosting us, thank you
-          to the planning crew, to the volunteers, to the donors and basket
-          makers, and to the golfers! Gateway Home is better for knowing each of
-          you.
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle>
-            3rd Annual Judy Russell Memorial Golf Tournament
-          </CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            By Sara Brunner
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          Thanks to the Russell family for another successful Judy Russell
-          Memorial golf tournament! We would also like to sincerely thank every
-          golfer, sponsor, volunteer, and basket donation. Our community rocks!!
-        </CardContent>
       </Card>
     </div>
   );
