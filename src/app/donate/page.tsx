@@ -107,7 +107,7 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>
+            <Button asChild>
               <Link
                 target="_blank"
                 href={
@@ -128,7 +128,7 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>
+            <Button asChild>
               <Link
                 target="_blank"
                 href={
@@ -149,7 +149,7 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>
+            <Button asChild>
               <Link
                 target="_blank"
                 href={
@@ -203,7 +203,7 @@ export default function Donate() {
         </CardContent>
         <CardFooter>
           <div className="flex items-center gap-4">
-            <Button>
+            <Button asChild>
               <Link
                 target="_blank"
                 href={
@@ -213,7 +213,7 @@ export default function Donate() {
                 Amazon
               </Link>
             </Button>
-            <Button>
+            <Button asChild>
               <Link
                 target="_blank"
                 href={
