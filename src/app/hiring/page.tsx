@@ -19,18 +19,6 @@ export default function Hiring() {
             Contact us if you have any questions.
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <p>
-            <strong>Phone: </strong>
-            <a href="tel:585-708-4331">585-708-4331</a>
-          </p>
-          <p>
-            <strong>Email: </strong>
-            <a href="mailto:info@gatewayhomeattica.org">
-              info@gatewayhomeattica.org
-            </a>
-          </p>
-        </CardContent>
       </Card>
       <Tabs defaultValue="Volunteer">
         <TabsList>

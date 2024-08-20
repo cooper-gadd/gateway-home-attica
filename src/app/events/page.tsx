@@ -160,7 +160,7 @@ export default function Events() {
           <CardHeader className="pb-3">
             <CardTitle>Meat Raffle</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Sunday, September 28th 6-9pm
+              Saturday, September 28th 6pm
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -197,7 +197,10 @@ export default function Events() {
           </CardContent>
           <CardFooter>
             <Button asChild>
-              <Link target="_blank" href="#">
+              <Link
+                target="_blank"
+                href="https://gatewayhomeattica.networkforgood.com/events/74629-3rd-annual-meat-raffle-sat-9-28"
+              >
                 Buy Tickets
               </Link>
             </Button>
