@@ -31,7 +31,7 @@ export default function Hiring() {
             <CardHeader className="pb-3">
               <CardTitle>Volunteer</CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
-                Volunteer, Reports to the Director
+                Pro Bono, Reports to the Director
               </CardDescription>
             </CardHeader>
             <CardContent>
