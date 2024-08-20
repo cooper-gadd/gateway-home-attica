@@ -15,6 +15,7 @@ import {
   TableBody,
   TableCell,
 } from "@/components/ui/table";
+import Link from "next/link";
 
 export default function Donate() {
   const wishList = [
@@ -106,20 +107,37 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>Donate Now</Button>
+            <Button>
+              <Link
+                target="_blank"
+                href={
+                  "https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"
+                }
+              >
+                Donate now
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
         <Card>
           <CardHeader className="pb-3">
             <CardTitle>Legacy Brick Sale</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              The engraved bricks will be a permanent memorial to our residents,
-              volunteers, families and businesses that wish to support Gateway
-              Home.
+              Make a lasting impact at Gateway Home. Act fast, limited
+              availability.
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>Buy a Brick</Button>
+            <Button>
+              <Link
+                target="_blank"
+                href={
+                  "https://gatewayhomeattica.networkforgood.com/projects/199955-legacy-brick-sale"
+                }
+              >
+                Buy a Brick
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
         <Card>
@@ -131,7 +149,16 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>Buy a Basket</Button>
+            <Button>
+              <Link
+                target="_blank"
+                href={
+                  "https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"
+                }
+              >
+                Buy a Basket
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
       </div>
@@ -176,8 +203,26 @@ export default function Donate() {
         </CardContent>
         <CardFooter>
           <div className="flex items-center gap-4">
-            <Button>Amazon</Button>
-            <Button>Walmart</Button>
+            <Button>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.amazon.com/registries/gl/guest-view/2R4ZT42FVZQW1"
+                }
+              >
+                Amazon
+              </Link>
+            </Button>
+            <Button>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.walmart.com/lists/shared/WL/64dea00b-59b4-4ab4-8d9e-3d13d28b6236"
+                }
+              >
+                Walmart
+              </Link>
+            </Button>
           </div>
         </CardFooter>
       </Card>

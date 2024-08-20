@@ -14,6 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import {
   CircleUser,
+  Facebook,
   Home,
   Mail,
   Map,
@@ -151,6 +152,12 @@ export function Navbar() {
               <DropdownMenuItem className="flex items-center gap-4">
                 <Mail className="h-5 w-5" />
                 info@gatewayhomeattica.org
+              </DropdownMenuItem>
+            </a>
+            <a href="https://www.facebook.com/gatewayhomeattica/">
+              <DropdownMenuItem className="flex items-center gap-4">
+                <Facebook className="h-5 w-5" />
+                Gateway Home
               </DropdownMenuItem>
             </a>
           </DropdownMenuContent>
