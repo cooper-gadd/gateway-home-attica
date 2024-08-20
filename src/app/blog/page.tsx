@@ -6,6 +6,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 import Image from "next/image";
 
 export default function Blog() {
@@ -148,21 +155,67 @@ export default function Blog() {
             to you this memorial brick walkway.”
           </p>
         </CardContent>
-        <CardFooter className="flex flex-col justify-center gap-4 sm:flex-row sm:gap-8 lg:gap-12">
-          <Image
-            src="/images/brick-walkway-dedication/doug-speaking.jpg"
-            width={500}
-            height={500}
-            alt="Doug Speaking"
-            className="rounded-lg"
-          />
-          <Image
-            src="/images/brick-walkway-dedication/sara-speaking.jpg"
-            width={500}
-            height={500}
-            alt="Sara Speaking"
-            className="rounded-lg"
-          />
+        <CardFooter className="flex flex-col">
+          <Carousel className="w-3/4 max-w-lg lg:w-full">
+            <CarouselContent>
+              <CarouselItem>
+                <Image
+                  src="/images/brick-walkway-dedication/doug-speaking.jpg"
+                  width={500}
+                  height={100}
+                  alt="Doug Speaking"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/brick-walkway-dedication/sara-speaking.jpg"
+                  width={500}
+                  height={100}
+                  alt="Sara Speaking"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/brick-walkway-dedication/doug-sara.jpg"
+                  width={500}
+                  height={100}
+                  alt="Doug and Sara"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/brick-walkway-dedication/doug-donna.jpg"
+                  width={500}
+                  height={100}
+                  alt="Doug and Donna"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/brick-walkway-dedication/sara.jpg"
+                  width={500}
+                  height={100}
+                  alt="Sara"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src="/images/brick-walkway-dedication/sue.jpg"
+                  width={500}
+                  height={100}
+                  alt="Sue"
+                  className="rounded-lg"
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </CardFooter>
       </Card>
     </div>
