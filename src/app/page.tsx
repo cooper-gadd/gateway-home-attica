@@ -62,9 +62,7 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-gray-300">
-                Platinum Angel Supporters
-              </CardTitle>
+              <CardTitle className="text-gray-300">Platinum Angel</CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2023 Annual Campaign Angel
                 Supporters
@@ -79,9 +77,7 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-yellow-400">
-                Gold Angel Supporters
-              </CardTitle>
+              <CardTitle className="text-yellow-400">Gold Angel</CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2023 Annual Campaign Angel
                 Supporters
@@ -106,9 +102,7 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-gray-200">
-                Silver Angel Supporters
-              </CardTitle>
+              <CardTitle className="text-gray-200">Silver Angel</CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2023 Annual Campaign Angel
                 Supporters
@@ -132,9 +126,7 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-amber-600">
-                Bronze Angel Supporters
-              </CardTitle>
+              <CardTitle className="text-amber-600">Bronze Angel</CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
                 Gateway Home Comfort Care’s 2023 Annual Campaign Angel
                 Supporters
