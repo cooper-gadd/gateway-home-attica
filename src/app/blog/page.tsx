@@ -2,9 +2,11 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Blog() {
   return (
@@ -97,6 +99,22 @@ export default function Blog() {
             to you this memorial brick walkway.”
           </p>
         </CardContent>
+        <CardFooter className="flex flex-col justify-center gap-4 sm:flex-row sm:gap-8 lg:gap-12">
+          <Image
+            src="/images/brick-walkway-dedication/doug-speaking.jpg"
+            width={500}
+            height={500}
+            alt="Doug Speaking"
+            className="rounded-lg"
+          />
+          <Image
+            src="/images/brick-walkway-dedication/sara-speaking.jpg"
+            width={500}
+            height={500}
+            alt="Sara Speaking"
+            className="rounded-lg"
+          />
+        </CardFooter>
       </Card>
       <Card>
         <CardHeader className="pb-3">
