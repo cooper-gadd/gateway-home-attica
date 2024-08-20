@@ -16,17 +16,35 @@ export default function Events() {
       <div className="grid grid-cols-1 gap-4">
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>Gateway Home Fall Chicken BBQ Fundraiser</CardTitle>
+            <CardTitle>Fall Chicken BBQ</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Sunday, September 8th 12-2pm
             </CardDescription>
           </CardHeader>
           <CardContent>
-            Gateway Home is holding a drive-thru Chicken BBQ fundraiser on
-            Sunday, September 8th. The dinner includes ½ chicken, salt potatoes,
-            cole slaw, roll & butter and a homemade cookie. Pick up is in the
-            Attica Elementary School parking lot on Prospect Street from noon
-            until 2:00pm. Ticket cost is $15.
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Get ready for our Fall Chicken BBQ on Sunday, September 8th! This
+              mouth-watering event will take place from noon until 2pm, or until
+              we&apos;re sold out. Please note, only 500 tickets will be sold,
+              so be sure to secure yours early!
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Each $15.00 ticket includes a hearty meal of ½ chicken, salt
+              potatoes, coleslaw, a roll, and a cookie. Pickup will be at the
+              Attica Elementary School parking lot.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              To purchase your tickets, simply click the button below to buy
+              online. Alternatively, tickets are available at our home, located
+              at 91 Main St, Attica. You can also call Sue at (585) 708-4331 to
+              arrange to purchase tickets by cash or check.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Given the popularity of this event, we usually sell out.
+              Therefore, pre-sale is highly encouraged to ensure you don&apos;t
+              miss out on this delicious BBQ feast! We look forward to seeing
+              you there!
+            </p>
           </CardContent>
           <CardFooter>
             <Button asChild>
@@ -41,7 +59,7 @@ export default function Events() {
         </Card>
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle>End of Life Doula Training at Gateway Home</CardTitle>
+            <CardTitle>End of Life Doula Training</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Wednesdays, September 18th - November 13th 6-8pm
             </CardDescription>
