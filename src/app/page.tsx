@@ -44,25 +44,15 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              The care provided is through trained, licensed, professional,
-              medical support staff and is supplemented with trained dedicated
-              volunteers.
-            </p>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Gateway Home provides support for up to two residents and their
-              families at a time.
-            </p>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Referrals are through medical professionals, clergy, family,
-              friends or other health care agencies.
-            </p>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Care is provided in the form of physical, spiritual and emotional
-              needs for the residents.
-            </p>
-          </div>
+          At Gateway Home, we pride ourselves on delivering comprehensive care
+          through our team of trained, licensed, professional medical support
+          staff. This care is further enhanced by the dedication of our trained
+          volunteers. We are equipped to provide support for up to two residents
+          and their families simultaneously. Our referrals come from a variety
+          of sources, including medical professionals, clergy, family, friends,
+          and other healthcare agencies. Our care extends beyond the physical,
+          as we also cater to the spiritual and emotional needs of our
+          residents, ensuring a holistic approach to their well-being.
         </CardContent>
       </Card>
       <Card>
