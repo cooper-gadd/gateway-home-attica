@@ -114,6 +114,68 @@ export default function Blog() {
       content: [
         "Thanks to the Russell family for another successful Judy Russell Memorial golf tournament! We would also like to sincerely thank every golfer, sponsor, volunteer, and basket donation. Our community rocks!!",
       ],
+      images: [
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/truck.jpg",
+          alt: "Truck",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/tickets.jpg",
+          alt: "Tickets",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/drawing.jpg",
+          alt: "Drawing",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/carts.jpg",
+          alt: "Carts",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/family.jpg",
+          alt: "Family",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/blue-shirts.jpg",
+          alt: "Blue Shirts",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/jim.jpg",
+          alt: "Jim",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/sue.jpg",
+          alt: "Sue",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/dudes-cart.jpg",
+          alt: "Dudes Cart",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/people-cart.jpg",
+          alt: "People Cart",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/raffle.jpg",
+          alt: "Raffle",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/jim-sara.jpg",
+          alt: "Jim and Sara",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/sign.jpg",
+          alt: "Sign",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/people-sign.jpg",
+          alt: "People Sign",
+        },
+        {
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/winners.jpg",
+          alt: "Winners",
+        },
+      ],
     },
     {
       title: "Gateway Home Dedicates Brick Walkways",
