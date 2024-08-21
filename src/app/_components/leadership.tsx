@@ -77,7 +77,7 @@ export function Leadership() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {leadership.map((leader) => (
             <Card key={leader.name} className="bg-muted/20">
               <CardHeader>
