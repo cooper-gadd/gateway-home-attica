@@ -30,22 +30,6 @@ export default function Blog() {
           alt: "Cars 5",
         },
         {
-          src: "/images/blog/3rd-annual-junkyard-reunion/beer-justice-brewing-co.jpg",
-          alt: "Beer Justice Brewing Co.",
-        },
-        {
-          src: "/images/blog/3rd-annual-junkyard-reunion/vintage-cow.jpg",
-          alt: "Vintage Cow",
-        },
-        {
-          src: "/images/blog/3rd-annual-junkyard-reunion/trail-blazers.jpg",
-          alt: "Trail Blazers",
-        },
-        {
-          src: "/images/blog/3rd-annual-junkyard-reunion/state-trooper.jpg",
-          alt: "State Trooper",
-        },
-        {
           src: "/images/blog/3rd-annual-junkyard-reunion/rosie.jpg",
           alt: "Rosie",
         },
@@ -75,10 +59,6 @@ export default function Blog() {
           alt: "Ladies",
         },
         {
-          src: "/images/blog/7th-annual-golfing-for-gateway/car.jpg",
-          alt: "Car",
-        },
-        {
           src: "/images/blog/7th-annual-golfing-for-gateway/putting-contest.jpg",
           alt: "Putting Contest",
         },
@@ -102,10 +82,6 @@ export default function Blog() {
           src: "/images/blog/7th-annual-golfing-for-gateway/19-shot.jpg",
           alt: "19 Shot",
         },
-        {
-          src: "/images/blog/7th-annual-golfing-for-gateway/grill.jpg",
-          alt: "Grill",
-        },
       ],
     },
     {
@@ -116,36 +92,8 @@ export default function Blog() {
       ],
       images: [
         {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/truck.jpg",
-          alt: "Truck",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/tickets.jpg",
-          alt: "Tickets",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/drawing.jpg",
-          alt: "Drawing",
-        },
-        {
           src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/carts.jpg",
           alt: "Carts",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/family.jpg",
-          alt: "Family",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/blue-shirts.jpg",
-          alt: "Blue Shirts",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/jim.jpg",
-          alt: "Jim",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/sue.jpg",
-          alt: "Sue",
         },
         {
           src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/dudes-cart.jpg",
@@ -156,20 +104,12 @@ export default function Blog() {
           alt: "People Cart",
         },
         {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/raffle.jpg",
-          alt: "Raffle",
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/jim.jpg",
+          alt: "Jim",
         },
         {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/jim-sara.jpg",
-          alt: "Jim and Sara",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/sign.jpg",
-          alt: "Sign",
-        },
-        {
-          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/people-sign.jpg",
-          alt: "People Sign",
+          src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/drawing.jpg",
+          alt: "Drawing",
         },
         {
           src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/winners.jpg",
@@ -209,16 +149,8 @@ export default function Blog() {
           alt: "Doug and Sara",
         },
         {
-          src: "/images/blog/gateway-home-dedicates-brick-walkways/doug-donna.jpg",
-          alt: "Doug and Donna",
-        },
-        {
           src: "/images/blog/gateway-home-dedicates-brick-walkways/sara.jpg",
           alt: "Sara",
-        },
-        {
-          src: "/images/blog/gateway-home-dedicates-brick-walkways/sue.jpg",
-          alt: "Sue",
         },
         {
           src: "/images/blog/gateway-home-dedicates-brick-walkways/bricks.jpg",
