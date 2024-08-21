@@ -7,13 +7,15 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-export function AngelSupporters() {
+export function Donors() {
   return (
     <Card>
       <CardHeader className="pb-3">
-        <CardTitle>Angel Supporters</CardTitle>
+        <CardTitle>Donors</CardTitle>
         <CardDescription className="max-w-lg text-balance leading-relaxed">
-          Gateway Home Comfort Care’s 2023 Annual Campaign Angel Supporters
+          Gateway Home is a non-profit organization that relies on the
+          generosity of our community to provide our services. We are grateful
+          for the support of our donors.
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -1,4 +1,4 @@
-import { AngelSupporters } from "./_components/angel-supporters";
+import { Donors } from "./_components/donors";
 import { FAQs } from "./_components/faqs";
 import { Leadership } from "./_components/leadership";
 import { MissionStatement } from "./_components/mission-statement";
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <MissionStatement />
       <ResidentCare />
-      <AngelSupporters />
+      <Donors />
       <Leadership />
       <FAQs />
     </div>

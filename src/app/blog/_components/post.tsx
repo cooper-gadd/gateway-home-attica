@@ -53,7 +53,7 @@ export function Post({ post }: { post: Post }) {
                   key={index}
                   className="flex flex-col items-center justify-center"
                 >
-                  <AspectRatio ratio={16 / 9} className="bg-muted">
+                  <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
                     <Image
                       src={image.src}
                       alt={image.alt}

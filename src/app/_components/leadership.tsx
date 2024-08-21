@@ -81,7 +81,7 @@ export function Leadership() {
           {leadership.map((leader) => (
             <Card key={leader.name} className="bg-muted/20">
               <CardHeader>
-                <AspectRatio ratio={3 / 4} className="bg-muted">
+                <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                   <Image
                     src={leader.image}
                     alt={leader.name}
