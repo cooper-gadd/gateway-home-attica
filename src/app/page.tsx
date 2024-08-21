@@ -1,5 +1,6 @@
 import { AngelSupporters } from "./_components/angel-supporters";
 import { FAQs } from "./_components/faqs";
+import { Leadership } from "./_components/leadership";
 import { MissionStatement } from "./_components/mission-statement";
 import { ResidentCare } from "./_components/resident-care";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <MissionStatement />
       <ResidentCare />
       <AngelSupporters />
+      <Leadership />
       <FAQs />
     </div>
   );
