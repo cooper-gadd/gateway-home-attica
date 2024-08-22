@@ -17,7 +17,7 @@ export default function Events() {
         <CardHeader className="pb-3">
           <CardTitle>Fall Chicken BBQ</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Sunday, September 8th 12-2pm
+            Fundraiser
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -57,9 +57,9 @@ export default function Events() {
       </Card>
       <Card>
         <CardHeader className="pb-3">
-          <CardTitle>End of Life Doula Training</CardTitle>
+          <CardTitle>End of Life Doula</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Wednesdays, September 18th - November 13th 6-8pm
+            Training Course
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -157,7 +157,7 @@ export default function Events() {
         <CardHeader className="pb-3">
           <CardTitle>Meat Raffle</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Saturday, September 28th 6pm
+            Fundraiser
           </CardDescription>
         </CardHeader>
         <CardContent>
