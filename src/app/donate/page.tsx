@@ -7,84 +7,72 @@ import {
   CardFooter,
   CardContent,
 } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 
 export default function Donate() {
   const wishList = [
-    { category: "Food", item: "Cookie mixes", details: "" },
-    { category: "Food", item: "Cake mixes", details: "" },
+    { category: "Food", item: "Cookie mixes" },
+    { category: "Food", item: "Cake mixes" },
     {
       category: "Household",
       item: "Storage bags of all sizes",
-      details: "",
     },
-    { category: "Food", item: "Clear shipping tape", details: "" },
+    { category: "Household", item: "Clear shipping tape" },
     {
       category: "Food",
-      item: "Coffee",
-      details: "Bags, cans or K-cups of regular & decaf.",
+      item: "Regular & decaf coffee in bags, cans or K-cups",
     },
     {
       category: "Food",
-      item: "Juices",
-      details: "Cans or bottles.",
+      item: "Juices in cans or bottles",
     },
-    { category: "Food", item: "Canned soda", details: "" },
-    { category: "Food", item: "Canned soups", details: "" },
-    { category: "Food", item: "Butter", details: "" },
-    { category: "Food", item: "Bottled water", details: "" },
-    { category: "Household", item: "Paper napkins", details: "" },
-    { category: "Household", item: "Paper towels", details: "" },
-    { category: "Household", item: "Toilet paper", details: "" },
-    { category: "Household", item: "Kleenex", details: "" },
+    { category: "Food", item: "Canned soda" },
+    { category: "Food", item: "Canned soups" },
+    { category: "Food", item: "Butter" },
+    { category: "Food", item: "Bottled water" },
+    { category: "Household", item: "Paper napkins" },
+    { category: "Household", item: "Paper towels" },
+    { category: "Household", item: "Toilet paper" },
+    { category: "Household", item: "Kleenex" },
     {
       category: "Household",
-      item: "Tall kitchen garbage bags",
-      details: "13 gallon",
+      item: "Tall kitchen garbage bags (13 gallon)",
     },
     {
       category: "Household",
-      item: "Small garbage bags",
-      details: "4 gallon",
+      item: "Small garbage bags (4 gallon)",
     },
     {
       category: "Household",
       item: "Swiffer solution & dry cloths",
-      details: "",
     },
-    { category: "Resident Care", item: "Lip balm", details: "" },
-    { category: "Resident Care", item: "Non-Latex gloves", details: "L & XL" },
-    { category: "Resident Care", item: "Distilled water", details: "" },
+    { category: "Resident Care", item: "Lip balm" },
+    {
+      category: "Resident Care",
+      item: "Non-Latex gloves (L & XL)",
+    },
+    { category: "Resident Care", item: "Distilled water" },
     {
       category: "Resident Care",
       item: "Disposable oral mouth swabs",
-      details: "",
     },
-    { category: "Resident Care", item: "Baby wipes", details: "" },
-    { category: "Resident Care", item: "Slip resistant socks", details: "" },
-    { category: "Miscellaneous", item: "Postage stamps", details: "" },
+    { category: "Resident Care", item: "Baby wipes" },
+    { category: "Resident Care", item: "Slip resistant socks" },
+    { category: "Miscellaneous", item: "Postage stamps" },
     {
       category: "Miscellaneous",
-      item: "Brother printer ink",
-      details: "LC30333PKS",
-    },
-    {
-      category: "Miscellaneous",
-      item: "Gift cards",
-      details:
-        "Tops, Dollar General, Walmart, Home Depot, Aldi’s, Tim Horton’s, Local Restaurants, etc.",
+      item: "Brother printer ink (LC30333PKS)",
     },
     {
       category: "Miscellaneous",
-      item: "Folding chairs",
-      details: "With seat cushions.",
+      item: "Gift cards from Tops, Dollar General, Walmart, Home Depot, Aldi’s, Tim Horton’s, Local Restaurants, etc.",
     },
-    { category: "Miscellaneous", item: "Easy up tents", details: "10 x 10" },
     {
       category: "Miscellaneous",
-      item: "Items and baskets",
-      details: "For basket auctions.",
+      item: "Folding chairs with seat cushions",
     },
+    { category: "Miscellaneous", item: "Easy up tents (10 x 10)" },
   ];
 
   return (
@@ -162,92 +150,54 @@ export default function Donate() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <Card className="bg-muted/20">
-              <CardHeader className="pb-3">
-                <CardTitle>Food</CardTitle>
-                <CardDescription className="max-w-lg text-balance leading-relaxed">
-                  We are always in need of the following food items.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                  {wishList
-                    .filter((item) => item.category === "Food")
-                    .sort((a, b) => a.item.localeCompare(b.item))
-                    .map((item) => (
-                      <li key={item.item}>
-                        {item.item}
-                        {item.details && ` - ${item.details}`}
-                      </li>
-                    ))}
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-muted/20">
-              <CardHeader className="pb-3">
-                <CardTitle>Household</CardTitle>
-                <CardDescription className="max-w-lg text-balance leading-relaxed">
-                  We are always in need of the following household items.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                  {wishList
-                    .filter((item) => item.category === "Household")
-                    .sort((a, b) => a.item.localeCompare(b.item))
-                    .map((item) => (
-                      <li key={item.item}>
-                        {item.item}
-                        {item.details && ` - ${item.details}`}
-                      </li>
-                    ))}
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-muted/20">
-              <CardHeader className="pb-3">
-                <CardTitle>Resident Care</CardTitle>
-                <CardDescription className="max-w-lg text-balance leading-relaxed">
-                  We are always in need of the following resident care items.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                  {wishList
-                    .filter((item) => item.category === "Resident Care")
-                    .sort((a, b) => a.item.localeCompare(b.item))
-                    .map((item) => (
-                      <li key={item.item}>
-                        {item.item}
-                        {item.details && ` - ${item.details}`}
-                      </li>
-                    ))}
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-muted/20">
-              <CardHeader className="pb-3">
-                <CardTitle>Miscellaneous</CardTitle>
-                <CardDescription className="max-w-lg text-balance leading-relaxed">
-                  We are always in need of the following miscellaneous items.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                  {wishList
-                    .filter((item) => item.category === "Miscellaneous")
-                    .sort((a, b) => a.item.localeCompare(b.item))
-                    .map((item) => (
-                      <li key={item.item}>
-                        {item.item}
-                        {item.details && ` - ${item.details}`}
-                      </li>
-                    ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+          <Tabs defaultValue="food">
+            <TabsList>
+              <TabsTrigger value="food">Food</TabsTrigger>
+              <TabsTrigger value="household">Household</TabsTrigger>
+              <TabsTrigger value="resident-care">Resident Care</TabsTrigger>
+              <TabsTrigger value="miscellaneous">Miscellaneous</TabsTrigger>
+            </TabsList>
+            <TabsContent value="food">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {wishList
+                  .filter((item) => item.category === "Food")
+                  .sort((a, b) => a.item.localeCompare(b.item))
+                  .map((item) => (
+                    <li key={item.item}>{item.item}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="household">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {wishList
+                  .filter((item) => item.category === "Household")
+                  .sort((a, b) => a.item.localeCompare(b.item))
+                  .map((item) => (
+                    <li key={item.item}>{item.item}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="resident-care">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {wishList
+                  .filter((item) => item.category === "Resident Care")
+                  .sort((a, b) => a.item.localeCompare(b.item))
+                  .map((item) => (
+                    <li key={item.item}>{item.item}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="miscellaneous">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {wishList
+                  .filter((item) => item.category === "Miscellaneous")
+                  .sort((a, b) => a.item.localeCompare(b.item))
+                  .map((item) => (
+                    <li key={item.item}>{item.item}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+          </Tabs>
         </CardContent>
         <CardFooter>
           <div className="flex items-center gap-4">
