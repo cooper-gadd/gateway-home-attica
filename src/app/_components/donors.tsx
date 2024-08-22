@@ -8,6 +8,142 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function Donors() {
+  const platinumDonors = [
+    "Attica Package Company, Inc.",
+    "Attica Lions Club",
+    "Louise M Schiltz",
+    "Donna Ferry",
+  ];
+
+  const goldDonors = [
+    "Marley Funeral Home LLC",
+    "Doug Domes",
+    "Advanced Dairy Services, Inc.",
+    "Todd & Brittany Gadd",
+    "L Toal Plumbing, LLC",
+    "Robinson & Hackemer Funeral Home",
+    "S.J.F. Construction, Inc",
+    "Dr. Joseph & Marcy Craddock",
+    "Shirley Teachen",
+    "Providence Fellowship",
+    "James & Jane Frankenberger",
+    "Ralph A. Janes",
+  ];
+
+  const silverDonors = [
+    "Shirley F. Peters",
+    "Michael & Marybeth Whiting",
+    "Ron & Peach Merrill",
+    "County Line Stone Co., Inc.",
+    "Connie Tartick",
+    "Sandy Ewert",
+    "Paul & Diane Luderman",
+    "Zehler Excavating, LLC",
+    "Durin Rogers & Paula Campbell",
+    "Harding's Attica Furniture",
+    "Joseph & Carol Pilc",
+  ];
+
+  const bronzeDonors = [
+    "Jeannie K. Bates",
+    "Richard & Linda VanDette",
+    "Gary & Renee Hanley",
+    "Martha Whittington",
+    "Melissa Spink",
+    "Laurie Valenti",
+    "Richard H. & Maria Walczak",
+    "Clarence & Mary Weaver",
+    "Ronald J. Demers",
+    "Kevin & Lisa Cochrane",
+    "Connie Holt",
+    "Lynn & Linda Camp",
+    "Stuart & Janis Hempel",
+    "David & Judith Brockner",
+    "Helen Leonard",
+    "Paul & Maryann Simonsen",
+    "Diane Phelps",
+    "Daniel & Barbara Krazmien",
+    "Patricia Herman",
+    "Warsaw Pennysaver",
+    "Barbara C. Schiltz",
+    "Helen Nichols",
+    "Joseph & Laura Schmieder",
+    "Jerilyn Clark",
+    "Brennan & Shelly Burdett",
+    "Andrew & Carla Gasiewicz",
+    "Ann & Deane Foster",
+    "Gary & Carol Barrow",
+    "Bernard & Janet Meinweiser",
+    "Barbara Myers",
+    "Alan & Kelly Heizmann",
+    "Timothy J. & Donna Embt",
+    "Cooke & Steffan - Mr. Tom Steffan",
+    "Laura Feger",
+    "Mike & Karen Shadbolt",
+    "Daniel & Shannon Ford",
+    "Howard & Muriel Herman",
+    "Angela Milillo & Doug Patti",
+    "Sandra C. Green",
+    "Donald & Linda Schmidt",
+    "Jerry & Sue Elmore",
+    "Orangeville Immanuel United Church of Chr",
+    "Anna Nutty",
+    "Can Can Redemption",
+    "Robert & Eileen Disinger",
+    "Rose Bartz",
+    "Pat Forsha Truck and Auto Collision, Inc.",
+    "Gary & Karen Beideck",
+    "Virginia & Burt Fugle",
+    "Susan Grew",
+    "Randy & Mary Szczesniak",
+    "Empire Access",
+    "The Greenery",
+    "Matthew & Mary Mest",
+    "M&M Meats",
+    "J & S Agen, Inc. - Design Art",
+    "Dennis & Carol Piechowiak",
+    "Gina M. Morrison",
+    "Toshmin D. Duncan",
+    "Kelly Nelson",
+    "Paul & Carol George",
+    "Robert & Barbara Peters",
+    "Don & Patti Almeter",
+    "David & Connie Rethlake",
+    "Sandra Urquhart",
+    "Robert & Maureen Kirby",
+    "Daniel & Susan Boss",
+    "Robert A. Koerner Construction",
+    "Arch & Peggy Snyder",
+    "Charles & J. Terri Woodruff",
+    "Daniel & Jean Burling",
+    "Michael & Peggy Morrissey",
+    "Springtyme Landscaping & Design Inc.",
+    "Tim & Louise Royce",
+    "Dave & Joanne Thornton",
+    "Grace Strollo",
+    "Dan & Brenda Miller",
+    "Jeff & Elizabeth Clark",
+    "Wilkins Insurance Agency, Inc",
+    "Norb & Marilyn Fuest",
+    "Logel Appliance, Inc.",
+    "Don & Jude Carpenter",
+    "Norma Gerhardt",
+    "Gerald & Deborah Landowski",
+    "Alfonso J. Ficarella",
+    "Lynn Herman",
+    "Kirk & Nina Reisdorf",
+    "William Errington",
+    "Peter & Dawn Mark",
+    "Sons of the American Legion Post 1720",
+    "Donald and Jane Beechler",
+    "Lor-Rob Dairy Farm",
+    "Janet Romesser",
+    "Herbert Hammond",
+    "William J. Renz Jr.",
+    "John E. Jaszko",
+    "Jeff & Elizabeth Clark",
+  ];
+
   return (
     <Card>
       <CardHeader className="pb-3">
@@ -21,157 +157,49 @@ export function Donors() {
       <CardContent>
         <Tabs defaultValue="platinum">
           <TabsList>
-            <TabsTrigger value="platinum" className="text-gray-300">
-              Platinum
-            </TabsTrigger>
-            <TabsTrigger value="gold" className="text-yellow-400">
-              Gold
-            </TabsTrigger>
-            <TabsTrigger value="silver" className="text-gray-200">
-              Silver
-            </TabsTrigger>
-            <TabsTrigger value="bronze" className="text-amber-600">
-              Bronze
-            </TabsTrigger>
+            <TabsTrigger value="platinum">Platinum</TabsTrigger>
+            <TabsTrigger value="gold">Gold</TabsTrigger>
+            <TabsTrigger value="silver">Silver</TabsTrigger>
+            <TabsTrigger value="bronze">Bronze</TabsTrigger>
           </TabsList>
           <TabsContent value="platinum">
             <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-              <li>Attica Package Company, Inc.</li>
-              <li>Attica Lions Club</li>
-              <li>Louise M Schiltz</li>
-              <li>Donna Ferry</li>
+              {platinumDonors
+                .slice()
+                .sort((a, b) => a.localeCompare(b))
+                .map((donor) => (
+                  <li key={donor}>{donor}</li>
+                ))}
             </ul>
           </TabsContent>
           <TabsContent value="gold">
             <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-              <li>Marley Funeral Home LLC</li>
-              <li>Doug Domes</li>
-              <li>Advanced Dairy Services, Inc.</li>
-              <li>Todd Gadd</li>
-              <li>L Toal Plumbing, LLC</li>
-              <li>Robinson & Hackemer Funeral Home</li>
-              <li>S.J.F. Construction, Inc</li>
-              <li>Dr. Joseph & Marcy Craddock</li>
-              <li>Shirley Teachen</li>
-              <li>Providence Fellowship</li>
-              <li>James & Jane Frankenberger</li>
-              <li>Ralph A. Janes</li>
+              {goldDonors
+                .slice()
+                .sort((a, b) => a.localeCompare(b))
+                .map((donor) => (
+                  <li key={donor}>{donor}</li>
+                ))}
             </ul>
           </TabsContent>
           <TabsContent value="silver">
             <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-              <li>Shirley F. Peters</li>
-              <li>Michael & Marybeth Whiting</li>
-              <li>Ron & Peach Merrill</li>
-              <li>County Line Stone Co., Inc.</li>
-              <li>Connie Tartick</li>
-              <li>Sandy Ewert</li>
-              <li>Paul & Diane Luderman</li>
-              <li>Zehler Excavating, LLC</li>
-              <li>Durin Rogers & Paula Campbell</li>
-              <li>Harding&apos;s Attica Furniture</li>
-              <li>Joseph & Carol Pilc</li>
+              {silverDonors
+                .slice()
+                .sort((a, b) => a.localeCompare(b))
+                .map((donor) => (
+                  <li key={donor}>{donor}</li>
+                ))}
             </ul>
           </TabsContent>
           <TabsContent value="bronze">
             <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-              <li>Jeannie K. Bates</li>
-              <li>Richard & Linda VanDette</li>
-              <li>Gary & Renee Hanley</li>
-              <li>Martha Whittington</li>
-              <li>Melissa Spink</li>
-              <li>Laurie Valenti</li>
-              <li>Richard H. & Maria Walczak</li>
-              <li>Clarence & Mary Weaver</li>
-              <li>Ronald J. Demers</li>
-              <li>Kevin & Lisa Cochrane</li>
-              <li>Connie Holt</li>
-              <li>Lynn & Linda Camp</li>
-              <li>Stuart & Janis Hempel</li>
-              <li>David & Judith Brockner</li>
-              <li>Helen Leonard</li>
-              <li>Paul & Maryann Simonsen</li>
-              <li>Diane Phelps</li>
-              <li>Daniel & Barbara Krazmien</li>
-              <li>Patricia Herman</li>
-              <li>Warsaw Pennysaver</li>
-              <li>Barbara C. Schiltz</li>
-              <li>Helen Nichols</li>
-              <li>Joseph & Laura Schmieder</li>
-              <li>Jerilyn Clark</li>
-              <li>Brennan & Shelly Burdett</li>
-              <li>Andrew & Carla Gasiewicz</li>
-              <li>Ann & Deane Foster</li>
-              <li>Gary & Carol Barrow</li>
-              <li>Bernard & Janet Meinweiser</li>
-              <li>Barbara Myers</li>
-              <li>Alan & Kelly Heizmann</li>
-              <li>Timothy J. & Donna Embt</li>
-              <li>Cooke & Steffan - Mr. Tom Steffan</li>
-              <li>Laura Feger</li>
-              <li>Mike & Karen Shadbolt</li>
-              <li>Daniel & Shannon Ford</li>
-              <li>Howard & Muriel Herman</li>
-              <li>Angela Milillo & Doug Patti</li>
-              <li>Sandra C. Green</li>
-              <li>Donald & Linda Schmidt</li>
-              <li>Jerry & Sue Elmore</li>
-              <li>Orangeville Immanuel United Church of Chr</li>
-              <li>Anna Nutty</li>
-              <li>Can Can Redemption</li>
-              <li>Robert & Eileen Disinger</li>
-              <li>Rose Bartz</li>
-              <li>Pat Forsha Truck and Auto Collision, Inc.</li>
-              <li>Gary & Karen Beideck</li>
-              <li>Virginia & Burt Fugle</li>
-              <li>Susan Grew</li>
-              <li>Randy & Mary Szczesniak</li>
-              <li>Empire Access</li>
-              <li>The Greenery</li>
-              <li>Matthew & Mary Mest</li>
-              <li>M&M Meats</li>
-              <li>J & S Agen, Inc. - Design Art</li>
-              <li>Dennis & Carol Piechowiak</li>
-              <li>Gina M. Morrison</li>
-              <li>Toshmin D. Duncan</li>
-              <li>Kelly Nelson</li>
-              <li>Paul & Carol George</li>
-              <li>Robert & Barbara Peters</li>
-              <li>Don & Patti Almeter</li>
-              <li>David & Connie Rethlake</li>
-              <li>Sandra Urquhart</li>
-              <li>Robert & Maureen Kirby</li>
-              <li>Daniel & Susan Boss</li>
-              <li>Robert A. Koerner Construction</li>
-              <li>Arch & Peggy Snyder</li>
-              <li>Charles & J. Terri Woodruff</li>
-              <li>Daniel & Jean Burling</li>
-              <li>Michael & Peggy Morrissey</li>
-              <li>Springtyme Landscaping & Design Inc.</li>
-              <li>Tim & Louise Royce</li>
-              <li>Dave & Joanne Thornton</li>
-              <li>Grace Strollo</li>
-              <li>Dan & Brenda Miller</li>
-              <li>Jeff & Elizabeth Clark</li>
-              <li>Wilkins Insurance Agency, Inc</li>
-              <li>Norb & Marilyn Fuest</li>
-              <li>Logel Appliance, Inc.</li>
-              <li>Don & Jude Carpenter</li>
-              <li>Norma Gerhardt</li>
-              <li>Gerald & Deborah Landowski</li>
-              <li>Alfonso J. Ficarella</li>
-              <li>Lynn Herman</li>
-              <li>Kirk & Nina Reisdorf</li>
-              <li>William Errington</li>
-              <li>Peter & Dawn Mark</li>
-              <li>Sons of the American Legion Post 1720</li>
-              <li>Donald and Jane Beechler</li>
-              <li>Lor-Rob Dairy Farm</li>
-              <li>Janet Romesser</li>
-              <li>Herbert Hammond</li>
-              <li>William J. Renz Jr.</li>
-              <li>John E. Jaszko</li>
-              <li>Jeff & Elizabeth Clark</li>
+              {bronzeDonors
+                .slice()
+                .sort((a, b) => a.localeCompare(b))
+                .map((donor) => (
+                  <li key={donor}>{donor}</li>
+                ))}
             </ul>
           </TabsContent>
         </Tabs>

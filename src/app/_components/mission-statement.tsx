@@ -10,7 +10,7 @@ export function MissionStatement() {
   return (
     <Card>
       <CardHeader className="pb-3">
-        <CardTitle>Gateway Home Attica</CardTitle>
+        <CardTitle>Gateway Home</CardTitle>
         <CardDescription className="max-w-lg text-balance leading-relaxed">
           Mission Statement
         </CardDescription>
