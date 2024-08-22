@@ -17,6 +17,8 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { posts } from "@/data/data";
 
+export const dynamic = "force-dynamic";
+
 export default function Post({
   params: { id: postId },
 }: {
