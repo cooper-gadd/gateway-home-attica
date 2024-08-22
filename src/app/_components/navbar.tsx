@@ -46,7 +46,12 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
-          <Home className="h-6 w-6" />
+          <Home
+            className={cn(
+              "h-6 w-6 hover:text-foreground",
+              pathname === "/" ? "text-foreground" : "text-muted-foreground",
+            )}
+          />
           <span className="sr-only">Gateway Home Attica</span>
         </Link>
         {navItems.map((item) => (
