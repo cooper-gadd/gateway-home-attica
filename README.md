@@ -5,4 +5,5 @@
 [ ] jobs descriptions
 [ ] imgs on home page
 [ ] theme
-[ ] blog refactor
+[ ] db connect
+[ ] host
