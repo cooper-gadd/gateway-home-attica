@@ -27,7 +27,7 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          Gateway Home is established to give “comfort care” to people who are
+          Gateway Home is established to give comfort care to people who are
           medically determined to be in their last stages of life (three months
           or less). Our organization will provide both medical and spiritual
           care to support the residents as they pass from this life to the next.

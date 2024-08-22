@@ -383,7 +383,7 @@ export const wishList = [
   { category: "Miscellaneous", item: "Postage stamps" },
   {
     category: "Miscellaneous",
-    item: "Brother printer ink (LC30333PKS)",
+    item: "Brother printer ink cartridges (LC30333PKS)",
   },
   {
     category: "Miscellaneous",
