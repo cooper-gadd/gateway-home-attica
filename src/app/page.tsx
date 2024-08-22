@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -12,8 +13,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Drawer,
+  DrawerTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerDescription,
+} from "@/components/ui/drawer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { donors, leadership } from "@/data/data";
+import { Info } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -139,18 +149,30 @@ export default function Home() {
                       className="rounded-md object-cover"
                     />
                   </AspectRatio>
-                  <CardTitle>{leader.name}</CardTitle>
+                  <CardTitle className="flex items-center justify-between">
+                    {leader.name}{" "}
+                    <Drawer>
+                      <DrawerTrigger asChild>
+                        <Button variant={"ghost"}>
+                          {" "}
+                          <Info className="h-4 w-4" />
+                        </Button>
+                      </DrawerTrigger>
+                      <DrawerContent>
+                        <DrawerHeader>
+                          <DrawerTitle>
+                            About {leader.name.split(" ")[0]}
+                          </DrawerTitle>
+                          <DrawerDescription>{leader.bio}</DrawerDescription>
+                        </DrawerHeader>
+                      </DrawerContent>
+                    </Drawer>
+                  </CardTitle>
                   <CardDescription className="max-w-lg text-balance leading-relaxed">
                     {leader.position}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {leader.bio.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
-                    ))}
-                  </div>
-                </CardContent>
+                <CardContent></CardContent>
               </Card>
             ))}
           </div>
