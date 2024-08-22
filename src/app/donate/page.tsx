@@ -153,9 +153,9 @@ export default function Donate() {
           <Tabs defaultValue="food">
             <TabsList>
               <TabsTrigger value="food">Food</TabsTrigger>
-              <TabsTrigger value="household">Household</TabsTrigger>
-              <TabsTrigger value="resident-care">Resident Care</TabsTrigger>
-              <TabsTrigger value="miscellaneous">Miscellaneous</TabsTrigger>
+              <TabsTrigger value="household">House</TabsTrigger>
+              <TabsTrigger value="resident-care">Res. Care</TabsTrigger>
+              <TabsTrigger value="miscellaneous">Misc.</TabsTrigger>
             </TabsList>
             <TabsContent value="food">
               <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
