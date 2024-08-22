@@ -7,14 +7,6 @@ import {
   CardFooter,
   CardContent,
 } from "@/components/ui/card";
-import {
-  Table,
-  TableHeader,
-  TableRow,
-  TableHead,
-  TableBody,
-  TableCell,
-} from "@/components/ui/table";
 import Link from "next/link";
 
 export default function Donate() {
@@ -160,7 +152,7 @@ export default function Donate() {
         </Card>
       </div>
       <Card>
-        <CardHeader className="px-7">
+        <CardHeader>
           <CardTitle>Wish List</CardTitle>
           <CardDescription>
             We are always in need of the following items. Please consider
@@ -170,33 +162,92 @@ export default function Donate() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="hidden sm:table-cell">Category</TableHead>
-                <TableHead className="table-cell">Item</TableHead>
-                <TableHead className="text-right">Details</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {wishList
-                .slice()
-                .sort((a, b) => a.item.localeCompare(b.item))
-                .map((item) => {
-                  return (
-                    <TableRow key={item.item}>
-                      <TableCell className="hidden sm:table-cell">
-                        {item.category}
-                      </TableCell>
-                      <TableCell>{item.item}</TableCell>
-                      <TableCell className="text-right">
-                        {item.details}
-                      </TableCell>
-                    </TableRow>
-                  );
-                })}
-            </TableBody>
-          </Table>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <Card className="bg-muted/20">
+              <CardHeader className="pb-3">
+                <CardTitle>Food</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  We are always in need of the following food items.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                  {wishList
+                    .filter((item) => item.category === "Food")
+                    .sort((a, b) => a.item.localeCompare(b.item))
+                    .map((item) => (
+                      <li key={item.item}>
+                        {item.item}
+                        {item.details && ` - ${item.details}`}
+                      </li>
+                    ))}
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-muted/20">
+              <CardHeader className="pb-3">
+                <CardTitle>Household</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  We are always in need of the following household items.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                  {wishList
+                    .filter((item) => item.category === "Household")
+                    .sort((a, b) => a.item.localeCompare(b.item))
+                    .map((item) => (
+                      <li key={item.item}>
+                        {item.item}
+                        {item.details && ` - ${item.details}`}
+                      </li>
+                    ))}
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-muted/20">
+              <CardHeader className="pb-3">
+                <CardTitle>Resident Care</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  We are always in need of the following resident care items.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                  {wishList
+                    .filter((item) => item.category === "Resident Care")
+                    .sort((a, b) => a.item.localeCompare(b.item))
+                    .map((item) => (
+                      <li key={item.item}>
+                        {item.item}
+                        {item.details && ` - ${item.details}`}
+                      </li>
+                    ))}
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-muted/20">
+              <CardHeader className="pb-3">
+                <CardTitle>Miscellaneous</CardTitle>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  We are always in need of the following miscellaneous items.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                  {wishList
+                    .filter((item) => item.category === "Miscellaneous")
+                    .sort((a, b) => a.item.localeCompare(b.item))
+                    .map((item) => (
+                      <li key={item.item}>
+                        {item.item}
+                        {item.details && ` - ${item.details}`}
+                      </li>
+                    ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </CardContent>
         <CardFooter>
           <div className="flex items-center gap-4">
