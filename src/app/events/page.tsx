@@ -7,6 +7,12 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
@@ -48,7 +54,7 @@ export default function Events() {
           <Button asChild>
             <Link
               target="_blank"
-              href="/https://gatewayhomeattica.networkforgood.com/events/74632-fall-chicken-bbq-sun-sept-8th"
+              href="https://gatewayhomeattica.networkforgood.com/events/74632-fall-chicken-bbq-sun-sept-8th"
             >
               Buy Tickets
             </Link>
@@ -139,18 +145,26 @@ export default function Events() {
           </p>
         </CardContent>
         <CardFooter>
-          <div className="flex items-center gap-4">
-            <Button asChild>
-              <Link href={"tel:585-708-4331"}>
-                <Phone className="mr-2 h-4 w-4" /> Register
-              </Link>
-            </Button>
-            <Button asChild>
-              <Link href={"mailto:sara@gatewayhomeattica.org"}>
-                <Mail className="mr-2 h-4 w-4" /> Register
-              </Link>
-            </Button>
-          </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button>Register</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start">
+              <DropdownMenuItem>
+                <Link href={"tel:585-708-4331"} className="flex items-center">
+                  <Phone className="mr-2 h-4 w-4" /> <span>585-708-4331</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={"mailto:sara@gatewayhomeattica.org"}
+                  className="flex items-center"
+                >
+                  <Mail className="mr-2 h-4 w-4" /> sara@gatewayhomeattica.org
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </CardFooter>
       </Card>
       <Card>
