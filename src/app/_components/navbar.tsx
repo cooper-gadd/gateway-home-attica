@@ -2,7 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Home, Menu, Search } from "lucide-react";
 import Link from "next/link";
@@ -68,26 +73,36 @@ export function Navbar() {
         </SheetTrigger>
         <SheetContent side="left">
           <nav className="grid gap-6 text-lg font-medium">
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-lg font-semibold md:text-base"
-            >
-              <Home className="h-6 w-6" />
-              <span className="sr-only">Gateway Home Attica</span>
-            </Link>
-            {navItems.map((item) => (
+            <SheetClose asChild>
               <Link
-                key={item.title}
-                href={item.href}
-                className={cn(
-                  "hover:text-foreground",
-                  pathname === item.href
-                    ? "text-foreground"
-                    : "text-muted-foreground",
-                )}
+                href="/"
+                className="flex items-center gap-2 text-lg font-semibold md:text-base"
               >
-                {item.title}
+                <Home
+                  className={cn(
+                    "h-6 w-6 hover:text-foreground",
+                    pathname === "/"
+                      ? "text-foreground"
+                      : "text-muted-foreground",
+                  )}
+                />
+                <span className="sr-only">Gateway Home Attica</span>
               </Link>
+            </SheetClose>
+            {navItems.map((item) => (
+              <SheetClose key={item.title} asChild>
+                <Link
+                  href={item.href}
+                  className={cn(
+                    "hover:text-foreground",
+                    pathname === item.href
+                      ? "text-foreground"
+                      : "text-muted-foreground",
+                  )}
+                >
+                  {item.title}
+                </Link>
+              </SheetClose>
             ))}
           </nav>
         </SheetContent>
