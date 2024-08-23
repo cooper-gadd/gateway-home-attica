@@ -278,9 +278,9 @@ export default function Home() {
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
                   All care given at Gateway Home is provided by volunteers or
                   staff members who are trained to provide the best possible
-                  care. We change caregivers every four hours during our day and
+                  care. We change caregivers every two hours during our day and
                   evening shifts so our caregivers come in renewed and
-                  refreshed. Our overnight shift from 11-7 is usually manned by
+                  refreshed. Our overnight shift from 10-8 is usually manned by
                   one caregiver. Interested individuals do not need to have any
                   healthcare experience to become a volunteer – just an open
                   heart and a willingness to learn how to care for another

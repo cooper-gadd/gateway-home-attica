@@ -106,27 +106,27 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "3rd Annual Junkyard Reunion",
-          href: "/blog/5",
+          href: "/blog/3rd-annual-junkyard-reunion",
           items: [],
         },
         {
           title: "7th Annual Golfing for Gateway",
-          href: "/blog/4",
+          href: "/blog/7th-annual-golfing-for-gateway",
           items: [],
         },
         {
           title: "3rd Annual Judy Russell Memorial Golf Tournament",
-          href: "/blog/3",
+          href: "/blog/3rd-annual-judy-russell-memorial-golf-tournament",
           items: [],
         },
         {
           title: "Gateway Home Dedicates Brick Walkways",
-          href: "/blog/2",
+          href: "/blog/gateway-home-dedicates-brick-walkways",
           items: [],
         },
         {
           title: "New Patio and Pergola",
-          href: "/blog/1",
+          href: "/blog/new-patio-and-pergola",
           items: [],
         },
       ],
