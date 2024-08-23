@@ -7,7 +7,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import { hirings } from "@/data/data";
+import { hirings } from "../_data/data";
 import { Clock, User, Users } from "lucide-react";
 
 export const dynamic = "force-dynamic";

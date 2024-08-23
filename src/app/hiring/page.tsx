@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { hirings } from "@/data/data";
+import { hirings } from "./_data/data";
 import Link from "next/link";
 
 export default function Hiring() {

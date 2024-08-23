@@ -7,7 +7,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import { events } from "@/data/data";
+import { events } from "./_data/data";
 import Link from "next/link";
 
 export default function Events() {

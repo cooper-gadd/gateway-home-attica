@@ -8,7 +8,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { wishList } from "@/data/data";
+import { wishList } from "./_data/data";
 import Link from "next/link";
 
 export default function Donate() {

@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardContent,
 } from "@/components/ui/card";
-import { posts } from "@/data/data";
+import { posts } from "./_data/data";
 import Link from "next/link";
 
 export default function Blog() {

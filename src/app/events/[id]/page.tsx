@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { events } from "@/data/data";
+import { events } from "../_data/data";
 import Link from "next/link";
 
 export const dynamic = "force-dynamic";

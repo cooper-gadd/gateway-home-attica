@@ -22,7 +22,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { donors, leadership } from "@/data/data";
+import { donors, leadership } from "./_data/data";
 import { Info } from "lucide-react";
 import Image from "next/image";
 

@@ -12,7 +12,7 @@ import {
   SunIcon,
 } from "lucide-react";
 import { useTheme } from "next-themes";
-import { navConfig } from "@/config/nav";
+import { navConfig } from "../_config/nav";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {

@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
-import { posts } from "@/data/data";
+import { posts } from "../_data/data";
 
 export const dynamic = "force-dynamic";
 
