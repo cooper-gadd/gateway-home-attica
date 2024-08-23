@@ -136,17 +136,17 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "Volunteer",
-          href: "/hiring",
+          href: "/hiring/1",
           items: [],
         },
         {
           title: "Care Aide",
-          href: "/hiring",
+          href: "/hiring/2",
           items: [],
         },
         {
           title: "RN/LPN",
-          href: "/hiring",
+          href: "/hiring/3",
           items: [],
         },
       ],

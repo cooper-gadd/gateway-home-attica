@@ -29,13 +29,11 @@ export default function Event({
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="prose max-w-none">
-            {event.content.map((paragraph, index) => (
-              <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          {event.content.map((paragraph, index) => (
+            <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
+              {paragraph}
+            </p>
+          ))}
         </CardContent>
         <CardFooter>
           <Button asChild>

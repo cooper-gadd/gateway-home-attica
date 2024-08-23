@@ -36,13 +36,11 @@ export default function Post({
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="prose max-w-none">
-            {post.content.map((paragraph, index) => (
-              <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          {post.content.map((paragraph, index) => (
+            <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
+              {paragraph}
+            </p>
+          ))}
         </CardContent>
         {post.images && (
           <CardFooter className="flex flex-col">
