@@ -1,6 +1,6 @@
 export const events = [
   {
-    id: 1,
+    id: "chicken-bbq",
     title: "Chicken BBQ",
     description: "Fundraiser",
     content: [
@@ -13,7 +13,7 @@ export const events = [
     link: "https://gatewayhomeattica.networkforgood.com/events/74632-fall-chicken-bbq-sun-sept-8th",
   },
   {
-    id: 2,
+    id: "end-of-life-doula",
     title: "End of Life Doula",
     description: "Training Course",
     content: [
@@ -36,7 +36,7 @@ export const events = [
     link: "mailto:sara@gatewayhomeattica.org",
   },
   {
-    id: 3,
+    id: "meat-raffle",
     title: "Meat Raffle",
     description: "Fundraiser",
     content: [
