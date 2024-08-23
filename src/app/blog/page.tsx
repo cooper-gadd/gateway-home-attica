@@ -24,7 +24,7 @@ export default function Blog() {
           <CardContent>{post.content[0]}</CardContent>
           <CardFooter>
             <Button asChild>
-              <Link href={`/post/${post.id}`}>Read More</Link>
+              <Link href={`/blog/${post.id}`}>Read More</Link>
             </Button>
           </CardFooter>
         </Card>

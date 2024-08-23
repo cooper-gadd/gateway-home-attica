@@ -86,17 +86,17 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "Chicken BBQ",
-          href: "/event/1",
+          href: "/events/1",
           items: [],
         },
         {
           title: "End of Life Doula",
-          href: "/event/2",
+          href: "/events/2",
           items: [],
         },
         {
           title: "Meat Raffle",
-          href: "/event/3",
+          href: "/events/3",
           items: [],
         },
       ],
@@ -106,27 +106,27 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "3rd Annual Junkyard Reunion",
-          href: "/blog/post/5",
+          href: "/blog/5",
           items: [],
         },
         {
           title: "7th Annual Golfing for Gateway",
-          href: "/post/4",
+          href: "/blog/4",
           items: [],
         },
         {
           title: "3rd Annual Judy Russell Memorial Golf Tournament",
-          href: "/post/3",
+          href: "/blog/3",
           items: [],
         },
         {
           title: "Gateway Home Dedicates Brick Walkways",
-          href: "/post/2",
+          href: "/blog/2",
           items: [],
         },
         {
           title: "New Patio and Pergola",
-          href: "/post/1",
+          href: "/blog/1",
           items: [],
         },
       ],

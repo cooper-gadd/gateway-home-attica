@@ -29,7 +29,7 @@ export default function Events() {
               </Link>
             </Button>
             <Button asChild>
-              <Link href={`/event/${event.id}`}>Learn More</Link>
+              <Link href={`/events/${event.id}`}>Learn More</Link>
             </Button>
           </CardFooter>
         </Card>
