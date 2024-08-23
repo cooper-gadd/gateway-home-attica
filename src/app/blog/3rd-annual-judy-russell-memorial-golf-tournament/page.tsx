@@ -8,11 +8,13 @@ export default function Post() {
         3rd Annual Judy Russell Memorial Golf Tournament
       </h1>
       <p className="text-sm text-muted-foreground">Sara Brunner</p>
-      <p className="text-xl text-muted-foreground">
-        Thanks to the Russell family for another successful Judy Russell
-        Memorial golf tournament! We would also like to sincerely thank every
-        golfer, sponsor, volunteer, and basket donation. Our community rocks!!
-      </p>
+      <div>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Thanks to the Russell family for another successful Judy Russell
+          Memorial golf tournament! We would also like to sincerely thank every
+          golfer, sponsor, volunteer, and basket donation. Our community rocks!!
+        </p>
+      </div>
       <Images images={images} />
     </div>
   );

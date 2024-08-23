@@ -1,12 +1,4 @@
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { events } from "../_data/data";
 import Link from "next/link";
 
@@ -21,28 +13,24 @@ export default function Event({
 
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle>{event.title}</CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            {event.description}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {event.content.map((paragraph, index) => (
-            <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
-              {paragraph}
-            </p>
-          ))}
-        </CardContent>
-        <CardFooter>
-          <Button asChild>
-            <Link target="_blank" href={event.link}>
-              {event.action}
-            </Link>
-          </Button>
-        </CardFooter>
-      </Card>
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        {event.title}
+      </h1>
+      <p className="text-sm text-muted-foreground">{event.description}</p>
+      <div>
+        {event.content.map((paragraph, index) => (
+          <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
+            {paragraph}
+          </p>
+        ))}
+      </div>
+      <div>
+        <Button asChild>
+          <Link target="_blank" href={event.link}>
+            {event.action}
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }
