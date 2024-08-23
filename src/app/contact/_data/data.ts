@@ -3,7 +3,7 @@ import { Mail, Map, Phone, Printer, ThumbsUp, UserPlus } from "lucide-react";
 export const socials = [
   {
     id: 1,
-    title: "Instagram",
+    title: "Phone",
     description: "585-708-4331",
     link: "tel:585-708-4331",
     icon: Phone,
