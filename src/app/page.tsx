@@ -14,13 +14,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import {
-  Drawer,
-  DrawerTrigger,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerDescription,
-} from "@/components/ui/drawer";
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { donors, leadership } from "@/data/data";
 import { Info } from "lucide-react";
@@ -151,22 +151,21 @@ export default function Home() {
                   </AspectRatio>
                   <CardTitle className="flex items-center justify-between">
                     {leader.name}{" "}
-                    <Drawer>
-                      <DrawerTrigger asChild>
+                    <Dialog>
+                      <DialogTrigger asChild>
                         <Button variant={"ghost"}>
-                          {" "}
                           <Info className="h-4 w-4" />
                         </Button>
-                      </DrawerTrigger>
-                      <DrawerContent>
-                        <DrawerHeader>
-                          <DrawerTitle>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>
                             About {leader.name.split(" ")[0]}
-                          </DrawerTitle>
-                          <DrawerDescription>{leader.bio}</DrawerDescription>
-                        </DrawerHeader>
-                      </DrawerContent>
-                    </Drawer>
+                          </DialogTitle>
+                          <DialogDescription>{leader.bio}</DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
                   </CardTitle>
                   <CardDescription className="max-w-lg text-balance leading-relaxed">
                     {leader.position}
