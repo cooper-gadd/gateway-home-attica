@@ -80,18 +80,18 @@ export const navConfig: NavConfig = {
       title: "Events",
       items: [
         {
-          title: "Fall Chicken BBQ",
-          href: "/events",
+          title: "Chicken BBQ",
+          href: "/event/1",
           items: [],
         },
         {
           title: "End of Life Doula",
-          href: "/events",
+          href: "/event/2",
           items: [],
         },
         {
           title: "Meat Raffle",
-          href: "/events",
+          href: "/event/3",
           items: [],
         },
       ],
