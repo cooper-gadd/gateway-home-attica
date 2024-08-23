@@ -1,6 +1,6 @@
 export const hirings = [
   {
-    id: 1,
+    id: "volunteer",
     role: "Volunteer",
     aboutTheRole: "Pro Bono, Reports to the Director",
     whatYouWillDo: [
@@ -21,7 +21,7 @@ export const hirings = [
     type: "Part Time",
   },
   {
-    id: 2,
+    id: "care-aide",
     role: "Care Aide",
     aboutTheRole: "Hourly, Reports to Director of Resident Care",
     whatYouWillDo: [
@@ -47,7 +47,7 @@ export const hirings = [
     type: "Part Time",
   },
   {
-    id: 3,
+    id: "rn-lpn",
     role: "RN/LPN",
     aboutTheRole: "24 Hour Shift, Reports to Director of Resident Care",
     whatYouWillDo: [

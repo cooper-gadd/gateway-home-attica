@@ -17,7 +17,7 @@ export default function Posting({
 }: {
   params: { id: string };
 }) {
-  const hiring = hirings.find((hiring) => hiring.id === Number(hiringId))!;
+  const hiring = hirings.find((hiring) => hiring.id === hiringId)!;
 
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
