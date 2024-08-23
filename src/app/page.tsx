@@ -189,7 +189,7 @@ export default function Home() {
         <CardContent>
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 What are Palliative Care, Hospice and Comfort Care?
               </AccordionTrigger>
               <AccordionContent>
@@ -207,7 +207,9 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>How is Gateway Home Funded?</AccordionTrigger>
+              <AccordionTrigger className="text-start">
+                How is Gateway Home Funded?
+              </AccordionTrigger>
               <AccordionContent>
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
                   Our services are provided free-of-charge to our home’s
@@ -258,7 +260,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Do you receive help from the government?
               </AccordionTrigger>
               <AccordionContent>
@@ -269,7 +271,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Who provides direct care at Gateway Home?
               </AccordionTrigger>
               <AccordionContent>
@@ -287,7 +289,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Who is eligible for admission to Gateway Home?
               </AccordionTrigger>
               <AccordionContent>
@@ -318,7 +320,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 What if my loved one who is residing at Gateway Home lives
                 beyond three months?
               </AccordionTrigger>
@@ -340,7 +342,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-7">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Are volunteer opportunities available?
               </AccordionTrigger>
               <AccordionContent>
