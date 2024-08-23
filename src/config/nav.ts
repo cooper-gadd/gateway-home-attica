@@ -1,9 +1,14 @@
+import { type LucideProps } from "lucide-react";
+import { type ForwardRefExoticComponent, type RefAttributes } from "react";
+
 export interface NavItem {
   title: string;
   href?: string;
   disabled?: boolean;
   external?: boolean;
-  icon?: React.HTMLAttributes<SVGElement>;
+  icon?: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
   label?: string;
 }
 

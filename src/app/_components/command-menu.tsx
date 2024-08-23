@@ -89,11 +89,16 @@ export function CommandMenu({ ...props }: DialogProps) {
                     runCommand(() => router.push(navItem.href!));
                   }}
                 >
-                  <FileIcon className="mr-2 h-4 w-4" />
+                  {navItem.icon ? (
+                    <navItem.icon className="mr-2 h-4 w-4" />
+                  ) : (
+                    <FileIcon className="mr-2 h-4 w-4" />
+                  )}
                   {navItem.title}
                 </CommandItem>
               ))}
           </CommandGroup>
+          <CommandSeparator />
           {navConfig.pageNav.map((group) => (
             <CommandGroup key={group.title} heading={group.title}>
               {group.items.map((navItem) => (
@@ -105,7 +110,11 @@ export function CommandMenu({ ...props }: DialogProps) {
                   }}
                 >
                   <div className="mr-2 flex h-4 w-4 items-center justify-center">
-                    <CircleIcon className="h-3 w-3" />
+                    {navItem.icon ? (
+                      <navItem.icon className="h-3 w-3" />
+                    ) : (
+                      <CircleIcon className="h-3 w-3" />
+                    )}
                   </div>
                   {navItem.title}
                 </CommandItem>
