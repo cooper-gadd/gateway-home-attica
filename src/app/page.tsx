@@ -21,10 +21,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { donors, leadership } from "./_data/data";
 import { Info } from "lucide-react";
 import Image from "next/image";
+import { donors, leadership } from "./_data/data";
 
 export default function Home() {
   return (
@@ -137,44 +138,46 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {leadership.map((leader) => (
-              <Card key={leader.name} className="bg-muted/20">
-                <CardHeader>
-                  <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                    <Image
-                      src={leader.image}
-                      alt={leader.name}
-                      fill
-                      className="rounded-md object-cover"
-                    />
-                  </AspectRatio>
-                  <CardTitle className="flex items-center justify-between">
-                    {leader.name}{" "}
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button variant={"ghost"}>
-                          <Info className="h-4 w-4" />
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>
-                            About {leader.name.split(" ")[0]}
-                          </DialogTitle>
-                          <DialogDescription>{leader.bio}</DialogDescription>
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
-                  </CardTitle>
-                  <CardDescription className="max-w-lg text-balance leading-relaxed">
-                    {leader.position}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent></CardContent>
-              </Card>
-            ))}
-          </div>
+          <InfiniteMovingCards speed="normal">
+            <div className="grid grid-cols-6 gap-4 md:gap-8">
+              {leadership.map((leader) => (
+                <Card key={leader.name} className="bg-muted/20">
+                  <CardHeader>
+                    <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                      <Image
+                        src={leader.image}
+                        alt={leader.name}
+                        fill
+                        loading="eager"
+                        className="rounded-md object-cover"
+                      />
+                    </AspectRatio>
+                    <CardTitle className="flex items-center justify-between">
+                      {leader.name}
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant={"ghost"}>
+                            <Info className="h-4 w-4" />
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          <DialogHeader>
+                            <DialogTitle>
+                              About {leader.name.split(" ")[0]}
+                            </DialogTitle>
+                            <DialogDescription>{leader.bio}</DialogDescription>
+                          </DialogHeader>
+                        </DialogContent>
+                      </Dialog>
+                    </CardTitle>
+                    <CardDescription className="max-w-lg text-balance leading-relaxed">
+                      {leader.position}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </InfiniteMovingCards>
         </CardContent>
       </Card>
       <Card>

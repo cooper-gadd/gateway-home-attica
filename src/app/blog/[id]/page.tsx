@@ -1,11 +1,6 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Card, CardHeader } from "@/components/ui/card";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import { posts } from "../_data/data";
 
@@ -25,29 +20,25 @@ export default function Event({
       </h1>
       <p className="text-sm text-muted-foreground">{post.author}</p>
       {post.content}
-      <div className="flex flex-col items-center justify-center">
-        <Carousel className="w-3/4 max-w-3xl">
-          <CarouselContent>
-            {post.images.map((image, index) => (
-              <CarouselItem
-                key={index}
-                className="flex flex-col items-center justify-center"
-              >
+      <InfiniteMovingCards speed="normal">
+        <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
+          {post.images.map((image) => (
+            <Card key={image.src} className="w-96 bg-muted/20">
+              <CardHeader>
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
+                    loading="eager"
                     className="rounded-md object-cover"
                   />
                 </AspectRatio>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </div>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </InfiniteMovingCards>
     </div>
   );
 }
