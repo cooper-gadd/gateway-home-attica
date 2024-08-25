@@ -22,7 +22,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Info } from "lucide-react";
 import Image from "next/image";
 import { donors, leadership } from "./_data/data";
@@ -79,54 +78,22 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Tabs defaultValue="platinum">
-            <TabsList>
-              <TabsTrigger value="platinum">Platinum</TabsTrigger>
-              <TabsTrigger value="gold">Gold</TabsTrigger>
-              <TabsTrigger value="silver">Silver</TabsTrigger>
-              <TabsTrigger value="bronze">Bronze</TabsTrigger>
-            </TabsList>
-            <TabsContent value="platinum">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Platinum")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-            <TabsContent value="gold">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Gold")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-            <TabsContent value="silver">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Silver")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-            <TabsContent value="bronze">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Bronze")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-          </Tabs>
+          <InfiniteMovingCards speed="ultra-slow">
+            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
+              {donors.map((donor) => (
+                <Card key={donor.name} className="bg-muted/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center justify-between">
+                      {donor.name}
+                    </CardTitle>
+                    <CardDescription className="max-w-lg text-balance leading-relaxed">
+                      {donor.level}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </InfiniteMovingCards>
         </CardContent>
       </Card>
       <Card id="leadership">
@@ -141,7 +108,7 @@ export default function Home() {
           <InfiniteMovingCards speed="normal">
             <div className="grid grid-cols-6 gap-4 md:gap-8">
               {leadership.map((leader) => (
-                <Card key={leader.name} className="bg-muted/20">
+                <Card key={leader.id} className="bg-muted/20">
                   <CardHeader>
                     <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                       <Image

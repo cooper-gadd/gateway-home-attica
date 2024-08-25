@@ -13,7 +13,13 @@ export const InfiniteMovingCards = ({
 }: {
   children: React.ReactNode;
   direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
+  speed?:
+    | "fast"
+    | "normal"
+    | "slow"
+    | "very-slow"
+    | "super-slow"
+    | "ultra-slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
@@ -61,8 +67,14 @@ export const InfiniteMovingCards = ({
         containerRef.current.style.setProperty("--animation-duration", "20s");
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
+      } else if (speed === "slow") {
         containerRef.current.style.setProperty("--animation-duration", "80s");
+      } else if (speed === "very-slow") {
+        containerRef.current.style.setProperty("--animation-duration", "160s");
+      } else if (speed === "super-slow") {
+        containerRef.current.style.setProperty("--animation-duration", "320s");
+      } else if (speed === "ultra-slow") {
+        containerRef.current.style.setProperty("--animation-duration", "640s");
       }
     }
   };

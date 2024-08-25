@@ -76,7 +76,7 @@ export default function Donate() {
           </CardFooter>
         </Card>
       </div>
-      <Card id="wish-list">
+      <Card id="wish-list" className="col-span-2">
         <CardHeader>
           <CardTitle>Wish List</CardTitle>
           <CardDescription>
