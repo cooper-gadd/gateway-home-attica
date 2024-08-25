@@ -4,7 +4,7 @@ export const donors = [
   { name: "Louise M Schiltz", level: "Platinum" },
   { name: "Donna Ferry", level: "Platinum" },
   { name: "Marley Funeral Home LLC", level: "Gold" },
-  { name: "Doug Domes", level: "Gold" },
+  { name: "Doug & Rosie Domes", level: "Gold" },
   { name: "Advanced Dairy Services, Inc.", level: "Gold" },
   { name: "Todd & Brittany Gadd", level: "Gold" },
   { name: "L Toal Plumbing, LLC", level: "Gold" },
