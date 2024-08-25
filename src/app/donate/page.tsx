@@ -13,9 +13,9 @@ import Link from "next/link";
 
 export default function Donate() {
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <div className="scroll-container flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        <Card>
+        <Card id="financial-donations">
           <CardHeader className="pb-3">
             <CardTitle>Financial Donations</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -35,7 +35,7 @@ export default function Donate() {
             </Button>
           </CardFooter>
         </Card>
-        <Card>
+        <Card id="legacy-brick-sale">
           <CardHeader className="pb-3">
             <CardTitle>Legacy Brick Sale</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -55,7 +55,7 @@ export default function Donate() {
             </Button>
           </CardFooter>
         </Card>
-        <Card>
+        <Card id="raffle-baskets">
           <CardHeader className="pb-3">
             <CardTitle>Raffle Baskets</CardTitle>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -76,7 +76,7 @@ export default function Donate() {
           </CardFooter>
         </Card>
       </div>
-      <Card>
+      <Card id="wish-list">
         <CardHeader>
           <CardTitle>Wish List</CardTitle>
           <CardDescription>

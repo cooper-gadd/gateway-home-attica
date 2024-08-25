@@ -119,9 +119,9 @@ export function CommandMenu({ ...props }: DialogProps) {
                   {navItem.title}
                 </CommandItem>
               ))}
+              <CommandSeparator />
             </CommandGroup>
           ))}
-          <CommandSeparator />
           <CommandGroup heading="Theme">
             <CommandItem onSelect={() => runCommand(() => setTheme("light"))}>
               <SunIcon className="mr-2 h-4 w-4" />

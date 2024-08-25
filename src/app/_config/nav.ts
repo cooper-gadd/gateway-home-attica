@@ -1,4 +1,26 @@
-import { type LucideProps } from "lucide-react";
+import {
+  Activity,
+  BriefcaseBusiness,
+  Calendar,
+  CircleHelp,
+  Contact,
+  Gift,
+  HandCoins,
+  HandHeart,
+  Heart,
+  Home,
+  Mail,
+  Map,
+  NotebookPen,
+  Phone,
+  Printer,
+  Stethoscope,
+  Target,
+  ThumbsUp,
+  UserPlus,
+  Users,
+  type LucideProps,
+} from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 
 export interface NavItem {
@@ -28,26 +50,32 @@ export const navConfig: NavConfig = {
     {
       title: "Home",
       href: "/",
+      icon: Home,
     },
     {
       title: "Events",
       href: "/events",
+      icon: Calendar,
     },
     {
       title: "Blog",
       href: "/blog",
+      icon: NotebookPen,
     },
     {
       title: "Hiring",
       href: "/hiring",
+      icon: BriefcaseBusiness,
     },
     {
       title: "Donate",
       href: "/donate",
+      icon: HandCoins,
     },
     {
       title: "Contact",
       href: "/contact",
+      icon: Contact,
     },
   ],
   pageNav: [
@@ -56,27 +84,32 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "Mission Statement",
-          href: "/",
+          href: "/#mission-statement",
+          icon: Target,
           items: [],
         },
         {
           title: "Resident Care",
-          href: "/",
+          href: "/#resident-care",
+          icon: Heart,
           items: [],
         },
         {
           title: "Donors",
-          href: "/",
+          href: "/#donors",
+          icon: Gift,
           items: [],
         },
         {
           title: "Leadership",
-          href: "/",
+          href: "/#leadership",
+          icon: Users,
           items: [],
         },
         {
           title: "FAQ",
-          href: "/",
+          href: "/#faq",
+          icon: CircleHelp,
           items: [],
         },
       ],
@@ -87,16 +120,19 @@ export const navConfig: NavConfig = {
         {
           title: "Chicken BBQ",
           href: "/events/chicken-bbq",
+          icon: Calendar,
           items: [],
         },
         {
           title: "End of Life Doula",
           href: "/events/end-of-life-doula",
+          icon: Calendar,
           items: [],
         },
         {
           title: "Meat Raffle",
           href: "/events/meat-raffle",
+          icon: Calendar,
           items: [],
         },
       ],
@@ -107,26 +143,31 @@ export const navConfig: NavConfig = {
         {
           title: "3rd Annual Junkyard Reunion",
           href: "/blog/3rd-annual-junkyard-reunion",
+          icon: NotebookPen,
           items: [],
         },
         {
           title: "7th Annual Golfing for Gateway",
           href: "/blog/7th-annual-golfing-for-gateway",
+          icon: NotebookPen,
           items: [],
         },
         {
           title: "3rd Annual Judy Russell Memorial Golf Tournament",
           href: "/blog/3rd-annual-judy-russell-memorial-golf-tournament",
+          icon: NotebookPen,
           items: [],
         },
         {
           title: "Gateway Home Dedicates Brick Walkways",
           href: "/blog/gateway-home-dedicates-brick-walkways",
+          icon: NotebookPen,
           items: [],
         },
         {
           title: "New Patio and Pergola",
           href: "/blog/new-patio-and-pergola",
+          icon: NotebookPen,
           items: [],
         },
       ],
@@ -137,16 +178,19 @@ export const navConfig: NavConfig = {
         {
           title: "Volunteer",
           href: "/hiring/volunteer",
+          icon: HandHeart,
           items: [],
         },
         {
           title: "Care Aide",
           href: "/hiring/care-aide",
+          icon: Stethoscope,
           items: [],
         },
         {
           title: "RN/LPN",
           href: "/hiring/rn-lpn",
+          icon: Activity,
           items: [],
         },
       ],
@@ -156,22 +200,26 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "Financial Donations",
-          href: "/donate",
+          href: "/donate#financial-donations",
+          icon: HandCoins,
           items: [],
         },
         {
           title: "Legacy Brick Sale",
-          href: "/donate",
+          href: "/donate#legacy-brick-sale",
+          icon: HandCoins,
           items: [],
         },
         {
           title: "Raffle Baskets",
-          href: "/donate",
+          href: "/donate#raffle-baskets",
+          icon: HandCoins,
           items: [],
         },
         {
           title: "Wish List",
-          href: "/donate",
+          href: "/donate#wish-list",
+          icon: HandCoins,
           items: [],
         },
       ],
@@ -181,32 +229,38 @@ export const navConfig: NavConfig = {
       items: [
         {
           title: "Phone",
-          href: "/contact",
+          href: "tel:585-708-4331",
+          icon: Phone,
           items: [],
         },
         {
           title: "Email",
-          href: "/contact",
+          href: "mailto:info@gatewayhomeattica.org",
+          icon: Mail,
           items: [],
         },
         {
           title: "Fax",
-          href: "/contact",
+          href: "fax:5857084333",
+          icon: Printer,
           items: [],
         },
         {
           title: "Address",
-          href: "/contact",
+          href: "https://www.google.com/maps/search/?api=1&query=91 Main Street, Attica, NY 14011",
+          icon: Map,
           items: [],
         },
         {
           title: "Facebook",
-          href: "/contact",
+          href: "https://www.facebook.com/gatewayhomeattica/",
+          icon: ThumbsUp,
           items: [],
         },
         {
           title: "Instagram",
-          href: "/contact",
+          href: "https://www.instagram.com/gatewayhomeattica/",
+          icon: UserPlus,
           items: [],
         },
       ],

@@ -30,7 +30,7 @@ import { donors, leadership } from "./_data/data";
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-      <Card>
+      <Card id="mission-statement">
         <CardHeader className="pb-3">
           <CardTitle>Gateway Home</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -49,7 +49,7 @@ export default function Home() {
           bequests, and community support. Admission is based solely on need.
         </CardContent>
       </Card>
-      <Card>
+      <Card id="resident-care">
         <CardHeader className="pb-3">
           <CardTitle>Resident Care</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -69,7 +69,7 @@ export default function Home() {
           residents, ensuring a holistic approach to their well-being.
         </CardContent>
       </Card>
-      <Card>
+      <Card id="donors">
         <CardHeader className="pb-3">
           <CardTitle>Donors</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -129,7 +129,7 @@ export default function Home() {
           </Tabs>
         </CardContent>
       </Card>
-      <Card>
+      <Card id="leadership">
         <CardHeader className="pb-3">
           <CardTitle>Leadership</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -180,7 +180,7 @@ export default function Home() {
           </InfiniteMovingCards>
         </CardContent>
       </Card>
-      <Card>
+      <Card id="faq">
         <CardHeader className="pb-3">
           <CardTitle>Frequently Asked Questions</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
