@@ -105,7 +105,7 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8 lg:grid-cols-4 2xl:grid-cols-7">
             {leadership.map((leader) => (
               <Card key={leader.id} className="bg-muted/20">
                 <CardHeader>
@@ -134,7 +134,7 @@ export default function Home() {
                           <DialogDescription>
                             {leader.bio.map((p) => (
                               <p
-                                className="sm:leading-7 sm:[&:not(:first-child)]:mt-6"
+                                className="lg:leading-7 lg:[&:not(:first-child)]:mt-6"
                                 key={p}
                               >
                                 {p}

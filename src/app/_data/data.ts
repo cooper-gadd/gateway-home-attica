@@ -164,6 +164,16 @@ export const leadership = [
   },
   {
     id: 5,
+    name: "Sara Brunner",
+    position: "Director",
+    image: "/images/leadership/sara-brunner.jpg",
+    bio: [
+      "Sara's journey to Gateway Home is deeply rooted in her personal experiences and professional background. Residing in Batavia with her beloved family, she found her calling in end-of-life care following the loss of her close friend Wendy. Witnessing the profound impact of love and compassion during Wendy's final moments solidified Sara's commitment to this field.",
+      "In February 2023, Sara joined Gateway Home as an overnight aide, while continuing her role as a volunteer coordinator at Crossroads House during the day. Her transition from hospitality management to end-of-life care reflects her dedication to providing meaningful support to families. Sara is excited to leverage her empathy and leadership skills at Gateway Home, aiming to expand its reach and positively impact as many lives as possible.",
+    ],
+  },
+  {
+    id: 6,
     name: "Sue Herman",
     position: "Office Manager",
     image: "/images/leadership/sue-herman.jpeg",
@@ -173,7 +183,7 @@ export const leadership = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Donna Ferry",
     position: "Board Member",
     image: "/images/leadership/donna-ferry.jpg",
