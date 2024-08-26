@@ -131,7 +131,16 @@ export default function Home() {
                           <DialogTitle>
                             About {leader.name.split(" ")[0]}
                           </DialogTitle>
-                          <DialogDescription>{leader.bio}</DialogDescription>
+                          <DialogDescription>
+                            {leader.bio.map((p) => (
+                              <p
+                                className="sm:leading-7 sm:[&:not(:first-child)]:mt-6"
+                                key={p}
+                              >
+                                {p}
+                              </p>
+                            ))}
+                          </DialogDescription>
                         </DialogHeader>
                       </DialogContent>
                     </Dialog>
