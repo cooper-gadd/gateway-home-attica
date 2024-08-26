@@ -10,6 +10,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -21,8 +22,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { Info } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { donors, leadership } from "./_data/data";
 
@@ -78,22 +78,54 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <InfiniteMovingCards speed="ultra-slow">
-            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
-              {donors.map((donor) => (
-                <Card key={donor.name} className="bg-muted/20">
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-between">
-                      {donor.name}
-                    </CardTitle>
-                    <CardDescription className="max-w-lg text-balance leading-relaxed">
-                      {donor.level}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              ))}
-            </div>
-          </InfiniteMovingCards>
+          <Tabs defaultValue="platinum">
+            <TabsList>
+              <TabsTrigger value="platinum">Platinum</TabsTrigger>
+              <TabsTrigger value="gold">Gold</TabsTrigger>
+              <TabsTrigger value="silver">Silver</TabsTrigger>
+              <TabsTrigger value="bronze">Bronze</TabsTrigger>
+            </TabsList>
+            <TabsContent value="platinum">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {donors
+                  .filter((donor) => donor.level === "Platinum")
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((donor) => (
+                    <li key={donor.name}>{donor.name}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="gold">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {donors
+                  .filter((donor) => donor.level === "Gold")
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((donor) => (
+                    <li key={donor.name}>{donor.name}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="silver">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {donors
+                  .filter((donor) => donor.level === "Silver")
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((donor) => (
+                    <li key={donor.name}>{donor.name}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+            <TabsContent value="bronze">
+              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                {donors
+                  .filter((donor) => donor.level === "Bronze")
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((donor) => (
+                    <li key={donor.name}>{donor.name}</li>
+                  ))}
+              </ul>
+            </TabsContent>
+          </Tabs>
         </CardContent>
       </Card>
       <Card id="leadership">
@@ -105,7 +137,7 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8 lg:grid-cols-4 2xl:grid-cols-7">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-4 2xl:grid-cols-8">
             {leadership.map((leader) => (
               <Card key={leader.id} className="bg-muted/20">
                 <CardHeader>
@@ -118,37 +150,35 @@ export default function Home() {
                       className="rounded-md object-cover"
                     />
                   </AspectRatio>
-                  <CardTitle className="flex items-center justify-between">
-                    {leader.name}
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button variant={"ghost"}>
-                          <Info className="h-4 w-4" />
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>
-                            About {leader.name.split(" ")[0]}
-                          </DialogTitle>
-                          <DialogDescription>
-                            {leader.bio.map((p) => (
-                              <p
-                                className="lg:leading-7 lg:[&:not(:first-child)]:mt-6"
-                                key={p}
-                              >
-                                {p}
-                              </p>
-                            ))}
-                          </DialogDescription>
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
-                  </CardTitle>
+                  <CardTitle>{leader.name}</CardTitle>
                   <CardDescription className="max-w-lg text-balance leading-relaxed">
                     {leader.position}
                   </CardDescription>
                 </CardHeader>
+                <CardFooter>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button>Read Bio</Button>
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader>
+                        <DialogTitle>
+                          About {leader.name.split(" ")[0]}
+                        </DialogTitle>
+                        <DialogDescription>
+                          {leader.bio?.map((p) => (
+                            <p
+                              className="lg:leading-7 lg:[&:not(:first-child)]:mt-6"
+                              key={p}
+                            >
+                              {p}
+                            </p>
+                          ))}
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
+                </CardFooter>
               </Card>
             ))}
           </div>

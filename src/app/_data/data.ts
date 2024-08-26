@@ -125,7 +125,7 @@ export const leadership = [
   {
     id: 1,
     name: "Doug Domes",
-    position: "President",
+    position: "President & Board Member",
     image: "/images/leadership/doug-domes.jpeg",
     bio: [
       "Doug has lived his life as a resident of Attica with wife Rosie of 48 years. He has four children who have blessed him with 16 beautiful grandchildren. As a businessman in the timber industry, Doug knows trees to be God’s only renewable natural resource for all of us to use wisely and has learned to respect this resource.",
@@ -135,7 +135,7 @@ export const leadership = [
   {
     id: 2,
     name: "Jim Russell",
-    position: "Vice President",
+    position: "Vice President & Board Member",
     image: "/images/leadership/jim-russell.jpeg",
     bio: [
       "Jim has lived in Batavia for over 50 years, many of which he owned and operated a fire and safety company. He has 3 children and 4 grandchildren. Over the years he has volunteered and served on many committees such as Volunteer Firefighter for the Town of Stafford and Town of Batavia Fire Departments, Batavia City Councilman, City of Batavia Zoning Board and Knights of Columbus Council 11728.",
@@ -145,7 +145,7 @@ export const leadership = [
   {
     id: 3,
     name: "Todd Gadd",
-    position: "Treasurer",
+    position: "Treasurer & Board Member",
     image: "/images/leadership/todd-gadd.jpeg",
     bio: [
       "Todd Gadd was led to be involved with a comfort care facility following an opportunity to serve others on a short-term mission trip to the Dominican Republic. This was following the passing of his mother during her illness in which her family had the privilege to take care of her at home until her passing. He has been part of the group that has organized Gateway Home and is now serving on the Board of Directors. Todd is married to Brittany and has two children, Cooper and Chloe. He grew up in Attica and currently lives in Cowlesville, NY. Being involved with such a much-needed organization whose purpose is to only help others has been very rewarding.",
@@ -154,7 +154,7 @@ export const leadership = [
   {
     id: 4,
     name: "Carolyn Gadd",
-    position: "Secretary",
+    position: "Secretary & Board Member",
     image: "/images/leadership/carolyn-gadd.jpg",
     bio: [
       "Carolyn Gadd lives in Alden, NY with her two daughters Alyssa, and Madison.  She has been a volunteer for Gateway Home since 2016 helping to spread the word of Gateway Home outside of Attica. She has also hosted fundraisers in Alden on behalf of Gateway Home, volunteered at various Gateway events and works at the Darien Lake Concert concession stands to raise money for Gateway.",
@@ -164,6 +164,24 @@ export const leadership = [
   },
   {
     id: 5,
+    name: "Donna Ferry",
+    position: "Board Member",
+    image: "/images/leadership/donna-ferry.jpg",
+    bio: [
+      "Donna Ferry lives in Darien and retired several years ago from S.J.F. Construction, Inc.  She has volunteered for several organizations that have allowed her to connect with the community including serving on the Board of Trustees at Genesee Community College.   ",
+      "After losing her mother to a short illness in 2021 her thoughts turned to the importance of end-of-life care and she began volunteering at Gateway Home in 2022 along with assisting with fundraising endeavors.   ",
+      "Serving alongside amazing volunteers and care givers has been a truly humbling experience for Donna and has strengthen her resolve to support Gateway Home in their mission. Donna joined the board in January 2023 and looks forward to working with the staff, volunteers, care givers, and fellow board members.",
+    ],
+  },
+  {
+    id: 6,
+    name: "Kim Kadziolka",
+    position: "Board Member",
+    image: "/images/placeholder.svg",
+    bio: null,
+  },
+  {
+    id: 7,
     name: "Sara Brunner",
     position: "Director",
     image: "/images/leadership/sara-brunner.jpg",
@@ -173,24 +191,13 @@ export const leadership = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     name: "Sue Herman",
     position: "Office Manager",
     image: "/images/leadership/sue-herman.jpeg",
     bio: [
       "Sue joined our team when we opened our doors in December 2019 and handles the day to day office tasks such as bookkeeping, mail and telephone. She also helps coordinate our volunteer scheduling and is often the voice behind the One Call messaging system. She is a graduate of Canisius College and is a certified public accountant. She previously worked for Farm Credit East as an agricultural income tax preparer. Sue keeps her hands in agriculture by continuing to do some on-farm bookkeeping as time permits. She enjoys volunteering with Attica Youth Athletics and is a member of the Attica Central School Board of Education.",
       "Sue lives in Attica with her husband, Don and son, Isaac. Sue and Don also have 3 adult children and 4 grandchildren. She is excited to add her creativity and enthusiasm to help promote Gateway Home’s mission.",
-    ],
-  },
-  {
-    id: 7,
-    name: "Donna Ferry",
-    position: "Board Member",
-    image: "/images/leadership/donna-ferry.jpg",
-    bio: [
-      "Donna Ferry lives in Darien and retired several years ago from S.J.F. Construction, Inc.  She has volunteered for several organizations that have allowed her to connect with the community including serving on the Board of Trustees at Genesee Community College.   ",
-      "After losing her mother to a short illness in 2021 her thoughts turned to the importance of end-of-life care and she began volunteering at Gateway Home in 2022 along with assisting with fundraising endeavors.   ",
-      "Serving alongside amazing volunteers and care givers has been a truly humbling experience for Donna and has strengthen her resolve to support Gateway Home in their mission. Donna joined the board in January 2023 and looks forward to working with the staff, volunteers, care givers, and fellow board members.",
     ],
   },
 ];
