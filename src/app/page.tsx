@@ -105,46 +105,44 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <InfiniteMovingCards speed="normal">
-            <div className="grid grid-cols-6 gap-4 md:gap-8">
-              {leadership.map((leader) => (
-                <Card key={leader.id} className="bg-muted/20">
-                  <CardHeader>
-                    <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                      <Image
-                        src={leader.image}
-                        alt={leader.name}
-                        fill
-                        loading="eager"
-                        className="rounded-md object-cover"
-                      />
-                    </AspectRatio>
-                    <CardTitle className="flex items-center justify-between">
-                      {leader.name}
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button variant={"ghost"}>
-                            <Info className="h-4 w-4" />
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogHeader>
-                            <DialogTitle>
-                              About {leader.name.split(" ")[0]}
-                            </DialogTitle>
-                            <DialogDescription>{leader.bio}</DialogDescription>
-                          </DialogHeader>
-                        </DialogContent>
-                      </Dialog>
-                    </CardTitle>
-                    <CardDescription className="max-w-lg text-balance leading-relaxed">
-                      {leader.position}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              ))}
-            </div>
-          </InfiniteMovingCards>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-6">
+            {leadership.map((leader) => (
+              <Card key={leader.id} className="bg-muted/20">
+                <CardHeader>
+                  <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                    <Image
+                      src={leader.image}
+                      alt={leader.name}
+                      fill
+                      loading="eager"
+                      className="rounded-md object-cover"
+                    />
+                  </AspectRatio>
+                  <CardTitle className="flex items-center justify-between">
+                    {leader.name}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant={"ghost"}>
+                          <Info className="h-4 w-4" />
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>
+                            About {leader.name.split(" ")[0]}
+                          </DialogTitle>
+                          <DialogDescription>{leader.bio}</DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+                  </CardTitle>
+                  <CardDescription className="max-w-lg text-balance leading-relaxed">
+                    {leader.position}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
         </CardContent>
       </Card>
       <Card id="faq">
