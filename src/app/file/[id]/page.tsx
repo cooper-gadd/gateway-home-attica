@@ -18,5 +18,3 @@ export default function File({
     </div>
   );
 }
-
-//http://localhost:3000/api/file?name=newsletter
