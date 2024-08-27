@@ -125,7 +125,7 @@ export const leadership = [
   {
     id: 1,
     name: "Doug Domes",
-    position: "President & Board Member",
+    position: "Board President",
     image: "/images/leadership/doug-domes.jpeg",
     bio: [
       "Doug has lived his life as a resident of Attica with wife Rosie of 55 years. He has four children who have blessed him with 16 beautiful grandchildren. As a businessman in the timber industry, Doug knows trees to be God’s only renewable natural resource for all of us to use wisely and has learned to respect this resource.",
@@ -135,7 +135,7 @@ export const leadership = [
   {
     id: 2,
     name: "Jim Russell",
-    position: "Vice President & Board Member",
+    position: "Board Vice President",
     image: "/images/leadership/jim-russell.jpeg",
     bio: [
       "Jim has lived in Batavia for over 50 years, many of which he owned and operated a fire and safety company. He has 3 children and 4 grandchildren. Over the years he has volunteered and served on many committees such as Volunteer Firefighter for the Town of Stafford and Town of Batavia Fire Departments, Batavia City Councilman, City of Batavia Zoning Board and Knights of Columbus Council 11728.",
@@ -145,7 +145,7 @@ export const leadership = [
   {
     id: 3,
     name: "Todd Gadd",
-    position: "Treasurer & Board Member",
+    position: "Board Treasurer",
     image: "/images/leadership/todd-gadd.jpeg",
     bio: [
       "Todd Gadd was led to be involved with a comfort care facility following an opportunity to serve others on a short-term mission trip to the Dominican Republic. This was following the passing of his mother during her illness in which her family had the privilege to take care of her at home until her passing. He has been part of the group that has organized Gateway Home and is now serving on the Board of Directors. Todd is married to Brittany and has two children, Cooper and Chloe. He grew up in Attica and currently lives in Cowlesville, NY. Being involved with such a much-needed organization whose purpose is to only help others has been very rewarding.",
@@ -154,7 +154,7 @@ export const leadership = [
   {
     id: 4,
     name: "Carolyn Gadd",
-    position: "Secretary & Board Member",
+    position: "Board Secretary",
     image: "/images/leadership/carolyn-gadd.jpg",
     bio: [
       "Carolyn Gadd lives in Alden, NY with her two daughters Alyssa, and Madison.  She has been a volunteer for Gateway Home since 2016 helping to spread the word of Gateway Home outside of Attica. She has also hosted fundraisers in Alden on behalf of Gateway Home, volunteered at various Gateway events and works at the Darien Lake Concert concession stands to raise money for Gateway.",
