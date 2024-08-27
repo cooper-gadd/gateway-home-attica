@@ -12,6 +12,7 @@ import {
   Home,
   Mail,
   Map,
+  Newspaper,
   NotebookPen,
   Phone,
   Printer,
@@ -73,6 +74,11 @@ export const navConfig: NavConfig = {
       title: "Donate",
       href: "/donate",
       icon: HandCoins,
+    },
+    {
+      title: "Newsletter",
+      href: "/file/newsletter",
+      icon: Newspaper,
     },
     {
       title: "Contact",

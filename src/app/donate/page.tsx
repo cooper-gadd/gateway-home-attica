@@ -42,7 +42,7 @@ export default function Donate() {
               Purchase a brick to be placed in our walkway.
             </CardDescription>
           </CardHeader>
-          <CardFooter>
+          <CardFooter className="flex items-center gap-4">
             <Button asChild>
               <Link
                 target="_blank"
@@ -52,6 +52,9 @@ export default function Donate() {
               >
                 Buy a Brick
               </Link>
+            </Button>
+            <Button asChild>
+              <Link href={"/file/legacy-brick-sale-form"}>Brick Form</Link>
             </Button>
           </CardFooter>
         </Card>

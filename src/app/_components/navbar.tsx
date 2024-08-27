@@ -34,6 +34,10 @@ export function Navbar() {
       href: "/donate",
     },
     {
+      title: "Newsletter",
+      href: "/file/newsletter",
+    },
+    {
       title: "Contact",
       href: "/contact",
     },
