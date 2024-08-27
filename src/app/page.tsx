@@ -25,7 +25,9 @@ import {
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
-import { donors, leadership } from "./_data/data";
+import Link from "next/link";
+import { donors, leadership, socials } from "./_data/data";
+import { Mail, Newspaper } from "lucide-react";
 
 export default function Home() {
   return (
@@ -587,6 +589,59 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </CardContent>
+      </Card>
+      <Card id="contact-us">
+        <CardHeader className="pb-3">
+          <CardTitle>Contact Us</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Open 24 hours
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {socials.map((social) => (
+              <Card key={social.id} className="bg-muted/20">
+                <CardHeader className="pb-3">
+                  <CardTitle>{social.title}</CardTitle>
+                  <CardDescription className="max-w-lg text-balance leading-relaxed">
+                    {social.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter>
+                  <Button asChild>
+                    <Link target="_blank" href={social.link}>
+                      {<social.icon className="mr-2 h-4 w-4" />}
+                      {social.action}
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+      <Card id="newsletter">
+        <CardHeader className="pb-3">
+          <CardTitle>Newsletter</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Subscribe to our newsletter to receive updates on our services and
+            events.
+          </CardDescription>
+        </CardHeader>
+        <CardFooter className="flex items-center gap-4">
+          <Button asChild>
+            <Link target="_blank" href={"/pdfs/newsletter.pdf"}>
+              <Newspaper className="mr-2 h-4 w-4" />
+              Read Latest
+            </Link>
+          </Button>
+          <Button asChild>
+            <Link target="_blank" href={"mailto:info@gatewayhomeattica.org"}>
+              <Mail className="mr-2 h-4 w-4" />
+              Subscribe
+            </Link>
+          </Button>
+        </CardFooter>
       </Card>
     </div>
   );

@@ -75,16 +75,6 @@ export const navConfig: NavConfig = {
       href: "/donate",
       icon: HandCoins,
     },
-    {
-      title: "Newsletter",
-      href: "/pdfs/newsletter.pdf",
-      icon: Newspaper,
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-      icon: Contact,
-    },
   ],
   pageNav: [
     {
@@ -130,6 +120,18 @@ export const navConfig: NavConfig = {
           title: "FAQ",
           href: "/#faq",
           icon: CircleHelp,
+          items: [],
+        },
+        {
+          title: "Contact Us",
+          href: "/#contact-us",
+          icon: Contact,
+          items: [],
+        },
+        {
+          title: "Newsletter",
+          href: "/#newsletter",
+          icon: Newspaper,
           items: [],
         },
       ],

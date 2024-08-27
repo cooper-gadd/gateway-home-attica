@@ -33,14 +33,6 @@ export function Navbar() {
       title: "Donate",
       href: "/donate",
     },
-    {
-      title: "Newsletter",
-      href: "/pdfs/newsletter.pdf",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
   ];
 
   return (
