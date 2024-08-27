@@ -22,6 +22,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { donors, leadership } from "./_data/data";
@@ -47,6 +48,25 @@ export default function Home() {
           services provided. Funding is accomplished through donations,
           bequests, and community support. Admission is based solely on need.
         </CardContent>
+        <CardFooter>
+          <InfiniteMovingCards speed="normal">
+            {Array.from({ length: 5 }).map((image, index) => (
+              <Card key={index} className="w-96 bg-muted/20">
+                <CardHeader>
+                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                    <Image
+                      src={`images/placeholder.svg`}
+                      alt={`placeholder`}
+                      fill
+                      loading="eager"
+                      className="rounded-md object-cover"
+                    />
+                  </AspectRatio>
+                </CardHeader>
+              </Card>
+            ))}
+          </InfiniteMovingCards>
+        </CardFooter>
       </Card>
       <Card id="resident-care">
         <CardHeader className="pb-3">
@@ -87,6 +107,20 @@ export default function Home() {
             the generosity of our community.
           </p>
         </CardContent>
+        <CardFooter className="flex items-center justify-center">
+          <Card className="w-96 bg-muted/20">
+            <CardHeader>
+              <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                <iframe
+                  src="https://www.youtube.com/embed/YG2s_j0Kh0o?si=UZhbjFEgUjOhBNMp"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  className="h-full w-full rounded-md object-cover"
+                ></iframe>
+              </AspectRatio>
+            </CardHeader>
+          </Card>
+        </CardFooter>
       </Card>
       <Card id="life-at-gateway-home">
         <CardHeader className="pb-3">
@@ -121,6 +155,25 @@ export default function Home() {
             community.
           </p>
         </CardContent>
+        <CardFooter>
+          <InfiniteMovingCards speed="normal">
+            {Array.from({ length: 5 }).map((image, index) => (
+              <Card key={index} className="w-96 bg-muted/20">
+                <CardHeader>
+                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                    <Image
+                      src={`images/placeholder.svg`}
+                      alt={`placeholder`}
+                      fill
+                      loading="eager"
+                      className="rounded-md object-cover"
+                    />
+                  </AspectRatio>
+                </CardHeader>
+              </Card>
+            ))}
+          </InfiniteMovingCards>
+        </CardFooter>
       </Card>
       <Card id="history">
         <CardHeader className="pb-3">
@@ -148,6 +201,25 @@ export default function Home() {
             the community for many years to come.
           </p>
         </CardContent>
+        <CardFooter>
+          <InfiniteMovingCards speed="normal">
+            {Array.from({ length: 5 }).map((image, index) => (
+              <Card key={index} className="w-96 bg-muted/20">
+                <CardHeader>
+                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                    <Image
+                      src={`images/placeholder.svg`}
+                      alt={`placeholder`}
+                      fill
+                      loading="eager"
+                      className="rounded-md object-cover"
+                    />
+                  </AspectRatio>
+                </CardHeader>
+              </Card>
+            ))}
+          </InfiniteMovingCards>
+        </CardFooter>
       </Card>
       <Card id="donors">
         <CardHeader className="pb-3">
