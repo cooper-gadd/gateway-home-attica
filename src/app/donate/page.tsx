@@ -30,7 +30,7 @@ export default function Donate() {
                   "https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"
                 }
               >
-                Donate now
+                Donate Now
               </Link>
             </Button>
           </CardFooter>

@@ -1,6 +1,16 @@
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Clock, Mail, User, Users } from "lucide-react";
+import Link from "next/link";
 import { hirings } from "../_data/data";
-import { Clock, User, Users } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
@@ -78,7 +88,29 @@ export default function Posting({
         </p>
       </div>
       <div>
-        <Button>Apply Now</Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button>Apply Now</Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Contact us to apply.</DialogTitle>
+              <DialogDescription>
+                Please email us to apply for this position.
+              </DialogDescription>
+              <DialogFooter className="flex items-center gap-2">
+                <Button asChild>
+                  <Link
+                    target="_blank"
+                    href={"mailto:info@gatewayhomeattica.org"}
+                  >
+                    <Mail className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </DialogFooter>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
     </div>
   );

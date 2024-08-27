@@ -7,7 +7,7 @@ export const socials = [
     description: "585-708-4331",
     link: "tel:585-708-4331",
     icon: Phone,
-    action: "Call us",
+    action: "Call Us",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const socials = [
     description: "info@gatewayhomeattica.org",
     link: "mailto:info@gatewayhomeattica.org",
     icon: Mail,
-    action: "Email us",
+    action: "Email Us",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const socials = [
     description: "585-708-4333",
     link: "fax:5857084333",
     icon: Printer,
-    action: "Fax us",
+    action: "Fax Us",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ export const socials = [
     description: " 91 Main Street, Attica, NY 14011",
     link: "https://www.google.com/maps/search/?api=1&query=91 Main Street, Attica, NY 14011",
     icon: Map,
-    action: "Find us",
+    action: "Find Us",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ export const socials = [
     description: "Gateway Home",
     link: "https://www.facebook.com/gatewayhomeattica/",
     icon: ThumbsUp,
-    action: "Like us",
+    action: "Like Us",
   },
   {
     id: 6,
@@ -47,6 +47,6 @@ export const socials = [
     description: "gatewayhomeattica",
     link: "https://www.instagram.com/gatewayhomeattica/",
     icon: UserPlus,
-    action: "Follow us",
+    action: "Follow Us",
   },
 ];
