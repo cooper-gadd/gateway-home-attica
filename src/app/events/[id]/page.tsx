@@ -17,13 +17,7 @@ export default function Event({
         {event.title}
       </h1>
       <p className="text-sm text-muted-foreground">{event.description}</p>
-      <div>
-        {event.content.map((paragraph, index) => (
-          <p className="leading-7 [&:not(:first-child)]:mt-6" key={index}>
-            {paragraph}
-          </p>
-        ))}
-      </div>
+      {event.content}
       <div>
         <Button asChild>
           <Link target="_blank" href={event.link}>
