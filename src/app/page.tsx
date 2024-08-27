@@ -112,10 +112,10 @@ export default function Home() {
             <CardHeader>
               <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
                 <iframe
-                  src="https://www.youtube.com/embed/YG2s_j0Kh0o?si=UZhbjFEgUjOhBNMp"
+                  src="https://www.youtube-nocookie.com/embed/YG2s_j0Kh0o?si=hufmO9fPzpUdHL84"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  className="h-full w-full rounded-md object-cover"
+                  className="z-10 h-full w-full rounded-md object-cover"
                 ></iframe>
               </AspectRatio>
             </CardHeader>
