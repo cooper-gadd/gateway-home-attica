@@ -35,7 +35,7 @@ export function Navbar() {
     },
     {
       title: "Newsletter",
-      href: "/file/newsletter",
+      href: "/pdfs/newsletter.pdf",
     },
     {
       title: "Contact",

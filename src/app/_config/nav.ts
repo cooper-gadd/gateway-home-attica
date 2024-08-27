@@ -77,7 +77,7 @@ export const navConfig: NavConfig = {
     },
     {
       title: "Newsletter",
-      href: "/file/newsletter",
+      href: "/pdfs/newsletter.pdf",
       icon: Newspaper,
     },
     {
