@@ -624,8 +624,8 @@ export default function Home() {
         <CardHeader className="pb-3">
           <CardTitle>Newsletter</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Subscribe to our newsletter to receive updates on our services and
-            events.
+            Email us to subscribe to our newsletter to receive updates on our
+            services and events.
           </CardDescription>
         </CardHeader>
         <CardFooter className="flex items-center gap-4">

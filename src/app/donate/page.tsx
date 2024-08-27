@@ -54,7 +54,9 @@ export default function Donate() {
               </Link>
             </Button>
             <Button asChild>
-              <Link href={"/pdfs/legacy-brick-sale-form.pdf"}>Brick Form</Link>
+              <Link target="_blank" href={"/pdfs/legacy-brick-sale-form.pdf"}>
+                Brick Form
+              </Link>
             </Button>
           </CardFooter>
         </Card>
