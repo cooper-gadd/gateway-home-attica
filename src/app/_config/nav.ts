@@ -1,5 +1,6 @@
 import {
   Activity,
+  BookOpen,
   BriefcaseBusiness,
   Calendar,
   CircleHelp,
@@ -14,6 +15,7 @@ import {
   NotebookPen,
   Phone,
   Printer,
+  Smile,
   Stethoscope,
   Target,
   ThumbsUp,
@@ -92,6 +94,18 @@ export const navConfig: NavConfig = {
           title: "Resident Care",
           href: "/#resident-care",
           icon: Heart,
+          items: [],
+        },
+        {
+          title: "Life at Gateway Home",
+          href: "/#life-at-gateway-home",
+          icon: Smile,
+          items: [],
+        },
+        {
+          title: "History",
+          href: "/#history",
+          icon: BookOpen,
           items: [],
         },
         {

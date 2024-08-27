@@ -236,30 +236,32 @@ export default function Home() {
                     {leader.position}
                   </CardDescription>
                 </CardHeader>
-                <CardFooter>
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button>Read Bio</Button>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle>
-                          About {leader.name.split(" ")[0]}
-                        </DialogTitle>
-                        <DialogDescription>
-                          {leader.bio?.map((p) => (
-                            <p
-                              className="lg:leading-7 lg:[&:not(:first-child)]:mt-6"
-                              key={p}
-                            >
-                              {p}
-                            </p>
-                          ))}
-                        </DialogDescription>
-                      </DialogHeader>
-                    </DialogContent>
-                  </Dialog>
-                </CardFooter>
+                {leader.bio && (
+                  <CardFooter>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button>Read Bio</Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>
+                            About {leader.name.split(" ")[0]}
+                          </DialogTitle>
+                          <DialogDescription>
+                            {leader.bio.map((p) => (
+                              <p
+                                className="lg:leading-7 lg:[&:not(:first-child)]:mt-6"
+                                key={p}
+                              >
+                                {p}
+                              </p>
+                            ))}
+                          </DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+                  </CardFooter>
+                )}
               </Card>
             ))}
           </div>
