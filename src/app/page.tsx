@@ -57,15 +57,96 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          At Gateway Home, we pride ourselves on delivering comprehensive care
-          through our team of trained, licensed, professional medical support
-          staff. This care is further enhanced by the dedication of our trained
-          volunteers. We are equipped to provide support for up to two residents
-          and their families simultaneously. Our referrals come from a variety
-          of sources, including medical professionals, clergy, family, friends,
-          and other healthcare agencies. Our care extends beyond the physical,
-          as we also cater to the spiritual and emotional needs of our
-          residents, ensuring a holistic approach to their well-being.
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            Gateway Home is an empathetic and loving comfort care home for the
+            terminally ill. It is a home-like setting that offers free comfort
+            care for those in their last three months of a terminal illness.
+            Gateway Home’s staff and trained volunteers are able to care for two
+            residents at a time, 24 hours a day, 365 days a year.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            Our primary goal is to provide comfort care, symptom control and
+            pain management for our residents, as well as to be a source of
+            respite care for the families and friends. Hands-on resident care is
+            provided around the clock, along with meals, laundry, companionship,
+            as well as emotional, and spiritual support. Comfort care honors the
+            well-being of every person and respects the dignity of human life.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            Admission to Gateway Home is based solely on need, regardless of
+            age, sex, race, religion or other distinctions . Referrals come from
+            several sources: Hospice, health care agencies, hospitals,
+            physicians, social workers, clergy, family, friends or the person
+            themselves. Priority is given to those who cannot receive adequate
+            care at home.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            There is no cost to the families that we serve, nor do we receive
+            any reimbursement from insurance companies. Gateway Home is funded
+            solely by donations, fundraising, memorial contributions and through
+            the generosity of our community.
+          </p>
+        </CardContent>
+      </Card>
+      <Card id="life-at-gateway-home">
+        <CardHeader className="pb-3">
+          <CardTitle>Life at Gateway Home</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Gateway Home is a place where residents can live out their final
+            days in comfort and dignity.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            Gateway Home is a place where residents can live out their final
+            days in comfort and dignity. Our staff and volunteers are dedicated
+            to providing the highest quality care to our residents, and we
+            strive to create a warm and welcoming environment where residents
+            can feel at home. We offer a range of services to meet the unique
+            needs of each resident, including medical care, emotional support,
+            and spiritual care. Our goal is to create a sense of community and
+            belonging for all who live here, and we are committed to providing
+            personalized care that meets the individual needs of each resident.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            At Gateway Home, we believe that every person deserves to live their
+            final days with dignity and respect. We are dedicated to providing
+            compassionate care to our residents and their families, and we
+            strive to create a peaceful and supportive environment where
+            residents can feel safe and cared for. Our staff and volunteers are
+            committed to providing the highest quality care to our residents,
+            and we work closely with families to ensure that their loved ones
+            receive the care and support they need. We are proud to be a part of
+            the Gateway Home family, and we look forward to welcoming you to our
+            community.
+          </p>
+        </CardContent>
+      </Card>
+      <Card id="history">
+        <CardHeader className="pb-3">
+          <CardTitle>History</CardTitle>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Gateway Home was founded a group of concerned citizens who
+            recognized the need for a comfort care home in the community.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            The home was established to provide free comfort care for those in
+            their last three months of a terminal illness, and to offer support
+            and respite care for their families. Since then, Gateway Home has
+            cared for hundreds of residents and their families, providing
+            compassionate care and support to those in need.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            Gateway Home is a non-profit organization that relies on the
+            generosity of the community to fund its operations. We are grateful
+            for the support of our donors, volunteers, and community partners,
+            who help us to provide comfort care to those in need. We are
+            committed to continuing our mission of providing compassionate care
+            to our residents and their families, and we look forward to serving
+            the community for many years to come.
+          </p>
         </CardContent>
       </Card>
       <Card id="donors">
@@ -328,6 +409,73 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="item-6">
               <AccordionTrigger className="text-start">
+                What is the process for admission to Gateway Home?
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                  The process for admission to Gateway Home begins with a
+                  referral from a physician, social worker, or other healthcare
+                  provider. Once a referral is received, our Assessment team
+                  will contact the person who is referred to schedule an
+                  assessment. The assessment is done in the person’s home or
+                  hospital room and takes about an hour. During the assessment,
+                  the person’s medical history, current symptoms, and care needs
+                  are discussed. The person’s family members or caregivers are
+                  also encouraged to participate in the assessment. After the
+                  assessment is completed, the person is placed on our waiting
+                  list. When a bed becomes available, the person is admitted to
+                  Gateway Home. The person’s family members or caregivers are
+                  encouraged to visit Gateway Home before the person is admitted
+                  to become familiar with the facility and meet the staff. Once
+                  the person is admitted, the person’s family members or
+                  caregivers are encouraged to visit as often as they like. We
+                  also encourage family members or caregivers to participate in
+                  the person’s care as much as they are able. We believe that
+                  family members and caregivers are an important part of the
+                  person’s care team and we welcome their involvement. We also
+                  provide support and education to family members and caregivers
+                  to help them care for their loved one. We believe that
+                  involving family members and caregivers in the person’s care
+                  helps to improve the person’s quality of life and provides
+                  comfort and support to the person and their family members or
+                  caregivers. We also provide support and education to family
+                  members and caregivers to help them care for their loved one.
+                  We believe that involving family members and caregivers in the
+                  person’s care helps to improve the person’s quality of life
+                  and provides comfort and support to the person and their
+                  family members or caregivers.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="text-start">
+                What items should my loved one bring to Gateway Home?
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                  When a person is admitted to Gateway Home, they are encouraged
+                  to bring personal items that will make them feel more at home.
+                  We encourage residents to bring their own clothing, personal
+                  care items, and any other items that will make them feel more
+                  comfortable. We provide all the necessary medical equipment
+                  and supplies, as well as snacks. We also provide all the
+                  necessary linens and towels. We have a washer and dryer on
+                  site for residents to use. We also have a small library of
+                  books, puzzles, and games for residents to enjoy. We have a
+                  beautiful garden and patio area for residents to enjoy the
+                  outdoors. We also have a large living room with a fireplace
+                  and a television for residents to enjoy. We encourage
+                  residents to bring their own personal items to make their stay
+                  more comfortable. We also encourage family members to visit
+                  often and to participate in the care of their loved one. We
+                  have a family room with a kitchenette and a dining area for
+                  family members to use. We also have a small chapel for
+                  residents and family members to use for prayer and reflection.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="text-start">
                 What if my loved one who is residing at Gateway Home lives
                 beyond three months?
               </AccordionTrigger>
@@ -348,7 +496,7 @@ export default function Home() {
                 </p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-7">
+            <AccordionItem value="item-9">
               <AccordionTrigger className="text-start">
                 Are volunteer opportunities available?
               </AccordionTrigger>
