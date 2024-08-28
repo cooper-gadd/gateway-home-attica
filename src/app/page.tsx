@@ -22,21 +22,39 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import Link from "next/link";
 import { donors, leadership, socials } from "./_data/data";
-import { Mail, Newspaper } from "lucide-react";
+import { Mail, Newspaper, Play } from "lucide-react";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+      <div className="text-center">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          Gateway Home
+        </h1>
+        <p className="text-xl leading-7 text-muted-foreground [&:not(:first-child)]:mt-6">
+          A Comfort Care Home for individuals in the final stages of life.
+        </p>
+      </div>
+      <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
+        <Image
+          src={`images/placeholder.svg`}
+          alt={`placeholder`}
+          fill
+          loading="eager"
+          className="rounded-md object-cover"
+        />
+      </AspectRatio>
       <Card id="mission-statement">
         <CardHeader className="pb-3">
-          <CardTitle>Gateway Home</CardTitle>
+          <CardTitle>Mission Statement</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Mission Statement
+            Our goal at Gateway Home is to provide a loving, caring, and
+            peaceful environment for our residents and their families.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -50,80 +68,70 @@ export default function Home() {
           services provided. Funding is accomplished through donations,
           bequests, and community support. Admission is based solely on need.
         </CardContent>
-        <CardFooter>
-          <InfiniteMovingCards speed="normal">
-            {Array.from({ length: 5 }).map((image, index) => (
-              <Card key={index} className="w-96 bg-muted/20">
-                <CardHeader>
-                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                    <Image
-                      src={`images/placeholder.svg`}
-                      alt={`placeholder`}
-                      fill
-                      loading="eager"
-                      className="rounded-md object-cover"
-                    />
-                  </AspectRatio>
-                </CardHeader>
-              </Card>
-            ))}
-          </InfiniteMovingCards>
-        </CardFooter>
       </Card>
-      <Card id="resident-care">
-        <CardHeader className="pb-3">
-          <CardTitle>Resident Care</CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            All the needs of the resident are provided for 24 hours a day, 7
-            days per week.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Gateway Home is an empathetic and loving comfort care home for the
-            terminally ill. It is a home-like setting that offers free comfort
-            care for those in their last three months of a terminal illness.
-            Gateway Home’s staff and trained volunteers are able to care for two
-            residents at a time, 24 hours a day, 365 days a year.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Our primary goal is to provide comfort care, symptom control and
-            pain management for our residents, as well as to be a source of
-            respite care for the families and friends. Hands-on resident care is
-            provided around the clock, along with meals, laundry, companionship,
-            as well as emotional, and spiritual support. Comfort care honors the
-            well-being of every person and respects the dignity of human life.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Admission to Gateway Home is based solely on need, regardless of
-            age, sex, race, religion or other distinctions . Referrals come from
-            several sources: Hospice, health care agencies, hospitals,
-            physicians, social workers, clergy, family, friends or the person
-            themselves. Priority is given to those who cannot receive adequate
-            care at home.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            There is no cost to the families that we serve, nor do we receive
-            any reimbursement from insurance companies. Gateway Home is funded
-            solely by donations, fundraising, memorial contributions and through
-            the generosity of our community.
-          </p>
-        </CardContent>
-        <CardFooter className="flex items-center justify-center">
-          <Card className="w-96 bg-muted/20">
-            <CardHeader>
-              <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                <iframe
-                  src="https://www.youtube-nocookie.com/embed/YG2s_j0Kh0o?si=hufmO9fPzpUdHL84"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  className="z-10 h-full w-full rounded-md object-cover"
-                ></iframe>
-              </AspectRatio>
-            </CardHeader>
-          </Card>
-        </CardFooter>
-      </Card>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <Card id="resident-care">
+          <CardHeader className="pb-3">
+            <CardTitle>Resident Care</CardTitle>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              All the needs of the resident are provided for 24 hours a day, 7
+              days per week.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Gateway Home is an empathetic and loving comfort care home for the
+              terminally ill. It is a home-like setting that offers free comfort
+              care for those in their last three months of a terminal illness.
+              Gateway Home’s staff and trained volunteers are able to care for
+              two residents at a time, 24 hours a day, 365 days a year.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Our primary goal is to provide comfort care, symptom control and
+              pain management for our residents, as well as to be a source of
+              respite care for the families and friends. Hands-on resident care
+              is provided around the clock, along with meals, laundry,
+              companionship, as well as emotional, and spiritual support.
+              Comfort care honors the well-being of every person and respects
+              the dignity of human life.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              Admission to Gateway Home is based solely on need, regardless of
+              age, sex, race, religion or other distinctions . Referrals come
+              from several sources: Hospice, health care agencies, hospitals,
+              physicians, social workers, clergy, family, friends or the person
+              themselves. Priority is given to those who cannot receive adequate
+              care at home.
+            </p>
+            <p className="leading-7 [&:not(:first-child)]:mt-6">
+              There is no cost to the families that we serve, nor do we receive
+              any reimbursement from insurance companies. Gateway Home is funded
+              solely by donations, fundraising, memorial contributions and
+              through the generosity of our community.
+            </p>
+          </CardContent>
+        </Card>
+        <div className="flex flex-col">
+          <Link
+            href="https://youtu.be/YG2s_j0Kh0o?si=rz_pSvlgUbGkM5Bd"
+            target="__blank"
+            className="group/image relative flex h-full gap-10"
+          >
+            <div className="group mx-auto h-full w-full bg-transparent dark:bg-transparent">
+              <div className="relative flex h-full w-full flex-1 flex-col space-y-2">
+                <Play className="absolute inset-0 z-10 m-auto h-20 w-20 text-black" />
+                <Image
+                  src="/images/gateway-logo.jpg"
+                  alt="header"
+                  width={800}
+                  height={800}
+                  className="aspect-square h-full w-full rounded-sm object-cover object-center blur-none transition-all duration-200 group-hover/image:blur-md"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
       <Card id="life-at-gateway-home">
         <CardHeader className="pb-3">
           <CardTitle>Life at Gateway Home</CardTitle>
