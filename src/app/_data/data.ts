@@ -228,7 +228,7 @@ export const leadership = [
   },
   {
     id: 6,
-    name: "Kim Kadziolka",
+    name: "Kimberly Kadziolka",
     position: "Board Member",
     image: "/images/placeholder.svg",
     bio: null,

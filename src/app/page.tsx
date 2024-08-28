@@ -498,36 +498,36 @@ export default function Home() {
               <AccordionContent>
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
                   The process for admission to Gateway Home begins with a
-                  referral from a physician, social worker, or other healthcare
-                  provider. Once a referral is received, our Assessment team
-                  will contact the person who is referred to schedule an
-                  assessment. The assessment is done in the person’s home or
-                  hospital room and takes about an hour. During the assessment,
-                  the person’s medical history, current symptoms, and care needs
-                  are discussed. The person’s family members or caregivers are
-                  also encouraged to participate in the assessment. After the
-                  assessment is completed, the person is placed on our waiting
-                  list. When a bed becomes available, the person is admitted to
-                  Gateway Home. The person’s family members or caregivers are
-                  encouraged to visit Gateway Home before the person is admitted
-                  to become familiar with the facility and meet the staff. Once
-                  the person is admitted, the person’s family members or
-                  caregivers are encouraged to visit as often as they like. We
-                  also encourage family members or caregivers to participate in
-                  the person’s care as much as they are able. We believe that
-                  family members and caregivers are an important part of the
-                  person’s care team and we welcome their involvement. We also
-                  provide support and education to family members and caregivers
-                  to help them care for their loved one. We believe that
-                  involving family members and caregivers in the person’s care
-                  helps to improve the person’s quality of life and provides
-                  comfort and support to the person and their family members or
-                  caregivers. We also provide support and education to family
+                  referral from a physician, social worker, family member,
+                  friend, or other healthcare provider. Once a referral is
+                  received, our Assessment team will contact the person who is
+                  referred to schedule an assessment. The assessment is done in
+                  the person’s home or hospital room and takes about an hour.
+                  During the assessment, the person’s medical history, current
+                  symptoms, and care needs are discussed. The person’s family
+                  members or caregivers are also encouraged to participate in
+                  the assessment. After the assessment is completed, the person
+                  is placed on our waiting list. When a bed becomes available,
+                  the person is admitted to Gateway Home. The person’s family
+                  members or caregivers are encouraged to visit Gateway Home
+                  before the person is admitted to become familiar with the
+                  facility and meet the staff. Once the person is admitted, the
+                  person’s family members or caregivers are encouraged to visit
+                  as often as they like. We also encourage family members or
+                  caregivers to participate in the person’s care as much as they
+                  are able. We believe that family members and caregivers are an
+                  important part of the person’s care team and we welcome their
+                  involvement. We also provide support and education to family
                   members and caregivers to help them care for their loved one.
                   We believe that involving family members and caregivers in the
                   person’s care helps to improve the person’s quality of life
                   and provides comfort and support to the person and their
-                  family members or caregivers.
+                  family members or caregivers. We also provide support and
+                  education to family members and caregivers to help them care
+                  for their loved one. We believe that involving family members
+                  and caregivers in the person’s care helps to improve the
+                  person’s quality of life and provides comfort and support to
+                  the person and their family members or caregivers.
                 </p>
               </AccordionContent>
             </AccordionItem>

@@ -72,7 +72,7 @@ export default function Donate() {
               <Link
                 target="_blank"
                 href={
-                  "https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"
+                  "https://gatewayhomeattica.networkforgood.com/projects/232986-basket-raffle-page"
                 }
               >
                 Buy a Basket
