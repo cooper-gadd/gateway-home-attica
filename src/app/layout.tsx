@@ -37,7 +37,7 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen w-full flex-col bg-muted/40">
             <Navbar />
-            <div className="container">{children}</div>
+            {children}
           </div>
         </ThemeProvider>
       </body>
