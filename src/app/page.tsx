@@ -28,6 +28,7 @@ import Link from "next/link";
 import { donors, leadership, socials } from "./_data/data";
 import {
   BookOpen,
+  CircleHelp,
   Clock,
   Coins,
   DoorOpen,
@@ -48,7 +49,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-      <Card>
+      <Card id="mission-statement">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle>Gateway Home</CardTitle>
@@ -69,7 +70,7 @@ export default function Home() {
               className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </AspectRatio>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
@@ -114,7 +115,7 @@ export default function Home() {
           </Button>
         </CardFooter>
       </Card>
-      <Card>
+      <Card id="resident-care">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle>Resident Care</CardTitle>
@@ -135,7 +136,7 @@ export default function Home() {
               className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </AspectRatio>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
@@ -180,7 +181,7 @@ export default function Home() {
           </Button>
         </CardFooter>
       </Card>
-      <Card>
+      <Card id="life-at-gateway">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle>Life at Gateway Home</CardTitle>
@@ -201,7 +202,7 @@ export default function Home() {
               className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </AspectRatio>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
@@ -246,7 +247,7 @@ export default function Home() {
           </Button>
         </CardFooter>
       </Card>
-      <Card>
+      <Card id="history">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle>History</CardTitle>
@@ -267,7 +268,7 @@ export default function Home() {
               className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </AspectRatio>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
@@ -314,11 +315,12 @@ export default function Home() {
       </Card>
       <Card id="donors">
         <CardHeader className="pb-3">
-          <CardTitle>Donors</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Donors</CardTitle>
+            <HandHeart className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Gateway Home is a non-profit organization that relies on the
-            generosity of our community to provide our services. We are grateful
-            for the support of our donors.
+            Gateway Home is made possible by the generosity of our donors.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -374,14 +376,17 @@ export default function Home() {
       </Card>
       <Card id="leadership">
         <CardHeader className="pb-3">
-          <CardTitle>Leadership</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Leadership</CardTitle>
+            <Users className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             Our leadership team is made up of dedicated individuals who are
             passionate about providing comfort and care to those in need.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-4 2xl:grid-cols-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-4">
             {leadership.map((leader) => (
               <Card key={leader.id} className="bg-muted/20">
                 <CardHeader>
@@ -432,7 +437,10 @@ export default function Home() {
       </Card>
       <Card id="faq">
         <CardHeader className="pb-3">
-          <CardTitle>Frequently Asked Questions</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Frequently Asked Questions</CardTitle>
+            <CircleHelp className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             We understand that you may have questions. We have compiled a list
             of frequently asked questions to help you better understand Gateway
