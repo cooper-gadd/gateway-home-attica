@@ -338,49 +338,10 @@ export default function Home() {
                 </Card>
               ))}
           </div>
-          <InfiniteMovingCards speed="slow">
-            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
-              {donors
-                .filter((donor) => donor.level === "Gold")
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((donor) => (
-                  <Card key={donor.name} className="bg-muted/20">
-                    <CardHeader>
-                      <CardTitle className="flex items-center justify-between">
-                        {donor.name}
-                      </CardTitle>
-                      <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        {donor.level}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                ))}
-            </div>
-          </InfiniteMovingCards>
-          <InfiniteMovingCards speed="slow">
-            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
-              {donors
-                .filter((donor) => donor.level === "Silver")
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((donor) => (
-                  <Card key={donor.name} className="bg-muted/20">
-                    <CardHeader>
-                      <CardTitle className="flex items-center justify-between">
-                        {donor.name}
-                      </CardTitle>
-                      <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        {donor.level}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                ))}
-            </div>
-          </InfiniteMovingCards>
           <InfiniteMovingCards speed="ultra-slow">
             <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
               {donors
-                .filter((donor) => donor.level === "Bronze")
-                .sort((a, b) => a.name.localeCompare(b.name))
+                .filter((donor) => donor.level !== "Platinum")
                 .map((donor) => (
                   <Card key={donor.name} className="bg-muted/20">
                     <CardHeader>
