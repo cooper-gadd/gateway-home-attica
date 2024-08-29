@@ -4,7 +4,6 @@ import {
   Calendar,
   CircleHelp,
   Contact,
-  Gift,
   HandCoins,
   HandHeart,
   Home,
@@ -76,12 +75,6 @@ export const navConfig: NavConfig = {
     {
       title: "Home",
       items: [
-        {
-          title: "Donors",
-          href: "/#donors",
-          icon: Gift,
-          items: [],
-        },
         {
           title: "Leadership",
           href: "/#leadership",
@@ -167,6 +160,12 @@ export const navConfig: NavConfig = {
         {
           title: "New Patio and Pergola",
           href: "/blog/new-patio-and-pergola",
+          icon: NotebookPen,
+          items: [],
+        },
+        {
+          title: "Donors",
+          href: "/blog/donors",
           icon: NotebookPen,
           items: [],
         },

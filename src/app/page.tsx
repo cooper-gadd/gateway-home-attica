@@ -22,7 +22,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import Link from "next/link";
 import { donors, leadership, socials } from "./_data/data";
@@ -324,55 +323,84 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Tabs defaultValue="platinum">
-            <TabsList>
-              <TabsTrigger value="platinum">Platinum</TabsTrigger>
-              <TabsTrigger value="gold">Gold</TabsTrigger>
-              <TabsTrigger value="silver">Silver</TabsTrigger>
-              <TabsTrigger value="bronze">Bronze</TabsTrigger>
-            </TabsList>
-            <TabsContent value="platinum">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Platinum")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-            <TabsContent value="gold">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Gold")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-            <TabsContent value="silver">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Silver")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-            <TabsContent value="bronze">
-              <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                {donors
-                  .filter((donor) => donor.level === "Bronze")
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((donor) => (
-                    <li key={donor.name}>{donor.name}</li>
-                  ))}
-              </ul>
-            </TabsContent>
-          </Tabs>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-8">
+            {donors
+              .filter((donor) => donor.level === "Platinum")
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((donor) => (
+                <Card key={donor.name} className="bg-muted/20">
+                  <CardHeader className="pb-3">
+                    <CardTitle>{donor.name}</CardTitle>
+                    <CardDescription className="max-w-lg text-balance leading-relaxed">
+                      {donor.level}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+          </div>
+          <InfiniteMovingCards speed="slow">
+            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
+              {donors
+                .filter((donor) => donor.level === "Gold")
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((donor) => (
+                  <Card key={donor.name} className="bg-muted/20">
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {donor.name}
+                      </CardTitle>
+                      <CardDescription className="max-w-lg text-balance leading-relaxed">
+                        {donor.level}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                ))}
+            </div>
+          </InfiniteMovingCards>
+          <InfiniteMovingCards speed="slow">
+            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
+              {donors
+                .filter((donor) => donor.level === "Silver")
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((donor) => (
+                  <Card key={donor.name} className="bg-muted/20">
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {donor.name}
+                      </CardTitle>
+                      <CardDescription className="max-w-lg text-balance leading-relaxed">
+                        {donor.level}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                ))}
+            </div>
+          </InfiniteMovingCards>
+          <InfiniteMovingCards speed="ultra-slow">
+            <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
+              {donors
+                .filter((donor) => donor.level === "Bronze")
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((donor) => (
+                  <Card key={donor.name} className="bg-muted/20">
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {donor.name}
+                      </CardTitle>
+                      <CardDescription className="max-w-lg text-balance leading-relaxed">
+                        {donor.level}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                ))}
+            </div>
+          </InfiniteMovingCards>
         </CardContent>
+        <CardFooter>
+          <Button asChild>
+            <Link href={"/blog/donors"}>Lean More</Link>
+          </Button>
+        </CardFooter>
       </Card>
       <Card id="leadership">
         <CardHeader className="pb-3">
