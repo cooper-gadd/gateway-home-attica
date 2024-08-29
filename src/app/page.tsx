@@ -709,7 +709,10 @@ export default function Home() {
       </Card>
       <Card id="newsletter">
         <CardHeader className="pb-3">
-          <CardTitle>Newsletter</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Newsletter</CardTitle>
+            <Newspaper className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             Email us to subscribe to our newsletter to receive updates on our
             services and events.
