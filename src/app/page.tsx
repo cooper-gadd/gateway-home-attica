@@ -90,8 +90,8 @@ export default function Home() {
                   <HandHeart className="h-4 w-4 text-muted-foreground" />
                 </div>
                 <CardDescription className="max-w-lg text-balance leading-relaxed">
-                  Operations are funded entirely through donations, bequests,
-                  and community generosity.
+                  Operations are funded entirely through donations, grants,
+                  bequests, and community generosity.
                 </CardDescription>
               </CardHeader>
             </Card>
