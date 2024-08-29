@@ -16,7 +16,10 @@ export default function Blog() {
       {posts.map((post) => (
         <Card key={post.id}>
           <CardHeader className="pb-3">
-            <CardTitle>{post.title}</CardTitle>
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>{post.title}</CardTitle>
+              <post.icon className="h-4 w-4 text-muted-foreground" />
+            </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               {post.author}
             </CardDescription>

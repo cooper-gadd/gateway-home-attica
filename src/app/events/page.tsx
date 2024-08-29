@@ -16,7 +16,10 @@ export default function Events() {
       {events.map((event) => (
         <Card key={event.id}>
           <CardHeader className="pb-3">
-            <CardTitle>{event.title}</CardTitle>
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>{event.title}</CardTitle>
+              <event.icon className="h-4 w-4 text-muted-foreground" />
+            </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               {event.description}
             </CardDescription>

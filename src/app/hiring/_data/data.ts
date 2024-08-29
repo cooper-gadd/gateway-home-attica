@@ -1,7 +1,30 @@
-export const hirings = [
+import {
+  Activity,
+  HandHeart,
+  Stethoscope,
+  type LucideProps,
+} from "lucide-react";
+import { type ForwardRefExoticComponent, type RefAttributes } from "react";
+
+export const hirings: {
+  id: string;
+  role: string;
+  icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
+  aboutTheRole: string;
+  whatYouWillDo: string[];
+  aboutYou: string;
+  bonusIfYouHave: string;
+  department: string;
+  location: string;
+  locationType: string;
+  type: string;
+}[] = [
   {
     id: "volunteer",
     role: "Volunteer",
+    icon: HandHeart,
     aboutTheRole: "Pro Bono, Reports to the Director",
     whatYouWillDo: [
       "Use your experience or be trained by us to care for our residents physical needs",
@@ -23,6 +46,7 @@ export const hirings = [
   {
     id: "care-aide",
     role: "Care Aide",
+    icon: Stethoscope,
     aboutTheRole: "Hourly, Reports to Director of Resident Care",
     whatYouWillDo: [
       "Work under the direction of the nurse in charge, according to the instructions in the resident care plan.",
@@ -49,6 +73,7 @@ export const hirings = [
   {
     id: "rn-lpn",
     role: "RN/LPN",
+    icon: Activity,
     aboutTheRole: "24 Hour Shift, Reports to Director of Resident Care",
     whatYouWillDo: [
       "Work under direction of the VNA/Hospice.",

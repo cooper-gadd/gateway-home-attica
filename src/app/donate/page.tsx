@@ -10,6 +10,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { wishList } from "./_data/data";
 import Link from "next/link";
+import { Cuboid, Gift, HandCoins, ScrollText } from "lucide-react";
 
 export default function Donate() {
   return (
@@ -17,7 +18,10 @@ export default function Donate() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card id="financial-donations">
           <CardHeader className="pb-3">
-            <CardTitle>Financial Donations</CardTitle>
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Financial Donations</CardTitle>
+              <HandCoins className="h-4 w-4 text-muted-foreground" />
+            </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Your financial support is crucial to our mission.
             </CardDescription>
@@ -37,7 +41,10 @@ export default function Donate() {
         </Card>
         <Card id="legacy-brick-sale">
           <CardHeader className="pb-3">
-            <CardTitle>Legacy Brick Sale</CardTitle>
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Legacy Brick Sale</CardTitle>
+              <Cuboid className="h-4 w-4 text-muted-foreground" />
+            </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Purchase a brick to be placed in our walkway.
             </CardDescription>
@@ -62,7 +69,10 @@ export default function Donate() {
         </Card>
         <Card id="raffle-baskets">
           <CardHeader className="pb-3">
-            <CardTitle>Raffle Baskets</CardTitle>
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Raffle Baskets</CardTitle>
+              <Gift className="h-4 w-4 text-muted-foreground" />
+            </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Create your own basket, or donate funds for us to create one.
             </CardDescription>
@@ -83,7 +93,10 @@ export default function Donate() {
       </div>
       <Card id="wish-list" className="col-span-2">
         <CardHeader>
-          <CardTitle>Wish List</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Wish List</CardTitle>
+            <ScrollText className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription>
             We are always in need of the following items. Please consider
             patronizing our kind partner, Attica Pharmacy for many of the
