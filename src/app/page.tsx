@@ -691,28 +691,26 @@ export default function Home() {
         <CardHeader className="pb-3">
           <CardTitle>Contact Us</CardTitle>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Open 24 hours
+            If you have any questions or would like to learn more about Gateway
+            Home, please contact us. We are here to help you.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-3">
             {socials.map((social) => (
-              <Card key={social.id} className="bg-muted/20">
-                <CardHeader className="pb-3">
-                  <CardTitle>{social.title}</CardTitle>
-                  <CardDescription className="max-w-lg text-balance leading-relaxed">
-                    {social.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardFooter>
-                  <Button asChild>
-                    <Link target="_blank" href={social.link}>
-                      {<social.icon className="mr-2 h-4 w-4" />}
-                      {social.action}
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
+              <Link key={social.id} target="_blank" href={social.link}>
+                <Card className="bg-muted/20">
+                  <CardHeader className="pb-3">
+                    <div className="flex flex-row items-center justify-between space-y-0">
+                      <CardTitle>{social.title}</CardTitle>
+                      <social.icon className="h-4 w-4 text-muted-foreground" />
+                    </div>
+                    <CardDescription className="max-w-lg text-balance leading-relaxed">
+                      {social.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
             ))}
           </div>
         </CardContent>
