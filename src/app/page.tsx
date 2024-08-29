@@ -27,16 +27,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { donors, leadership, socials } from "./_data/data";
 import {
+  Bed,
   BookOpen,
   CircleHelp,
   Clock,
   Coins,
+  Contact,
   DoorOpen,
   HandHeart,
   HeartHandshake,
   HeartPulse,
   HomeIcon,
-  Lamp,
   Mail,
   Newspaper,
   Play,
@@ -185,7 +186,7 @@ export default function Home() {
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle>Life at Gateway Home</CardTitle>
-            <Lamp className="h-4 w-4 text-muted-foreground" />
+            <Bed className="h-4 w-4 text-muted-foreground" />
           </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             Creating a welcoming environment where residents receive
@@ -689,7 +690,10 @@ export default function Home() {
       </Card>
       <Card id="contact-us">
         <CardHeader className="pb-3">
-          <CardTitle>Contact Us</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Contact Us</CardTitle>
+            <Contact className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             If you have any questions or would like to learn more about Gateway
             Home, please contact us. We are here to help you.
