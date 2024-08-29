@@ -63,11 +63,11 @@ export default function Home() {
         <CardContent className="space-y-4">
           <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
             <Image
-              src={`images/placeholder.svg`}
-              alt={`placeholder`}
+              src={`/images/home/gateway-home.jpg`}
+              alt={`Gateway Home`}
               fill
               loading="eager"
-              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+              className="rounded-md object-cover"
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
@@ -128,13 +128,12 @@ export default function Home() {
         </CardHeader>
         <CardContent className="space-y-4">
           <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
-            <Image
-              src={`images/placeholder.svg`}
-              alt={`placeholder`}
-              fill
-              loading="eager"
-              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
-            />
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/YG2s_j0Kh0o?si=5ijMK22xhPHMV1mh"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              className="h-full w-full rounded-md object-cover"
+            ></iframe>
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <Card className="bg-muted/20">
@@ -195,11 +194,11 @@ export default function Home() {
         <CardContent className="space-y-4">
           <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
             <Image
-              src={`images/placeholder.svg`}
-              alt={`placeholder`}
+              src={`/images/home/life-at-gateway-home.jpeg`}
+              alt={`Life at Gateway Home`}
               fill
               loading="eager"
-              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+              className="rounded-md object-cover"
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
@@ -261,11 +260,11 @@ export default function Home() {
         <CardContent className="space-y-4">
           <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
             <Image
-              src={`images/placeholder.svg`}
-              alt={`placeholder`}
+              src={`/images/home/history.jpeg`}
+              alt={`history`}
               fill
               loading="eager"
-              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+              className="rounded-md object-cover"
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
