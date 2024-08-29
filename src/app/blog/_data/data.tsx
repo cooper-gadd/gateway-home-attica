@@ -1,5 +1,31 @@
 export const posts = [
   {
+    id: "history",
+    title: "History",
+    author: "Doug Domes",
+    lead: "Gateway Home was founded a group of concerned citizens who recognized the need for a comfort care home in the community.",
+    content: (
+      <div>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          The home was established to provide free comfort care for those in
+          their last three months of a terminal illness, and to offer support
+          and respite care for their families. Since then, Gateway Home has
+          cared for hundreds of residents and their families, providing
+          compassionate care and support to those in need.
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Gateway Home is a non-profit organization that relies on the
+          generosity of the community to fund its operations. We are grateful
+          for the support of our donors, volunteers, and community partners, who
+          help us to provide comfort care to those in need. We are committed to
+          continuing our mission of providing compassionate care to our
+          residents and their families, and we look forward to serving the
+          community for many years to come.
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "3rd-annual-junkyard-reunion",
     title: "3rd Annual Junkyard Reunion",
     author: "Sara Brunner",
@@ -341,5 +367,94 @@ export const posts = [
         alt: "Final",
       },
     ],
+  },
+  {
+    id: "mission-statement",
+    title: "Mission Statement",
+    author: "Various Authors",
+    lead: "Our goal at Gateway Home is to provide a loving, caring, and peaceful environment for our residents and their families.",
+    content: (
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        Gateway Home is established to give comfort care to people who are
+        medically determined to be in their last stages of life (three months or
+        less). Our organization will provide both medical and spiritual care to
+        support the residents as they pass from this life to the next. Gateway
+        Home staff and volunteers are committed to provide dignified care,
+        comfort, and support for our residents and their families. Gateway Home
+        is a nonprofit organization, and does not charge for services provided.
+        Funding is accomplished through donations, bequests, and community
+        support. Admission is based solely on need.
+      </p>
+    ),
+  },
+  {
+    id: "resident-care",
+    title: "Resident Care",
+    author: "Various Authors",
+    lead: "All the needs of the resident are provided for 24 hours a day, 7 days per week.",
+    content: (
+      <div>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Gateway Home is an empathetic and loving comfort care home for the
+          terminally ill. It is a home-like setting that offers free comfort
+          care for those in their last three months of a terminal illness.
+          Gateway Home’s staff and trained volunteers are able to care for two
+          residents at a time, 24 hours a day, 365 days a year.
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Our primary goal is to provide comfort care, symptom control and pain
+          management for our residents, as well as to be a source of respite
+          care for the families and friends. Hands-on resident care is provided
+          around the clock, along with meals, laundry, companionship, as well as
+          emotional, and spiritual support. Comfort care honors the well-being
+          of every person and respects the dignity of human life.
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Admission to Gateway Home is based solely on need, regardless of age,
+          sex, race, religion or other distinctions . Referrals come from
+          several sources: Hospice, health care agencies, hospitals, physicians,
+          social workers, clergy, family, friends or the person themselves.
+          Priority is given to those who cannot receive adequate care at home.
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          There is no cost to the families that we serve, nor do we receive any
+          reimbursement from insurance companies. Gateway Home is funded solely
+          by donations, fundraising, memorial contributions and through the
+          generosity of our community.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "life-at-gateway-home",
+    title: "Life at Gateway Home",
+    author: "Various Authors",
+    lead: "Gateway Home is a place where residents can live out their final days in comfort and dignity.",
+    content: (
+      <div>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Gateway Home is a place where residents can live out their final days
+          in comfort and dignity. Our staff and volunteers are dedicated to
+          providing the highest quality care to our residents, and we strive to
+          create a warm and welcoming environment where residents can feel at
+          home. We offer a range of services to meet the unique needs of each
+          resident, including medical care, emotional support, and spiritual
+          care. Our goal is to create a sense of community and belonging for all
+          who live here, and we are committed to providing personalized care
+          that meets the individual needs of each resident.
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          At Gateway Home, we believe that every person deserves to live their
+          final days with dignity and respect. We are dedicated to providing
+          compassionate care to our residents and their families, and we strive
+          to create a peaceful and supportive environment where residents can
+          feel safe and cared for. Our staff and volunteers are committed to
+          providing the highest quality care to our residents, and we work
+          closely with families to ensure that their loved ones receive the care
+          and support they need. We are proud to be a part of the Gateway Home
+          family, and we look forward to welcoming you to our community.
+        </p>
+      </div>
+    ),
   },
 ];

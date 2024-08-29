@@ -26,209 +26,290 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import Link from "next/link";
 import { donors, leadership, socials } from "./_data/data";
-import { Mail, Newspaper, Play } from "lucide-react";
+import {
+  BookOpen,
+  Clock,
+  Coins,
+  DoorOpen,
+  HandHeart,
+  HeartHandshake,
+  HeartPulse,
+  HomeIcon,
+  Lamp,
+  Mail,
+  Newspaper,
+  Play,
+  RotateCw,
+  User,
+  Users,
+} from "lucide-react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-      <div className="text-center">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Gateway Home
-        </h1>
-        <p className="text-xl leading-7 text-muted-foreground [&:not(:first-child)]:mt-6">
-          A Comfort Care Home for individuals in the final stages of life.
-        </p>
-      </div>
-      <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
-        <Image
-          src={`images/placeholder.svg`}
-          alt={`placeholder`}
-          fill
-          loading="eager"
-          className="rounded-md object-cover"
-        />
-      </AspectRatio>
-      <Card id="mission-statement">
+      <Card>
         <CardHeader className="pb-3">
-          <CardTitle>Mission Statement</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Gateway Home</CardTitle>
+            <HomeIcon className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Our goal at Gateway Home is to provide a loving, caring, and
-            peaceful environment for our residents and their families.
+            Providing free, dignified care and spiritual support for those in
+            their final stages of life.
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          Gateway Home is established to give comfort care to people who are
-          medically determined to be in their last stages of life (three months
-          or less). Our organization will provide both medical and spiritual
-          care to support the residents as they pass from this life to the next.
-          Gateway Home staff and volunteers are committed to provide dignified
-          care, comfort, and support for our residents and their families.
-          Gateway Home is a nonprofit organization, and does not charge for
-          services provided. Funding is accomplished through donations,
-          bequests, and community support. Admission is based solely on need.
-        </CardContent>
-      </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <Card id="resident-care">
-          <CardHeader className="pb-3">
-            <CardTitle>Resident Care</CardTitle>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              All the needs of the resident are provided for 24 hours a day, 7
-              days per week.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Gateway Home is an empathetic and loving comfort care home for the
-              terminally ill. It is a home-like setting that offers free comfort
-              care for those in their last three months of a terminal illness.
-              Gateway Home’s staff and trained volunteers are able to care for
-              two residents at a time, 24 hours a day, 365 days a year.
-            </p>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Our primary goal is to provide comfort care, symptom control and
-              pain management for our residents, as well as to be a source of
-              respite care for the families and friends. Hands-on resident care
-              is provided around the clock, along with meals, laundry,
-              companionship, as well as emotional, and spiritual support.
-              Comfort care honors the well-being of every person and respects
-              the dignity of human life.
-            </p>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Admission to Gateway Home is based solely on need, regardless of
-              age, sex, race, religion or other distinctions . Referrals come
-              from several sources: Hospice, health care agencies, hospitals,
-              physicians, social workers, clergy, family, friends or the person
-              themselves. Priority is given to those who cannot receive adequate
-              care at home.
-            </p>
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              There is no cost to the families that we serve, nor do we receive
-              any reimbursement from insurance companies. Gateway Home is funded
-              solely by donations, fundraising, memorial contributions and
-              through the generosity of our community.
-            </p>
-          </CardContent>
-        </Card>
-        <div className="flex flex-col">
-          <Link
-            href="https://youtu.be/YG2s_j0Kh0o?si=rz_pSvlgUbGkM5Bd"
-            target="__blank"
-            className="group/image relative flex h-full gap-10"
-          >
-            <div className="group mx-auto h-full w-full bg-transparent dark:bg-transparent">
-              <div className="relative flex h-full w-full flex-1 flex-col space-y-2">
-                <Play className="absolute inset-0 z-10 m-auto h-20 w-20 text-black" />
-                <Image
-                  src="/images/gateway-logo.jpg"
-                  alt="header"
-                  width={800}
-                  height={800}
-                  className="aspect-square h-full w-full rounded-sm object-cover object-center blur-none transition-all duration-200 group-hover/image:blur-md"
-                />
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <Card id="life-at-gateway-home">
-        <CardHeader className="pb-3">
-          <CardTitle>Life at Gateway Home</CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Gateway Home is a place where residents can live out their final
-            days in comfort and dignity.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Gateway Home is a place where residents can live out their final
-            days in comfort and dignity. Our staff and volunteers are dedicated
-            to providing the highest quality care to our residents, and we
-            strive to create a warm and welcoming environment where residents
-            can feel at home. We offer a range of services to meet the unique
-            needs of each resident, including medical care, emotional support,
-            and spiritual care. Our goal is to create a sense of community and
-            belonging for all who live here, and we are committed to providing
-            personalized care that meets the individual needs of each resident.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            At Gateway Home, we believe that every person deserves to live their
-            final days with dignity and respect. We are dedicated to providing
-            compassionate care to our residents and their families, and we
-            strive to create a peaceful and supportive environment where
-            residents can feel safe and cared for. Our staff and volunteers are
-            committed to providing the highest quality care to our residents,
-            and we work closely with families to ensure that their loved ones
-            receive the care and support they need. We are proud to be a part of
-            the Gateway Home family, and we look forward to welcoming you to our
-            community.
-          </p>
+        <CardContent className="space-y-4">
+          <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
+            <Image
+              src={`images/placeholder.svg`}
+              alt={`placeholder`}
+              fill
+              loading="eager"
+              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+            />
+          </AspectRatio>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Compassionate End-of-Life Care</CardTitle>
+                  <HeartHandshake className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Providing free, dignified care and spiritual support for
+                  individuals in their final months of life.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Community-Funded Support</CardTitle>
+                  <HandHeart className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Operations are funded entirely through donations, bequests,
+                  and community generosity.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Admission Based on Need</CardTitle>
+                  <DoorOpen className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Admission is determined solely by need, ensuring care for
+                  those most vulnerable.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
         </CardContent>
         <CardFooter>
-          <InfiniteMovingCards speed="normal">
-            {Array.from({ length: 5 }).map((image, index) => (
-              <Card key={index} className="w-96 bg-muted/20">
-                <CardHeader>
-                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                    <Image
-                      src={`images/placeholder.svg`}
-                      alt={`placeholder`}
-                      fill
-                      loading="eager"
-                      className="rounded-md object-cover"
-                    />
-                  </AspectRatio>
-                </CardHeader>
-              </Card>
-            ))}
-          </InfiniteMovingCards>
+          <Button asChild>
+            <Link href={"/blog/mission-statement"}>Lean More</Link>
+          </Button>
         </CardFooter>
       </Card>
-      <Card id="history">
+      <Card>
         <CardHeader className="pb-3">
-          <CardTitle>History</CardTitle>
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Resident Care</CardTitle>
+            <HeartPulse className="h-4 w-4 text-muted-foreground" />
+          </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Gateway Home was founded a group of concerned citizens who
-            recognized the need for a comfort care home in the community.
+            Offering full-time care, emotional support, and a home-like
+            environment for terminally ill residents.
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            The home was established to provide free comfort care for those in
-            their last three months of a terminal illness, and to offer support
-            and respite care for their families. Since then, Gateway Home has
-            cared for hundreds of residents and their families, providing
-            compassionate care and support to those in need.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Gateway Home is a non-profit organization that relies on the
-            generosity of the community to fund its operations. We are grateful
-            for the support of our donors, volunteers, and community partners,
-            who help us to provide comfort care to those in need. We are
-            committed to continuing our mission of providing compassionate care
-            to our residents and their families, and we look forward to serving
-            the community for many years to come.
-          </p>
+        <CardContent className="space-y-4">
+          <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
+            <Image
+              src={`images/placeholder.svg`}
+              alt={`placeholder`}
+              fill
+              loading="eager"
+              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+            />
+          </AspectRatio>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>24/7 Care</CardTitle>
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Around-the-clock care for residents, including pain
+                  management, meals, and companionship.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Family Respite</CardTitle>
+                  <Users className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Offering emotional and spiritual support to both residents and
+                  their families.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>No Financial Burden</CardTitle>
+                  <Coins className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Care is provided free of charge, with no insurance
+                  involvement.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
         </CardContent>
         <CardFooter>
-          <InfiniteMovingCards speed="normal">
-            {Array.from({ length: 5 }).map((image, index) => (
-              <Card key={index} className="w-96 bg-muted/20">
-                <CardHeader>
-                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                    <Image
-                      src={`images/placeholder.svg`}
-                      alt={`placeholder`}
-                      fill
-                      loading="eager"
-                      className="rounded-md object-cover"
-                    />
-                  </AspectRatio>
-                </CardHeader>
-              </Card>
-            ))}
-          </InfiniteMovingCards>
+          <Button asChild>
+            <Link href={"/blog/resident-care"}>Lean More</Link>
+          </Button>
+        </CardFooter>
+      </Card>
+      <Card>
+        <CardHeader className="pb-3">
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>Life at Gateway Home</CardTitle>
+            <Lamp className="h-4 w-4 text-muted-foreground" />
+          </div>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Creating a welcoming environment where residents receive
+            personalized, compassionate care.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
+            <Image
+              src={`images/placeholder.svg`}
+              alt={`placeholder`}
+              fill
+              loading="eager"
+              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+            />
+          </AspectRatio>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Homelike Setting</CardTitle>
+                  <HomeIcon className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  A warm, welcoming environment where residents feel at home in
+                  their final days.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Individualized Support</CardTitle>
+                  <User className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Personalized care tailored to the unique needs of each
+                  resident.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Sense of Belonging</CardTitle>
+                  <Users className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Creating a community atmosphere where residents and families
+                  feel connected.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button asChild>
+            <Link href={"/blog/life-at-gateway-home"}>Lean More</Link>
+          </Button>
+        </CardFooter>
+      </Card>
+      <Card>
+        <CardHeader className="pb-3">
+          <div className="flex flex-row items-center justify-between space-y-0">
+            <CardTitle>History</CardTitle>
+            <BookOpen className="h-4 w-4 text-muted-foreground" />
+          </div>
+          <CardDescription className="max-w-lg text-balance leading-relaxed">
+            Learn about how we providing free comfort care to those in need,
+            supported by our community.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
+            <Image
+              src={`images/placeholder.svg`}
+              alt={`placeholder`}
+              fill
+              loading="eager"
+              className="rounded-md object-cover dark:brightness-[0.2] dark:grayscale"
+            />
+          </AspectRatio>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Opened 2019</CardTitle>
+                  <DoorOpen className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Serving the terminally ill with free comfort care since our
+                  opening.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Community-Driven</CardTitle>
+                  <Users className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Powered by the dedication of donors, volunteers, and community
+                  partners.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex flex-row items-center justify-between space-y-0">
+                  <CardTitle>Ongoing Mission</CardTitle>
+                  <RotateCw className="h-4 w-4 text-muted-foreground" />
+                </div>
+                <CardDescription className="max-w-lg text-balance leading-relaxed">
+                  Continuing our mission to provide compassionate care for years
+                  to come.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button asChild>
+            <Link href={"/blog/history"}>Lean More</Link>
+          </Button>
         </CardFooter>
       </Card>
       <Card id="donors">
@@ -651,6 +732,25 @@ export default function Home() {
           </Button>
         </CardFooter>
       </Card>
+      <div className="flex flex-col">
+        <Link
+          href="https://youtu.be/YG2s_j0Kh0o?si=rz_pSvlgUbGkM5Bd"
+          target="__blank"
+          className="group/image relative flex h-full gap-10"
+        >
+          <div className="group mx-auto h-full w-full bg-transparent dark:bg-transparent">
+            <div className="relative flex h-full w-full flex-1 flex-col space-y-2">
+              <Play className="absolute inset-0 z-10 m-auto h-20 w-20 text-black" />
+              <Image
+                src="/images/gateway-logo.jpg"
+                alt="header"
+                fill
+                className="aspect-square h-full w-full rounded-sm object-cover object-center blur-none transition-all duration-200 group-hover/image:blur-md"
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }

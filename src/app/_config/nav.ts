@@ -81,30 +81,6 @@ export const navConfig: NavConfig = {
       title: "Home",
       items: [
         {
-          title: "Mission Statement",
-          href: "/#mission-statement",
-          icon: Target,
-          items: [],
-        },
-        {
-          title: "Resident Care",
-          href: "/#resident-care",
-          icon: Heart,
-          items: [],
-        },
-        {
-          title: "Life at Gateway Home",
-          href: "/#life-at-gateway-home",
-          icon: Smile,
-          items: [],
-        },
-        {
-          title: "History",
-          href: "/#history",
-          icon: BookOpen,
-          items: [],
-        },
-        {
           title: "Donors",
           href: "/#donors",
           icon: Gift,
@@ -163,6 +139,12 @@ export const navConfig: NavConfig = {
       title: "Blog",
       items: [
         {
+          title: "History",
+          href: "/blog/history",
+          icon: NotebookPen,
+          items: [],
+        },
+        {
           title: "3rd Annual Junkyard Reunion",
           href: "/blog/3rd-annual-junkyard-reunion",
           icon: NotebookPen,
@@ -189,6 +171,24 @@ export const navConfig: NavConfig = {
         {
           title: "New Patio and Pergola",
           href: "/blog/new-patio-and-pergola",
+          icon: NotebookPen,
+          items: [],
+        },
+        {
+          title: "Mission Statement",
+          href: "/blog/mission-statement",
+          icon: NotebookPen,
+          items: [],
+        },
+        {
+          title: "Resident Care",
+          href: "/blog/resident-care",
+          icon: NotebookPen,
+          items: [],
+        },
+        {
+          title: "Life at Gateway Home",
+          href: "/blog/life-at-gateway-home",
           icon: NotebookPen,
           items: [],
         },
