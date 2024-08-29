@@ -8,10 +8,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { Home, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CommandMenu } from "./command-menu";
+import Image from "next/image";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -42,9 +43,13 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
-          <Home
+          <Image
+            src="/images/gateway-home.png"
+            alt="Gateway Home Attica"
+            width={150}
+            height={150}
             className={cn(
-              "h-6 w-6 hover:text-foreground",
+              "hover:text-foreground",
               pathname === "/" ? "text-foreground" : "text-muted-foreground",
             )}
           />
@@ -79,9 +84,13 @@ export function Navbar() {
                 href="/"
                 className="flex items-center gap-2 text-lg font-semibold md:text-base"
               >
-                <Home
+                <Image
+                  src="/images/gateway-home.png"
+                  alt="Gateway Home Attica"
+                  width={50}
+                  height={50}
                   className={cn(
-                    "h-6 w-6 hover:text-foreground",
+                    "hover:text-foreground",
                     pathname === "/"
                       ? "text-foreground"
                       : "text-muted-foreground",
