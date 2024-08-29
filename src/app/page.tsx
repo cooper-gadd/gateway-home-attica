@@ -40,7 +40,6 @@ import {
   HomeIcon,
   Mail,
   Newspaper,
-  Play,
   RotateCw,
   User,
   Users,
@@ -742,25 +741,6 @@ export default function Home() {
           </Button>
         </CardFooter>
       </Card>
-      <div className="flex flex-col">
-        <Link
-          href="https://youtu.be/YG2s_j0Kh0o?si=rz_pSvlgUbGkM5Bd"
-          target="__blank"
-          className="group/image relative flex h-full gap-10"
-        >
-          <div className="group mx-auto h-full w-full bg-transparent dark:bg-transparent">
-            <div className="relative flex h-full w-full flex-1 flex-col space-y-2">
-              <Play className="absolute inset-0 z-10 m-auto h-20 w-20 text-black" />
-              <Image
-                src="/images/gateway-logo.jpg"
-                alt="header"
-                fill
-                className="aspect-square h-full w-full rounded-sm object-cover object-center blur-none transition-all duration-200 group-hover/image:blur-md"
-              />
-            </div>
-          </div>
-        </Link>
-      </div>
     </div>
   );
 }
