@@ -70,7 +70,7 @@ export default function Home() {
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Compassionate End-of-Life Care</CardTitle>
@@ -82,7 +82,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Community-Funded Support</CardTitle>
@@ -94,7 +94,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Admission Based on Need</CardTitle>
@@ -136,7 +136,7 @@ export default function Home() {
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>24/7 Care</CardTitle>
@@ -148,7 +148,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Family Respite</CardTitle>
@@ -160,7 +160,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>No Financial Burden</CardTitle>
@@ -202,7 +202,7 @@ export default function Home() {
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Homelike Setting</CardTitle>
@@ -214,7 +214,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Individualized Support</CardTitle>
@@ -226,7 +226,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Sense of Belonging</CardTitle>
@@ -268,7 +268,7 @@ export default function Home() {
             />
           </AspectRatio>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Opened 2019</CardTitle>
@@ -280,7 +280,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Community-Driven</CardTitle>
@@ -292,7 +292,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card>
+            <Card className="bg-muted/20">
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
                   <CardTitle>Ongoing Mission</CardTitle>
