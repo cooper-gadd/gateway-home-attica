@@ -44,6 +44,7 @@ import {
   Users,
 } from "lucide-react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -385,7 +386,11 @@ export default function Home() {
                       alt={leader.name}
                       fill
                       loading="eager"
-                      className="rounded-md object-cover"
+                      className={cn(
+                        "rounded-md object-cover",
+                        leader.image === "/images/placeholder.svg" &&
+                          "dark:brightness-[0.2] dark:grayscale",
+                      )}
                     />
                   </AspectRatio>
                   <CardTitle>{leader.name}</CardTitle>

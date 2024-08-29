@@ -29,7 +29,7 @@ export const posts = [
     id: "3rd-annual-junkyard-reunion",
     title: "3rd Annual Junkyard Reunion",
     author: "Sara Brunner",
-    lead: "The Junkyard Reunion was an absolute HOOT! A wonderful success put on by some awesome folks. Thank you to Angela and Steve Zymowski who did the legwork on this and managed a fabulous event. Thank you to the Folsom Trailblazers, Vintage Cow, and Beer Justice Brewing for the incredible food! Thank you to Ken Barrett Chevrolet and ProX Window and Door for their generous sponsorship. All of our beautiful basket donors! Lastly, all of you who attended, brought cars, tried for baskets, and ate some phenomenal food! We couldn’t do what we do without each of you!",
+    lead: "The Junkyard Reunion was an absolute HOOT!",
     content: (
       <div>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -80,7 +80,7 @@ export const posts = [
     id: "7th-annual-golfing-for-gateway",
     title: "7th Annual Golfing for Gateway",
     author: "Sara Brunner",
-    lead: "We had a phenomenal day on the course today in our 7th Annual Golfing for Gateway event! Thank you to Quiet Times for hosting us, thank you to the planning crew, to the volunteers, to the donors and basket makers, and to the golfers! Gateway Home is better for knowing each of you.",
+    lead: "We had a phenomenal day on the course today in our 7th Annual Golfing for Gateway event!",
     content: (
       <div>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -135,7 +135,7 @@ export const posts = [
     id: "3rd-annual-judy-russell-memorial-golf-tournament",
     title: "3rd Annual Judy Russell Memorial Golf Tournament",
     author: "Sara Brunner",
-    lead: "Thanks to the Russell family for another successful Judy Russell Memorial golf tournament! We would also like to sincerely thank every golfer, sponsor, volunteer, and basket donation. Our community rocks!!",
+    lead: "Thanks to the Russell family for another successful Judy Russell Memorial golf tournament!",
     content: (
       <div>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
