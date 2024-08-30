@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -13,28 +13,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CommandMenu } from "./command-menu";
 import Image from "next/image";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export function Navbar() {
   const pathname = usePathname();
-  const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = useState(true);
-
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
-    if (typeof current === "number") {
-      const direction = current - scrollYProgress.getPrevious()!;
-
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(true);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
-      }
-    }
-  });
 
   const navItems = [
     {
@@ -60,20 +41,7 @@ export function Navbar() {
   ];
 
   return (
-    <motion.header
-      initial={{
-        opacity: 1,
-        y: -100,
-      }}
-      animate={{
-        y: visible ? 0 : -100,
-        opacity: visible ? 1 : 0,
-      }}
-      transition={{
-        duration: 0.2,
-      }}
-      className="sticky top-0 z-50 flex h-16 w-full items-center gap-4 border-b border-border/40 bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-6"
-    >
+    <header className="top-0 z-50 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link
           href="/"
@@ -150,6 +118,6 @@ export function Navbar() {
           </div>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }
