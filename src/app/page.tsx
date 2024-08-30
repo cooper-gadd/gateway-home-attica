@@ -26,7 +26,7 @@ import { donors, leadership } from "./_data/data";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <div className="container flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
       <Card id="mission-statement">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
@@ -60,7 +60,7 @@ export default function Home() {
         <Card>
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Compassionate End-of-Life Care</CardTitle>
+              <CardTitle>Compassionate Care</CardTitle>
               <HeartHandshake className="h-4 w-4 text-muted-foreground" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
