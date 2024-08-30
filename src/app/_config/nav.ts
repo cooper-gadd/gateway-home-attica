@@ -91,17 +91,6 @@ export const navConfig: NavConfig = {
   ],
   pageNav: [
     {
-      title: "Home",
-      items: [
-        {
-          title: "Leadership",
-          href: "/#leadership",
-          icon: Users,
-          items: [],
-        },
-      ],
-    },
-    {
       title: "Events",
       items: [
         {
@@ -131,6 +120,12 @@ export const navConfig: NavConfig = {
           title: "History",
           href: "/blog/history",
           icon: BookOpen,
+          items: [],
+        },
+        {
+          title: "Leadership",
+          href: "/blog/leadership",
+          icon: Users,
           items: [],
         },
         {

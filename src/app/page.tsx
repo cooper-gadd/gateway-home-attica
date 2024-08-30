@@ -4,21 +4,11 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import Image from "next/image";
-import Link from "next/link";
-import { donors, leadership } from "./_data/data";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { cn } from "@/lib/utils";
 import {
   Clock,
   Coins,
@@ -30,8 +20,9 @@ import {
   User,
   Users,
 } from "lucide-react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import { donors, leadership } from "./_data/data";
 
 export default function Home() {
   return (
@@ -362,6 +353,11 @@ export default function Home() {
             Our leadership team is made up of dedicated individuals who are
             passionate about providing comfort and care to those in need.
           </CardDescription>
+          <div>
+            <Button variant={"ghost"} asChild>
+              <Link href={"/blog/leadership"}>Learn More</Link>
+            </Button>
+          </div>
         </CardHeader>
         <CardContent>
           <div className="container">
@@ -387,32 +383,6 @@ export default function Home() {
                       {leader.position}
                     </CardDescription>
                   </CardHeader>
-                  {leader.bio && (
-                    <CardFooter>
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button>Read Bio</Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogHeader>
-                            <DialogTitle>
-                              About {leader.name.split(" ")[0]}
-                            </DialogTitle>
-                            <DialogDescription>
-                              {leader.bio.map((p) => (
-                                <p
-                                  className="lg:leading-7 lg:[&:not(:first-child)]:mt-6"
-                                  key={p}
-                                >
-                                  {p}
-                                </p>
-                              ))}
-                            </DialogDescription>
-                          </DialogHeader>
-                        </DialogContent>
-                      </Dialog>
-                    </CardFooter>
-                  )}
                 </Card>
               ))}
             </div>
