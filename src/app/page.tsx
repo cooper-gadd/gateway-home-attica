@@ -236,7 +236,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/history"}>Lean More</Link>
+              <Link href={"/blog/our-history"}>Lean More</Link>
             </Button>
           </div>
         </CardHeader>

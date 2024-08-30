@@ -28,8 +28,8 @@ export const posts: {
   link?: string;
 }[] = [
   {
-    id: "history",
-    title: "History",
+    id: "our-history",
+    title: "Our History",
     icon: BookOpen,
     author: "Doug Domes",
     lead: "Gateway Home was founded a group of concerned citizens who recognized the need for a comfort care home in the community.",

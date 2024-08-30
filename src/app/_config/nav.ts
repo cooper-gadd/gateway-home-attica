@@ -117,8 +117,8 @@ export const navConfig: NavConfig = {
       title: "Blog",
       items: [
         {
-          title: "History",
-          href: "/blog/history",
+          title: "Our History",
+          href: "/blog/our-history",
           icon: BookOpen,
           items: [],
         },
