@@ -8,6 +8,7 @@ import {
   Heart,
   HelpCircle,
   type LucideProps,
+  Newspaper,
   Smile,
   Target,
 } from "lucide-react";
@@ -21,8 +22,9 @@ export const posts: {
   >;
   author: string;
   lead: string;
-  content: JSX.Element;
+  content?: JSX.Element;
   images?: { src: string; alt: string }[];
+  link?: string;
 }[] = [
   {
     id: "history",
@@ -535,6 +537,14 @@ export const posts: {
         alt: "Bricks",
       },
     ],
+  },
+  {
+    id: "spring-summer-2024-newletter",
+    title: "Spring/Summer 2024 Newsletter",
+    icon: Newspaper,
+    author: "Various Authors",
+    lead: "This month's newsletter highlights the compassionate care provided by Gateway Home, our upcoming fundraising events, and a special feature on the dedicated volunteers who make our mission possible. Learn about our resident stories, see how your donations are making an impact, and get a sneak peek into our future plans.",
+    link: "/pdfs/spring-summer-2024-newletter.pdf",
   },
   {
     id: "new-patio-and-pergola",

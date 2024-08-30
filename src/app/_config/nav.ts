@@ -19,6 +19,7 @@ import {
   Home,
   Mail,
   Map,
+  Newspaper,
   NotebookPen,
   Phone,
   Printer,
@@ -160,6 +161,12 @@ export const navConfig: NavConfig = {
           title: "Gateway Home Dedicates Brick Walkways",
           href: "/blog/gateway-home-dedicates-brick-walkways",
           icon: BrickWall,
+          items: [],
+        },
+        {
+          title: "Spring/Summer 2024 Newsletter",
+          href: "/pdfs/spring-summer-2024-newletter.pdf",
+          icon: Newspaper,
           items: [],
         },
         {

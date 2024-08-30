@@ -27,7 +27,11 @@ export default function Blog() {
           <CardContent>{post.lead}</CardContent>
           <CardFooter>
             <Button asChild>
-              <Link href={`/blog/${post.id}`}>Read More</Link>
+              {post.link ? (
+                <Link href={post.link}>Read More</Link>
+              ) : (
+                <Link href={`/blog/${post.id}`}>Read More</Link>
+              )}
             </Button>
           </CardFooter>
         </Card>
