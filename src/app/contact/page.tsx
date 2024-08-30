@@ -49,7 +49,7 @@ export default function Page() {
             <Mail className="h-4 w-4 text-muted-foreground" />
           </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Email us to subscribe to our newsletter to receive updates on our
+            Email us to subscribe to our mailing list to receive updates on our
             programs and events.
           </CardDescription>
         </CardHeader>
