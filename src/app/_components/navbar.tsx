@@ -12,7 +12,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CommandMenu } from "./command-menu";
-import Image from "next/image";
+import { Logo } from "./logo";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -47,13 +47,8 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
-          <Image
-            src="/images/gateway-home.png"
-            alt="Gateway Home Attica"
-            width={145}
-            height={145}
-          />
-          <span className="sr-only">Gateway Home Attica</span>
+          <Logo className="h-12 w-12" />
+          <span className="sr-only">Gateway Home</span>
         </Link>
         {navItems.map((item) => (
           <Link
@@ -84,13 +79,8 @@ export function Navbar() {
                 href="/"
                 className="flex items-center gap-2 text-lg font-semibold md:text-base"
               >
-                <Image
-                  src="/images/gateway-home.png"
-                  alt="Gateway Home Attica"
-                  width={50}
-                  height={50}
-                />
-                <span className="sr-only">Gateway Home Attica</span>
+                <Logo className="h-12 w-12" />
+                <span className="sr-only">Gateway Home</span>
               </Link>
             </SheetClose>
             {navItems.map((item) => (
