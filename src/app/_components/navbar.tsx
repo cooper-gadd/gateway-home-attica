@@ -34,6 +34,10 @@ export function Navbar() {
       title: "Donate",
       href: "/donate",
     },
+    {
+      title: "Contact",
+      href: "/contact",
+    },
   ];
 
   return (
@@ -46,8 +50,8 @@ export function Navbar() {
           <Image
             src="/images/gateway-home.png"
             alt="Gateway Home Attica"
-            width={150}
-            height={150}
+            width={145}
+            height={145}
             className={cn(
               "hover:text-foreground",
               pathname === "/" ? "text-foreground" : "text-muted-foreground",

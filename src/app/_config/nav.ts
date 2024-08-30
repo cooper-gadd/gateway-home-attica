@@ -19,7 +19,6 @@ import {
   Home,
   Mail,
   Map,
-  Newspaper,
   NotebookPen,
   Phone,
   Printer,
@@ -83,6 +82,11 @@ export const navConfig: NavConfig = {
       href: "/donate",
       icon: HandCoins,
     },
+    {
+      title: "Contact",
+      href: "/contact",
+      icon: Contact,
+    },
   ],
   pageNav: [
     {
@@ -92,24 +96,6 @@ export const navConfig: NavConfig = {
           title: "Leadership",
           href: "/#leadership",
           icon: Users,
-          items: [],
-        },
-        {
-          title: "FAQ",
-          href: "/#faq",
-          icon: CircleHelp,
-          items: [],
-        },
-        {
-          title: "Contact Us",
-          href: "/#contact-us",
-          icon: Contact,
-          items: [],
-        },
-        {
-          title: "Newsletter",
-          href: "/#newsletter",
-          icon: Newspaper,
           items: [],
         },
       ],
@@ -144,6 +130,12 @@ export const navConfig: NavConfig = {
           title: "History",
           href: "/blog/history",
           icon: BookOpen,
+          items: [],
+        },
+        {
+          title: "Frequently Asked Questions",
+          href: "/blog/fequently-asked-questions",
+          icon: CircleHelp,
           items: [],
         },
         {
