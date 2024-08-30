@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Events() {
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <>
       {events.map((event) => (
         <Card key={event.id}>
           <CardHeader className="pb-3">
@@ -37,6 +37,6 @@ export default function Events() {
           </CardFooter>
         </Card>
       ))}
-    </div>
+    </>
   );
 }

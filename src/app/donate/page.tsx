@@ -14,8 +14,8 @@ import { Cuboid, Gift, HandCoins, ScrollText } from "lucide-react";
 
 export default function Donate() {
   return (
-    <div className="scroll-container flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+    <>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Card id="financial-donations">
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
@@ -74,7 +74,7 @@ export default function Donate() {
               <Gift className="h-4 w-4 text-muted-foreground" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Create your own basket, or donate funds for us to create one.
+              We raise a good portion of funds via basket raffles.
             </CardDescription>
           </CardHeader>
           <CardFooter>
@@ -179,6 +179,6 @@ export default function Donate() {
           </div>
         </CardFooter>
       </Card>
-    </div>
+    </>
   );
 }

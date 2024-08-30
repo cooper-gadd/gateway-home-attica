@@ -26,7 +26,7 @@ import { donors, leadership } from "./_data/data";
 
 export default function Home() {
   return (
-    <div className="container flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <>
       <Card id="mission-statement">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
@@ -389,6 +389,6 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-    </div>
+    </>
   );
 }

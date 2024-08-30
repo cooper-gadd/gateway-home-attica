@@ -13,7 +13,7 @@ import { BriefcaseBusiness } from "lucide-react";
 
 export default function Hiring() {
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <>
       <Card>
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
@@ -42,6 +42,6 @@ export default function Hiring() {
           </CardFooter>
         </Card>
       ))}
-    </div>
+    </>
   );
 }

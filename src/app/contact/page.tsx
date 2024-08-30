@@ -11,7 +11,7 @@ import { socials } from "./_data/data";
 
 export default function Page() {
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+    <>
       <Card id="contact-us">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
@@ -54,6 +54,6 @@ export default function Page() {
           </CardDescription>
         </CardHeader>
       </Card>
-    </div>
+    </>
   );
 }
