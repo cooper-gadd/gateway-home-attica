@@ -10,12 +10,18 @@ import {
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { cn } from "@/lib/utils";
 import {
+  Briefcase,
+  Calendar,
   Clock,
   Coins,
   DoorOpen,
   HandHeart,
+  Heart,
   HeartHandshake,
+  HelpingHand,
   HomeIcon,
+  Medal,
+  Ribbon,
   RotateCw,
   User,
   Users,
@@ -27,7 +33,7 @@ import { donors, leadership } from "./_data/data";
 export default function Home() {
   return (
     <>
-      <Card id="mission-statement">
+      <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Gateway Home
@@ -94,7 +100,7 @@ export default function Home() {
           </CardHeader>
         </Card>
       </div>
-      <Card id="resident-care">
+      <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Resident Care
@@ -159,7 +165,7 @@ export default function Home() {
           </CardHeader>
         </Card>
       </div>
-      <Card id="life-at-gateway">
+      <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Life at Gateway Home
@@ -225,7 +231,7 @@ export default function Home() {
           </CardHeader>
         </Card>
       </div>
-      <Card id="history">
+      <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Our History
@@ -292,7 +298,7 @@ export default function Home() {
           </CardHeader>
         </Card>
       </div>
-      <Card id="donors">
+      <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Donors
@@ -344,7 +350,44 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <Card id="leadership">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Top-Tier Support</CardTitle>
+              <Medal className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              Over 100 donors contributing significantly to Gateway Home.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Community Commitment</CardTitle>
+              <Heart className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              Donors from local businesses and families unite to sustain Gateway
+              Home&apos;s mission.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Grateful Recognition</CardTitle>
+              <Ribbon className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              Each contribution, large or small, is vital to our ability to
+              provide compassionate care.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      </div>
+      <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Leadership
@@ -389,6 +432,44 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Experienced Leadership</CardTitle>
+              <Briefcase className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              A diverse team of professionals with backgrounds in business,
+              healthcare, and community service.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Dedicated to Service</CardTitle>
+              <HelpingHand className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              Leaders who are deeply committed to supporting Gateway Home&apos;s
+              residents and their families.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Community Engagement</CardTitle>
+              <Calendar className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              Actively involved in organizing fundraising events and fostering
+              community connections.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      </div>
     </>
   );
 }
