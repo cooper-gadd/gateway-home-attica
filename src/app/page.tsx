@@ -15,6 +15,7 @@ import {
   Clock,
   Coins,
   DoorOpen,
+  Flag,
   HandHeart,
   Heart,
   HeartHandshake,
@@ -22,7 +23,6 @@ import {
   HomeIcon,
   Medal,
   Ribbon,
-  RotateCw,
   User,
   Users,
 } from "lucide-react";
@@ -373,12 +373,24 @@ export default function Home() {
         <Card>
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Opened 2019</CardTitle>
+              <CardTitle>Dedicated 2016</CardTitle>
+              <Flag className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <CardDescription className="max-w-lg text-balance leading-relaxed">
+              The 2016 dedication of Gateway Home was a tribute to our Lord God,
+              the founder of the home.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className="pb-3">
+            <div className="flex flex-row items-center justify-between space-y-0">
+              <CardTitle>Established 2019</CardTitle>
               <DoorOpen className="h-4 w-4 text-muted-foreground" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Serving the terminally ill with free comfort care since our
-              opening.
+              establishment.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -391,18 +403,6 @@ export default function Home() {
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Powered by the dedication of donors, volunteers, and community
               partners.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Ongoing Mission</CardTitle>
-              <RotateCw className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Continuing our mission to provide compassionate care for years to
-              come.
             </CardDescription>
           </CardHeader>
         </Card>
