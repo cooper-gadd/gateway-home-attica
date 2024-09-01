@@ -50,15 +50,48 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="container">
-            <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
-              <Image
-                src={`/images/home/gateway-home.jpg`}
-                alt={`Gateway Home`}
-                fill
-                loading="eager"
-                className="rounded-md object-cover"
-              />
-            </AspectRatio>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/gateway-home/front.jpg`}
+                    alt={`Front of Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="h-full rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/gateway-home/established-brick.jpg`}
+                  alt={`Established Brick at Gateway Home`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/gateway-home/dedication-brick.jpg`}
+                  alt={`Dedication of Gateway Home`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/gateway-home/back.jpg`}
+                    alt={`Back of Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
