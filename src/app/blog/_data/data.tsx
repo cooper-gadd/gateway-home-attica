@@ -189,7 +189,7 @@ export const posts: {
             Kimberly Kadziolka
           </h2>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Member since 2024
+            Member starting 2025
           </p>
         </div>
         <div className="mb-6">

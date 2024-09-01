@@ -64,8 +64,8 @@ export default function Home() {
               </div>
               <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                 <Image
-                  src={`/images/home/gateway-home/established-brick.jpg`}
-                  alt={`Established Brick at Gateway Home`}
+                  src={`/images/home/gateway-home/dedication-brick.jpg`}
+                  alt={`Dedication of Gateway Home`}
                   fill
                   loading="eager"
                   className="rounded-md object-cover"
@@ -73,8 +73,8 @@ export default function Home() {
               </AspectRatio>
               <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                 <Image
-                  src={`/images/home/gateway-home/dedication-brick.jpg`}
-                  alt={`Dedication of Gateway Home`}
+                  src={`/images/home/gateway-home/established-brick.jpg`}
+                  alt={`Established Brick at Gateway Home`}
                   fill
                   loading="eager"
                   className="rounded-md object-cover"
@@ -225,15 +225,48 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="container">
-            <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
-              <Image
-                src={`/images/home/life-at-gateway-home.jpeg`}
-                alt={`Life at Gateway Home`}
-                fill
-                loading="eager"
-                className="rounded-md object-cover"
-              />
-            </AspectRatio>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/life-at-gateway-home/resident-room.jpg`}
+                    alt={`Resident Room at Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="h-full rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/life-at-gateway-home/kitchen.jpg`}
+                  alt={`Kitchen at Gateway Home`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/life-at-gateway-home/hallway.jpg`}
+                  alt={`Hallway at Gateway Home`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/life-at-gateway-home/living-room.jpg`}
+                    alt={`Living Room at Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
@@ -291,15 +324,48 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="container">
-            <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
-              <Image
-                src={`/images/home/history.jpeg`}
-                alt={`history`}
-                fill
-                loading="eager"
-                className="rounded-md object-cover"
-              />
-            </AspectRatio>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/our-history/established-event.jpg`}
+                    alt={`Established Event at Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="h-full rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/our-history/va.jpg`}
+                  alt={`Veterans at Gateway Home`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/our-history/demo.jpg`}
+                  alt={`Demolition at Gateway Home`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/our-history/first-fundraiser.jpg`}
+                    alt={`First Fundraiser at Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
