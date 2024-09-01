@@ -117,14 +117,24 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="container">
-            <AspectRatio ratio={16 / 9} className="rounded-md bg-muted">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/YG2s_j0Kh0o?si=5ijMK22xhPHMV1mh"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                className="h-full w-full rounded-md object-cover"
-              ></iframe>
-            </AspectRatio>
+            <video
+              width="2000"
+              controls
+              preload="none"
+              loop
+              muted
+              autoPlay
+              playsInline
+              className="h-full w-full rounded-md object-cover"
+            >
+              <source src="/videos/promo.mp4" type="video/mp4" />
+              <track
+                src="/captions/promo.vtt"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+            </video>
           </div>
         </CardContent>
       </Card>
