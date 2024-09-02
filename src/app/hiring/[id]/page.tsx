@@ -31,10 +31,10 @@ export default function Posting({
           <Users className="mr-1 h-4 w-4" /> {hiring.department}
         </span>
         <span className="flex items-center">
-          <User className="mr-1 h-4 w-4" /> {hiring.locationType}
+          <User className="mr-1 h-4 w-4" /> In Person
         </span>
         <span className="flex items-center">
-          <Clock className="mr-1 h-4 w-4" /> {hiring.type}
+          <Clock className="mr-1 h-4 w-4" /> Part Time
         </span>
       </div>
       <div>

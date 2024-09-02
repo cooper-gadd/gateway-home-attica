@@ -32,7 +32,7 @@ export default function Hiring() {
               <CardTitle>{hiring.role}</CardTitle>
               <hiring.icon className="h-4 w-4 text-muted-foreground" />
             </div>
-            <CardDescription>{hiring.location}</CardDescription>
+            <CardDescription>Attica, NY</CardDescription>
           </CardHeader>
           <CardContent>{hiring.aboutYou}</CardContent>
           <CardFooter>

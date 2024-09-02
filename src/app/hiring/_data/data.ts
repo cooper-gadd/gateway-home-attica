@@ -17,9 +17,6 @@ export const hirings: {
   aboutYou: string;
   bonusIfYouHave: string;
   department: string;
-  location: string;
-  locationType: string;
-  type: string;
 }[] = [
   {
     id: "volunteer",
@@ -39,9 +36,6 @@ export const hirings: {
     bonusIfYouHave:
       "Have experience in care giving, fundraising, grounds keeping, housekeeping, or maintenance and building repair.",
     department: "Miscellaneous",
-    location: "Attica, New York",
-    locationType: "In Person",
-    type: "Part Time",
   },
   {
     id: "care-aide",
@@ -66,9 +60,6 @@ export const hirings: {
       "Someone who has completed orientation and training as given by nurses prior to employment, can function in a comfort care environment with minimal direct supervision, and is in good physical condition to allow standing, bending, stretching, walking, pulling, pushing, and/or lifting of light to moderate loads.",
     bonusIfYouHave: "Have previous experience in a similar role.",
     department: "Resident Care",
-    location: "Attica, New York",
-    locationType: "In Person",
-    type: "Part Time",
   },
   {
     id: "rn-lpn",
@@ -89,8 +80,5 @@ export const hirings: {
       "A registered nurse or licensed practical nurse who can work under the direction of the VNA/Hospice and is responsible for the coordination of care of residents.",
     bonusIfYouHave: "Have previous experience in a similar role.",
     department: "Resident Care",
-    location: "Attica, New York",
-    locationType: "In Person",
-    type: "Part Time",
   },
 ];
