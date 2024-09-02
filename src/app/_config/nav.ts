@@ -91,6 +91,47 @@ export const navConfig: NavConfig = {
   ],
   pageNav: [
     {
+      title: "About",
+      items: [
+        {
+          title: "Mission Statement",
+          href: "/about/mission-statement",
+          icon: Target,
+          items: [],
+        },
+        {
+          title: "Resident Care",
+          href: "/blog/resident-care",
+          icon: Heart,
+          items: [],
+        },
+        {
+          title: "Life at Gateway Home",
+          href: "/blog/life-at-gateway-home",
+          icon: Smile,
+          items: [],
+        },
+        {
+          title: "Our History",
+          href: "/blog/our-history",
+          icon: BookOpen,
+          items: [],
+        },
+        {
+          title: "Donors",
+          href: "/blog/donors",
+          icon: HandCoins,
+          items: [],
+        },
+        {
+          title: "Leadership",
+          href: "/blog/leadership",
+          icon: Users,
+          items: [],
+        },
+      ],
+    },
+    {
       title: "Events",
       items: [
         {
@@ -116,18 +157,6 @@ export const navConfig: NavConfig = {
     {
       title: "Blog",
       items: [
-        {
-          title: "Our History",
-          href: "/blog/our-history",
-          icon: BookOpen,
-          items: [],
-        },
-        {
-          title: "Leadership",
-          href: "/blog/leadership",
-          icon: Users,
-          items: [],
-        },
         {
           title: "Frequently Asked Questions",
           href: "/blog/fequently-asked-questions",
@@ -168,30 +197,6 @@ export const navConfig: NavConfig = {
           title: "New Patio and Pergola",
           href: "/blog/new-patio-and-pergola",
           icon: Hammer,
-          items: [],
-        },
-        {
-          title: "Donors",
-          href: "/blog/donors",
-          icon: HandCoins,
-          items: [],
-        },
-        {
-          title: "Mission Statement",
-          href: "/blog/mission-statement",
-          icon: Target,
-          items: [],
-        },
-        {
-          title: "Resident Care",
-          href: "/blog/resident-care",
-          icon: Heart,
-          items: [],
-        },
-        {
-          title: "Life at Gateway Home",
-          href: "/blog/life-at-gateway-home",
-          icon: Smile,
           items: [],
         },
       ],

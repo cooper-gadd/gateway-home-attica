@@ -44,7 +44,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/mission-statement"}>Learn More</Link>
+              <Link href={"/about/mission-statement"}>Learn More</Link>
             </Button>
           </div>
         </CardHeader>
@@ -144,7 +144,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/resident-care"}>Learn More</Link>
+              <Link href={"/about/resident-care"}>Learn More</Link>
             </Button>
           </div>
         </CardHeader>
@@ -219,7 +219,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/life-at-gateway-home"}>Lean More</Link>
+              <Link href={"/about/life-at-gateway-home"}>Lean More</Link>
             </Button>
           </div>
         </CardHeader>
@@ -318,7 +318,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/our-history"}>Lean More</Link>
+              <Link href={"/about/our-history"}>Lean More</Link>
             </Button>
           </div>
         </CardHeader>
@@ -417,7 +417,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/donors"}>Learn More</Link>
+              <Link href={"/about/donors"}>Learn More</Link>
             </Button>
           </div>
         </CardHeader>
@@ -507,7 +507,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/blog/leadership"}>Learn More</Link>
+              <Link href={"/about/leadership"}>Learn More</Link>
             </Button>
           </div>
         </CardHeader>
