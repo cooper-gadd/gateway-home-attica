@@ -24,7 +24,7 @@ export default function Blog() {
               {post.author}
             </CardDescription>
           </CardHeader>
-          <CardContent>{post.lead}</CardContent>
+          <CardContent>{post.description}</CardContent>
           <CardFooter>
             <Button asChild>
               {post.link ? (

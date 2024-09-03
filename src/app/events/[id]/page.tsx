@@ -16,7 +16,7 @@ export default function Event({
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         {event.title}
       </h1>
-      <p className="text-sm text-muted-foreground">{event.description}</p>
+      <p className="text-sm text-muted-foreground">{event.type}</p>
       {event.content}
       <div>
         <Button asChild>

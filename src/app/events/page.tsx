@@ -21,10 +21,10 @@ export default function Events() {
               <event.icon className="h-4 w-4 text-muted-foreground" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              {event.description}
+              {event.type}
             </CardDescription>
           </CardHeader>
-          <CardContent>{event.lead}</CardContent>
+          <CardContent>{event.description}</CardContent>
           <CardFooter className="flex items-center gap-4">
             <Button asChild>
               <Link target="_blank" href={event.link}>
