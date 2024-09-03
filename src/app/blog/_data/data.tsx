@@ -8,6 +8,12 @@ import {
   Newspaper,
 } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
+import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
+import { ThirdAnnualJunkyardReunion } from "../_components/third-annual-junkyard-reunion";
+import { SeventhAnnualGolfingForGateway } from "../_components/seventh-annual-golfing-for-gateway";
+import { ThirdAnnualJudyRussellMemorialGolfTournament } from "../_components/third-annual-judy-russell-memorial-golf-tournament";
+import { GatewayHomeDedicatesBrickWalkways } from "../_components/gateway-home-dedicates-brick-walkways";
+import { NewPatioAndPergola } from "../_components/new-patio-and-pergola";
 
 export const posts: {
   id: string;
@@ -27,223 +33,7 @@ export const posts: {
     icon: HelpCircle,
     author: "Various Authors",
     lead: "Here are some of the most frequently asked questions about Gateway Home.",
-    content: (
-      <div>
-        <div className="mb-6">
-          <p className="text-xl text-muted-foreground">
-            Here are some of the most frequently asked questions about Gateway
-            Home.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            What are Palliative Care, Hospice and Comfort Care?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Palliative care can be appropriate at any stage of an illness. It is
-            a holistic approach to health care that goes beyond the physical
-            wellbeing of the resident, attending to their spiritual, emotional
-            and psychological needs. Hospice care is a specialized form of
-            palliative care designed to support those in the final stages of a
-            terminal illness. Comfort Care is available during the last 90 days
-            of someone’s life with the resident and family agreeing there will
-            be no heroic measures taken to prolong life.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            How is Gateway Home Funded?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Our services are provided free-of-charge to our home’s residents. We
-            are an independent, not-for-profit organization and money to run
-            Gateway Home is generated entirely through community support,
-            donations and grants. Our annual operating expenses must be covered
-            by monies received from memorials, honorary donations, bequests,
-            donations from people, corporations, service organizations, plus
-            grants and fund-raising events.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            A nonprofit grant is financial support given to nonprofits by
-            corporations, foundations, or government agencies. They are
-            beneficial for nonprofits because they provide the opportunity for
-            additional funding that doesn’t need to be paid back and they
-            increase awareness of their organization. Grants have also allowed
-            us to make some improvements to our property that wouldn’t have been
-            possible without the additional funding. Gateway Home relies solely
-            on fundraising, memorials, donations, and grants for funding. With
-            operating expenses exceeding $200k per year a lot of hard work and
-            research is done to apply for grants in hopes of receiving funds to
-            help keep our doors open. Gateway Home has been fortunate enough to
-            be granted several grants over the years that allowed the doors to
-            open and that have helped make it possible for us to serve our
-            community.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            We have been generously supported by various grant sources. The{" "}
-            <strong>Hope</strong> grant was used for home improvement. The{" "}
-            <strong>Conable Family Foundation</strong> and the{" "}
-            <strong>East Hill Foundation</strong> grants were utilized for
-            renovations. The <strong>William F. Thiel Trust</strong> provided us
-            with funds for medical equipment. The{" "}
-            <strong>Ralph C. Wilson Legacy Funds</strong> were used for
-            caregiver training and operating expenses.{" "}
-            <strong>Home Depot</strong> provided us with a grant for an ADA
-            compliant ramp. The <strong>Garman Family Foundation</strong> funded
-            a generator for us. <strong>United Way</strong> contributed to our
-            operating expenses, and the <strong>Odd Fellow & Rebekah</strong>{" "}
-            grant was used for nurses and care aid payroll. These grants have
-            played a significant role in helping us continue to fulfill our
-            mission.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Do you receive help from the government?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            We do not receive any financial funding from the government or from
-            insurance companies.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Who provides direct care at Gateway Home?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            All care given at Gateway Home is provided by volunteers or staff
-            members who are trained to provide the best possible care. We change
-            caregivers every two hours during our day and evening shifts so our
-            caregivers come in renewed and refreshed. Our overnight shift from
-            10-8 is usually manned by one caregiver. Interested individuals do
-            not need to have any healthcare experience to become a volunteer –
-            just an open heart and a willingness to learn how to care for
-            another person. We help volunteers do the rest!
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Who is eligible for admission to Gateway Home?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Admission to Gateway Home is based on an assessment of those who
-            have the greatest need and the fewest options. A physician must have
-            determined that the person has a terminal illness and is in their
-            last three months of life. We are not able to accept every person
-            who is referred and can only care for up to two dying residents at
-            one time. Each case is evaluated carefully by our Assessment
-            Caregivers and Director of Resident Care and priority is given to
-            those people who have the greatest need at the time; i.e., those who
-            are at home with limited adequate care giving support. Other
-            considerations involve the complexity of nursing care that some
-            people may require.
-          </p>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            We do not use intravenous fluids, feeding tubes or CPR
-            (resuscitation). It ensures that comfort care, pain management, and
-            symptom control will accompany a natural death process, in an
-            atmosphere filled with love. It is not uncommon to have multiple
-            people waiting for the next available bed. When a bed is available,
-            our Assessment team evaluates all who are waiting, and choose the
-            one who has the greatest need; not who is next on the list for
-            admission.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            What is the process for admission to Gateway Home?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            The process for admission to Gateway Home begins with a referral
-            from a physician, social worker, family member, friend, or other
-            healthcare provider. Once a referral is received, our Assessment
-            team will contact the person who is referred to schedule an
-            assessment. The assessment is done in the person’s home or hospital
-            room and takes about an hour. During the assessment, the person’s
-            medical history, current symptoms, and care needs are discussed. The
-            person’s family members or caregivers are also encouraged to
-            participate in the assessment. After the assessment is completed,
-            the person is placed on our waiting list. When a bed becomes
-            available, the person is admitted to Gateway Home. The person’s
-            family members or caregivers are encouraged to visit Gateway Home
-            before the person is admitted to become familiar with the facility
-            and meet the staff. Once the person is admitted, the person’s family
-            members or caregivers are encouraged to visit as often as they like.
-            We also encourage family members or caregivers to participate in the
-            person’s care as much as they are able. We believe that family
-            members and caregivers are an important part of the person’s care
-            team and we welcome their involvement. We also provide support and
-            education to family members and caregivers to help them care for
-            their loved one. We believe that involving family members and
-            caregivers in the person’s care helps to improve the person’s
-            quality of life and provides comfort and support to the person and
-            their family members or caregivers. We also provide support and
-            education to family members and caregivers to help them care for
-            their loved one. We believe that involving family members and
-            caregivers in the person’s care helps to improve the person’s
-            quality of life and provides comfort and support to the person and
-            their family members or caregivers.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            What items should my loved one bring to Gateway Home?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            When a person is admitted to Gateway Home, they are encouraged to
-            bring personal items that will make them feel more at home. We
-            encourage residents to bring their own clothing, personal care
-            items, and any other items that will make them feel more
-            comfortable. We provide all the necessary medical equipment and
-            supplies, as well as snacks. We also provide all the necessary
-            linens and towels. We have a washer and dryer on site for residents
-            to use. We also have a small library of books, puzzles, and games
-            for residents to enjoy. We have a beautiful garden and patio area
-            for residents to enjoy the outdoors. We also have a large living
-            room with a fireplace and a television for residents to enjoy. We
-            encourage residents to bring their own personal items to make their
-            stay more comfortable. We also encourage family members to visit
-            often and to participate in the care of their loved one. We have a
-            family room with a kitchenette and a dining area for family members
-            to use. We also have a small chapel for residents and family members
-            to use for prayer and reflection.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            What if my loved one who is residing at Gateway Home lives beyond
-            three months?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            At times there may be remission of a person’s disease, and it may be
-            necessary to be discharged from Gateway Home to an alternative
-            placement: such as home, or moving in with a family member, or to a
-            Nursing home. It’s amazing to see, and such a blessing, that with
-            some conditions, proper symptom control management, socialization
-            and tender loving care, people do go into remission and live longer
-            than what was expected. The staff at Gateway Home will work closely
-            with the Hospice team and family to determine the best alternative
-            placement for our resident. Residents may return to Gateway Home and
-            die peacefully when that time is appropriate and a bed is available.
-          </p>
-        </div>
-        <div className="mb-6">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Are volunteer opportunities available?
-          </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              YES! In fact, we could not operate without volunteers. There are
-              many volunteer roles, so please consider your individual gifts and
-              how you might utilize those to support the Gateway Home. The
-              greatest need is resident care volunteers. If you prefer not to
-              work with residents, there are numerous other opportunities
-              available.
-            </p>
-          </p>
-        </div>
-      </div>
-    ),
+    content: <FrequentlyAskedQuestions />,
   },
   {
     id: "3rd-annual-junkyard-reunion",
@@ -251,21 +41,7 @@ export const posts: {
     icon: Car,
     author: "Sara Brunner",
     lead: "The Junkyard Reunion was an absolute HOOT!",
-    content: (
-      <div>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          The Junkyard Reunion was an absolute HOOT! A wonderful success put on
-          by some awesome folks. Thank you to Angela and Steve Zymowski who did
-          the legwork on this and managed a fabulous event. Thank you to the
-          Folsom Trailblazers, Vintage Cow, and Beer Justice Brewing for the
-          incredible food! Thank you to Ken Barrett Chevrolet and ProX Window
-          and Door for their generous sponsorship. All of our beautiful basket
-          donors! Lastly, all of you who attended, brought cars, tried for
-          baskets, and ate some phenomenal food! We couldn’t do what we do
-          without each of you!
-        </p>
-      </div>
-    ),
+    content: <ThirdAnnualJunkyardReunion />,
     images: [
       {
         src: "/images/blog/3rd-annual-junkyard-reunion/cars-1.jpg",
@@ -303,17 +79,7 @@ export const posts: {
     icon: Flag,
     author: "Sara Brunner",
     lead: "We had a phenomenal day on the course today in our 7th Annual Golfing for Gateway event!",
-    content: (
-      <div>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          We had a phenomenal day on the course today in our 7th Annual Golfing
-          for Gateway event! Thank you to Quiet Times for hosting us, thank you
-          to the planning crew, to the volunteers, to the donors and basket
-          makers, and to the golfers! Gateway Home is better for knowing each of
-          you.
-        </p>
-      </div>
-    ),
+    content: <SeventhAnnualGolfingForGateway />,
     images: [
       {
         src: "/images/blog/7th-annual-golfing-for-gateway/pink-ladies.jpg",
@@ -359,15 +125,7 @@ export const posts: {
     icon: Flag,
     author: "Sara Brunner",
     lead: "Thanks to the Russell family for another successful Judy Russell Memorial golf tournament!",
-    content: (
-      <div>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Thanks to the Russell family for another successful Judy Russell
-          Memorial golf tournament! We would also like to sincerely thank every
-          golfer, sponsor, volunteer, and basket donation. Our community rocks!!
-        </p>
-      </div>
-    ),
+    content: <ThirdAnnualJudyRussellMemorialGolfTournament />,
     images: [
       {
         src: "/images/blog/3rd-annual-judy-russell-memorial-golf-tournament/carts.jpg",
@@ -401,88 +159,7 @@ export const posts: {
     icon: BrickWall,
     author: "Brain Quinn",
     lead: "Brick by brick, those who wanted to honor the memory of a Gateway Home resident contributed to walkways at the comfort care facility. They were able to see the results when the walkways were dedicated recently.",
-    content: (
-      <div>
-        <p className="text-xl text-muted-foreground">
-          Brick by brick, those who wanted to honor the memory of a Gateway Home
-          resident contributed to walkways at the comfort care facility. They
-          were able to see the results when the walkways were dedicated
-          recently.
-        </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Gateway Director Sara Brunner said the brick walkways part of the
-          project took about a year. Gateway, 91 Main St., is a home for the
-          terminally ill offering free comfort care for those in their last
-          three months of a terminal illness.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          “We collected brick orders and printed bricks,” she said. “There’s the
-          back walkway and the front walkway. They have a checkered pattern.”
-        </blockquote>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Each brick, Brunner said, is a representation of love and memories
-          from everyone at the dedication.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          “Piece by piece, the road to Gateway is truly paved with the beloved
-          remembrances of those who have gone before us. In this way, you have
-          chosen to have their name and their legacy remembered. You have also
-          supported this mission to move forward and make a lasting contribution
-          to others whom we have yet to meet,” she said. “Walking in every
-          morning brings a smile to my face to think of these beautiful souls
-          that we have cared for and the lovely supporters who think that what
-          we’re doing here is worth investing in.”
-        </blockquote>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Brunner invited those who had bought bricks for the walkways to come
-          to Gateway Home when they need to feel close to the loved ones in
-          whose memory they bought them.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          “Sit in the garden so exquisitely done by Rosie Domes. It truly is a
-          place of peace,” Brunner said, talking about the effort by Domes, a
-          volunteer.
-        </blockquote>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Brunner told family members of former residents that Gateway thinks of
-          them often and wonders how they’re doing these days.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          “Today, we dedicate this memorial and we are not simply erecting a
-          monument or a walkway made of stone, but we’re creating a lasting
-          testament to people’s enduring impact,” she said. “This memorial will
-          serve as a reminder of their contributions and as a symbol of the
-          values they held dear. We appreciate each and every one of you.
-          Without every person in this audience, what we do here and the impact
-          that we make would not be possible.”
-        </blockquote>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Gateway President Doug Domes said the East Hill Foundation has been
-          good to Gateway Home in terms of giving funds, for the brick walkways
-          and also for improvements made at Gateway. He said when East Hill Vice
-          President Warren Greatbatch came to see the home, it was an honor to
-          have him.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          “The East Hill Foundation has helped us with, right in the beginning,
-          with some of the demolition that took place, helped us with our
-          kitchen, our shower facilities, roof repair, porch, pergola and our
-          brick and walkway,” he said.
-        </blockquote>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Gateway received more than $121,000 in grant funds, through East Hill,
-          for the improvements, he said.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          Brunner said, “Eventually, we’re going to have to be at the end of our
-          journey here. To know that there is something in this community and a
-          whole group of beautiful people waiting to help you makes that thought
-          just a little bit easier. Once you have been here you know that you’re
-          our family. We are honored to be here today to present to you this
-          memorial brick walkway.”
-        </blockquote>
-      </div>
-    ),
+    content: <GatewayHomeDedicatesBrickWalkways />,
     images: [
       {
         src: "/images/blog/gateway-home-dedicates-brick-walkways/doug-speaking.jpg",
@@ -520,56 +197,7 @@ export const posts: {
     icon: Hammer,
     author: "Nathan Montford",
     lead: "Another wonderful project for the Gateway Home done and ready for the resident families to enjoy spending time with loved ones on the decorative concrete pad and underneath the new fancy pergola. Once again, it was a project that just simply couldn’t have gotten done without the help of the community stepping up and volunteering.",
-    content: (
-      <div>
-        <p className="text-xl text-muted-foreground">
-          Another wonderful project for the Gateway Home done and ready for the
-          resident families to enjoy spending time with loved ones on the
-          decorative concrete pad and underneath the new fancy pergola. Once
-          again, it was a project that just simply couldn’t have gotten done
-          without the help of the community stepping up and volunteering.
-        </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          The hands-on portion of this project started Memorial Day weekend as
-          Doug Domes, Todd Gadd, Greg Scholand and I began digging and prepping
-          the area for concrete. Once the dirt and stone settled through time,
-          the next step was to form and pour the concrete pad. That’s when we
-          needed the expertise of masons. Dave Reding and brothers, Guy and
-          Dustin Westermeier graciously volunteered and stepped in to pour the
-          decorative concrete pad. The team nailed it by doing an absolutely
-          amazing job that shows in the pictures, yet only gives justice when
-          you see it in person.
-        </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Last week was the final step to the project. With the help and
-          carpentry skills of Roger Blair, Bill Hulme and Bob Rebmann, the
-          pergola was finally erected. This just brought everything all together
-          in a way that exceeded our expectations since planning the project
-          many months ago.
-        </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          This project was yet another eye opener. Each volunteer did this not
-          for the pat on the back or praise, but for their community and in some
-          cases, in memory of loved ones of their own. It was truly an honor
-          working with all of them to see this project through.
-        </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          I’d like to personally thank everyone who helped make this community
-          project possible from start to finish. I know the folks at the Gateway
-          Home are extremely pleased with the outcome and the families who will
-          use it, I’m sure will appreciate what you’ve all done to provide this
-          to them.
-        </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          If any of you are looking to volunteer at the Gateway Home in any
-          capacity, please feel free to reach out to see what you can do to
-          help.
-        </p>
-        <blockquote className="mt-6 border-l-2 pl-6 italic">
-          “It takes a village”
-        </blockquote>
-      </div>
-    ),
+    content: <NewPatioAndPergola />,
     images: [
       {
         src: "/images/blog/new-patio-and-pergola/truck.jpg",
