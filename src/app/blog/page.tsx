@@ -21,7 +21,7 @@ export default function Blog() {
               <post.icon className="h-4 w-4 text-muted-foreground" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
-              {post.author}
+              {post.date} • {post.readTime}
             </CardDescription>
           </CardHeader>
           <CardContent>{post.description}</CardContent>
