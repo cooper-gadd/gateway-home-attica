@@ -4,7 +4,7 @@ import Image from "next/image";
 export function GatewayHomeDedicatesBrickWalkways() {
   return (
     <div>
-      <p className="text-xl text-muted-foreground">
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
         Brick by brick, those who wanted to honor the memory of a Gateway Home
         resident contributed to walkways at the comfort care facility. They were
         able to see the results when the walkways were dedicated recently.

@@ -1,44 +1,27 @@
-export function NewPatioAndPergola() {
-  const images = [
-    {
-      src: "/images/blog/new-patio-and-pergola/truck.jpg",
-      alt: "Truck",
-    },
-    {
-      src: "/images/blog/new-patio-and-pergola/pouring.jpg",
-      alt: "Pouring",
-    },
-    {
-      src: "/images/blog/new-patio-and-pergola/memory.jpg",
-      alt: "Memory",
-    },
-    {
-      src: "/images/blog/new-patio-and-pergola/drying.jpg",
-      alt: "Drying",
-    },
-    {
-      src: "/images/blog/new-patio-and-pergola/pillars.jpg",
-      alt: "Pillars",
-    },
-    {
-      src: "/images/blog/new-patio-and-pergola/roof.jpg",
-      alt: "Roof",
-    },
-    {
-      src: "/images/blog/new-patio-and-pergola/final.jpg",
-      alt: "Final",
-    },
-  ];
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
 
+export function NewPatioAndPergola() {
   return (
     <div>
-      <p className="text-xl text-muted-foreground">
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
         Another wonderful project for the Gateway Home done and ready for the
         resident families to enjoy spending time with loved ones on the
         decorative concrete pad and underneath the new fancy pergola. Once
         again, it was a project that just simply couldn’t have gotten done
         without the help of the community stepping up and volunteering.
       </p>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/new-patio-and-pergola/truck.jpg`}
+            alt={`Truck`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         The hands-on portion of this project started Memorial Day weekend as
         Doug Domes, Todd Gadd, Greg Scholand and I began digging and prepping
@@ -49,12 +32,34 @@ export function NewPatioAndPergola() {
         concrete pad. The team nailed it by doing an absolutely amazing job that
         shows in the pictures, yet only gives justice when you see it in person.
       </p>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/new-patio-and-pergola/pouring.jpg`}
+            alt={`Pouring`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         Last week was the final step to the project. With the help and carpentry
         skills of Roger Blair, Bill Hulme and Bob Rebmann, the pergola was
         finally erected. This just brought everything all together in a way that
         exceeded our expectations since planning the project many months ago.
       </p>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/new-patio-and-pergola/roof.jpg`}
+            alt={`Roof`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         This project was yet another eye opener. Each volunteer did this not for
         the pat on the back or praise, but for their community and in some
@@ -75,6 +80,17 @@ export function NewPatioAndPergola() {
       <blockquote className="mt-6 border-l-2 pl-6 italic">
         “It takes a village”
       </blockquote>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/new-patio-and-pergola/final.jpg`}
+            alt={`Final`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
     </div>
   );
 }

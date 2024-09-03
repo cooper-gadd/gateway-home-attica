@@ -2,12 +2,6 @@ export function FrequentlyAskedQuestions() {
   return (
     <div>
       <div className="mb-6">
-        <p className="text-xl text-muted-foreground">
-          Here are some of the most frequently asked questions about Gateway
-          Home.
-        </p>
-      </div>
-      <div className="mb-6">
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           What are Palliative Care, Hospice and Comfort Care?
         </h2>
