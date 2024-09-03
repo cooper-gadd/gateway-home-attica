@@ -1,7 +1,5 @@
 import {
   BrickWall,
-  Car,
-  Flag,
   Hammer,
   HelpCircle,
   type LucideProps,
@@ -9,9 +7,6 @@ import {
 } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
-import { ThirdAnnualJunkyardReunion } from "../_components/third-annual-junkyard-reunion";
-import { SeventhAnnualGolfingForGateway } from "../_components/seventh-annual-golfing-for-gateway";
-import { ThirdAnnualJudyRussellMemorialGolfTournament } from "../_components/third-annual-judy-russell-memorial-golf-tournament";
 import { GatewayHomeDedicatesBrickWalkways } from "../_components/gateway-home-dedicates-brick-walkways";
 import { NewPatioAndPergola } from "../_components/new-patio-and-pergola";
 
@@ -33,30 +28,6 @@ export const posts: {
     author: "Various Authors",
     lead: "Here are some of the most frequently asked questions about Gateway Home.",
     content: <FrequentlyAskedQuestions />,
-  },
-  {
-    id: "3rd-annual-junkyard-reunion",
-    title: "3rd Annual Junkyard Reunion",
-    icon: Car,
-    author: "Sara Brunner",
-    lead: "The Junkyard Reunion was an absolute HOOT!",
-    content: <ThirdAnnualJunkyardReunion />,
-  },
-  {
-    id: "7th-annual-golfing-for-gateway",
-    title: "7th Annual Golfing for Gateway",
-    icon: Flag,
-    author: "Sara Brunner",
-    lead: "We had a phenomenal day on the course today in our 7th Annual Golfing for Gateway event!",
-    content: <SeventhAnnualGolfingForGateway />,
-  },
-  {
-    id: "3rd-annual-judy-russell-memorial-golf-tournament",
-    title: "3rd Annual Judy Russell Memorial Golf Tournament",
-    icon: Flag,
-    author: "Sara Brunner",
-    lead: "Thanks to the Russell family for another successful Judy Russell Memorial golf tournament!",
-    content: <ThirdAnnualJudyRussellMemorialGolfTournament />,
   },
   {
     id: "gateway-home-dedicates-brick-walkways",
