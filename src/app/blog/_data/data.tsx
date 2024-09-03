@@ -1,12 +1,5 @@
-import {
-  BrickWall,
-  Hammer,
-  HelpCircle,
-  type LucideProps,
-  Newspaper,
-} from "lucide-react";
+import { BrickWall, Hammer, type LucideProps, Newspaper } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
-import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
 import { GatewayHomeDedicatesBrickWalkways } from "../_components/gateway-home-dedicates-brick-walkways";
 import { NewPatioAndPergola } from "../_components/new-patio-and-pergola";
 
@@ -23,17 +16,6 @@ export const posts: {
   content?: JSX.Element;
   link?: string;
 }[] = [
-  {
-    id: "fequently-asked-questions",
-    title: "Frequently Asked Questions",
-    icon: HelpCircle,
-    author: "Various Authors",
-    date: "August 28, 2024",
-    readTime: "13 minute read",
-    description:
-      "Here are some of the most frequently asked questions about Gateway Home.",
-    content: <FrequentlyAskedQuestions />,
-  },
   {
     id: "gateway-home-dedicates-brick-walkways",
     title: "Gateway Home Dedicates Brick Walkways",

@@ -1,4 +1,5 @@
 import { Donors } from "../_components/donors";
+import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
 import { Leadership } from "../_components/leadership";
 import { LifeAtGatewayHome } from "../_components/life-at-gateway-home";
 import { MissionStatement } from "../_components/mission-statement";
@@ -11,6 +12,12 @@ export const abouts = [
     title: "Donors",
     author: "Various Authors",
     content: <Donors />,
+  },
+  {
+    id: "fequently-asked-questions",
+    title: "Frequently Asked Questions",
+    author: "Various Authors",
+    content: <FrequentlyAskedQuestions />,
   },
   {
     id: "leadership",

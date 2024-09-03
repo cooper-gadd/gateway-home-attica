@@ -99,32 +99,38 @@ export const navConfig: NavConfig = {
         },
         {
           title: "Resident Care",
-          href: "/blog/resident-care",
+          href: "/about/resident-care",
           icon: Heart,
           items: [],
         },
         {
           title: "Life at Gateway Home",
-          href: "/blog/life-at-gateway-home",
+          href: "/about/life-at-gateway-home",
           icon: Smile,
           items: [],
         },
         {
           title: "Our History",
-          href: "/blog/our-history",
+          href: "/about/our-history",
           icon: BookOpen,
           items: [],
         },
         {
           title: "Donors",
-          href: "/blog/donors",
+          href: "/about/donors",
           icon: HandCoins,
           items: [],
         },
         {
           title: "Leadership",
-          href: "/blog/leadership",
+          href: "/about/leadership",
           icon: Users,
+          items: [],
+        },
+        {
+          title: "Frequently Asked Questions",
+          href: "/about/fequently-asked-questions",
+          icon: CircleHelp,
           items: [],
         },
       ],
@@ -155,12 +161,6 @@ export const navConfig: NavConfig = {
     {
       title: "Blog",
       items: [
-        {
-          title: "Frequently Asked Questions",
-          href: "/blog/fequently-asked-questions",
-          icon: CircleHelp,
-          items: [],
-        },
         {
           title: "Gateway Home Dedicates Brick Walkways",
           href: "/blog/gateway-home-dedicates-brick-walkways",

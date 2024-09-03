@@ -579,6 +579,21 @@ export default function Home() {
           </CardHeader>
         </Card>
       </div>
+      <Card>
+        <CardHeader className="pb-3 text-center">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Curious about Gateway Home?
+          </CardTitle>
+          <CardDescription className="text-balance leading-relaxed">
+            Discover the answers to our most frequently asked questions.
+          </CardDescription>
+          <div>
+            <Button variant={"ghost"} asChild>
+              <Link href={"/about/fequently-asked-questions"}>Learn More</Link>
+            </Button>
+          </div>
+        </CardHeader>
+      </Card>
     </>
   );
 }
