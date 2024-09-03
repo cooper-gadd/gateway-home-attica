@@ -1,7 +1,3 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Card, CardHeader } from "@/components/ui/card";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import Image from "next/image";
 import { posts } from "../_data/data";
 
 export const dynamic = "force-dynamic";
@@ -20,27 +16,6 @@ export default function Event({
       </h1>
       <p className="text-sm text-muted-foreground">{post.author}</p>
       {post.content}
-      {post.images && (
-        <InfiniteMovingCards speed="normal">
-          <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
-            {post.images.map((image) => (
-              <Card key={image.src} className="w-96 bg-muted/20">
-                <CardHeader>
-                  <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      loading="eager"
-                      className="rounded-md object-cover"
-                    />
-                  </AspectRatio>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </InfiniteMovingCards>
-      )}
     </>
   );
 }

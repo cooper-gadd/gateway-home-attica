@@ -1,3 +1,6 @@
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
+
 export function GatewayHomeDedicatesBrickWalkways() {
   return (
     <div>
@@ -30,6 +33,17 @@ export function GatewayHomeDedicatesBrickWalkways() {
         cared for and the lovely supporters who think that what we’re doing here
         is worth investing in.”
       </blockquote>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/gateway-home-dedicates-brick-walkways/sara.jpg`}
+            alt={`Sara Brunner`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         Brunner invited those who had bought bricks for the walkways to come to
         Gateway Home when they need to feel close to the loved ones in whose
@@ -53,6 +67,17 @@ export function GatewayHomeDedicatesBrickWalkways() {
         person in this audience, what we do here and the impact that we make
         would not be possible.”
       </blockquote>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/gateway-home-dedicates-brick-walkways/sara-speaking.jpg`}
+            alt={`Sara Speaking`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         Gateway President Doug Domes said the East Hill Foundation has been good
         to Gateway Home in terms of giving funds, for the brick walkways and
@@ -70,6 +95,17 @@ export function GatewayHomeDedicatesBrickWalkways() {
         Gateway received more than $121,000 in grant funds, through East Hill,
         for the improvements, he said.
       </p>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/gateway-home-dedicates-brick-walkways/doug-speaking.jpg`}
+            alt={`Doug Speaking`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
       <blockquote className="mt-6 border-l-2 pl-6 italic">
         Brunner said, “Eventually, we’re going to have to be at the end of our
         journey here. To know that there is something in this community and a
@@ -78,6 +114,17 @@ export function GatewayHomeDedicatesBrickWalkways() {
         our family. We are honored to be here today to present to you this
         memorial brick walkway.”
       </blockquote>
+      <div className="container max-w-4xl p-4 md:p-8">
+        <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+          <Image
+            src={`/images/blog/gateway-home-dedicates-brick-walkways/doug-sara.jpg`}
+            alt={`Doug and Sara`}
+            fill
+            loading="eager"
+            className="h-full rounded-md object-cover"
+          />
+        </AspectRatio>
+      </div>
     </div>
   );
 }
