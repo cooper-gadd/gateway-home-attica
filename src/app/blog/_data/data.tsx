@@ -24,7 +24,7 @@ export const posts: {
     date: "July 13, 2024",
     readTime: "4 minute read",
     description:
-      "Brick by brick, those who wanted to honor the memory of a Gateway Home resident contributed to walkways at the comfort care facility. They were able to see the results when the walkways were dedicated recently.",
+      "Join Gateway Home as they unveil their touching new memorial brick walkways. This article captures the emotional dedication ceremony, where each brick represents a cherished memory of a former resident. Discover how this project, supported by the East Hill Foundation, has transformed the home's exterior while creating a lasting tribute to those who have passed. Director Sara Brunner and President Doug Domes share insights on the project's significance and the continued community support that makes Gateway Home's mission possible.",
     content: <GatewayHomeDedicatesBrickWalkways />,
   },
   {
@@ -35,8 +35,19 @@ export const posts: {
     date: "Spring/Summer 2024",
     readTime: "8 minute read",
     description:
-      "This newsletter highlights the compassionate care provided by Gateway Home, our upcoming fundraising events, and a special feature on the dedicated volunteers who make our mission possible. Learn about our resident stories, see how your donations are making an impact, and get a sneak peek into our future plans.",
-    link: "/pdfs/spring-summer-2024-newletter.pdf",
+      "Our Spring/Summer 2024 newsletter introduces our new director, Sara Brunner, and highlights Gateway Home's ongoing commitment to compassionate end-of-life care. Learn about our community outreach efforts, upcoming fundraising events, and exciting new projects like our brick walkway initiative. Discover how our volunteers and staff work together to provide comfort and support to residents and their families, and find out how you can contribute to our mission.",
+    link: "/pdfs/spring-summer-2024-newsletter.pdf",
+  },
+  {
+    id: "spring-2023-newletter",
+    title: "Spring 2023 Newsletter",
+    icon: Newspaper,
+    author: "Various Authors",
+    date: "Spring 2023",
+    readTime: "10 minute read",
+    description:
+      "Our Spring 2023 newsletter offers insights into the compassionate care provided at Gateway Home. It features a message from our director, volunteer spotlights, upcoming events, and updates on our community partnerships. Learn about our mission, the importance of comfort care homes, and how you can support our work.",
+    link: "/pdfs/spring-2023-newsletter.pdf",
   },
   {
     id: "new-patio-and-pergola",
@@ -46,7 +57,7 @@ export const posts: {
     date: "September 1, 2022",
     readTime: "2 minute read",
     description:
-      "Another wonderful project for the Gateway Home done and ready for the resident families to enjoy spending time with loved ones on the decorative concrete pad and underneath the new fancy pergola. Once again, it was a project that just simply couldn’t have gotten done without the help of the community stepping up and volunteering.",
+      "Experience the community spirit that built Gateway Home's new outdoor space. This heartwarming story details the construction of a decorative concrete patio and pergola, showcasing the power of volunteerism. From initial groundwork to the final touches, learn how local skilled workers and dedicated community members came together to create a beautiful area for residents and their families to enjoy.",
     content: <NewPatioAndPergola />,
   },
 ];
