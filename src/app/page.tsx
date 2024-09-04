@@ -587,12 +587,59 @@ export default function Home() {
           <CardDescription className="text-balance leading-relaxed">
             Discover the answers to our most frequently asked questions.
           </CardDescription>
+
           <div>
             <Button variant={"ghost"} asChild>
               <Link href={"/about/fequently-asked-questions"}>Learn More</Link>
             </Button>
           </div>
         </CardHeader>
+        <CardContent>
+          <div className="container">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/fequently-asked-questions/pancake-breakfast.jpg`}
+                    alt={`Pancake Breakfast at Gateway Home`}
+                    fill
+                    loading="eager"
+                    className="h-full rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/fequently-asked-questions/birthday.jpg`}
+                  alt={`Birthday Celebration`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
+                <Image
+                  src={`/images/home/fequently-asked-questions/concert.jpg`}
+                  alt={`Concert`}
+                  fill
+                  loading="eager"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+              <div className="md:col-span-2">
+                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
+                  <Image
+                    src={`/images/home/fequently-asked-questions/junkyard.jpg`}
+                    alt={`Junkyard`}
+                    fill
+                    loading="eager"
+                    className="rounded-md object-cover"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
+          </div>
+        </CardContent>
       </Card>
     </>
   );
