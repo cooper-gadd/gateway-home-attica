@@ -29,7 +29,7 @@ export default function Hiring() {
         <Card key={hiring.id}>
           <CardHeader>
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>{hiring.role}</CardTitle>
+              <CardTitle>{hiring.title}</CardTitle>
               <hiring.icon className="h-4 w-4 text-muted-foreground" />
             </div>
             <CardDescription>Attica, NY</CardDescription>

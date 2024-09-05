@@ -27,7 +27,7 @@ export default function Page() {
       </Card>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-3">
         {socials.map((social) => (
-          <Link key={social.id} target="_blank" href={social.link}>
+          <Link key={social.title} target="_blank" href={social.link}>
             <Card>
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">

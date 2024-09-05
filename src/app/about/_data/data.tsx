@@ -1,3 +1,12 @@
+import {
+  BookOpen,
+  CircleHelp,
+  HandCoins,
+  Heart,
+  Smile,
+  Target,
+  Users,
+} from "lucide-react";
 import { Donors } from "../_components/donors";
 import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
 import { Leadership } from "../_components/leadership";
@@ -8,45 +17,52 @@ import { ResidentCare } from "../_components/resident-care";
 
 export const abouts = [
   {
-    id: "donors",
-    title: "Donors",
-    author: "Various Authors",
-    content: <Donors />,
-  },
-  {
-    id: "fequently-asked-questions",
-    title: "Frequently Asked Questions",
-    author: "Various Authors",
-    content: <FrequentlyAskedQuestions />,
-  },
-  {
-    id: "leadership",
-    title: "Leadership",
-    author: "Various Authors",
-    content: <Leadership />,
-  },
-  {
-    id: "life-at-gateway-home",
-    title: "Life at Gateway Home",
-    author: "Various Authors",
-    content: <LifeAtGatewayHome />,
-  },
-  {
     id: "mission-statement",
     title: "Mission Statement",
+    icon: Target,
     author: "Various Authors",
     content: <MissionStatement />,
   },
   {
+    id: "resident-care",
+    title: "Resident Care",
+    icon: Heart,
+    author: "Various Authors",
+    content: <ResidentCare />,
+  },
+  {
+    id: "life-at-gateway-home",
+    title: "Life at Gateway Home",
+    icon: Smile,
+    author: "Various Authors",
+    content: <LifeAtGatewayHome />,
+  },
+  {
     id: "our-history",
     title: "Our History",
+    icon: BookOpen,
     author: "Various Authors",
     content: <OurHistory />,
   },
   {
-    id: "resident-care",
-    title: "Resident Care",
+    id: "donors",
+    title: "Donors",
+    icon: HandCoins,
     author: "Various Authors",
-    content: <ResidentCare />,
+    content: <Donors />,
+  },
+  {
+    id: "leadership",
+    title: "Leadership",
+    icon: Users,
+    author: "Various Authors",
+    content: <Leadership />,
+  },
+  {
+    id: "fequently-asked-questions",
+    title: "Frequently Asked Questions",
+    icon: CircleHelp,
+    author: "Various Authors",
+    content: <FrequentlyAskedQuestions />,
   },
 ];

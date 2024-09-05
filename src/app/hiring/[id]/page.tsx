@@ -24,7 +24,7 @@ export default function Posting({
   return (
     <>
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        {hiring.role}
+        {hiring.title}
       </h1>
       <div className="flex max-w-lg flex-col items-start gap-2 text-balance leading-relaxed md:flex-row md:items-center md:gap-4">
         <span className="flex items-center">

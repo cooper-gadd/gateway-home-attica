@@ -8,7 +8,7 @@ import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 
 export const hirings: {
   id: string;
-  role: string;
+  title: string;
   icon: ForwardRefExoticComponent<
     Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
   >;
@@ -20,7 +20,7 @@ export const hirings: {
 }[] = [
   {
     id: "volunteer",
-    role: "Volunteer",
+    title: "Volunteer",
     icon: HandHeart,
     aboutTheRole: "Pro Bono, Reports to the Director",
     whatYouWillDo: [
@@ -39,7 +39,7 @@ export const hirings: {
   },
   {
     id: "care-aide",
-    role: "Care Aide",
+    title: "Care Aide",
     icon: Stethoscope,
     aboutTheRole: "Hourly, Reports to Director of Resident Care",
     whatYouWillDo: [
@@ -63,7 +63,7 @@ export const hirings: {
   },
   {
     id: "rn-lpn",
-    role: "RN/LPN",
+    title: "RN/LPN",
     icon: Activity,
     aboutTheRole: "24 Hour Shift, Reports to Director of Resident Care",
     whatYouWillDo: [

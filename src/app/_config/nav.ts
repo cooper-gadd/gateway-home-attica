@@ -1,36 +1,22 @@
 import {
-  Activity,
-  Beef,
-  BookOpen,
-  BrickWall,
   BriefcaseBusiness,
   Calendar,
-  CircleHelp,
   Contact,
   Cuboid,
-  Drumstick,
   Gift,
-  Hammer,
   HandCoins,
-  HandHeart,
-  Heart,
   Home,
-  Mail,
-  Map,
-  Newspaper,
   NotebookPen,
-  Phone,
-  Printer,
   ScrollText,
-  Smile,
-  Stethoscope,
-  Target,
-  ThumbsUp,
-  UserPlus,
-  Users,
+  type LucideIcon,
   type LucideProps,
 } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
+import { abouts } from "../about/_data/data";
+import { posts } from "../blog/_data/data";
+import { socials } from "../contact/_data/data";
+import { events } from "../events/_data/data";
+import { hirings } from "../hiring/_data/data";
 
 export interface NavItem {
   title: string;
@@ -54,155 +40,50 @@ export interface NavConfig {
   pageNav: PageNavItem[];
 }
 
+interface DataItem {
+  id: string | number;
+  title: string;
+  icon: LucideIcon;
+  href?: string;
+}
+
+function createNavItems<T extends DataItem>(
+  items: T[],
+  pathPrefix: string,
+): NavItemWithChildren[] {
+  return items.map((item) => ({
+    title: item.title,
+    href: item.href ?? `${pathPrefix}/${item.id}`,
+    icon: item.icon,
+    items: [],
+  }));
+}
+
 export const navConfig: NavConfig = {
   mainNav: [
-    {
-      title: "Home",
-      href: "/",
-      icon: Home,
-    },
-    {
-      title: "Events",
-      href: "/events",
-      icon: Calendar,
-    },
-    {
-      title: "Blog",
-      href: "/blog",
-      icon: NotebookPen,
-    },
-    {
-      title: "Hiring",
-      href: "/hiring",
-      icon: BriefcaseBusiness,
-    },
-    {
-      title: "Donate",
-      href: "/donate",
-      icon: HandCoins,
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-      icon: Contact,
-    },
+    { title: "Home", href: "/", icon: Home },
+    { title: "Events", href: "/events", icon: Calendar },
+    { title: "Blog", href: "/blog", icon: NotebookPen },
+    { title: "Hiring", href: "/hiring", icon: BriefcaseBusiness },
+    { title: "Donate", href: "/donate", icon: HandCoins },
+    { title: "Contact", href: "/contact", icon: Contact },
   ],
   pageNav: [
     {
       title: "About",
-      items: [
-        {
-          title: "Mission Statement",
-          href: "/about/mission-statement",
-          icon: Target,
-          items: [],
-        },
-        {
-          title: "Resident Care",
-          href: "/about/resident-care",
-          icon: Heart,
-          items: [],
-        },
-        {
-          title: "Life at Gateway Home",
-          href: "/about/life-at-gateway-home",
-          icon: Smile,
-          items: [],
-        },
-        {
-          title: "Our History",
-          href: "/about/our-history",
-          icon: BookOpen,
-          items: [],
-        },
-        {
-          title: "Donors",
-          href: "/about/donors",
-          icon: HandCoins,
-          items: [],
-        },
-        {
-          title: "Leadership",
-          href: "/about/leadership",
-          icon: Users,
-          items: [],
-        },
-        {
-          title: "Frequently Asked Questions",
-          href: "/about/fequently-asked-questions",
-          icon: CircleHelp,
-          items: [],
-        },
-      ],
+      items: createNavItems(abouts, "/about"),
     },
     {
       title: "Events",
-      items: [
-        {
-          title: "Chicken BBQ",
-          href: "/events/chicken-bbq",
-          icon: Drumstick,
-          items: [],
-        },
-        {
-          title: "End of Life Doula",
-          href: "/events/end-of-life-doula",
-          icon: Stethoscope,
-          items: [],
-        },
-        {
-          title: "Meat Raffle",
-          href: "/events/meat-raffle",
-          icon: Beef,
-          items: [],
-        },
-      ],
+      items: createNavItems(events, "/events"),
     },
     {
       title: "Blog",
-      items: [
-        {
-          title: "Gateway Home Dedicates Brick Walkways",
-          href: "/blog/gateway-home-dedicates-brick-walkways",
-          icon: BrickWall,
-          items: [],
-        },
-        {
-          title: "Spring/Summer 2024 Newsletter",
-          href: "/pdfs/spring-summer-2024-newletter.pdf",
-          icon: Newspaper,
-          items: [],
-        },
-        {
-          title: "New Patio and Pergola",
-          href: "/blog/new-patio-and-pergola",
-          icon: Hammer,
-          items: [],
-        },
-      ],
+      items: createNavItems(posts, "/blog"),
     },
     {
       title: "Hiring",
-      items: [
-        {
-          title: "Volunteer",
-          href: "/hiring/volunteer",
-          icon: HandHeart,
-          items: [],
-        },
-        {
-          title: "Care Aide",
-          href: "/hiring/care-aide",
-          icon: Stethoscope,
-          items: [],
-        },
-        {
-          title: "RN/LPN",
-          href: "/hiring/rn-lpn",
-          icon: Activity,
-          items: [],
-        },
-      ],
+      items: createNavItems(hirings, "/hiring"),
     },
     {
       title: "Donate",
@@ -235,44 +116,7 @@ export const navConfig: NavConfig = {
     },
     {
       title: "Contact",
-      items: [
-        {
-          title: "Phone",
-          href: "tel:585-708-4331",
-          icon: Phone,
-          items: [],
-        },
-        {
-          title: "Email",
-          href: "mailto:info@gatewayhomeattica.org",
-          icon: Mail,
-          items: [],
-        },
-        {
-          title: "Fax",
-          href: "fax:5857084333",
-          icon: Printer,
-          items: [],
-        },
-        {
-          title: "Address",
-          href: "https://www.google.com/maps/search/?api=1&query=91 Main Street, Attica, NY 14011",
-          icon: Map,
-          items: [],
-        },
-        {
-          title: "Facebook",
-          href: "https://www.facebook.com/gatewayhomeattica/",
-          icon: ThumbsUp,
-          items: [],
-        },
-        {
-          title: "Instagram",
-          href: "https://www.instagram.com/gatewayhomeattica/",
-          icon: UserPlus,
-          items: [],
-        },
-      ],
+      items: createNavItems(socials, "/contact"),
     },
   ],
 };
