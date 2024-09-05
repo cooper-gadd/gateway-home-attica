@@ -629,8 +629,8 @@ export default function Home() {
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
                   <Image
-                    src={`/images/home/fequently-asked-questions/junkyard.jpg`}
-                    alt={`Junkyard`}
+                    src={`/images/home/fequently-asked-questions/winter-fest.jpg`}
+                    alt={`Winter Fest`}
                     fill
                     loading="eager"
                     className="rounded-md object-cover"
