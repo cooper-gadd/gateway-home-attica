@@ -310,7 +310,7 @@ export default function Home() {
       <Card>
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Our History
+            Our Story
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
             Learn about the founding of Gateway Home and our mission to provide
@@ -318,7 +318,7 @@ export default function Home() {
           </CardDescription>
           <div>
             <Button variant={"ghost"} asChild>
-              <Link href={"/about/our-history"}>Lean More</Link>
+              <Link href={"/about/our-story"}>Lean More</Link>
             </Button>
           </div>
         </CardHeader>
@@ -328,7 +328,7 @@ export default function Home() {
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
                   <Image
-                    src={`/images/home/our-history/established-event.jpg`}
+                    src={`/images/home/our-story/established-event.jpg`}
                     alt={`Established Event at Gateway Home`}
                     fill
                     loading="eager"
@@ -338,7 +338,7 @@ export default function Home() {
               </div>
               <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                 <Image
-                  src={`/images/home/our-history/va.jpg`}
+                  src={`/images/home/our-story/va.jpg`}
                   alt={`Veterans at Gateway Home`}
                   fill
                   loading="eager"
@@ -347,7 +347,7 @@ export default function Home() {
               </AspectRatio>
               <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                 <Image
-                  src={`/images/home/our-history/demo.jpg`}
+                  src={`/images/home/our-story/demo.jpg`}
                   alt={`Demolition at Gateway Home`}
                   fill
                   loading="eager"
@@ -357,7 +357,7 @@ export default function Home() {
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
                   <Image
-                    src={`/images/home/our-history/first-fundraiser.jpg`}
+                    src={`/images/home/our-story/first-fundraiser.jpg`}
                     alt={`First Fundraiser at Gateway Home`}
                     fill
                     loading="eager"

@@ -1,4 +1,4 @@
-export function OurHistory() {
+export function OurStory() {
   return (
     <div>
       <p className="leading-7 [&:not(:first-child)]:mt-6">

@@ -12,7 +12,7 @@ import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questio
 import { Leadership } from "../_components/leadership";
 import { LifeAtGatewayHome } from "../_components/life-at-gateway-home";
 import { MissionStatement } from "../_components/mission-statement";
-import { OurHistory } from "../_components/our-history";
+import { OurStory } from "../_components/our-story";
 import { ResidentCare } from "../_components/resident-care";
 
 export const abouts = [
@@ -38,11 +38,11 @@ export const abouts = [
     content: <LifeAtGatewayHome />,
   },
   {
-    id: "our-history",
-    title: "Our History",
+    id: "our-story",
+    title: "Our Story",
     icon: BookOpen,
     author: "Various Authors",
-    content: <OurHistory />,
+    content: <OurStory />,
   },
   {
     id: "donors",
