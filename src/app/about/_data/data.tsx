@@ -41,7 +41,7 @@ export const abouts = [
     id: "our-story",
     title: "Our Story",
     icon: BookOpen,
-    author: "Various Authors",
+    author: "Doug Domes",
     content: <OurStory />,
   },
   {
