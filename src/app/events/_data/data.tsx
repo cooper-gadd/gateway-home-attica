@@ -1,6 +1,5 @@
-import { Beef, Drumstick, type LucideProps, Stethoscope } from "lucide-react";
+import { Beef, type LucideProps, Stethoscope } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
-import { ChickenBBQ } from "../_components/chicken-bbq";
 import { EndOfLifeDoula } from "../_components/end-of-life-doula";
 import { MeatRaffle } from "../_components/meat-raffle";
 
@@ -16,17 +15,6 @@ export const events: {
     Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
   >;
 }[] = [
-  {
-    id: "chicken-bbq",
-    title: "Chicken BBQ",
-    icon: Drumstick,
-    type: "Fundraiser",
-    description:
-      "Join us on Sunday, September 8, 2024, for our Fall Chicken BBQ at the Attica Fire Department, located at 11 Water St, Attica, NY 14011. The event will run from 11:00 am to 2:00 pm, with drive-thru and take-out options available.",
-    content: <ChickenBBQ />,
-    action: "Buy Tickets",
-    link: "https://gatewayhomeattica.networkforgood.com/events/74632-fall-chicken-bbq-sun-sept-8th",
-  },
   {
     id: "end-of-life-doula",
     title: "End of Life Doula",
