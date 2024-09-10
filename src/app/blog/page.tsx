@@ -27,8 +27,8 @@ export default function Blog() {
           <CardContent>{post.description}</CardContent>
           <CardFooter>
             <Button asChild>
-              {post.link ? (
-                <Link href={post.link}>Read More</Link>
+              {post.href ? (
+                <Link href={post.href}>Read More</Link>
               ) : (
                 <Link href={`/blog/${post.id}`}>Read More</Link>
               )}

@@ -14,7 +14,7 @@ export const posts: {
   readTime: string;
   description: string;
   content?: JSX.Element;
-  link?: string;
+  href?: string;
 }[] = [
   {
     id: "fall-2024-winter-2025-newsletter",
@@ -25,7 +25,7 @@ export const posts: {
     readTime: "10 minute read",
     description:
       "Our Fall 2024/Winter 2025 newsletter reflects on a busy summer of fundraising events and community support. Director Sara Brunner shares insights on recent activities, including concession stands, golf tournaments, and a touching memorial brick dedication. The newsletter highlights Gateway Home's ongoing mission to provide compassionate end-of-life care, featuring stories of resident care, volunteer spotlights, and upcoming events. Learn about the distinctions between comfort care, hospice care, and palliative care, and discover how you can support Gateway Home's vital work in the community.",
-    link: "/pdfs/fall-2024-winter-2025-newsletter.pdf",
+    href: "/pdfs/fall-2024-winter-2025-newsletter.pdf",
   },
   {
     id: "gateway-home-dedicates-brick-walkways",
@@ -47,7 +47,7 @@ export const posts: {
     readTime: "8 minute read",
     description:
       "Our Spring/Summer 2024 newsletter introduces our new director, Sara Brunner, and highlights Gateway Home's ongoing commitment to compassionate end-of-life care. Learn about our community outreach efforts, upcoming fundraising events, and exciting new projects like our brick walkway initiative. Discover how our volunteers and staff work together to provide comfort and support to residents and their families, and find out how you can contribute to our mission.",
-    link: "/pdfs/spring-summer-2024-newsletter.pdf",
+    href: "/pdfs/spring-summer-2024-newsletter.pdf",
   },
   {
     id: "spring-2023-newletter",
@@ -58,7 +58,7 @@ export const posts: {
     readTime: "10 minute read",
     description:
       "Our Spring 2023 newsletter offers insights into the compassionate care provided at Gateway Home. It features a message from our director, volunteer spotlights, upcoming events, and updates on our community partnerships. Learn about our mission, the importance of comfort care homes, and how you can support our work.",
-    link: "/pdfs/spring-2023-newsletter.pdf",
+    href: "/pdfs/spring-2023-newsletter.pdf",
   },
   {
     id: "new-patio-and-pergola",
