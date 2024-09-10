@@ -17,6 +17,17 @@ export const posts: {
   link?: string;
 }[] = [
   {
+    id: "fall-2024-winter-2025-newsletter",
+    title: "Fall 2024/Winter 2025 Newsletter",
+    icon: Newspaper,
+    author: "Various Authors",
+    date: "Fall 2024/Winter 2025",
+    readTime: "10 minute read",
+    description:
+      "Our Fall 2024/Winter 2025 newsletter reflects on a busy summer of fundraising events and community support. Director Sara Brunner shares insights on recent activities, including concession stands, golf tournaments, and a touching memorial brick dedication. The newsletter highlights Gateway Home's ongoing mission to provide compassionate end-of-life care, featuring stories of resident care, volunteer spotlights, and upcoming events. Learn about the distinctions between comfort care, hospice care, and palliative care, and discover how you can support Gateway Home's vital work in the community.",
+    link: "/pdfs/fall-2024-winter-2025-newsletter.pdf",
+  },
+  {
     id: "gateway-home-dedicates-brick-walkways",
     title: "Gateway Home Dedicates Brick Walkways",
     icon: BrickWall,
