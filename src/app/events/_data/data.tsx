@@ -1,6 +1,7 @@
-import { Beef, type LucideProps, Stethoscope } from "lucide-react";
+import { Beef, Leaf, type LucideProps, Stethoscope } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 import { EndOfLifeDoula } from "../_components/end-of-life-doula";
+import { KindredTreasuresFallFestival } from "../_components/kindered-treasures-fall-festival";
 import { MeatRaffle } from "../_components/meat-raffle";
 
 export const events: {
@@ -36,5 +37,16 @@ export const events: {
     content: <MeatRaffle />,
     action: "Buy Tickets",
     link: "https://gatewayhomeattica.networkforgood.com/events/74629-3rd-annual-meat-raffle-sat-9-28",
+  },
+  {
+    id: "kindered-treasures-fall-festival",
+    title: "Kindered Treasures Fall Festival",
+    icon: Leaf,
+    type: "Fundraiser",
+    description:
+      "Join us in the beautiful hills of Attica for an outdoor Fall Festival with crafts, vendors, pony rides, a Basket Raffle to benefit Gateway Home, and food! The event takes place on October 18th from noon to 6pm and October 19th from 9am-5pm at 3099 and 3095 Merle Rd, Attica, NY.",
+    content: <KindredTreasuresFallFestival />,
+    action: "Contact for Vendor Info",
+    link: "mailto:info@gatewayhomeattica.org",
   },
 ];
