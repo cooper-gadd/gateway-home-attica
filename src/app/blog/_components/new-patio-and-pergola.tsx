@@ -17,7 +17,6 @@ export function NewPatioAndPergola() {
             src={`/images/blog/new-patio-and-pergola/truck.jpg`}
             alt={`Truck`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
@@ -38,7 +37,6 @@ export function NewPatioAndPergola() {
             src={`/images/blog/new-patio-and-pergola/pouring.jpg`}
             alt={`Pouring`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
@@ -55,7 +53,6 @@ export function NewPatioAndPergola() {
             src={`/images/blog/new-patio-and-pergola/roof.jpg`}
             alt={`Roof`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
@@ -86,7 +83,6 @@ export function NewPatioAndPergola() {
             src={`/images/blog/new-patio-and-pergola/final.jpg`}
             alt={`Final`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>

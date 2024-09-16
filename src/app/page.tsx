@@ -57,7 +57,6 @@ export default function Home() {
                     src={`/images/home/gateway-home/front.jpg`}
                     alt={`Front of Gateway Home`}
                     fill
-                    loading="eager"
                     className="h-full rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -67,7 +66,6 @@ export default function Home() {
                   src={`/images/home/gateway-home/dedication-brick.jpg`}
                   alt={`Dedication of Gateway Home`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -76,7 +74,6 @@ export default function Home() {
                   src={`/images/home/gateway-home/established-brick.jpg`}
                   alt={`Established Brick at Gateway Home`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -86,7 +83,6 @@ export default function Home() {
                     src={`/images/home/gateway-home/back.jpg`}
                     alt={`Back of Gateway Home`}
                     fill
-                    loading="eager"
                     className="rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -232,7 +228,6 @@ export default function Home() {
                     src={`/images/home/life-at-gateway-home/resident-room.jpg`}
                     alt={`Resident Room at Gateway Home`}
                     fill
-                    loading="eager"
                     className="h-full rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -242,7 +237,6 @@ export default function Home() {
                   src={`/images/home/life-at-gateway-home/kitchen.jpg`}
                   alt={`Kitchen at Gateway Home`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -251,7 +245,6 @@ export default function Home() {
                   src={`/images/home/life-at-gateway-home/hallway.jpg`}
                   alt={`Hallway at Gateway Home`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -261,7 +254,6 @@ export default function Home() {
                     src={`/images/home/life-at-gateway-home/living-room.jpg`}
                     alt={`Living Room at Gateway Home`}
                     fill
-                    loading="eager"
                     className="rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -331,7 +323,6 @@ export default function Home() {
                     src={`/images/home/our-story/established-event.jpg`}
                     alt={`Established Event at Gateway Home`}
                     fill
-                    loading="eager"
                     className="h-full rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -341,7 +332,6 @@ export default function Home() {
                   src={`/images/home/our-story/va.jpg`}
                   alt={`Veterans at Gateway Home`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -350,7 +340,6 @@ export default function Home() {
                   src={`/images/home/our-story/demo.jpg`}
                   alt={`Demolition at Gateway Home`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -360,7 +349,6 @@ export default function Home() {
                     src={`/images/home/our-story/first-fundraiser.jpg`}
                     alt={`First Fundraiser at Gateway Home`}
                     fill
-                    loading="eager"
                     className="rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -522,7 +510,6 @@ export default function Home() {
                         src={leader.image}
                         alt={leader.name}
                         fill
-                        loading="eager"
                         className={cn(
                           "rounded-md object-cover",
                           leader.image === "/images/placeholder.svg" &&
@@ -603,7 +590,6 @@ export default function Home() {
                     src={`/images/home/fequently-asked-questions/pancake-breakfast.jpg`}
                     alt={`Pancake Breakfast at Gateway Home`}
                     fill
-                    loading="eager"
                     className="h-full rounded-md object-cover"
                   />
                 </AspectRatio>
@@ -613,7 +599,6 @@ export default function Home() {
                   src={`/images/home/fequently-asked-questions/birthday.jpg`}
                   alt={`Birthday Celebration`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -622,7 +607,6 @@ export default function Home() {
                   src={`/images/home/fequently-asked-questions/concert.jpg`}
                   alt={`Concert`}
                   fill
-                  loading="eager"
                   className="rounded-md object-cover"
                 />
               </AspectRatio>
@@ -632,7 +616,6 @@ export default function Home() {
                     src={`/images/home/fequently-asked-questions/winter-fest.jpg`}
                     alt={`Winter Fest`}
                     fill
-                    loading="eager"
                     className="rounded-md object-cover"
                   />
                 </AspectRatio>

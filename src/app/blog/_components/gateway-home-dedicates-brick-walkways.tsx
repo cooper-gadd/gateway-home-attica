@@ -39,7 +39,6 @@ export function GatewayHomeDedicatesBrickWalkways() {
             src={`/images/blog/gateway-home-dedicates-brick-walkways/sara.jpg`}
             alt={`Sara Brunner`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
@@ -73,7 +72,6 @@ export function GatewayHomeDedicatesBrickWalkways() {
             src={`/images/blog/gateway-home-dedicates-brick-walkways/sara-speaking.jpg`}
             alt={`Sara Speaking`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
@@ -101,7 +99,6 @@ export function GatewayHomeDedicatesBrickWalkways() {
             src={`/images/blog/gateway-home-dedicates-brick-walkways/doug-speaking.jpg`}
             alt={`Doug Speaking`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
@@ -120,7 +117,6 @@ export function GatewayHomeDedicatesBrickWalkways() {
             src={`/images/blog/gateway-home-dedicates-brick-walkways/doug-sara.jpg`}
             alt={`Doug and Sara`}
             fill
-            loading="eager"
             className="h-full rounded-md object-cover"
           />
         </AspectRatio>
