@@ -14,7 +14,6 @@ export default function About({
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         {about.title}
       </h1>
-      <p className="text-sm text-muted-foreground">{about.author}</p>
       {about.content}
     </>
   );
