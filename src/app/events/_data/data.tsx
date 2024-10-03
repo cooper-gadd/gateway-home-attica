@@ -1,8 +1,7 @@
-import { Beef, Leaf, type LucideProps, Stethoscope } from "lucide-react";
+import { Leaf, type LucideProps, Stethoscope } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 import { EndOfLifeDoula } from "../_components/end-of-life-doula";
 import { KindredTreasuresFallFestival } from "../_components/kindered-treasures-fall-festival";
-import { MeatRaffle } from "../_components/meat-raffle";
 
 export const events: {
   id: string;
@@ -26,17 +25,6 @@ export const events: {
     content: <EndOfLifeDoula />,
     action: "Register Now",
     link: "mailto:sara@gatewayhomeattica.org",
-  },
-  {
-    id: "meat-raffle",
-    title: "Meat Raffle",
-    icon: Beef,
-    type: "Fundraiser",
-    description:
-      "Join us on Saturday, September 28, 2024, for an exciting evening at the Alexander Firemen’s Recreation Hall, located at 10708 Alexander Rd, Alexander, NY 14011. Doors will open at 6:00 pm, with the first spin taking place promptly at 7:00 pm.",
-    content: <MeatRaffle />,
-    action: "Buy Tickets",
-    link: "https://gatewayhomeattica.networkforgood.com/events/74629-3rd-annual-meat-raffle-sat-9-28",
   },
   {
     id: "kindered-treasures-fall-festival",
