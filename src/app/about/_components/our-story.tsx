@@ -5,7 +5,7 @@ export function OurStory() {
     <div className="flex items-center">
       <Construction className="mr-4 h-8 w-8" />
       <HardHat className="mr-4 h-8 w-8" />
-      Under Construction...
+      Under Construction
     </div>
   );
 }
