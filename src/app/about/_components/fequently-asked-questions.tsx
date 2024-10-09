@@ -165,8 +165,7 @@ export function FrequentlyAskedQuestions() {
           items to make their stay more comfortable. We also encourage family
           members to visit often and to participate in the care of their loved
           one. We have a family room with a kitchenette and a dining area for
-          family members to use. We also have a small chapel for residents and
-          family members to use for prayer and reflection.
+          family members to use.
         </p>
       </div>
       <div className="mb-6">
