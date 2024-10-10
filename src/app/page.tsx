@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <video
               width="2000"
               controls
@@ -220,7 +220,7 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
@@ -315,7 +315,7 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
@@ -410,7 +410,7 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-8">
               {donors
                 .filter((donor) => donor.level === "Platinum")
@@ -500,10 +500,10 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-4">
               {leadership.map((leader) => (
-                <Card key={leader.id} className="bg-muted/20">
+                <Card key={leader.id} className="border-hidden">
                   <CardHeader>
                     <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
                       <Image
@@ -574,7 +574,6 @@ export default function Home() {
           <CardDescription className="text-balance leading-relaxed">
             Discover the answers to our most frequently asked questions.
           </CardDescription>
-
           <div>
             <Button variant={"ghost"} asChild>
               <Link href={"/about/fequently-asked-questions"}>Learn More</Link>
@@ -582,7 +581,7 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="container">
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
