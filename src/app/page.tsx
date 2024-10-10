@@ -152,7 +152,6 @@ export default function Home() {
               preload="none"
               loop
               muted
-              autoPlay
               playsInline
               className="h-full w-full rounded-md object-cover"
             >
