@@ -1,5 +1,4 @@
 import {
-  BookOpen,
   CircleHelp,
   HandCoins,
   Heart,
@@ -12,7 +11,6 @@ import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questio
 import { Leadership } from "../_components/leadership";
 import { LifeAtGatewayHome } from "../_components/life-at-gateway-home";
 import { MissionStatement } from "../_components/mission-statement";
-import { OurStory } from "../_components/our-story";
 import { ResidentCare } from "../_components/resident-care";
 
 export const abouts = [
@@ -33,12 +31,6 @@ export const abouts = [
     title: "Life at Gateway Home",
     icon: Smile,
     content: <LifeAtGatewayHome />,
-  },
-  {
-    id: "our-story",
-    title: "Our Story",
-    icon: BookOpen,
-    content: <OurStory />,
   },
   {
     id: "donors",

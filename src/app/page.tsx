@@ -298,64 +298,6 @@ export default function Home() {
           </CardHeader>
         </Card>
       </div>
-      <Card>
-        <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Our Story
-          </CardTitle>
-          <CardDescription className="text-balance leading-relaxed">
-            Learn about the founding of Gateway Home and our mission to provide
-            compassionate end-of-life care.
-          </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/our-story"}>Learn More</Link>
-            </Button>
-          </div>
-        </CardHeader>
-        <CardContent>
-          <div className="lg:container">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-              <div className="md:col-span-2">
-                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                  <Image
-                    src={`/images/home/our-story/established-event.jpg`}
-                    alt={`Established Event at Gateway Home`}
-                    fill
-                    className="h-full rounded-md object-cover"
-                  />
-                </AspectRatio>
-              </div>
-              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                <Image
-                  src={`/images/home/our-story/va.jpg`}
-                  alt={`Veterans at Gateway Home`}
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
-              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                <Image
-                  src={`/images/home/our-story/demo.jpg`}
-                  alt={`Demolition at Gateway Home`}
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
-              <div className="md:col-span-2">
-                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                  <Image
-                    src={`/images/home/our-story/first-fundraiser.jpg`}
-                    alt={`First Fundraiser at Gateway Home`}
-                    fill
-                    className="rounded-md object-cover"
-                  />
-                </AspectRatio>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
         <Card>
           <CardHeader className="pb-3">
