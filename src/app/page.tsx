@@ -15,7 +15,7 @@ import { stats } from "./_data/data";
 export default function Home() {
   return (
     <>
-      <Card className="border-none bg-transparent" id="mission-statement">
+      <Card className="border-none bg-transparent shadow-none">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Gateway Home
@@ -44,7 +44,10 @@ export default function Home() {
             {stats
               .filter((stat) => stat.category === "mission-statement")
               .map((stat, index) => (
-                <Card key={index} className="border-none bg-transparent">
+                <Card
+                  key={index}
+                  className="border-none bg-transparent shadow-none"
+                >
                   <CardHeader className="pb-3">
                     <div className="flex flex-row items-center justify-between space-y-0">
                       <CardTitle>{stat.title}</CardTitle>
@@ -59,7 +62,7 @@ export default function Home() {
           </div>
         </CardFooter>
       </Card>
-      <Card className="border-none bg-transparent">
+      <Card className="border-none bg-transparent shadow-none">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Resident Care
@@ -99,7 +102,10 @@ export default function Home() {
             {stats
               .filter((stat) => stat.category === "resident-care")
               .map((stat, index) => (
-                <Card key={index} className="border-none bg-transparent">
+                <Card
+                  key={index}
+                  className="border-none bg-transparent shadow-none"
+                >
                   <CardHeader className="pb-3">
                     <div className="flex flex-row items-center justify-between space-y-0">
                       <CardTitle>{stat.title}</CardTitle>
@@ -114,7 +120,7 @@ export default function Home() {
           </div>
         </CardFooter>
       </Card>
-      <Card className="border-none bg-transparent">
+      <Card className="border-none bg-transparent shadow-none">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Life at Gateway Home
@@ -143,7 +149,10 @@ export default function Home() {
             {stats
               .filter((stat) => stat.category === "life-at-gateway-home")
               .map((stat, index) => (
-                <Card key={index} className="border-none bg-transparent">
+                <Card
+                  key={index}
+                  className="border-none bg-transparent shadow-none"
+                >
                   <CardHeader className="pb-3">
                     <div className="flex flex-row items-center justify-between space-y-0">
                       <CardTitle>{stat.title}</CardTitle>
@@ -158,7 +167,7 @@ export default function Home() {
           </div>
         </CardFooter>
       </Card>
-      <Card className="border-none bg-transparent">
+      <Card className="border-none bg-transparent shadow-none">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Donors
@@ -182,7 +191,10 @@ export default function Home() {
             {stats
               .filter((stat) => stat.category === "donors")
               .map((stat, index) => (
-                <Card key={index} className="border-none bg-transparent">
+                <Card
+                  key={index}
+                  className="border-none bg-transparent shadow-none"
+                >
                   <CardHeader className="pb-3">
                     <div className="flex flex-row items-center justify-between space-y-0">
                       <CardTitle>{stat.title}</CardTitle>
@@ -197,7 +209,7 @@ export default function Home() {
           </div>
         </CardFooter>
       </Card>
-      <Card className="border-none bg-transparent">
+      <Card className="border-none bg-transparent shadow-none">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Curious about Gateway Home?
