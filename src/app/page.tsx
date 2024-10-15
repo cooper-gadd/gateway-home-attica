@@ -31,52 +31,16 @@ export default function Home() {
             Providing free, dignified care and spiritual support for those in
             their final stages of life.
           </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/mission-statement"}>Learn More</Link>
-            </Button>
-          </div>
         </CardHeader>
         <CardContent>
           <div className="lg:container">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-              <div className="md:col-span-2">
-                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                  <Image
-                    src={`/images/home/gateway-home/front.jpg`}
-                    alt={`Front of Gateway Home`}
-                    fill
-                    className="h-full rounded-md object-cover"
-                  />
-                </AspectRatio>
-              </div>
-              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                <Image
-                  src={`/images/home/gateway-home/dedication-brick.jpg`}
-                  alt={`Dedication of Gateway Home`}
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
-              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                <Image
-                  src={`/images/home/gateway-home/established-brick.jpg`}
-                  alt={`Established Brick at Gateway Home`}
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
-              <div className="md:col-span-2">
-                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                  <Image
-                    src={`/images/home/gateway-home/back.jpg`}
-                    alt={`Back of Gateway Home`}
-                    fill
-                    className="rounded-md object-cover"
-                  />
-                </AspectRatio>
-              </div>
-            </div>
+            <Image
+              src={`/images/home/gateway-home/front.jpg`}
+              alt={`Front of Gateway Home`}
+              width={2000}
+              height={1000}
+              className="h-full w-full rounded-md object-cover"
+            />
           </div>
         </CardContent>
       </Card>
@@ -134,7 +98,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="lg:container">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4">
               <div className="md:col-span-2">
                 <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
                   <Image
@@ -191,7 +155,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="lg:container">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-8">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-4 md:gap-4">
               {donors
                 .filter((donor) => donor.level === "Platinum")
                 .sort((a, b) => a.name.localeCompare(b.name))
@@ -210,7 +174,7 @@ export default function Home() {
                 ))}
             </div>
             <InfiniteMovingCards speed="ultra-slow">
-              <div className="grid auto-cols-max grid-flow-col gap-4 md:gap-8">
+              <div className="grid auto-cols-max grid-flow-col gap-2 md:gap-4">
                 {donors
                   .filter((donor) => donor.level !== "Platinum")
                   .map((donor) => (
@@ -259,7 +223,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="lg:container">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-4">
               {leadership.map((leader) => (
                 <Card key={leader.id} className="border-hidden">
                   <CardHeader>
