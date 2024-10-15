@@ -8,6 +8,7 @@ import {
   Home,
   NotebookPen,
   ScrollText,
+  Users,
   type LucideIcon,
   type LucideProps,
 } from "lucide-react";
@@ -110,6 +111,12 @@ export const navConfig: NavConfig = {
           title: "Wish List",
           href: "/donate#wish-list",
           icon: ScrollText,
+          items: [],
+        },
+        {
+          title: "Donors",
+          href: "/donate#donors",
+          icon: Users,
           items: [],
         },
       ],

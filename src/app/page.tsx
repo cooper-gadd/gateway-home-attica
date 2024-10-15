@@ -31,6 +31,11 @@ export default function Home() {
             Providing free, dignified care and spiritual support for those in
             their final stages of life.
           </CardDescription>
+          <div>
+            <Button variant={"ghost"} asChild>
+              <Link href={"/about/mission-statement"}>Learn More</Link>
+            </Button>
+          </div>
         </CardHeader>
         <CardContent>
           <div className="lg:container">
@@ -39,7 +44,7 @@ export default function Home() {
               alt={`Front of Gateway Home`}
               width={2000}
               height={1000}
-              className="h-full w-full rounded-md object-cover"
+              className="rounded-md"
             />
           </div>
         </CardContent>
@@ -68,7 +73,7 @@ export default function Home() {
               loop
               muted
               playsInline
-              className="h-full w-full rounded-md object-cover"
+              className="rounded-md"
             >
               <source src="/videos/promo.mp4" type="video/mp4" />
               <track
@@ -98,43 +103,42 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="lg:container">
+            <Image
+              src={`/images/home/life-at-gateway-home/resident-room.jpg`}
+              alt={`Resident Room at Gateway Home`}
+              width={2000}
+              height={1000}
+              className="rounded-md"
+            />
+          </div>
+        </CardContent>
+      </Card>
+      <Card className="border-none bg-transparent">
+        <CardHeader className="pb-3 text-center">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
+            About Gateway Home
+          </CardTitle>
+          <CardDescription className="text-balance leading-relaxed">
+            Gateway Home is a nonprofit organization that provides compassionate
+            care to terminally ill residents.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="lg:container">
             <div className="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4">
-              <div className="md:col-span-2">
-                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                  <Image
-                    src={`/images/home/life-at-gateway-home/resident-room.jpg`}
-                    alt={`Resident Room at Gateway Home`}
-                    fill
-                    className="h-full rounded-md object-cover"
-                  />
-                </AspectRatio>
-              </div>
-              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                <Image
-                  src={`/images/home/life-at-gateway-home/kitchen.jpg`}
-                  alt={`Kitchen at Gateway Home`}
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
-              <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                <Image
-                  src={`/images/home/life-at-gateway-home/hallway.jpg`}
-                  alt={`Hallway at Gateway Home`}
-                  fill
-                  className="rounded-md object-cover"
-                />
-              </AspectRatio>
-              <div className="md:col-span-2">
-                <AspectRatio ratio={4 / 3} className="rounded-md bg-muted">
-                  <Image
-                    src={`/images/home/life-at-gateway-home/living-room.jpg`}
-                    alt={`Living Room at Gateway Home`}
-                    fill
-                    className="rounded-md object-cover"
-                  />
-                </AspectRatio>
-              </div>
+              {stats.map((stat, index) => (
+                <Card key={index} className="">
+                  <CardHeader className="pb-3">
+                    <div className="flex flex-row items-center justify-between space-y-0">
+                      <CardTitle>{stat.title}</CardTitle>
+                      <stat.icon className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
+                    </div>
+                    <CardDescription className="max-w-lg text-balance leading-relaxed">
+                      {stat.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
             </div>
           </div>
         </CardContent>
@@ -206,31 +210,25 @@ export default function Home() {
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
-            Our Compassionate Approach
+            Join Us in Making a Difference
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
-            At Gateway Home, we embrace a holistic philosophy of care, providing
-            dignity, comfort, and support to our residents and their families
-            during life&apos;s final journey.
+            Your support can help provide compassionate care to those in their
+            final stages of life. Whether through donations, volunteering, or
+            spreading awareness, every action counts.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="lg:container">
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4">
-              {stats.map((stat, index) => (
-                <Card key={index} className="">
-                  <CardHeader className="pb-3">
-                    <div className="flex flex-row items-center justify-between space-y-0">
-                      <CardTitle>{stat.title}</CardTitle>
-                      <stat.icon className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
-                    </div>
-                    <CardDescription className="max-w-lg text-balance leading-relaxed">
-                      {stat.description}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              ))}
-            </div>
+          <div className="flex flex-col justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+            <Button asChild variant="secondary">
+              <Link href="/donate">Donate Now</Link>
+            </Button>
+            <Button asChild variant="secondary">
+              <Link href="/hiring/volunteer">Volunteer</Link>
+            </Button>
+            <Button asChild variant="secondary">
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
         </CardContent>
       </Card>
