@@ -7,17 +7,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { donors, leadership, stats } from "./_data/data";
+import { leadership, stats } from "./_data/data";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { DonorsChart } from "./_components/donors-chart";
 
 export default function Home() {
   return (
@@ -155,54 +155,7 @@ export default function Home() {
         </CardHeader>
         <CardContent>
           <div className="lg:container">
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-4 md:gap-4">
-              {donors
-                .filter((donor) => donor.level === "Platinum")
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((donor) => (
-                  <Card
-                    key={donor.name}
-                    className="border-gray-300 bg-muted/20"
-                  >
-                    <CardHeader className="pb-3">
-                      <CardTitle>{donor.name}</CardTitle>
-                      <CardDescription className="max-w-lg text-balance leading-relaxed">
-                        {donor.level}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                ))}
-            </div>
-            <InfiniteMovingCards speed="ultra-slow">
-              <div className="grid auto-cols-max grid-flow-col gap-2 md:gap-4">
-                {donors
-                  .filter((donor) => donor.level !== "Platinum")
-                  .map((donor) => (
-                    <Card
-                      key={donor.name}
-                      className={cn(
-                        "bg-muted/20",
-                        donor.level === "Gold"
-                          ? "border-yellow-400"
-                          : donor.level === "Silver"
-                            ? "border-gray-400"
-                            : donor.level === "Bronze"
-                              ? "border-amber-700"
-                              : "border-",
-                      )}
-                    >
-                      <CardHeader>
-                        <CardTitle className="flex items-center justify-between">
-                          {donor.name}
-                        </CardTitle>
-                        <CardDescription className="max-w-lg text-balance leading-relaxed">
-                          {donor.level}
-                        </CardDescription>
-                      </CardHeader>
-                    </Card>
-                  ))}
-              </div>
-            </InfiniteMovingCards>
+            <DonorsChart />
           </div>
         </CardContent>
       </Card>
