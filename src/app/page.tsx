@@ -9,33 +9,16 @@ import {
 } from "@/components/ui/card";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { cn } from "@/lib/utils";
-import {
-  Briefcase,
-  Calendar,
-  Clock,
-  Coins,
-  DoorOpen,
-  Flag,
-  HandHeart,
-  Heart,
-  HeartHandshake,
-  HelpingHand,
-  HomeIcon,
-  Medal,
-  Ribbon,
-  User,
-  Users,
-} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { donors, leadership } from "./_data/data";
+import { donors, leadership, stats } from "./_data/data";
 
 export default function Home() {
   return (
     <>
-      <Card>
+      <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
             Gateway Home
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -91,47 +74,9 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Compassionate Care</CardTitle>
-              <HeartHandshake className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Providing free, dignified care and spiritual support for
-              individuals in their final months of life.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Community-Funded Support</CardTitle>
-              <HandHeart className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Operations are funded entirely through donations, grants,
-              bequests, and community generosity.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Admission Based on Need</CardTitle>
-              <DoorOpen className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Admission is determined solely by need, ensuring care for those
-              most vulnerable.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-      <Card>
+      <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
             Resident Care
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -166,46 +111,9 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>24/7 Care</CardTitle>
-              <Clock className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Around-the-clock care for residents, including pain management,
-              meals, and companionship.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Family Respite</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Offering emotional and spiritual support to both residents and
-              their families.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>No Financial Burden</CardTitle>
-              <Coins className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Care is provided free of charge, with no insurance involvement.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-      <Card>
+      <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
             Life at Gateway Home
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -261,84 +169,9 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Homelike Setting</CardTitle>
-              <HomeIcon className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              A warm, welcoming environment where residents feel at home in
-              their final days.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Individualized Support</CardTitle>
-              <User className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Personalized care tailored to the unique needs of each resident.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Sense of Belonging</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Creating a community atmosphere where residents and families feel
-              connected.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Dedicated 2016</CardTitle>
-              <Flag className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              The 2016 dedication of Gateway Home was a tribute to our Lord God,
-              the founder of the home.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Established 2019</CardTitle>
-              <DoorOpen className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Serving the terminally ill with free comfort care since our
-              establishment.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Community-Driven</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Powered by the dedication of donors, volunteers, and community
-              partners.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-      <Card>
+      <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
             Donors
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -357,7 +190,10 @@ export default function Home() {
                 .filter((donor) => donor.level === "Platinum")
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((donor) => (
-                  <Card key={donor.name} className="bg-muted/20">
+                  <Card
+                    key={donor.name}
+                    className="border-gray-300 bg-muted/20"
+                  >
                     <CardHeader className="pb-3">
                       <CardTitle>{donor.name}</CardTitle>
                       <CardDescription className="max-w-lg text-balance leading-relaxed">
@@ -372,7 +208,19 @@ export default function Home() {
                 {donors
                   .filter((donor) => donor.level !== "Platinum")
                   .map((donor) => (
-                    <Card key={donor.name} className="bg-muted/20">
+                    <Card
+                      key={donor.name}
+                      className={cn(
+                        "bg-muted/20",
+                        donor.level === "Gold"
+                          ? "border-yellow-400"
+                          : donor.level === "Silver"
+                            ? "border-gray-400"
+                            : donor.level === "Bronze"
+                              ? "border-amber-700"
+                              : "border-",
+                      )}
+                    >
                       <CardHeader>
                         <CardTitle className="flex items-center justify-between">
                           {donor.name}
@@ -388,46 +236,9 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Top-Tier Support</CardTitle>
-              <Medal className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Over 100 donors contributing significantly to Gateway Home.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Community Commitment</CardTitle>
-              <Heart className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Donors from local businesses and families unite to sustain Gateway
-              Home&apos;s mission.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Grateful Recognition</CardTitle>
-              <Ribbon className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Each contribution, large or small, is vital to our ability to
-              provide compassionate care.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-      <Card>
+      <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
             Leadership
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -469,47 +280,40 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Experienced Leadership</CardTitle>
-              <Briefcase className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              A diverse team of professionals with backgrounds in business,
-              healthcare, and community service.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Dedicated to Service</CardTitle>
-              <HelpingHand className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Leaders who are deeply committed to supporting Gateway Home&apos;s
-              residents and their families.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Community Engagement</CardTitle>
-              <Calendar className="h-4 w-4 text-muted-foreground" />
-            </div>
-            <CardDescription className="max-w-lg text-balance leading-relaxed">
-              Actively involved in organizing fundraising events and fostering
-              community connections.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-      <Card>
+      <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+            Our Compassionate Approach
+          </CardTitle>
+          <CardDescription className="text-balance leading-relaxed">
+            At Gateway Home, we embrace a holistic philosophy of care, providing
+            dignity, comfort, and support to our residents and their families
+            during life&apos;s final journey.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="container">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4">
+              {stats.map((stat, index) => (
+                <Card key={index} className="">
+                  <CardHeader className="pb-3">
+                    <div className="flex flex-row items-center justify-between space-y-0">
+                      <CardTitle>{stat.title}</CardTitle>
+                      <stat.icon className="h-4 w-4 text-muted-foreground text-teal-300" />
+                    </div>
+                    <CardDescription className="max-w-lg text-balance leading-relaxed">
+                      {stat.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      <Card className="border-none bg-transparent">
+        <CardHeader className="pb-3 text-center">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
             Curious about Gateway Home?
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">

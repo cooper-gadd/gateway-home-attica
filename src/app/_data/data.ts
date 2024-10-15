@@ -1,3 +1,18 @@
+import {
+  Briefcase,
+  Calendar,
+  Clock,
+  Coins,
+  DoorOpen,
+  Flag,
+  HandHeart,
+  Heart,
+  HeartHandshake,
+  HomeIcon,
+  User,
+  Users,
+} from "lucide-react";
+
 export const donors = [
   { name: "Attica Lions Club", level: "Platinum" },
   { name: "Attica Package Company, Inc.", level: "Platinum" },
@@ -199,5 +214,79 @@ export const leadership = [
       "Sue joined our team when we opened our doors in December 2019 and handles the day to day office tasks such as bookkeeping, mail and telephone. She also helps coordinate our volunteer scheduling and is often the voice behind the One Call messaging system. She is a graduate of Canisius College and is a certified public accountant. She previously worked for Farm Credit East as an agricultural income tax preparer. Sue keeps her hands in agriculture by continuing to do some on-farm bookkeeping as time permits. She enjoys volunteering with Attica Youth Athletics and is a member of the Attica Central School Board of Education.",
       "Sue lives in Attica with her husband, Don and son, Isaac. Sue and Don also have 3 adult children and 4 grandchildren. She is excited to add her creativity and enthusiasm to help promote Gateway Home’s mission.",
     ],
+  },
+];
+
+export const stats = [
+  {
+    title: "Compassionate Care",
+    icon: HeartHandshake,
+    description:
+      "Free, dignified care and spiritual support for individuals in their final months of life.",
+  },
+  {
+    title: "Community-Funded",
+    icon: HandHeart,
+    description:
+      "Entirely funded through donations, grants, and community generosity.",
+  },
+  {
+    title: "Need-Based Admission",
+    icon: DoorOpen,
+    description:
+      "Admission determined solely by need, ensuring care for the most vulnerable.",
+  },
+  {
+    title: "24/7 Support",
+    icon: Clock,
+    description:
+      "Round-the-clock care including pain management, meals, and companionship.",
+  },
+  {
+    title: "Family-Focused",
+    icon: Users,
+    description:
+      "Emotional and spiritual support for both residents and their families.",
+  },
+  {
+    title: "No-Cost Care",
+    icon: Coins,
+    description:
+      "Services provided free of charge, without insurance involvement.",
+  },
+  {
+    title: "Home-Like Environment",
+    icon: HomeIcon,
+    description: "A warm, welcoming setting for residents in their final days.",
+  },
+  {
+    title: "Personalized Support",
+    icon: User,
+    description:
+      "Care tailored to the unique needs of each individual resident.",
+  },
+  {
+    title: "Established 2019",
+    icon: Flag,
+    description:
+      "Serving the terminally ill with free comfort care since our founding.",
+  },
+  {
+    title: "Community-Driven",
+    icon: Heart,
+    description:
+      "Powered by dedicated donors, volunteers, and community partners.",
+  },
+  {
+    title: "Experienced Team",
+    icon: Briefcase,
+    description:
+      "Led by professionals with diverse backgrounds in healthcare and community service.",
+  },
+  {
+    title: "Local Engagement",
+    icon: Calendar,
+    description:
+      "Actively organizing fundraising events and fostering community connections.",
   },
 ];
