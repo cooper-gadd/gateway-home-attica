@@ -27,6 +27,10 @@ export function Navbar() {
       href: "/blog",
     },
     {
+      title: "Leadership",
+      href: "/leadership",
+    },
+    {
       title: "Hiring",
       href: "/hiring",
     },

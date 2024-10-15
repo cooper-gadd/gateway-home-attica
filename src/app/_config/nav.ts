@@ -5,6 +5,7 @@ import {
   Cuboid,
   Gift,
   HandCoins,
+  Handshake,
   Home,
   NotebookPen,
   ScrollText,
@@ -64,6 +65,7 @@ export const navConfig: NavConfig = {
   mainNav: [
     { title: "Home", href: "/", icon: Home },
     { title: "Events", href: "/events", icon: Calendar },
+    { title: "Leadership", href: "/leadership", icon: Users },
     { title: "Blog", href: "/blog", icon: NotebookPen },
     { title: "Hiring", href: "/hiring", icon: BriefcaseBusiness },
     { title: "Donate", href: "/donate", icon: HandCoins },
@@ -116,7 +118,7 @@ export const navConfig: NavConfig = {
         {
           title: "Donors",
           href: "/donate#donors",
-          icon: Users,
+          icon: Handshake,
           items: [],
         },
       ],

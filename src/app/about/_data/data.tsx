@@ -1,14 +1,5 @@
-import {
-  CircleHelp,
-  HandCoins,
-  Heart,
-  Smile,
-  Target,
-  Users,
-} from "lucide-react";
-import { Donors } from "../_components/donors";
+import { CircleHelp, Heart, Smile, Target } from "lucide-react";
 import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
-import { Leadership } from "../_components/leadership";
 import { LifeAtGatewayHome } from "../_components/life-at-gateway-home";
 import { MissionStatement } from "../_components/mission-statement";
 import { ResidentCare } from "../_components/resident-care";
@@ -31,18 +22,6 @@ export const abouts = [
     title: "Life at Gateway Home",
     icon: Smile,
     content: <LifeAtGatewayHome />,
-  },
-  {
-    id: "donors",
-    title: "Donors",
-    icon: HandCoins,
-    content: <Donors />,
-  },
-  {
-    id: "leadership",
-    title: "Leadership",
-    icon: Users,
-    content: <Leadership />,
   },
   {
     id: "fequently-asked-questions",

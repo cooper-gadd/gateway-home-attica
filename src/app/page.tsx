@@ -1,4 +1,3 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -7,10 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { leadership, stats } from "./_data/data";
+import { stats } from "./_data/data";
 import {
   Accordion,
   AccordionContent,
@@ -22,7 +20,7 @@ import { DonorsChart } from "./_components/donors-chart";
 export default function Home() {
   return (
     <>
-      <Card className="border-none bg-transparent">
+      <Card className="border-none bg-transparent" id="mission-statement">
         <CardHeader className="pb-3 text-center">
           <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Gateway Home
@@ -31,22 +29,15 @@ export default function Home() {
             Providing free, dignified care and spiritual support for those in
             their final stages of life.
           </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/mission-statement"}>Learn More</Link>
-            </Button>
-          </div>
         </CardHeader>
-        <CardContent>
-          <div className="lg:container">
-            <Image
-              src={`/images/home/gateway-home/front.jpg`}
-              alt={`Front of Gateway Home`}
-              width={2000}
-              height={1000}
-              className="rounded-md"
-            />
-          </div>
+        <CardContent className="flex items-center justify-center lg:container">
+          <Image
+            src={`/images/home/gateway-home/front.jpg`}
+            alt={`Front of Gateway Home`}
+            width={2000}
+            height={1000}
+            className="rounded-md"
+          />
         </CardContent>
       </Card>
       <Card className="border-none bg-transparent">
@@ -58,32 +49,26 @@ export default function Home() {
             Offering full-time care, emotional support, and a home-like
             environment for terminally ill residents.
           </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/resident-care"}>Learn More</Link>
-            </Button>
-          </div>
         </CardHeader>
-        <CardContent>
-          <div className="lg:container">
-            <video
-              width="2000"
-              controls
-              preload="none"
-              loop
-              muted
-              playsInline
-              className="rounded-md"
-            >
-              <source src="/videos/promo.mp4" type="video/mp4" />
-              <track
-                src="/captions/promo.vtt"
-                kind="subtitles"
-                srcLang="en"
-                label="English"
-              />
-            </video>
-          </div>
+        <CardContent className="flex items-center justify-center lg:container">
+          <video
+            width="2000"
+            height="1000"
+            controls
+            preload="none"
+            loop
+            muted
+            playsInline
+            className="rounded-md"
+          >
+            <source src="/videos/promo.mp4" type="video/mp4" />
+            <track
+              src="/captions/promo.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+          </video>
         </CardContent>
       </Card>
       <Card className="border-none bg-transparent">
@@ -95,22 +80,15 @@ export default function Home() {
             Creating a welcoming environment where residents receive
             personalized, compassionate care.
           </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/life-at-gateway-home"}>Learn More</Link>
-            </Button>
-          </div>
         </CardHeader>
-        <CardContent>
-          <div className="lg:container">
-            <Image
-              src={`/images/home/life-at-gateway-home/resident-room.jpg`}
-              alt={`Resident Room at Gateway Home`}
-              width={2000}
-              height={1000}
-              className="rounded-md"
-            />
-          </div>
+        <CardContent className="flex items-center justify-center lg:container">
+          <Image
+            src={`/images/home/life-at-gateway-home/resident-room.jpg`}
+            alt={`Resident Room at Gateway Home`}
+            width={2000}
+            height={1000}
+            className="rounded-md"
+          />
         </CardContent>
       </Card>
       <Card className="border-none bg-transparent">
@@ -151,59 +129,10 @@ export default function Home() {
           <CardDescription className="text-balance leading-relaxed">
             Gateway Home is made possible by the generosity of our donors.
           </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/donors"}>Learn More</Link>
-            </Button>
-          </div>
         </CardHeader>
         <CardContent>
           <div className="lg:container">
             <DonorsChart />
-          </div>
-        </CardContent>
-      </Card>
-      <Card className="border-none bg-transparent">
-        <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
-            Leadership
-          </CardTitle>
-          <CardDescription className="text-balance leading-relaxed">
-            Our leadership team is made up of dedicated individuals who are
-            passionate about providing comfort and care to those in need.
-          </CardDescription>
-          <div>
-            <Button variant={"ghost"} asChild>
-              <Link href={"/about/leadership"}>Learn More</Link>
-            </Button>
-          </div>
-        </CardHeader>
-        <CardContent>
-          <div className="lg:container">
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-4">
-              {leadership.map((leader) => (
-                <Card key={leader.id} className="border-hidden">
-                  <CardHeader>
-                    <AspectRatio ratio={3 / 4} className="rounded-md bg-muted">
-                      <Image
-                        src={leader.image}
-                        alt={leader.name}
-                        fill
-                        className={cn(
-                          "rounded-md object-cover",
-                          leader.image === "/images/placeholder.svg" &&
-                            "dark:brightness-[0.2] dark:grayscale",
-                        )}
-                      />
-                    </AspectRatio>
-                    <CardTitle>{leader.name}</CardTitle>
-                    <CardDescription className="max-w-lg text-balance leading-relaxed">
-                      {leader.position}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              ))}
-            </div>
           </div>
         </CardContent>
       </Card>
