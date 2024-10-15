@@ -24,7 +24,7 @@ export default function Home() {
     <>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Gateway Home
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -46,7 +46,7 @@ export default function Home() {
       </Card>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Resident Care
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -83,7 +83,7 @@ export default function Home() {
       </Card>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Life at Gateway Home
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -141,7 +141,7 @@ export default function Home() {
       </Card>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Donors
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -208,7 +208,7 @@ export default function Home() {
       </Card>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Leadership
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -252,7 +252,7 @@ export default function Home() {
       </Card>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Our Compassionate Approach
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">
@@ -269,7 +269,7 @@ export default function Home() {
                   <CardHeader className="pb-3">
                     <div className="flex flex-row items-center justify-between space-y-0">
                       <CardTitle>{stat.title}</CardTitle>
-                      <stat.icon className="h-4 w-4 text-muted-foreground text-teal-300" />
+                      <stat.icon className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
                     </div>
                     <CardDescription className="max-w-lg text-balance leading-relaxed">
                       {stat.description}
@@ -283,7 +283,7 @@ export default function Home() {
       </Card>
       <Card className="border-none bg-transparent">
         <CardHeader className="pb-3 text-center">
-          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-300 lg:text-5xl">
+          <CardTitle className="scroll-m-20 text-4xl font-extrabold tracking-tight text-orange-400 dark:text-orange-300 lg:text-5xl">
             Curious about Gateway Home?
           </CardTitle>
           <CardDescription className="text-balance leading-relaxed">

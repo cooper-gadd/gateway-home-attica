@@ -19,8 +19,10 @@ export default function Donate() {
         <Card id="financial-donations">
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Financial Donations</CardTitle>
-              <HandCoins className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-orange-400 dark:text-orange-300">
+                Financial Donations
+              </CardTitle>
+              <HandCoins className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Your financial support is crucial to our mission.
@@ -42,8 +44,10 @@ export default function Donate() {
         <Card id="legacy-brick-sale">
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Legacy Brick Sale</CardTitle>
-              <Cuboid className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-orange-400 dark:text-orange-300">
+                Legacy Brick Sale
+              </CardTitle>
+              <Cuboid className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               Purchase a brick to be placed in our walkway.
@@ -70,8 +74,10 @@ export default function Donate() {
         <Card id="raffle-baskets">
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>Raffle Baskets</CardTitle>
-              <Gift className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-orange-400 dark:text-orange-300">
+                Raffle Baskets
+              </CardTitle>
+              <Gift className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               We raise a good portion of funds via basket raffles.
@@ -94,8 +100,10 @@ export default function Donate() {
       <Card id="wish-list" className="col-span-2">
         <CardHeader>
           <div className="flex flex-row items-center justify-between space-y-0">
-            <CardTitle>Wish List</CardTitle>
-            <ScrollText className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-orange-400 dark:text-orange-300">
+              Wish List
+            </CardTitle>
+            <ScrollText className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
           </div>
           <CardDescription>
             We are always in need of the following items. Please consider

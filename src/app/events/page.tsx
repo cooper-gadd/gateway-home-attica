@@ -17,8 +17,10 @@ export default function Events() {
         <Card key={event.id}>
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>{event.title}</CardTitle>
-              <event.icon className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-orange-400 dark:text-orange-300">
+                {event.title}
+              </CardTitle>
+              <event.icon className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               {event.type}

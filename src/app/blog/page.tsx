@@ -17,8 +17,10 @@ export default function Blog() {
         <Card key={post.id}>
           <CardHeader className="pb-3">
             <div className="flex flex-row items-center justify-between space-y-0">
-              <CardTitle>{post.title}</CardTitle>
-              <post.icon className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-orange-400 dark:text-orange-300">
+                {post.title}
+              </CardTitle>
+              <post.icon className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
             </div>
             <CardDescription className="max-w-lg text-balance leading-relaxed">
               {post.date} • {post.readTime}

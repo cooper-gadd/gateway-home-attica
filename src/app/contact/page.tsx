@@ -15,8 +15,10 @@ export default function Page() {
       <Card id="contact-us">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
-            <CardTitle>Contact Us</CardTitle>
-            <Contact className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-orange-400 dark:text-orange-300">
+              Contact Us
+            </CardTitle>
+            <Contact className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
           </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             If you have any questions or would like to learn more about Gateway
@@ -31,8 +33,10 @@ export default function Page() {
             <Card>
               <CardHeader className="pb-3">
                 <div className="flex flex-row items-center justify-between space-y-0">
-                  <CardTitle>{social.title}</CardTitle>
-                  <social.icon className="h-4 w-4 text-muted-foreground" />
+                  <CardTitle className="text-orange-400 dark:text-orange-300">
+                    {social.title}
+                  </CardTitle>
+                  <social.icon className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
                 </div>
                 <CardDescription className="max-w-lg text-balance leading-relaxed">
                   {social.description}
@@ -45,8 +49,10 @@ export default function Page() {
       <Card id="newsletter">
         <CardHeader className="pb-3">
           <div className="flex flex-row items-center justify-between space-y-0">
-            <CardTitle>Mailing List</CardTitle>
-            <Mail className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-orange-400 dark:text-orange-300">
+              Mailing List
+            </CardTitle>
+            <Mail className="h-4 w-4 text-muted-foreground text-teal-400 dark:text-teal-300" />
           </div>
           <CardDescription className="max-w-lg text-balance leading-relaxed">
             Email us to subscribe to our mailing list to receive updates on our
