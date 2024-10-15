@@ -1,8 +1,9 @@
-import { CircleHelp, Heart, Smile, Target } from "lucide-react";
+import { CircleHelp, HandCoins, Heart, Smile, Target } from "lucide-react";
 import { FrequentlyAskedQuestions } from "../_components/fequently-asked-questions";
 import { LifeAtGatewayHome } from "../_components/life-at-gateway-home";
 import { MissionStatement } from "../_components/mission-statement";
 import { ResidentCare } from "../_components/resident-care";
+import { Donors } from "../_components/donors";
 
 export const abouts = [
   {
@@ -22,6 +23,12 @@ export const abouts = [
     title: "Life at Gateway Home",
     icon: Smile,
     content: <LifeAtGatewayHome />,
+  },
+  {
+    id: "donors",
+    title: "Donors",
+    icon: HandCoins,
+    content: <Donors />,
   },
   {
     id: "fequently-asked-questions",

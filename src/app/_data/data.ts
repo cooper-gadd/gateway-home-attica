@@ -1,14 +1,13 @@
 import {
-  Briefcase,
-  Calendar,
   Clock,
   Coins,
   DoorOpen,
-  Flag,
   HandHeart,
   Heart,
   HeartHandshake,
   HomeIcon,
+  Medal,
+  Ribbon,
   User,
   Users,
 } from "lucide-react";
@@ -19,70 +18,81 @@ export const stats = [
     icon: HeartHandshake,
     description:
       "Free, dignified care and spiritual support for individuals in their final months of life.",
+    category: "mission-statement",
   },
   {
     title: "Community-Funded",
     icon: HandHeart,
     description:
       "Entirely funded through donations, grants, and community generosity.",
+    category: "mission-statement",
   },
   {
     title: "Need-Based Admission",
     icon: DoorOpen,
     description:
       "Admission determined solely by need, ensuring care for the most vulnerable.",
+    category: "mission-statement",
   },
   {
     title: "24/7 Support",
     icon: Clock,
     description:
       "Round-the-clock care including pain management, meals, and companionship.",
+    category: "resident-care",
   },
   {
     title: "Family-Focused",
     icon: Users,
     description:
       "Emotional and spiritual support for both residents and their families.",
+    category: "resident-care",
   },
   {
     title: "No-Cost Care",
     icon: Coins,
     description:
       "Services provided free of charge, without insurance involvement.",
+    category: "resident-care",
   },
   {
     title: "Home-Like Environment",
     icon: HomeIcon,
     description: "A warm, welcoming setting for residents in their final days.",
+    category: "life-at-gateway-home",
   },
   {
     title: "Personalized Support",
     icon: User,
     description:
       "Care tailored to the unique needs of each individual resident.",
+    category: "life-at-gateway-home",
   },
   {
-    title: "Established 2019",
-    icon: Flag,
+    title: "Sense of Belonging",
+    icon: Users,
     description:
-      "Serving the terminally ill with free comfort care since our founding.",
+      "Creating a community atmosphere where residents and families feel connected.",
+    category: "life-at-gateway-home",
   },
   {
-    title: "Community-Driven",
+    title: "Top-Tier Support",
+    icon: Medal,
+    description: "Over 100 donors contributing significantly to Gateway Home.",
+    category: "donors",
+  },
+  {
+    title: "Community Support",
     icon: Heart,
     description:
-      "Powered by dedicated donors, volunteers, and community partners.",
+      "Donors from local businesses and families unite to sustain Gateway Home's mission.",
+    category: "donors",
   },
   {
-    title: "Experienced Team",
-    icon: Briefcase,
+    title: "Grateful Recognition",
+    icon: Ribbon,
     description:
-      "Led by professionals with diverse backgrounds in healthcare and community service.",
-  },
-  {
-    title: "Local Engagement",
-    icon: Calendar,
-    description:
-      "Actively organizing fundraising events and fostering community connections.",
+      "Each contribution, large or small, is vital to our ability to provide compassionate care.",
+    category: "donors",
   },
 ];
