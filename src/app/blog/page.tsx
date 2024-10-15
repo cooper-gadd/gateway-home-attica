@@ -28,7 +28,7 @@ export default function Blog() {
           </CardHeader>
           <CardContent>{post.description}</CardContent>
           <CardFooter>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               {post.href ? (
                 <Link href={post.href}>Read More</Link>
               ) : (

@@ -29,7 +29,7 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link
                 target="_blank"
                 href={
@@ -54,7 +54,7 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter className="flex items-center gap-4">
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link
                 target="_blank"
                 href={
@@ -64,7 +64,7 @@ export default function Donate() {
                 Buy a Brick
               </Link>
             </Button>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link target="_blank" href={"/pdfs/legacy-brick-sale-form.pdf"}>
                 Brick Form
               </Link>
@@ -84,7 +84,7 @@ export default function Donate() {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link
                 target="_blank"
                 href={
@@ -164,7 +164,7 @@ export default function Donate() {
         </CardContent>
         <CardFooter>
           <div className="flex items-center gap-4">
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link
                 target="_blank"
                 href={
@@ -174,7 +174,7 @@ export default function Donate() {
                 Amazon
               </Link>
             </Button>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link
                 target="_blank"
                 href={

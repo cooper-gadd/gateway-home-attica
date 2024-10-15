@@ -40,7 +40,7 @@ export default function Hiring() {
           </CardHeader>
           <CardContent>{hiring.aboutYou}</CardContent>
           <CardFooter>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link href={`/hiring/${hiring.id}`}>Read More</Link>
             </Button>
           </CardFooter>

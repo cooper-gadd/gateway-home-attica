@@ -28,12 +28,12 @@ export default function Events() {
           </CardHeader>
           <CardContent>{event.description}</CardContent>
           <CardFooter className="flex items-center gap-4">
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link target="_blank" href={event.link}>
                 {event.action}
               </Link>
             </Button>
-            <Button asChild>
+            <Button variant={"secondary"} asChild>
               <Link href={`/events/${event.id}`}>Learn More</Link>
             </Button>
           </CardFooter>
