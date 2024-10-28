@@ -1,7 +1,6 @@
-import { Leaf, type LucideProps, Stethoscope } from "lucide-react";
+import { type LucideProps, Stethoscope } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 import { EndOfLifeDoula } from "../_components/end-of-life-doula";
-import { KindredTreasuresFallFestival } from "../_components/kindered-treasures-fall-festival";
 
 export const events: {
   id: string;
@@ -25,16 +24,5 @@ export const events: {
     content: <EndOfLifeDoula />,
     action: "Register Now",
     link: "mailto:sara@gatewayhomeattica.org",
-  },
-  {
-    id: "kindered-treasures-fall-festival",
-    title: "Kindered Treasures Fall Festival",
-    icon: Leaf,
-    type: "Fundraiser",
-    description:
-      "Join us in the beautiful hills of Attica for an outdoor Fall Festival with crafts, vendors, pony rides, a Basket Raffle to benefit Gateway Home, and food! The event takes place on October 18th from noon to 6pm and October 19th from 9am-5pm at 3099 and 3095 Merle Rd, Attica, NY.",
-    content: <KindredTreasuresFallFestival />,
-    action: "Contact for Vendor Info",
-    link: "mailto:info@gatewayhomeattica.org",
   },
 ];
