@@ -1,6 +1,6 @@
-import { type LucideProps, Stethoscope } from "lucide-react";
+import { DollarSign, type LucideProps } from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
-import { EndOfLifeDoula } from "../_components/end-of-life-doula";
+import { CashRaffle } from "../_components/cash-raffle";
 
 export const events: {
   id: string;
@@ -15,14 +15,14 @@ export const events: {
   >;
 }[] = [
   {
-    id: "end-of-life-doula",
-    title: "End of Life Doula",
-    icon: Stethoscope,
-    type: "Training Course",
+    id: "cash-raffle",
+    title: "Cash Raffle",
+    icon: DollarSign,
+    type: "Fundraiser",
     description:
-      "We are excited to announce an 8-week End of Life Doula training course at Gateway Home, beginning Wednesday, September 18th. This immersive program is designed to empower caregivers with the skills and wisdom to offer compassionate support to those nearing the end of life. The class will take place every Wednesday for eight consecutive weeks, providing both practical and spiritual tools to help those in their final days live fully until they pass.",
-    content: <EndOfLifeDoula />,
-    action: "Register Now",
-    link: "mailto:sara@gatewayhomeattica.org",
+      "Join our exciting cash raffle fundraiser with $50,000 in total prizes! Only 1,000 tickets available at $20 each, with multiple chances to win including a grand prize of $2,500. Drawing will be held during Attica's Winterfest on December 14th, 2024 at Gateway Home. Winners need not be present to win.",
+    content: <CashRaffle />,
+    action: "Buy Tickets",
+    link: "https://gatewayhomeattica.networkforgood.com/events/77462-cash-raffle-2024?fbclid=IwZXh0bgNhZW0CMTAAAR2xD1PeWxdwL7yNRZG1TMCwtD9tvGX3G6L6cCLLDJMzPU0am7xSddyp1mw_aem_ePsseGJW0Csc2DelvRl8Dw",
   },
 ];
