@@ -6,7 +6,8 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { Bar, BarChart, XAxis, YAxis } from "recharts";
+import * as React from "react";
+import { Label, Pie, PieChart } from "recharts";
 
 const chartData = [
   { level: "platinum", donors: 4, fill: "var(--color-platinum)" },
@@ -21,43 +22,75 @@ const chartConfig = {
   },
   platinum: {
     label: "Platinum",
-    color: "#E5E4E2",
+    color: "hsl(0, 0%, 90%)", // #E5E4E2
   },
   gold: {
     label: "Gold",
-    color: "#FFD700",
+    color: "hsl(51, 100%, 50%)", // #FFD700
   },
   silver: {
     label: "Silver",
-    color: "#C0C0C0;",
+    color: "hsl(0, 0%, 75%)", // #C0C0C0
   },
   bronze: {
     label: "Bronze",
-    color: "#CD7F32",
+    color: "hsl(30, 60%, 50%)", // #CD7F32
   },
 } satisfies ChartConfig;
 
 export function DonorsChart() {
+  const totalDonors = React.useMemo(() => {
+    return chartData.reduce((acc, curr) => acc + curr.donors, 0);
+  }, []);
+
   return (
-    <ChartContainer config={chartConfig}>
-      <BarChart accessibilityLayer data={chartData} layout="vertical">
-        <YAxis
-          dataKey="level"
-          type="category"
-          tickLine={false}
-          tickMargin={10}
-          axisLine={false}
-          tickFormatter={(value) =>
-            chartConfig[value as keyof typeof chartConfig]?.label
-          }
-        />
-        <XAxis dataKey="donors" type="number" hide />
+    <ChartContainer
+      config={chartConfig}
+      className="mx-auto aspect-square max-h-[500px]"
+    >
+      <PieChart>
         <ChartTooltip
           cursor={false}
           content={<ChartTooltipContent hideLabel />}
         />
-        <Bar dataKey="donors" layout="vertical" radius={5} />
-      </BarChart>
+        <Pie
+          data={chartData}
+          dataKey="donors"
+          nameKey="level"
+          innerRadius={60}
+          strokeWidth={5}
+        >
+          <Label
+            content={({ viewBox }) => {
+              if (viewBox && "cx" in viewBox && "cy" in viewBox) {
+                return (
+                  <text
+                    x={viewBox.cx}
+                    y={viewBox.cy}
+                    textAnchor="middle"
+                    dominantBaseline="middle"
+                  >
+                    <tspan
+                      x={viewBox.cx}
+                      y={viewBox.cy}
+                      className="fill-foreground text-3xl font-bold"
+                    >
+                      {totalDonors.toLocaleString()}
+                    </tspan>
+                    <tspan
+                      x={viewBox.cx}
+                      y={(viewBox.cy ?? 0) + 24}
+                      className="fill-muted-foreground"
+                    >
+                      Total Donors
+                    </tspan>
+                  </text>
+                );
+              }
+            }}
+          />
+        </Pie>
+      </PieChart>
     </ChartContainer>
   );
 }

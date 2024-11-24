@@ -82,7 +82,7 @@ export default function Home() {
             width="2000"
             height="1000"
             controls
-            preload="none"
+            preload="metadata"
             loop
             muted
             playsInline
