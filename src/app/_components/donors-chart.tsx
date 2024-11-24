@@ -82,7 +82,7 @@ export function DonorsChart() {
                       y={(viewBox.cy ?? 0) + 24}
                       className="fill-muted-foreground"
                     >
-                      Total Donors
+                      Donors
                     </tspan>
                   </text>
                 );
