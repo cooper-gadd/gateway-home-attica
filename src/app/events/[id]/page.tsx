@@ -22,11 +22,13 @@ export default function Event({
       </h1>
       {event.content}
       <div>
-        <Button asChild>
-          <Link target="_blank" href={event.link}>
-            {event.action}
-          </Link>
-        </Button>
+        {event.action && (
+          <Button asChild>
+            <Link target="_blank" href={event.link ?? "#"}>
+              {event.action}
+            </Link>
+          </Button>
+        )}
       </div>
     </>
   );
