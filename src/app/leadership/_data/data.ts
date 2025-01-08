@@ -29,18 +29,7 @@ export const leadership = [
     ],
   },
   {
-    id: 4,
-    name: "Carolyn Gadd",
-    position: "Board Secretary",
-    image: "/images/leadership/carolyn-gadd.jpg",
-    bio: [
-      "Carolyn Gadd lives in Alden, NY with her two daughters Alyssa, and Madison.  She has been a volunteer for Gateway Home since 2016 helping to spread the word of Gateway Home outside of Attica. She has also hosted fundraisers in Alden on behalf of Gateway Home, volunteered at various Gateway events and works at the Darien Lake Concert concession stands to raise money for Gateway.",
-      "Carolyn has 25 plus years of experience working in a business environment where her experience is utilized as Treasurer for Gateway Home.",
-      "Carolyn feels fortunate to be in an organization that allows her to help others and apply her skills to make a difference in the life of others.",
-    ],
-  },
-  {
-    id: 5,
+    id: 6,
     name: "Donna Ferry",
     position: "Board Member",
     image: "/images/leadership/donna-ferry.jpg",
@@ -51,10 +40,10 @@ export const leadership = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Kimberly Kadziolka",
     position: "Board Member",
-    image: "/images/placeholder.svg",
+    image: "/images/leadership/kimberly-kadziolka.jpg",
     bio: [
       "Kimberly Kadziolka, BA, MS, EdD, is a seasoned human services professional who has a long career working with vulnerable populations in WNY. Currently, she is the executive director of Parent Network of WNY, however her experience includes working with children and adults with disabilities, children in the child welfare system, survivors of domestic violence, County, and individuals returning to WNY following incarceration in the federal prison system. Kimberly has a deep sense of equity and works for the day when everyone in our community has access to all they need to reach their full potential throughout their life.",
       "Kimberly was introduced to Gateway Home when her sister, Jammie, was a resident in July 2023. Witnessing the compassionate care provided to her sister and family, she felt moved to offer her skills in helping to spread the mission of Gateway Home. Recognizing that comfort care is an incredible gift to our community, she is excited to be a part of Gateway Home.",
@@ -63,7 +52,7 @@ export const leadership = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "Sara Brunner",
     position: "Director",
     image: "/images/leadership/sara-brunner.jpg",
@@ -73,7 +62,7 @@ export const leadership = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     name: "Sue Herman",
     position: "Office Manager",
     image: "/images/leadership/sue-herman.jpeg",
