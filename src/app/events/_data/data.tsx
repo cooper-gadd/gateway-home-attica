@@ -19,7 +19,8 @@ export const events: {
     title: "Superbowl Squares",
     icon: Trophy,
     type: "Fundraiser",
-    description: "Get your football squares for the Superbowl game!",
+    description:
+      "Get your football squares for the Superbowl game (Sun, Feb 9th).",
     content: <SuperbowlSquares />,
   },
 ];
