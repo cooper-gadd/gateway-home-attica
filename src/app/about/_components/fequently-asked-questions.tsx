@@ -150,23 +150,39 @@ export function FrequentlyAskedQuestions() {
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           What items should my loved one bring to Gateway Home?
         </h2>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          When a person is admitted to Gateway Home, they are encouraged to
-          bring personal items that will make them feel more at home. We
-          encourage residents to bring their own clothing, personal care items,
-          and any other items that will make them feel more comfortable. We
-          provide all the necessary medical equipment and supplies, as well as
-          snacks. We also provide all the necessary linens and towels. We have a
-          washer and dryer on site for residents to use. We also have a small
-          library of books, puzzles, and games for residents to enjoy. We have a
-          beautiful garden and patio area for residents to enjoy the outdoors.
-          We also have a large living room with a fireplace and a television for
-          residents to enjoy. We encourage residents to bring their own personal
-          items to make their stay more comfortable. We also encourage family
-          members to visit often and to participate in the care of their loved
-          one. We have a family room with a kitchenette and a dining area for
-          family members to use.
-        </p>
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          <li>
+            Essential Documents
+            <ul className="ml-6 list-disc [&>li]:mt-2">
+              <li>Current medications</li>
+              <li>Insurance and Social Security cards</li>
+              <li>DNR, Health Care Proxy, and MOLST forms</li>
+            </ul>
+          </li>
+          <li>
+            Personal Care Items
+            <ul className="ml-6 list-disc [&>li]:mt-2">
+              <li>Comfortable clothing (pajamas, undergarments)</li>
+              <li>Favorite blankets and pillows</li>
+            </ul>
+          </li>
+          <li>
+            Comfort & Entertainment
+            <ul className="ml-6 list-disc [&>li]:mt-2">
+              <li>Special pictures and photos</li>
+              <li>Favorite foods, snacks, and drinks</li>
+              <li>Music/media players and headphones</li>
+            </ul>
+          </li>
+          <li>
+            Contact Information
+            <ul className="ml-6 list-disc [&>li]:mt-2">
+              <li>
+                Addresses, phone numbers, and emails for family and friends
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div className="mb-6">
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
