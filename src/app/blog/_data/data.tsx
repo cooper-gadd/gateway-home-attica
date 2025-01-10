@@ -1,7 +1,14 @@
-import { BrickWall, Hammer, type LucideProps, Newspaper } from "lucide-react";
+import {
+  BrickWall,
+  Flower2,
+  Hammer,
+  type LucideProps,
+  Newspaper,
+} from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 import { GatewayHomeDedicatesBrickWalkways } from "../_components/gateway-home-dedicates-brick-walkways";
 import { NewPatioAndPergola } from "../_components/new-patio-and-pergola";
+import { FirstAnnualGatewayHomeMemorialService } from "../_components/first-annual-gateway-home-memorial-service";
 
 export const posts: {
   id: string;
@@ -16,6 +23,17 @@ export const posts: {
   content?: JSX.Element;
   href?: string;
 }[] = [
+  {
+    id: "first-annual-gateway-home-memorial-service",
+    title: "First Annual Gateway Home Memorial Service",
+    icon: Flower2,
+    author: "Sara Brunner",
+    date: "November 13, 2024",
+    readTime: "3 minute read",
+    description:
+      "Gateway Home hosted its first annual Memorial Service at the 1st Baptist Church in Attica, honoring 77 residents who passed away in our care. The evening featured songs, remembrance, and fellowship, establishing a new yearly tradition each November.",
+    content: <FirstAnnualGatewayHomeMemorialService />,
+  },
   {
     id: "fall-2024-winter-2025-newsletter",
     title: "Fall 2024/Winter 2025 Newsletter",
