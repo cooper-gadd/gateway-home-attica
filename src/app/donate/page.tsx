@@ -104,7 +104,7 @@ export default function Donate() {
           </CardFooter>
         </Card>
       </div>
-      <Card id="charitable-giving" className="mt-4">
+      <Card id="charitable-giving">
         <CardHeader>
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle className="text-orange-400 dark:text-orange-300">
@@ -167,7 +167,7 @@ export default function Donate() {
           </ul>
         </CardContent>
       </Card>
-      <Card id="legacy-giving" className="mt-4">
+      <Card id="legacy-giving">
         <CardHeader>
           <div className="flex flex-row items-center justify-between space-y-0">
             <CardTitle className="text-orange-400 dark:text-orange-300">
