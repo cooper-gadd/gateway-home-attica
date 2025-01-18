@@ -1,8 +1,15 @@
-import { Drumstick, Sun, Trophy, type LucideProps } from "lucide-react";
+import {
+  Drumstick,
+  Sun,
+  Trophy,
+  Utensils,
+  type LucideProps,
+} from "lucide-react";
 import { type ForwardRefExoticComponent, type RefAttributes } from "react";
 import { SuperbowlSquares } from "../_components/superbowl-squares";
 import { SpringChickenBbq } from "../_components/spring-chicken-bbq";
 import { FirstAnnualGatewayToSummer } from "../_components/first-annual-gateway-to-summer";
+import { PancakeBreakfast } from "../_components/pancake-breakfast";
 
 export const events: {
   id: string;
@@ -24,6 +31,14 @@ export const events: {
     description:
       "Get your football squares for the Superbowl game (Sun, Feb 9th).",
     content: <SuperbowlSquares />,
+  },
+  {
+    id: "pancake-breakfast",
+    title: "Pancake Breakfast",
+    icon: Utensils,
+    type: "Fundraiser",
+    description: "Join us for our annual Pancake Breakfast in February 23rd.",
+    content: <PancakeBreakfast />,
   },
   {
     id: "spring-chicken-bbq",
