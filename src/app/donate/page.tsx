@@ -269,28 +269,16 @@ export default function Donate() {
           </Tabs>
         </CardContent>
         <CardFooter>
-          <div className="flex items-center gap-4">
-            <Button variant={"secondary"} asChild>
-              <Link
-                target="_blank"
-                href={
-                  "https://www.amazon.com/registries/gl/guest-view/2R4ZT42FVZQW1"
-                }
-              >
-                Amazon
-              </Link>
-            </Button>
-            <Button variant={"secondary"} asChild>
-              <Link
-                target="_blank"
-                href={
-                  "https://www.walmart.com/lists/shared/WL/64dea00b-59b4-4ab4-8d9e-3d13d28b6236"
-                }
-              >
-                Walmart
-              </Link>
-            </Button>
-          </div>
+          <Button variant={"secondary"} asChild>
+            <Link
+              target="_blank"
+              href={
+                "https://www.amazon.com/registries/gl/guest-view/2R4ZT42FVZQW1"
+              }
+            >
+              Amazon
+            </Link>
+          </Button>
         </CardFooter>
       </Card>
     </>
