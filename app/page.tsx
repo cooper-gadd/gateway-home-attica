@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Video } from "@/components/video-placeholder";
 import Image from "next/image";
 import Link from "next/link";
@@ -427,23 +426,6 @@ export default function Home() {
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Signup */}
-      <section className="py-16 bg-muted">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
-            Stay Updated
-          </h2>
-          <form className="max-w-md mx-auto flex gap-2">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-grow"
-            />
-            <Button type="submit">Subscribe</Button>
-          </form>
         </div>
       </section>
     </main>
