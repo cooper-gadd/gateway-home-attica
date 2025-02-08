@@ -5,40 +5,39 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Video } from "@/components/video-placeholder";
 import Image from "next/image";
 import Link from "next/link";
+import homeFront from "./home-front.jpg";
+import residentRoom from "./resident-room.jpg";
 
 export default function Home() {
   const events = [
     {
       id: 1,
-      title: "Community Gathering",
-      date: "June 7, 2023",
+      title: "Pancake Breakfast",
+      date: "February 23rd",
       description:
-        "Join us for our monthly community gathering. Share stories, enjoy refreshments, and connect with others.",
+        "Join us from 8:00am to 1:00pm for our annual Pancake Breakfast. This will take place at the Alden Fire Department substation #2 (11856 Broadway, Alden NY). This is a free will offering event.",
     },
     {
       id: 2,
-      title: "Art Therapy Workshop",
-      date: "June 14, 2023",
-      description:
-        "Express yourself through art in our therapeutic workshop led by local artists.",
+      title: "Spring Chicken BBQ",
+      date: "May",
+      description: "Join us for our annual Spring Chicken BBQ.",
     },
     {
       id: 3,
-      title: "Family Day Picnic",
-      date: "June 21, 2023",
-      description:
-        "Bring your family for a day of fun, games, and delicious food in our beautiful garden.",
-    },
-    {
-      id: 4,
-      title: "Music & Memories Concert",
-      date: "June 28, 2023",
-      description:
-        "Enjoy a live performance of classic tunes that will bring back fond memories.",
+      title: "First Annual Gateway to Summer",
+      date: "June",
+      description: "Celebrate the start of summer with Gateway Home.",
     },
   ];
 
@@ -81,15 +80,16 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-muted text-foreground">
+      <section className="relative h-[70vh] bg-muted/40 text-foreground">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
-          alt="Serenity House"
-          fill
-          className="object-cover opacity-50"
+          src={homeFront}
+          alt="Gateway Home"
+          width={1920}
+          height={1080}
+          className="opacity-50 h-full w-full object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="text-5xl font-bold mb-4">Serenity House</h1>
+          <h1 className="text-5xl font-bold mb-4">Gateway Home</h1>
           <p className="text-xl max-w-2xl">
             A place of comfort, care, and compassion
           </p>
@@ -102,80 +102,43 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
             Our Mission
           </h2>
-          <p className="text-xl text-center max-w-3xl mx-auto">
-            At Serenity House, we are dedicated to providing compassionate,
-            high-quality care in a warm and supportive environment. Our mission
-            is to enhance the quality of life for our residents and their
-            families during life's most challenging moments.
+          <p className="text-xl text-center max-w-3xl mx-auto text-foreground">
+            We provide free comfort care for those nearing the end of life. Our
+            team supports residents and families with medical and spiritual
+            care. As a nonprofit, we rely on community donations to serve those
+            in need.
           </p>
-        </div>
-      </section>
-
-      {/* Resident Care Video Section */}
-      <section className="bg-muted">
-        <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
-            Experience Our Compassionate Care
-          </h2>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-            Hear directly from our residents and their families about the
-            quality of care and life at Serenity House.
-          </p>
-          <Video
-            thumbnailSrc="/placeholder.svg?height=1080&width=1920"
-            videoSrc="/path-to-your-promo-video.mp4"
-          />
         </div>
       </section>
 
       {/* Resident Care Section */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
             Our Approach to Resident Care
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg mb-4 text-center">
-              At Serenity House, we believe in a holistic approach to care that
-              addresses not just physical needs, but also emotional and social
-              well-being. Our dedicated team works tirelessly to create a
-              nurturing environment where each resident feels valued, respected,
-              and cared for.
+            <p className="text-lg mb-6 text-center text-foreground">
+              Gateway Home provides free comfort care for terminally ill
+              patients in their final three months. Our staff and volunteers
+              care for two residents at a time, 24/7.
             </p>
-            <p className="text-lg mb-6 text-center">
-              From our 24/7 nursing care to our diverse range of therapies and
-              activities, every aspect of our service is designed to enhance the
-              quality of life for our residents. We understand that each
-              individual has unique needs and preferences, which is why we
-              tailor our care plans to each resident.
+            <p className="text-lg mb-6 text-center text-foreground">
+              We focus on comfort care, pain management, and family support. Our
+              services include around-the-clock care, meals, laundry,
+              companionship, and emotional support - all while respecting each
+              person&apos;s dignity.
             </p>
-            <div className="text-center">
-              <Button asChild>
-                <Link href="/care-services">Explore Our Care Services</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Upcoming Events */}
-      <section className="py-16 bg-muted">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
-            Upcoming Events
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {events.map((event) => (
-              <Card key={event.id}>
-                <CardHeader>
-                  <CardTitle>{event.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{event.description}</p>
-                  <p className="mt-2 font-semibold">Date: {event.date}</p>
-                </CardContent>
-              </Card>
-            ))}
+            <p className="text-lg mb-6 text-center text-foreground">
+              We accept residents based on need alone, regardless of background.
+              Referrals come from healthcare providers, social workers, clergy,
+              family or individuals. Those unable to receive care at home get
+              priority.
+            </p>
+            <p className="text-lg mb-6 text-center text-foreground">
+              Our services are completely free. We rely entirely on donations,
+              fundraising, and community support.
+            </p>
           </div>
         </div>
       </section>
@@ -186,7 +149,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src={residentRoom}
                 alt="Inside Serenity House"
                 width={800}
                 height={600}
@@ -195,39 +158,75 @@ export default function Home() {
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
-                Living at Serenity House
+                Living at Gateway Home
               </h2>
               <p className="text-lg mb-4 text-foreground">
-                At Serenity House, we provide a warm, home-like environment
-                where residents can feel comfortable and cared for. Our spacious
-                common areas and cozy private rooms are designed to promote both
-                social interaction and personal peace.
+                Gateway Home offers comfort and dignity for residents in their
+                final days. Our staff and volunteers provide quality care in a
+                warm, welcoming environment. We offer medical care, emotional
+                support, and spiritual care tailored to each resident&apos;s
+                needs. Our community provides a sense of belonging through
+                personalized attention and care.
               </p>
               <p className="text-lg mb-4 text-foreground">
-                Our dedicated staff ensures that each resident receives
-                personalized care, engaging activities, and nutritious meals
-                tailored to their preferences and needs. We strive to create a
-                supportive community where residents can thrive and families can
-                find peace of mind.
+                We believe everyone deserves dignity and respect in their final
+                days. Our peaceful environment and compassionate care extend to
+                both residents and their families. We work closely with families
+                to ensure their loved ones receive the support they need.
+                We&apos;re proud to welcome you to our Gateway Home community.
               </p>
-              <Button asChild>
-                <Link href="/tour">Schedule a Tour</Link>
-              </Button>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Resident Care Video Section */}
+      <section className="bg-muted/40">
+        <div className="container mx-auto px-4 py-16">
+          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+            Experience Our Compassionate Care
+          </h2>
+          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+            Hear directly from our residents and their families about the
+            quality of care and life at Gateway Home.
+          </p>
+          <Video
+            thumbnailSrc="/placeholder.svg?height=1080&width=1920"
+            videoSrc="/path-to-your-promo-video.mp4"
+          />
+        </div>
+      </section>
+
+      {/* Upcoming Events */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+            Upcoming Events
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {events.map((event) => (
+              <Card key={event.id}>
+                <CardHeader>
+                  <CardTitle>{event.title}</CardTitle>
+                  <CardDescription>{event.date}</CardDescription>
+                </CardHeader>
+                <CardContent>{event.description}</CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Volunteering Section */}
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
             Volunteer with Us
           </h2>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-foreground">
               Make a difference in the lives of our residents by volunteering at
-              Serenity House. We offer various opportunities for individuals to
+              Gateway House. We offer various opportunities for individuals to
               share their time, skills, and compassion with our community.
             </p>
             <Button asChild>
@@ -237,8 +236,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Leadership Section */}
+      {/* Donations Section */}
       <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+            Support Our Mission
+          </h2>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg mb-6 text-foreground">
+              Your generous donations help us continue providing exceptional
+              care and creating a nurturing environment for our residents. Every
+              contribution, no matter the size, makes a significant impact on
+              the lives of those we serve.
+            </p>
+            <Button asChild>
+              <Link href="/donate">Make a Donation</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Leadership Section */}
+      <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
             Our Leadership Team
@@ -263,26 +282,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Donations Section */}
-      <section className="py-16 bg-muted">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
-            Support Our Mission
-          </h2>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg mb-6">
-              Your generous donations help us continue providing exceptional
-              care and creating a nurturing environment for our residents. Every
-              contribution, no matter the size, makes a significant impact on
-              the lives of those we serve.
-            </p>
-            <Button asChild>
-              <Link href="/donate">Make a Donation</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Employment Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
@@ -290,11 +289,11 @@ export default function Home() {
             Join Our Team
           </h2>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg mb-6">
-              At Serenity House, we're always looking for compassionate and
-              dedicated individuals to join our team. If you're passionate about
-              making a difference in the lives of others, we'd love to hear from
-              you.
+            <p className="text-lg mb-6 text-foreground">
+              At Serenity House, we&apos;re always looking for compassionate and
+              dedicated individuals to join our team. If you&apos;re passionate
+              about making a difference in the lives of others, we&apos;d love
+              to hear from you.
             </p>
             <Button asChild>
               <Link href="/careers">View Open Positions</Link>
@@ -304,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* Blog Posts */}
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
             Latest from Our Blog
@@ -318,10 +317,8 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Learn about the best practices for providing care and
-                    support to your family members in need.
-                  </p>
+                  Learn about the best practices for providing care and support
+                  to your family members in need.
                   <Button variant="link" asChild className="mt-2 p-0">
                     <Link href={`/blog/post-${post}`}>Read More</Link>
                   </Button>
@@ -367,7 +364,7 @@ export default function Home() {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
             Frequently Asked Questions
@@ -377,7 +374,7 @@ export default function Home() {
               <AccordionTrigger>What services do you offer?</AccordionTrigger>
               <AccordionContent>
                 We offer 24/7 nursing care, pain management, emotional support,
-                and various therapies tailored to each resident's needs.
+                and various therapies tailored to each resident&apos;s needs.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
