@@ -143,14 +143,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Living at Serenity House Section */}
+      {/* Living at Gateway House Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <Image
                 src={residentRoom}
-                alt="Inside Serenity House"
+                alt="Inside Gateway House"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-lg"
@@ -290,7 +290,7 @@ export default function Home() {
           </h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg mb-6 text-foreground">
-              At Serenity House, we&apos;re always looking for compassionate and
+              At Gateway House, we&apos;re always looking for compassionate and
               dedicated individuals to join our team. If you&apos;re passionate
               about making a difference in the lives of others, we&apos;d love
               to hear from you.
@@ -614,14 +614,13 @@ export default function Home() {
           </h2>
           <div className="max-w-lg mx-auto text-center">
             <p className="mb-2">
-              <strong>Address:</strong> 123 Comfort Lane, Serenity City, SC
-              12345
+              <strong>Address:</strong> 123 Comfort Lane, Gateway City, SC 12345
             </p>
             <p className="mb-2">
               <strong>Phone:</strong> (555) 123-4567
             </p>
             <p className="mb-4">
-              <strong>Email:</strong> info@serenityhouse.com
+              <strong>Email:</strong> info@Gatewayhouse.com
             </p>
             <Button asChild>
               <Link href="/contact">Get in Touch</Link>
