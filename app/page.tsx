@@ -708,10 +708,10 @@ export default function Home() {
           </h2>
           <div className="max-w-lg mx-auto text-center mb-16">
             <p className="mb-2">
-              <strong>Address:</strong> 123 Comfort Lane, Gateway City, SC 12345
+              <strong>Address:</strong> 91 Main Street, Attica, NY 14011
             </p>
             <p className="mb-2">
-              <strong>Phone:</strong> (555) 123-4567
+              <strong>Phone:</strong> (585) 708-4331
             </p>
             <p className="mb-4">
               <strong>Email:</strong> info@Gatewayhouse.com
