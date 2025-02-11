@@ -1,21 +1,22 @@
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Video } from "@/components/video-placeholder";
 import Image from "next/image";
 import Link from "next/link";
+import cake from "./cake.jpg";
 import donnaFerry from "./donna-ferry.jpg";
 import dougDomes from "./doug-domes.jpeg";
 import homeFront from "./home-front.jpg";
@@ -155,56 +156,68 @@ export default function Home() {
       {/* Resident Care Section */}
       <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
-            Our Approach to Resident Care
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg mb-6 text-center text-foreground">
-              Gateway Home is an empathetic and loving comfort care home for the
-              terminally ill. It is a home-like setting that offers free comfort
-              care for those in their last three months of a terminal illness.
-              Gateway Home’s staff and trained volunteers are able to care for
-              two residents at a time, 24 hours a day, 365 days a year. Our
-              primary goal is to provide comfort care, symptom control and pain
-              management for our residents, as well as to be a source of respite
-              care for the families and friends. Hands-on resident care is
-              provided around the clock, along with meals, laundry,
-              companionship, as well as emotional, and spiritual support.
-              Comfort care honors the well-being of every person and respects
-              the dignity of human life. Admission to Gateway Home is based
-              solely on need, regardless of age, sex, race, religion or other
-              distinctions . Referrals come from several sources: Hospice,
-              health care agencies, hospitals, physicians, social workers,
-              clergy, family, friends or the person themselves. Priority is
-              given to those who cannot receive adequate care at home. There is
-              no cost to the families that we serve, nor do we receive any
-              reimbursement from insurance companies. Gateway Home is funded
-              solely by donations, fundraising, memorial contributions and
-              through the generosity of our community.
-            </p>
-            <p className="text-lg mb-6 text-center text-foreground">
-              Our primary goal is to provide comfort care, symptom control and
-              pain management for our residents, as well as to be a source of
-              respite care for the families and friends. Hands-on resident care
-              is provided around the clock, along with meals, laundry,
-              companionship, as well as emotional, and spiritual support.
-              Comfort care honors the well-being of every person and respects
-              the dignity of human life.
-            </p>
-            <p className="text-lg mb-6 text-center text-foreground">
-              Admission to Gateway Home is based solely on need, regardless of
-              age, sex, race, religion or other distinctions . Referrals come
-              from several sources: Hospice, health care agencies, hospitals,
-              physicians, social workers, clergy, family, friends or the person
-              themselves. Priority is given to those who cannot receive adequate
-              care at home.
-            </p>
-            <p className="text-lg mb-6 text-center text-foreground">
-              There is no cost to the families that we serve, nor do we receive
-              any reimbursement from insurance companies. Gateway Home is funded
-              solely by donations, fundraising, memorial contributions and
-              through the generosity of our community.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+
+            <div className="md:w-1/2">
+              <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+                Our Approach to Resident Care
+              </h2>
+              <p className="text-lg mb-4 text-foreground">
+                Gateway Home is an empathetic and loving comfort care home for
+                the terminally ill. It is a home-like setting that offers free
+                comfort care for those in their last three months of a terminal
+                illness. Gateway Home’s staff and trained volunteers are able to
+                care for two residents at a time, 24 hours a day, 365 days a
+                year. Our primary goal is to provide comfort care, symptom
+                control and pain management for our residents, as well as to be
+                a source of respite care for the families and friends. Hands-on
+                resident care is provided around the clock, along with meals,
+                laundry, companionship, as well as emotional, and spiritual
+                support. Comfort care honors the well-being of every person and
+                respects the dignity of human life. Admission to Gateway Home is
+                based solely on need, regardless of age, sex, race, religion or
+                other distinctions . Referrals come from several sources:
+                Hospice, health care agencies, hospitals, physicians, social
+                workers, clergy, family, friends or the person themselves.
+                Priority is given to those who cannot receive adequate care at
+                home. There is no cost to the families that we serve, nor do we
+                receive any reimbursement from insurance companies. Gateway Home
+                is funded solely by donations, fundraising, memorial
+                contributions and through the generosity of our community.
+              </p>
+              <p className="text-lg mb-4 text-foreground">
+                Our primary goal is to provide comfort care, symptom control and
+                pain management for our residents, as well as to be a source of
+                respite care for the families and friends. Hands-on resident
+                care is provided around the clock, along with meals, laundry,
+                companionship, as well as emotional, and spiritual support.
+                Comfort care honors the well-being of every person and respects
+                the dignity of human life.
+              </p>
+              <p className="text-lg mb-4 text-foreground">
+                Admission to Gateway Home is based solely on need, regardless of
+                age, sex, race, religion or other distinctions . Referrals come
+                from several sources: Hospice, health care agencies, hospitals,
+                physicians, social workers, clergy, family, friends or the
+                person themselves. Priority is given to those who cannot receive
+                adequate care at home.
+              </p>
+              <p className="text-lg mb-4 text-foreground">
+                There is no cost to the families that we serve, nor do we
+                receive any reimbursement from insurance companies. Gateway Home
+                is funded solely by donations, fundraising, memorial
+                contributions and through the generosity of our community.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <Image
+                src={cake}
+                alt="Resident Care"
+                width={800}
+                height={600}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
