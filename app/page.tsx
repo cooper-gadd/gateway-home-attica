@@ -72,36 +72,43 @@ export default function Home() {
       name: "Doug Domes",
       role: "Board President",
       imageSrc: dougDomes,
+      page: "/leadership/doug-domes",
     },
     {
       name: "Jim Russell",
       role: "Board Vice President",
       imageSrc: jimRussell,
+      page: "/leadership/jim-russell",
     },
     {
       name: "Todd Gadd",
       role: "Board Treasurer",
       imageSrc: toddGadd,
+      page: "/leadership/todd-gadd",
     },
     {
       name: "Donna Ferry",
       role: "Board Member",
       imageSrc: donnaFerry,
+      page: "/leadership/donna-ferry",
     },
     {
       name: "Kimberly Kadziolka",
       role: "Board Member",
       imageSrc: kimberlyKadziolka,
+      page: "/leadership/kimberly-kadziolka",
     },
     {
       name: "Sara Brunner",
       role: "Director",
       imageSrc: saraBrunner,
+      page: "/leadership/sara-brunner",
     },
     {
       name: "Sue Herman",
       role: "Office Manager",
       imageSrc: sueHerman,
+      page: "/leadership/sue-herman",
     },
   ];
 
@@ -365,19 +372,23 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {leadershipTeam.map((leader) => (
-              <Card key={leader.name}>
-                <CardContent className="flex flex-col items-center p-6">
-                  <Image
-                    src={leader.imageSrc}
-                    alt={leader.name}
-                    width={200}
-                    height={200}
-                    className="rounded-md mb-4 object-cover aspect-[3/4]"
-                  />
-                  <h3 className="text-xl font-semibold mb-2">{leader.name}</h3>
-                  <p className="text-muted-foreground">{leader.role}</p>
-                </CardContent>
-              </Card>
+              <Link href={leader.page} key={leader.name}>
+                <Card className="transition-transform hover:scale-105">
+                  <CardContent className="flex flex-col items-center p-6">
+                    <Image
+                      src={leader.imageSrc}
+                      alt={leader.name}
+                      width={200}
+                      height={200}
+                      className="rounded-md mb-4 object-cover aspect-[3/4]"
+                    />
+                    <h3 className="text-xl font-semibold mb-2">
+                      {leader.name}
+                    </h3>
+                    <p className="text-muted-foreground">{leader.role}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
