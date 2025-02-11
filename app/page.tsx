@@ -1,31 +1,31 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Video } from "@/components/video-placeholder";
 import Image from "next/image";
 import Link from "next/link";
-import cake from "./cake.jpg";
-import donnaFerry from "./donna-ferry.jpg";
-import dougDomes from "./doug-domes.jpeg";
-import homeFront from "./home-front.jpg";
-import jimRussell from "./jim-russell.jpeg";
-import kimberlyKadziolka from "./kimberly-kadziolka.jpg";
-import residentRoom from "./resident-room.jpg";
-import saraBrunner from "./sara-brunner.jpg";
-import sueHerman from "./sue-herman.jpeg";
-import toddGadd from "./todd-gadd.jpeg";
+import cake from "./images/cake.jpg";
+import donnaFerry from "./images/donna-ferry.jpg";
+import dougDomes from "./images/doug-domes.jpeg";
+import homeFront from "./images/home-front.jpg";
+import jimRussell from "./images/jim-russell.jpeg";
+import kimberlyKadziolka from "./images/kimberly-kadziolka.jpg";
+import residentRoom from "./images/resident-room.jpg";
+import saraBrunner from "./images/sara-brunner.jpg";
+import sueHerman from "./images/sue-herman.jpeg";
+import toddGadd from "./images/todd-gadd.jpeg";
 
 export default function Home() {
   const events = [
@@ -53,18 +53,18 @@ export default function Home() {
   const newsletters = [
     {
       id: 1,
-      title: "Spring 2023 Newsletter",
-      pdfUrl: "/newsletters/spring-2023.pdf",
+      title: "Fall 2024/Winter 2025",
+      pdfUrl: "/newsletters/fall-2024-winter-2025.pdf",
     },
     {
       id: 2,
-      title: "Winter 2022 Newsletter",
-      pdfUrl: "/newsletters/winter-2022.pdf",
+      title: "Spring/Summer 2024",
+      pdfUrl: "/newsletters/spring-summer-2024.pdf",
     },
     {
       id: 3,
-      title: "Fall 2022 Newsletter",
-      pdfUrl: "/newsletters/fall-2022.pdf",
+      title: "Spring 2023",
+      pdfUrl: "/newsletters/spring-2023.pdf",
     },
   ];
 
@@ -157,7 +157,6 @@ export default function Home() {
       <section className="py-16 bg-muted/40">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
-
             <div className="md:w-1/2">
               <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
                 Our Approach to Resident Care
