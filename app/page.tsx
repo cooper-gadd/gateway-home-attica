@@ -302,9 +302,8 @@ export default function Home() {
             <div>
               <p className="text-lg mb-6">
                 Make a difference in the lives of our residents by volunteering
-                at Serenity House. We offer various opportunities for
-                individuals to share their time, skills, and compassion with our
-                community.
+                at Gateway House. We offer various opportunities for individuals
+                to share their time, skills, and compassion with our community.
               </p>
               <Button asChild>
                 <Link href="/volunteer">Learn About Volunteering</Link>
