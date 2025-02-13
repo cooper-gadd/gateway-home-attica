@@ -384,7 +384,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {leadershipTeam.map((leader) => (
               <Link href={leader.page} key={leader.name}>
-                <Card className="transition-transform hover:scale-105">
+                <Card className="group">
                   <CardContent className="flex flex-col items-center p-6">
                     <Image
                       src={leader.imageSrc}
@@ -396,7 +396,9 @@ export default function Home() {
                     <h3 className="text-xl font-semibold mb-2">
                       {leader.name}
                     </h3>
-                    <p className="text-muted-foreground">{leader.role}</p>
+                    <p className="text-muted-foreground group-hover:text-foreground transition-colors">
+                      {leader.role}
+                    </p>
                   </CardContent>
                 </Card>
               </Link>
