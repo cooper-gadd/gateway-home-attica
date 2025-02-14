@@ -1,10 +1,17 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { VideoPlaceholder } from "@/components/video-placeholder"
-import { FileText } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { VideoPlaceholder } from "@/components/video-placeholder";
+import { FileText } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import homeFront from "./images/home-front.jpg";
 
 export default function Home() {
   const events = [
@@ -27,17 +34,45 @@ export default function Home() {
       date: "June",
       description: "Celebrate the start of summer with Gateway Home.",
     },
-  ]
+  ];
 
   const leadershipTeam = [
-    { name: "Doug Domes", role: "Board President", page: "/leadership/doug-domes" },
-    { name: "Jim Russell", role: "Board Vice President", page: "/leadership/jim-russell" },
-    { name: "Todd Gadd", role: "Board Treasurer", page: "/leadership/todd-gadd" },
-    { name: "Donna Ferry", role: "Board Member", page: "/leadership/donna-ferry" },
-    { name: "Kimberly Kadziolka", role: "Board Member", page: "/leadership/kimberly-kadziolka" },
-    { name: "Sara Brunner", role: "Director", page: "/leadership/sara-brunner" },
-    { name: "Sue Herman", role: "Office Manager", page: "/leadership/sue-herman" },
-  ]
+    {
+      name: "Doug Domes",
+      role: "Board President",
+      page: "/leadership/doug-domes",
+    },
+    {
+      name: "Jim Russell",
+      role: "Board Vice President",
+      page: "/leadership/jim-russell",
+    },
+    {
+      name: "Todd Gadd",
+      role: "Board Treasurer",
+      page: "/leadership/todd-gadd",
+    },
+    {
+      name: "Donna Ferry",
+      role: "Board Member",
+      page: "/leadership/donna-ferry",
+    },
+    {
+      name: "Kimberly Kadziolka",
+      role: "Board Member",
+      page: "/leadership/kimberly-kadziolka",
+    },
+    {
+      name: "Sara Brunner",
+      role: "Director",
+      page: "/leadership/sara-brunner",
+    },
+    {
+      name: "Sue Herman",
+      role: "Office Manager",
+      page: "/leadership/sue-herman",
+    },
+  ];
 
   const newsletters = [
     {
@@ -55,26 +90,26 @@ export default function Home() {
       title: "Spring 2023",
       pdfUrl: "/newsletters/spring-2023.pdf",
     },
-  ]
+  ];
 
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src={homeFront}
           alt="Gateway Home"
-          fill
-          className="object-cover"
+          width={1920}
+          height={1080}
+          className="absolute w-full h-full object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white">
           <h1 className="text-5xl font-bold mb-4">Gateway Home</h1>
-          <p className="text-xl max-w-2xl mx-auto mb-8">A place of comfort, care, and compassion</p>
-          <Button asChild size="lg">
-            <Link href="/about">Learn More</Link>
-          </Button>
+          <p className="text-xl max-w-2xl mx-auto mb-8">
+            A place of comfort, care, and compassion
+          </p>
         </div>
       </section>
 
@@ -83,9 +118,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-8">Our Mission</h2>
           <p className="text-xl text-center max-w-3xl mx-auto">
-            Gateway Home is established to give comfort care to people who are medically determined to be in their last
-            stages of life. We provide both medical and spiritual care to support our residents and their families
-            during this important transition.
+            Gateway Home is established to give comfort care to people who are
+            medically determined to be in their last stages of life. We provide
+            both medical and spiritual care to support our residents and their
+            families during this important transition.
           </p>
         </div>
       </section>
@@ -95,11 +131,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">Our Approach to Resident Care</h2>
+              <h2 className="text-3xl font-bold mb-6">
+                Our Approach to Resident Care
+              </h2>
               <p className="text-lg mb-6">
-                At Gateway Home, we offer a holistic approach to care that addresses physical, emotional, and spiritual
-                needs. Our dedicated staff and trained volunteers provide 24/7 comfort care, symptom control, and pain
-                management for our residents.
+                At Gateway Home, we offer a holistic approach to care that
+                addresses physical, emotional, and spiritual needs. Our
+                dedicated staff and trained volunteers provide 24/7 comfort
+                care, symptom control, and pain management for our residents.
               </p>
               <Button asChild>
                 <Link href="/care">Learn More About Our Care</Link>
@@ -121,7 +160,9 @@ export default function Home() {
       {/* Upcoming Events */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Upcoming Events
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {events.map((event) => (
               <Card key={event.id} className="flex flex-col">
@@ -129,7 +170,9 @@ export default function Home() {
                   <CardTitle>{event.title}</CardTitle>
                   <CardDescription>{event.date}</CardDescription>
                 </CardHeader>
-                <CardContent className="flex-grow">{event.description}</CardContent>
+                <CardContent className="flex-grow">
+                  {event.description}
+                </CardContent>
               </Card>
             ))}
           </div>
@@ -152,7 +195,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="mb-4">
-                  Make a difference in the lives of our residents by volunteering your time and skills.
+                  Make a difference in the lives of our residents by
+                  volunteering your time and skills.
                 </p>
                 <Button asChild>
                   <Link href="/volunteer">Learn About Volunteering</Link>
@@ -164,7 +208,10 @@ export default function Home() {
                 <CardTitle>Support Our Mission</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">Your donations help us continue providing exceptional care to our residents.</p>
+                <p className="mb-4">
+                  Your donations help us continue providing exceptional care to
+                  our residents.
+                </p>
                 <Button asChild>
                   <Link href="/donate">Make a Donation</Link>
                 </Button>
@@ -177,7 +224,9 @@ export default function Home() {
       {/* Leadership Team */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Leadership Team
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {leadershipTeam.map((leader) => (
               <Link href={leader.page} key={leader.name} className="group">
@@ -190,8 +239,12 @@ export default function Home() {
                       height={200}
                       className="rounded-full mx-auto mb-4"
                     />
-                    <h3 className="text-lg font-semibold text-center">{leader.name}</h3>
-                    <p className="text-sm text-center text-muted-foreground">{leader.role}</p>
+                    <h3 className="text-lg font-semibold text-center">
+                      {leader.name}
+                    </h3>
+                    <p className="text-sm text-center text-muted-foreground">
+                      {leader.role}
+                    </p>
                   </CardContent>
                 </Card>
               </Link>
@@ -203,9 +256,12 @@ export default function Home() {
       {/* Video Section */}
       <section className="py-24 bg-muted/40">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Experience Our Compassionate Care</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Experience Our Compassionate Care
+          </h2>
           <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-            Hear directly from our residents and their families about the quality of care and life at Gateway Home.
+            Hear directly from our residents and their families about the
+            quality of care and life at Gateway Home.
           </p>
           <VideoPlaceholder />
         </div>
@@ -234,13 +290,20 @@ export default function Home() {
             </Card>
             <Card className="p-6">
               <h2 className="text-3xl font-bold mb-6">Stay Connected</h2>
-              <p className="mb-4">Subscribe to our newsletter for updates and resources.</p>
+              <p className="mb-4">
+                Subscribe to our newsletter for updates and resources.
+              </p>
               <form className="flex gap-4 mb-6">
-                <Input type="email" placeholder="Enter your email" className="flex-grow" />
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-grow"
+                />
                 <Button type="submit">Subscribe</Button>
               </form>
               <p className="text-sm text-muted-foreground">
-                Join our community to receive the latest news, event updates, and resources.
+                Join our community to receive the latest news, event updates,
+                and resources.
               </p>
             </Card>
           </div>
@@ -248,22 +311,23 @@ export default function Home() {
             <h3 className="text-2xl font-semibold mb-6">Recent Newsletters</h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {newsletters.map((newsletter) => (
-                <div key={newsletter.id} className="flex items-center justify-between p-4 bg-muted rounded-lg">
+                <Link
+                  key={newsletter.id}
+                  href={newsletter.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
+                >
                   <div className="flex items-center">
                     <FileText className="h-5 w-5 mr-2 text-primary" />
                     <span className="font-medium">{newsletter.title}</span>
                   </div>
-                  <Button asChild variant="outline" size="sm">
-                    <Link href={newsletter.pdfUrl} target="_blank" rel="noopener noreferrer">
-                      View PDF
-                    </Link>
-                  </Button>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }
