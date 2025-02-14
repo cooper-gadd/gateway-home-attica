@@ -22,16 +22,16 @@ export function Navbar() {
       href: "/events",
     },
     {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
       title: "Volunteer",
       href: "/volunteer",
     },
     {
       title: "Donate",
       href: "/donate",
+    },
+    {
+      title: "Blog",
+      href: "/blog",
     },
     {
       title: "Contact",
