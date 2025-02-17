@@ -1,6 +1,10 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const events = [
   {
@@ -22,19 +26,7 @@ const events = [
     date: "June",
     description: "Celebrate the start of summer with Gateway Home.",
   },
-  {
-    id: 4,
-    title: "Fall Fundraiser Gala",
-    date: "September 15th",
-    description: "An elegant evening of dinner, music, and auctions to support Gateway Home.",
-  },
-  {
-    id: 5,
-    title: "Holiday Open House",
-    date: "December 10th",
-    description: "Tour our festively decorated home and enjoy refreshments with our staff and volunteers.",
-  },
-]
+];
 
 export default function EventsPage() {
   return (
@@ -51,11 +43,6 @@ export default function EventsPage() {
           </Card>
         ))}
       </div>
-      <div className="mt-12 text-center">
-        <Button asChild>
-          <Link href="/">Back to Home</Link>
-        </Button>
-      </div>
     </main>
-  )
+  );
 }
