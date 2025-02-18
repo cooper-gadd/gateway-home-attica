@@ -1,62 +1,60 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
-import Link from "next/link"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Read about the latest news and updates from Gateway Home Attica.",
+};
 
 const blogPosts = [
   {
     id: 1,
-    title: "Understanding Palliative Care",
+    title: "First Annual Gateway Home Memorial Service",
     excerpt:
-      "Learn about the holistic approach to care that focuses on improving quality of life for patients and their families.",
-    date: "May 15, 2023",
-    author: "Dr. Emily Johnson",
-    readTime: "5 min read",
+      "Gateway Home hosted its first annual Memorial Service at the 1st Baptist Church in Attica, honoring 77 residents who passed away in our care. The evening featured songs, remembrance, and fellowship, establishing a new yearly tradition each November.",
+    date: "November 13, 2024",
+    author: "Sara Brunner",
+    readTime: "3 min read",
+    link: "/blog/first-annual-gateway-home-memorial-service",
   },
   {
     id: 2,
-    title: "The Importance of Volunteer Work in Comfort Care",
-    excerpt: "Discover how volunteers make a significant impact on the lives of our residents and their families.",
-    date: "April 22, 2023",
-    author: "Sarah Thompson",
+    title: "Gateway Home Dedicates Brick Walkways",
+    excerpt:
+      "Join Gateway Home as they unveil their touching new memorial brick walkways. This article captures the emotional dedication ceremony, where each brick represents a cherished memory of a former resident. Discover how this project, supported by the East Hill Foundation, has transformed the home's exterior while creating a lasting tribute to those who have passed. Director Sara Brunner and President Doug Domes share insights on the project's significance and the continued community support that makes Gateway Home's mission possible.",
+    date: "July 13, 2024",
+    author: "Brain Quinn",
     readTime: "4 min read",
+    link: "/blog/gateway-home-dedicates-brick-walkways",
   },
   {
     id: 3,
-    title: "Coping with Grief: A Guide for Families",
+    title: "New Patio and Pergola",
     excerpt:
-      "Practical advice and resources for dealing with loss and supporting loved ones through the grieving process.",
-    date: "March 10, 2023",
-    author: "Michael Roberts, LCSW",
-    readTime: "6 min read",
+      "Experience the community spirit that built Gateway Home's new outdoor space. This heartwarming story details the construction of a decorative concrete patio and pergola, showcasing the power of volunteerism. From initial groundwork to the final touches, learn how local skilled workers and dedicated community members came together to create a beautiful area for residents and their families to enjoy.",
+    date: "September 1, 2022",
+    author: "Nathan Montford",
+    readTime: "2 min read",
+    link: "/blog/new-patio-and-pergola",
   },
-  {
-    id: 4,
-    title: "The Role of Music Therapy in End-of-Life Care",
-    excerpt:
-      "Explore how music can provide comfort, reduce anxiety, and improve quality of life for terminally ill patients.",
-    date: "February 5, 2023",
-    author: "Lisa Chen, MT-BC",
-    readTime: "4 min read",
-  },
-]
+];
 
 export default function BlogPage() {
   return (
     <main className="container mx-auto px-4 py-24">
-      <h1 className="text-4xl font-bold text-center mb-12">Gateway Home Blog</h1>
+      <h1 className="text-4xl font-bold text-center mb-12">
+        Gateway Home Blog
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {blogPosts.map((post) => (
-          <Link href={`/blog/${post.id}`} key={post.id} className="group">
+          <Link href={post.link} key={post.id} className="group">
             <Card className="h-full transition-shadow hover:shadow-lg">
-              <Image
-                src={`/placeholder.svg?height=200&width=400&text=${encodeURIComponent(post.title)}`}
-                alt={post.title}
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
               <CardHeader>
-                <CardTitle className="group-hover:text-primary transition-colors">{post.title}</CardTitle>
+                <CardTitle className="group-hover:text-primary transition-colors">
+                  {post.title}
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">{post.excerpt}</p>
@@ -64,12 +62,14 @@ export default function BlogPage() {
                   <span>{post.author}</span>
                   <span>{post.date}</span>
                 </div>
-                <div className="mt-2 text-sm text-muted-foreground">{post.readTime}</div>
+                <div className="mt-2 text-sm text-muted-foreground">
+                  {post.readTime}
+                </div>
               </CardContent>
             </Card>
           </Link>
         ))}
       </div>
     </main>
-  )
+  );
 }
