@@ -4,6 +4,9 @@ import type { MDXComponents } from "mdx/types";
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
+    wrapper: ({ children }) => (
+      <article className="max-w-4xl mx-auto px-4 py-8">{children}</article>
+    ),
     h1: ({ className, ...props }) => (
       <h1
         className={cn(
