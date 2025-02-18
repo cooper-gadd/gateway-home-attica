@@ -10,6 +10,13 @@ import {
   Phone,
   Printer,
 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "We're always here to answer your questions and provide support.",
+};
 
 export default function ContactPage() {
   return (

@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import va from "./images/va.jpg";
+
+export const metadata: Metadata = {
+  title: "Donate",
+  description:
+    "Your generous donations help us continue providing exceptional care and creating a nurturing environment for our residents. Every contribution, no matter the size, makes a significant impact on the lives of those we serve.",
+};
 
 const donationOptions = [
   {
