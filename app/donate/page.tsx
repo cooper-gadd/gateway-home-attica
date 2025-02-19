@@ -35,17 +35,15 @@ const donationOptions = [
 export default function DonatePage() {
   return (
     <main className="container mx-auto px-4 py-24">
-      <h1 className="text-4xl font-bold text-center mb-8">
-        Support Gateway Home
-      </h1>
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <p className="text-xl mb-4">
+        <h1 className="text-4xl font-bold mb-4">Support Gateway Home</h1>
+        <p className="text-lg text-muted-foreground">
           Your generous donations help us continue providing exceptional care
           and creating a nurturing environment for our residents. Every
           contribution, no matter the size, makes a significant impact on the
           lives of those we serve.
         </p>
-        <Button asChild>
+        <Button asChild className="mt-6">
           <Link
             target="_blank"
             href="https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"

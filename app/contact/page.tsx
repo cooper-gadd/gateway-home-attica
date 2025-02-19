@@ -21,11 +21,9 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="container mx-auto px-4 py-24">
-      <h1 className="text-4xl font-bold text-center mb-8">
-        Contact Gateway Home
-      </h1>
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <p className="text-xl mb-4">
+        <h1 className="text-4xl font-bold mb-4">Contact Gateway Home</h1>
+        <p className="text-lg text-muted-foreground">
           We&apos;re always here to answer your questions and provide support.
           Don&apos;t hesitate to reach out to us through any of the methods
           above or by using the contact form.
