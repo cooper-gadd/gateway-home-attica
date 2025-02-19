@@ -18,10 +18,6 @@ export function Navbar() {
 
   const navItems = [
     {
-      title: "Events",
-      href: "/events",
-    },
-    {
       title: "Volunteer",
       href: "/volunteer",
     },

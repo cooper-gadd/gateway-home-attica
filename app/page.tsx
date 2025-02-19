@@ -176,11 +176,6 @@ export default function Home() {
               </Card>
             ))}
           </div>
-          <div className="text-center mt-12">
-            <Button asChild variant="outline">
-              <Link href="/events">View All Events</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
