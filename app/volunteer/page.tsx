@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import concert from "./assets/concert.jpg";
 
 export default function VolunteerPage() {
   const volunteerOpportunities = [
@@ -72,7 +71,7 @@ export default function VolunteerPage() {
             </div>
             <div className="md:w-1/2">
               <Image
-                src={concert}
+                src="/concert.jpg"
                 alt="Volunteer with Resident"
                 width={600}
                 height={400}

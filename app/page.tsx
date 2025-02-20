@@ -17,15 +17,6 @@ import { VideoPlaceholder } from "@/components/video-placeholder";
 import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import cake from "./assets/cake.jpg";
-import donnaFerry from "./assets/donna-ferry.jpg";
-import dougDomes from "./assets/doug-domes.jpeg";
-import homeFront from "./assets/home-front.jpg";
-import jimRussell from "./assets/jim-russell.jpeg";
-import kimberlyKadziolka from "./assets/kimberly-kadziolka.jpg";
-import saraBrunner from "./assets/sara-brunner.jpg";
-import sueHerman from "./assets/sue-herman.jpeg";
-import toddGadd from "./assets/todd-gadd.jpeg";
 
 export default function Home() {
   const events = [
@@ -55,43 +46,43 @@ export default function Home() {
       name: "Doug Domes",
       role: "Board President",
       page: "/leadership/doug-domes",
-      image: dougDomes,
+      image: "/doug-domes.jpeg",
     },
     {
       name: "Jim Russell",
       role: "Board Vice President",
       page: "/leadership/jim-russell",
-      image: jimRussell,
+      image: "/jim-russell.jpeg",
     },
     {
       name: "Todd Gadd",
       role: "Board Treasurer",
       page: "/leadership/todd-gadd",
-      image: toddGadd,
+      image: "/todd-gadd.jpeg",
     },
     {
       name: "Donna Ferry",
       role: "Board Member",
       page: "/leadership/donna-ferry",
-      image: donnaFerry,
+      image: "/donna-ferry.jpg",
     },
     {
       name: "Kimberly Kadziolka",
       role: "Board Member",
       page: "/leadership/kimberly-kadziolka",
-      image: kimberlyKadziolka,
+      image: "/kimberly-kadziolka.jpg",
     },
     {
       name: "Sara Brunner",
       role: "Director",
       page: "/leadership/sara-brunner",
-      image: saraBrunner,
+      image: "/sara-brunner.jpg",
     },
     {
       name: "Sue Herman",
       role: "Office Manager",
       page: "/leadership/sue-herman",
-      image: sueHerman,
+      image: "/sue-herman.jpeg",
     },
   ];
 
@@ -99,17 +90,17 @@ export default function Home() {
     {
       id: 1,
       title: "Fall 2024/Winter 2025",
-      pdfUrl: "/newsletters/fall-2024-winter-2025.pdf",
+      pdfUrl: "/fall-2024-winter-2025.pdf",
     },
     {
       id: 2,
       title: "Spring/Summer 2024",
-      pdfUrl: "/newsletters/spring-summer-2024.pdf",
+      pdfUrl: "/spring-summer-2024.pdf",
     },
     {
       id: 3,
       title: "Spring 2023",
-      pdfUrl: "/newsletters/spring-2023.pdf",
+      pdfUrl: "/spring-2023.pdf",
     },
   ];
 
@@ -117,7 +108,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
-          src={homeFront}
+          src="/home-front.jpg"
           alt="Gateway Home"
           width={1920}
           height={1080}
@@ -191,7 +182,7 @@ export default function Home() {
             </div>
             <div className="lg:w-1/2">
               <Image
-                src={cake}
+                src="/cake.jpg"
                 alt="Resident Care"
                 width={600}
                 height={400}

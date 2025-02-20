@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import va from "./assets/va.jpg";
 
 export const metadata: Metadata = {
   title: "Donate",
@@ -76,7 +75,7 @@ export default function DonatePage() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <Image
-              src={va}
+              src="/va.jpg"
               alt="Residents enjoying activities"
               width={600}
               height={400}
