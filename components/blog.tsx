@@ -1,5 +1,4 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
 interface BlogPostProps {
@@ -8,10 +7,9 @@ interface BlogPostProps {
   author: string;
 }
 
-export function BlogHeader({ date, title, author }: BlogPostProps) {
+export function BlogHeader({ title, author }: BlogPostProps) {
   return (
     <header className="mb-8">
-      <Badge className="mb-2">{date}</Badge>
       <h1 className="text-4xl font-bold mb-2">{title}</h1>
       <p className="text-sm text-muted-foreground">{author}</p>
     </header>
