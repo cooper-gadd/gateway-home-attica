@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import { useState } from "react";
 
-export function VideoPlaceholder() {
+export function Video() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {

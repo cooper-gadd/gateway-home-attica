@@ -13,7 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { VideoPlaceholder } from "@/components/video-placeholder";
+import { Video } from "@/components/video";
 import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -269,7 +269,7 @@ export default function Home() {
           <p className="text-xl text-center max-w-3xl mx-auto mb-8">
             Hear from families about the quality of care.
           </p>
-          <VideoPlaceholder />
+          <Video />
         </div>
       </section>
 
