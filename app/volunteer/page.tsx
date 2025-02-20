@@ -7,34 +7,29 @@ import Image from "next/image";
 export default function VolunteerPage() {
   const volunteerOpportunities = [
     {
-      title: "Care Giving",
+      title: "Resident Care",
       description:
         "Experience in providing direct care and support to individuals in need.",
     },
     {
-      title: "Fundraising",
+      title: "End of Life Doula",
       description:
-        "Experience in organizing and conducting fundraising activities and events.",
+        "Experience in providing emotional and spiritual support to individuals nearing the end of their lives.",
     },
     {
-      title: "Grounds Keeping",
-      description:
-        "Experience in maintaining outdoor spaces, landscaping, and garden care.",
-    },
-    {
-      title: "Housekeeping",
+      title: "Household Needs/Cleaning",
       description:
         "Experience in maintaining clean and organized living spaces and facilities.",
     },
     {
-      title: "Maintenance and Building Repair",
+      title: "Grounds/Maintenance",
       description:
-        "Experience in facility maintenance, repairs, and general building upkeep.",
+        "Experience in maintaining outdoor spaces, landscaping, and garden care.",
     },
     {
-      title: "Miscellaneous",
+      title: "Fundraising Support",
       description:
-        "Support in various other areas where help is needed to make a difference.",
+        "Experience in fundraising and community outreach to support Gateway Home's mission.",
     },
   ];
 
@@ -47,7 +42,7 @@ export default function VolunteerPage() {
         </p>
       </div>
 
-      <section className="py-24 bg-muted/40">
+      <section className="py-24 bg-muted/40 rounded-lg">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
             The Impact of Your Time
@@ -102,7 +97,7 @@ export default function VolunteerPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-muted/40">
+      <section className="py-24 bg-muted/40 rounded-lg">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">
             Ready to Make a Difference?
