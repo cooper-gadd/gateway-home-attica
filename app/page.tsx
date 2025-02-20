@@ -17,7 +17,15 @@ import { VideoPlaceholder } from "@/components/video-placeholder";
 import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import cake from "./assets/cake.jpg";
+import donnaFerry from "./assets/donna-ferry.jpg";
+import dougDomes from "./assets/doug-domes.jpeg";
 import homeFront from "./assets/home-front.jpg";
+import jimRussell from "./assets/jim-russell.jpeg";
+import kimberlyKadziolka from "./assets/kimberly-kadziolka.jpg";
+import saraBrunner from "./assets/sara-brunner.jpg";
+import sueHerman from "./assets/sue-herman.jpeg";
+import toddGadd from "./assets/todd-gadd.jpeg";
 
 export default function Home() {
   const events = [
@@ -47,36 +55,43 @@ export default function Home() {
       name: "Doug Domes",
       role: "Board President",
       page: "/leadership/doug-domes",
+      image: dougDomes,
     },
     {
       name: "Jim Russell",
       role: "Board Vice President",
       page: "/leadership/jim-russell",
+      image: jimRussell,
     },
     {
       name: "Todd Gadd",
       role: "Board Treasurer",
       page: "/leadership/todd-gadd",
+      image: toddGadd,
     },
     {
       name: "Donna Ferry",
       role: "Board Member",
       page: "/leadership/donna-ferry",
+      image: donnaFerry,
     },
     {
       name: "Kimberly Kadziolka",
       role: "Board Member",
       page: "/leadership/kimberly-kadziolka",
+      image: kimberlyKadziolka,
     },
     {
       name: "Sara Brunner",
       role: "Director",
       page: "/leadership/sara-brunner",
+      image: saraBrunner,
     },
     {
       name: "Sue Herman",
       role: "Office Manager",
       page: "/leadership/sue-herman",
+      image: sueHerman,
     },
   ];
 
@@ -100,7 +115,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
           src={homeFront}
@@ -119,20 +133,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission Statement */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-8">Our Mission</h2>
           <p className="text-xl text-center max-w-3xl mx-auto">
             Gateway Home is established to give comfort care to people who are
-            medically determined to be in their last stages of life. We provide
-            both medical and spiritual care to support our residents and their
-            families during this important transition.
+            medically deemed to be in their last stages of life (three months or
+            less). Our organization will provide both medical and spiritual care
+            to support the residents as they pass from this life to the next.
+            Gateway Home staff and volunteers are committed to provide dignified
+            care, comfort, and support for our residents and their families.
+            Gateway Home is a nonprofit organization, and does not charge for
+            services provided. Funding is accomplished through donations,
+            bequests, and community support. Admission is based solely on need.
           </p>
         </div>
       </section>
 
-      {/* Resident Care Section */}
       <section className="py-24 bg-muted/40">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -141,18 +158,40 @@ export default function Home() {
                 Our Approach to Resident Care
               </h2>
               <p className="text-lg mb-6">
-                At Gateway Home, we offer a holistic approach to care that
-                addresses physical, emotional, and spiritual needs. Our
-                dedicated staff and trained volunteers provide 24/7 comfort
-                care, symptom control, and pain management for our residents.
+                Gateway Home is an empathetic and loving comfort care home for
+                the terminally ill. It is a home-like setting that offers free
+                comfort care for those in their last three months of a terminal
+                illness. Gateway Home’s staff and trained volunteers are able to
+                care for two residents at a time, 24 hours a day, 365 days a
+                year.
               </p>
-              <Button asChild>
-                <Link href="/care">Learn More About Our Care</Link>
-              </Button>
+              <p className="text-lg mb-6">
+                Our primary goal is to provide comfort care, symptom control and
+                pain management for our residents, as well as to be a source of
+                respite care for the families and friends. Hands-on resident
+                care is provided around the clock, along with meals, laundry,
+                companionship, as well as emotional, and spiritual support.
+                Comfort care honors the well-being of every person and respects
+                the dignity of human life.
+              </p>
+              <p className="text-lg mb-6">
+                Admission to Gateway Home is based solely on need, regardless of
+                age, sex, race, religion or other distinctions . Referrals come
+                from several sources: Hospice, health care agencies, hospitals,
+                physicians, social workers, clergy, family, friends or the
+                person themselves. Priority is given to those who cannot receive
+                adequate care at home.
+              </p>
+              <p className="text-lg mb-6">
+                There is no cost to the families that we serve, nor do we
+                receive any reimbursement from insurance companies. Gateway Home
+                is funded solely by donations, fundraising, memorial
+                contributions and through the generosity of our community.
+              </p>
             </div>
             <div className="lg:w-1/2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={cake}
                 alt="Resident Care"
                 width={600}
                 height={400}
@@ -163,7 +202,86 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Upcoming Events */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">
+                Living at Gateway Home
+              </h2>
+              <p className="text-lg mb-6">
+                Gateway Home is a place where residents can live out their final
+                days in comfort and dignity. Our staff and volunteers are
+                dedicated to providing the highest quality care to our
+                residents, and we strive to create a warm and welcoming
+                environment where residents can feel at home. We offer a range
+                of services to meet the unique needs of each resident, including
+                medical care, emotional support, and spiritual care. Our goal is
+                to create a sense of community and belonging for all who live
+                here, and we are committed to providing personalized care that
+                meets the individual needs of each resident.
+              </p>
+              <p className="text-lg mb-6">
+                At Gateway Home, we believe that every person deserves to live
+                their final days with dignity and respect. We are dedicated to
+                providing compassionate care to our residents and their
+                families, and we strive to create a peaceful and supportive
+                environment where residents can feel safe and cared for. Our
+                staff and volunteers are committed to providing the highest
+                quality care to our residents, and we work closely with families
+                to ensure that their loved ones receive the care and support
+                they need. We are proud to be a part of the Gateway Home family,
+                and we look forward to welcoming you to our community.
+              </p>
+            </div>
+            <div className="lg:w-1/2">
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Volunteer helping a resident"
+                  width={300}
+                  height={300}
+                  className="rounded-lg"
+                />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Volunteer organizing an activity"
+                  width={300}
+                  height={300}
+                  className="rounded-lg"
+                />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Volunteer gardening"
+                  width={300}
+                  height={300}
+                  className="rounded-lg"
+                />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Volunteer reading to residents"
+                  width={300}
+                  height={300}
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-muted/40">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Experience Our Compassionate Care
+          </h2>
+          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+            Hear from families about the quality of care.
+          </p>
+          <VideoPlaceholder />
+        </div>
+      </section>
+
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
@@ -185,7 +303,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Get Involved Section */}
       <section className="py-24 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Get Involved</h2>
@@ -222,54 +339,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Leadership Team */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
             Our Leadership Team
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {leadershipTeam.map((leader) => (
-              <Link href={leader.page} key={leader.name} className="group">
-                <Card className="h-full transition-transform group-hover:scale-105">
-                  <CardContent className="p-4">
+              <Link href={leader.page} key={leader.name}>
+                <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-lg">
+                  <div className="aspect-[3/4]">
                     <Image
-                      src="/placeholder.svg?height=200&width=200"
+                      src={
+                        leader.image ?? "/placeholder.svg?height=400&width=300"
+                      }
                       alt={leader.name}
-                      width={200}
-                      height={200}
-                      className="rounded-full mx-auto mb-4"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
-                    <h3 className="text-lg font-semibold text-center">
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+                    <h3 className="text-lg font-semibold mb-1">
                       {leader.name}
                     </h3>
-                    <p className="text-sm text-center text-muted-foreground">
-                      {leader.role}
-                    </p>
-                  </CardContent>
-                </Card>
+                    <p className="text-sm text-gray-200">{leader.role}</p>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Video Section */}
       <section className="py-24 bg-muted/40">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Experience Our Compassionate Care
-          </h2>
-          <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-            Hear directly from our residents and their families about the
-            quality of care and life at Gateway Home.
-          </p>
-          <VideoPlaceholder />
-        </div>
-      </section>
-
-      {/* Contact and Newsletter */}
-      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="p-6">
@@ -330,8 +432,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQs */}
-      <section className="py-24 bg-muted/40">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
             Frequently Asked Questions
