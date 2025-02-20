@@ -297,7 +297,7 @@ export default function Home() {
       <section className="py-24 bg-muted/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Get Involved</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
                 <CardTitle>Volunteer with Us</CardTitle>
@@ -323,6 +323,20 @@ export default function Home() {
                 </p>
                 <Button asChild>
                   <Link href="/donate">Make a Donation</Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Join Our Team</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4">
+                  We&apos;re always looking for compassionate professionals to
+                  join our team.
+                </p>
+                <Button asChild>
+                  <Link href="/careers">View Open Positions</Link>
                 </Button>
               </CardContent>
             </Card>
