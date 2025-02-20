@@ -11,7 +11,7 @@ import { VideoPlaceholder } from "@/components/video-placeholder";
 import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import homeFront from "./images/home-front.jpg";
+import homeFront from "./assets/home-front.jpg";
 
 export default function Home() {
   const events = [

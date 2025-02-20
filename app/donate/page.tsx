@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import va from "./images/va.jpg";
+import va from "./assets/va.jpg";
 
 export const metadata: Metadata = {
   title: "Donate",
