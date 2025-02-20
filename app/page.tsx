@@ -228,32 +228,32 @@ export default function Home() {
             <div className="lg:w-1/2">
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/resident-room.jpg"
                   alt="Volunteer helping a resident"
                   width={300}
                   height={300}
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-full object-cover"
                 />
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/hallway.jpg"
                   alt="Volunteer organizing an activity"
                   width={300}
                   height={300}
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-full object-cover"
                 />
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/kitchen.jpg"
                   alt="Volunteer gardening"
                   width={300}
                   height={300}
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-full object-cover"
                 />
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/living-room.jpg"
                   alt="Volunteer reading to residents"
                   width={300}
                   height={300}
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-full object-cover"
                 />
               </div>
             </div>
