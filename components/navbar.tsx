@@ -26,6 +26,10 @@ export function Navbar() {
       href: "/donate",
     },
     {
+      title: "Careers",
+      href: "/careers",
+    },
+    {
       title: "Blog",
       href: "/blog",
     },
