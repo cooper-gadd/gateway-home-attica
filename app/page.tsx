@@ -12,9 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Video } from "@/components/video";
-import { FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -74,24 +72,6 @@ export default function Home() {
       role: "Office Manager",
       page: "/leadership/sue-herman",
       image: "/sue-herman.jpeg",
-    },
-  ];
-
-  const newsletters = [
-    {
-      id: 1,
-      title: "Fall 2024/Winter 2025",
-      pdfUrl: "/fall-2024-winter-2025.pdf",
-    },
-    {
-      id: 2,
-      title: "Spring/Summer 2024",
-      pdfUrl: "/spring-summer-2024.pdf",
-    },
-    {
-      id: 3,
-      title: "Spring 2023",
-      pdfUrl: "/spring-2023.pdf",
     },
   ];
 
@@ -368,67 +348,6 @@ export default function Home() {
       </section>
 
       <section className="py-24 bg-muted/40">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="p-6">
-              <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-              <div className="space-y-4 mb-6">
-                <p>
-                  <strong>Address:</strong> 91 Main Street, Attica, NY 14011
-                </p>
-                <p>
-                  <strong>Phone:</strong> (585) 708-4331
-                </p>
-                <p>
-                  <strong>Email:</strong> info@Gatewayhouse.com
-                </p>
-              </div>
-              <Button asChild>
-                <Link href="/contact">Get in Touch</Link>
-              </Button>
-            </Card>
-            <Card className="p-6">
-              <h2 className="text-3xl font-bold mb-6">Stay Connected</h2>
-              <p className="mb-4">
-                Subscribe to our newsletter for updates and resources.
-              </p>
-              <form className="flex gap-4 mb-6">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-grow"
-                />
-                <Button type="submit">Subscribe</Button>
-              </form>
-              <p className="text-sm text-muted-foreground">
-                Join our community to receive the latest news, event updates,
-                and resources.
-              </p>
-            </Card>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">Recent Newsletters</h3>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {newsletters.map((newsletter) => (
-                <Link
-                  key={newsletter.id}
-                  href={newsletter.pdfUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
-                >
-                  <div className="flex items-center">
-                    <FileText className="h-5 w-5 mr-2 text-primary" />
-                    <span className="font-medium">{newsletter.title}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
             Frequently Asked Questions

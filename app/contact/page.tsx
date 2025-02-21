@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
   Facebook,
+  FileText,
   Instagram,
   Mail,
   MapPinHouse,
@@ -11,12 +12,31 @@ import {
   Printer,
 } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
     "We're always here to answer your questions and provide support.",
 };
+
+const newsletters = [
+  {
+    id: 1,
+    title: "Fall 2024/Winter 2025",
+    pdfUrl: "/fall-2024-winter-2025.pdf",
+  },
+  {
+    id: 2,
+    title: "Spring/Summer 2024",
+    pdfUrl: "/spring-summer-2024.pdf",
+  },
+  {
+    id: 3,
+    title: "Spring 2023",
+    pdfUrl: "/spring-2023.pdf",
+  },
+];
 
 export default function ContactPage() {
   return (
@@ -157,6 +177,56 @@ export default function ContactPage() {
                   <span className="text-sm">gatewayhomeattica</span>
                 </a>
               </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="mt-12">
+        <Card>
+          <CardHeader>
+            <CardTitle>Stay Connected</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-4">
+              Subscribe to our newsletter for updates and resources.
+            </p>
+            <form className="flex gap-4 mb-6">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-grow"
+              />
+              <Button type="submit">Subscribe</Button>
+            </form>
+            <p className="text-sm text-muted-foreground">
+              Join our community to receive the latest news, event updates, and
+              resources.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div className="mt-12">
+        <Card>
+          <CardHeader>
+            <CardTitle>Recent Newsletters</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {newsletters.map((newsletter) => (
+                <Link
+                  key={newsletter.id}
+                  href={newsletter.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <div className="flex items-center">
+                    <FileText className="h-5 w-5 mr-2 text-primary" />
+                    <span className="font-medium">{newsletter.title}</span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </CardContent>
         </Card>
