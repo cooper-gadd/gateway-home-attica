@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { VolunteerForm } from "@/components/volunteer-form";
 import Image from "next/image";
 
 export default function VolunteerPage() {
@@ -113,92 +111,7 @@ export default function VolunteerPage() {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      htmlFor="firstName"
-                      className="block text-sm font-medium text-foreground mb-1"
-                    >
-                      First Name
-                    </label>
-                    <Input
-                      id="firstName"
-                      placeholder="Enter your first name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="lastName"
-                      className="block text-sm font-medium text-foreground mb-1"
-                    >
-                      Last Name
-                    </label>
-                    <Input
-                      id="lastName"
-                      placeholder="Enter your last name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-foreground mb-1"
-                  >
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-foreground mb-1"
-                  >
-                    Phone Number
-                  </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="Enter your phone number"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="interests"
-                    className="block text-sm font-medium text-foreground mb-1"
-                  >
-                    Areas of Interest
-                  </label>
-                  <Textarea
-                    id="interests"
-                    placeholder="Tell us which volunteer opportunities interest you"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="experience"
-                    className="block text-sm font-medium text-foreground mb-1"
-                  >
-                    Relevant Experience
-                  </label>
-                  <Textarea
-                    id="experience"
-                    placeholder="Describe any relevant experience or skills"
-                  />
-                </div>
-                <Button type="submit" className="w-full">
-                  Submit Application
-                </Button>
-              </form>
+              <VolunteerForm />
             </CardContent>
           </Card>
         </div>
