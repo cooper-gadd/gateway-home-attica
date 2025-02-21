@@ -667,12 +667,7 @@ export function VolunteerForm() {
           </CardContent>
         </Card>
 
-        {/* Submit Button */}
-        <div className="flex justify-end">
-          <Button type="submit" size="lg">
-            Submit Application
-          </Button>
-        </div>
+        <Button type="submit">Submit Application</Button>
       </form>
     </Form>
   );
