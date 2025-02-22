@@ -77,23 +77,28 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background">
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/home-front.jpg"
-          alt="Gateway Home"
-          width={1920}
-          height={1080}
-          className="absolute w-full h-full object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 text-center text-white">
-          <h1 className="text-5xl font-bold mb-4">Gateway Home</h1>
-          <p className="text-xl max-w-2xl mx-auto mb-8">
-            A place of comfort, care, and compassion
-          </p>
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-center mb-8">
+                Gateway Home
+              </h2>
+              <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+                A place of comfort, care, and compassion
+              </p>
+              <div className="relative w-full aspect-video bg-muted rounded-lg overflow-hidden">
+                <Image
+                  src="/front.jpg"
+                  alt="Gateway Home Mission"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <div className="border-grid border-b">
         <div className="container-wrapper">
@@ -102,17 +107,22 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-center mb-8">
                 Our Mission
               </h2>
-              <p className="text-xl text-center max-w-3xl mx-auto">
+              <p className="text-lg mb-6">
                 Gateway Home is established to give comfort care to people who
                 are medically deemed to be in their last stages of life (three
                 months or less). Our organization will provide both medical and
                 spiritual care to support the residents as they pass from this
-                life to the next. Gateway Home staff and volunteers are
-                committed to provide dignified care, comfort, and support for
-                our residents and their families. Gateway Home is a nonprofit
-                organization, and does not charge for services provided. Funding
-                is accomplished through donations, bequests, and community
-                support. Admission is based solely on need.
+                life to the next.
+              </p>
+              <p className="text-lg mb-6">
+                Gateway Home staff and volunteers are committed to provide
+                dignified care, comfort, and support for our residents and their
+                families. Gateway Home is a nonprofit organization, and does not
+                charge for services provided.
+              </p>
+              <p className="text-lg mb-6">
+                Funding is accomplished through donations, bequests, and
+                community support. Admission is based solely on need.
               </p>
             </div>
           </section>

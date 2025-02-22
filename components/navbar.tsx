@@ -40,40 +40,11 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 flex h-16 w-full items-center md:justify-center gap-4 border-b border-border/40 bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-6">
-      <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-lg font-semibold md:text-base"
-        >
-          <Logo className="h-12 w-12" />
-          <span className="sr-only">Gateway Home</span>
-        </Link>
-        {navItems.map((item) => (
-          <Link
-            key={item.title}
-            href={item.href}
-            className={cn(
-              "hover:text-foreground",
-              pathname === item.href
-                ? "text-foreground"
-                : "text-muted-foreground",
-            )}
-          >
-            {item.title}
-          </Link>
-        ))}
-      </nav>
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline" size="icon" className="shrink-0 md:hidden">
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle navigation menu</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="left">
-          <nav className="grid gap-6 text-lg font-medium">
-            <SheetClose asChild>
+    <div className="sticky top-0 z-50 w-full border-b border-border/70 dark:border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="border-grid">
+        <div className="container-wrapper">
+          <header className="container h-16 flex items-center md:justify-center gap-4">
+            <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
               <Link
                 href="/"
                 className="flex items-center gap-2 text-lg font-semibold md:text-base"
@@ -81,10 +52,9 @@ export function Navbar() {
                 <Logo className="h-12 w-12" />
                 <span className="sr-only">Gateway Home</span>
               </Link>
-            </SheetClose>
-            {navItems.map((item) => (
-              <SheetClose key={item.title} asChild>
+              {navItems.map((item) => (
                 <Link
+                  key={item.title}
                   href={item.href}
                   className={cn(
                     "hover:text-foreground",
@@ -95,11 +65,51 @@ export function Navbar() {
                 >
                   {item.title}
                 </Link>
-              </SheetClose>
-            ))}
-          </nav>
-        </SheetContent>
-      </Sheet>
-    </header>
+              ))}
+            </nav>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="shrink-0 md:hidden"
+                >
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <nav className="grid gap-6 text-lg font-medium">
+                  <SheetClose asChild>
+                    <Link
+                      href="/"
+                      className="flex items-center gap-2 text-lg font-semibold md:text-base"
+                    >
+                      <Logo className="h-12 w-12" />
+                      <span className="sr-only">Gateway Home</span>
+                    </Link>
+                  </SheetClose>
+                  {navItems.map((item) => (
+                    <SheetClose key={item.title} asChild>
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          "hover:text-foreground",
+                          pathname === item.href
+                            ? "text-foreground"
+                            : "text-muted-foreground",
+                        )}
+                      >
+                        {item.title}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </header>
+        </div>
+      </div>
+    </div>
   );
 }
