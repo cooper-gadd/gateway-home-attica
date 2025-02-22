@@ -70,48 +70,67 @@ export default function BlogPage() {
   const blogPosts = getBlogPosts();
 
   return (
-    <main className="container mx-auto px-4 py-24">
-      <div className="max-w-3xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Gateway Home Blog</h1>
-        <p className="text-lg text-muted-foreground">
-          Stay updated with the latest news, stories, and updates from our
-          community
-        </p>
-      </div>
-      <div className="grid grid-cols-1 gap-8">
-        {blogPosts.map((post) => (
-          <Link href={post.link} key={post.title} className="group">
-            <Card className="h-full transition-shadow hover:shadow-lg flex flex-col">
-              <CardHeader className="flex-none pb-4">
-                <CardTitle className="group-hover:text-primary transition-colors text-2xl">
-                  {post.title}
-                </CardTitle>
-                <div className="flex items-center gap-2 text-sm mt-2">
-                  <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                    {post.author}
-                  </span>
-                  <span className="text-muted-foreground">•</span>
-                  <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                    {post.formattedDate}
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col justify-between">
-                <p className="text-muted-foreground group-hover:text-foreground transition-colors mb-4 line-clamp-3">
-                  {post.excerpt}
+    <main className="min-h-screen">
+      {/* Header Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="max-w-3xl mx-auto text-center">
+                <h1 className="text-4xl font-bold mb-4">Gateway Home Blog</h1>
+                <p className="text-lg text-muted-foreground">
+                  Stay updated with the latest news, stories, and updates from
+                  our community
                 </p>
-                <div className="flex items-center gap-2 text-sm mt-auto pt-4 border-t">
-                  <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                    {post.readTime}
-                  </span>
-                  <span className="text-muted-foreground group-hover:text-primary transition-colors">
-                    →
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* Blog Posts Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="grid grid-cols-1 gap-8">
+                {blogPosts.map((post) => (
+                  <Link href={post.link} key={post.title} className="group">
+                    <Card className="h-full transition-shadow hover:shadow-lg flex flex-col">
+                      <CardHeader className="flex-none pb-4">
+                        <CardTitle className="group-hover:text-primary transition-colors text-2xl">
+                          {post.title}
+                        </CardTitle>
+                        <div className="flex items-center gap-2 text-sm mt-2">
+                          <span className="text-muted-foreground group-hover:text-foreground transition-colors">
+                            {post.author}
+                          </span>
+                          <span className="text-muted-foreground">•</span>
+                          <span className="text-muted-foreground group-hover:text-foreground transition-colors">
+                            {post.formattedDate}
+                          </span>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="flex-1 flex flex-col justify-between">
+                        <p className="text-muted-foreground group-hover:text-foreground transition-colors mb-4 line-clamp-3">
+                          {post.excerpt}
+                        </p>
+                        <div className="flex items-center gap-2 text-sm mt-auto pt-4 border-t">
+                          <span className="text-muted-foreground group-hover:text-foreground transition-colors">
+                            {post.readTime}
+                          </span>
+                          <span className="text-muted-foreground group-hover:text-primary transition-colors">
+                            →
+                          </span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   );

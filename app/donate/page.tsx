@@ -33,175 +33,212 @@ const donationOptions = [
 
 export default function DonatePage() {
   return (
-    <main className="container mx-auto px-4 py-24">
-      <div className="max-w-3xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Support Gateway Home</h1>
-        <p className="text-lg text-muted-foreground">
-          Your generous donations help us continue providing exceptional care
-          and creating a nurturing environment for our residents. Every
-          contribution, no matter the size, makes a significant impact on the
-          lives of those we serve.
-        </p>
-        <Button asChild className="mt-6">
-          <Link
-            target="_blank"
-            href="https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"
-          >
-            Donate Now
-          </Link>
-        </Button>
+    <main className="min-h-screen">
+      {/* Header Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="max-w-3xl mx-auto text-center">
+                <h1 className="text-4xl font-bold mb-4">
+                  Support Gateway Home
+                </h1>
+                <p className="text-lg text-muted-foreground">
+                  Your generous donations help us continue providing exceptional
+                  care and creating a nurturing environment for our residents.
+                  Every contribution, no matter the size, makes a significant
+                  impact on the lives of those we serve.
+                </p>
+                <Button asChild className="mt-6">
+                  <Link
+                    target="_blank"
+                    href="https://gatewayhomeattica.networkforgood.com/projects/96096-main-giving-page"
+                  >
+                    Donate Now
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
 
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-center mb-6">
-          How Your Donation Helps
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {donationOptions.map((option) => (
-            <Card key={option.amount}>
-              <CardHeader>
-                <CardTitle>${option.amount}</CardTitle>
-              </CardHeader>
-              <CardContent>{option.description}</CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-muted/40 p-8 rounded-lg mb-12">
-        <h2 className="text-2xl font-semibold text-center mb-6">
-          The Impact of Your Generosity
-        </h2>
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2">
-            <Image
-              src="/va.jpg"
-              alt="Residents enjoying activities"
-              width={600}
-              height={400}
-              className="rounded-lg"
-            />
-          </div>
-          <div className="md:w-1/2">
-            <p className="text-lg">
-              Your donations directly improve the lives of our residents. From
-              enhancing our facilities to providing engaging activities and
-              therapies, every contribution helps create a more comfortable and
-              enriching environment for those in our care.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold text-center mb-6">
-          Other Ways to Give
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="md:col-span-2">
-            <CardHeader>
-              <CardTitle>Charitable Giving</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                Learn about tax-advantaged giving options through IRA
-                distributions and other charitable giving programs that support
-                our mission.
-              </p>
-              <Button variant="outline" asChild>
-                <Link href="/charitable-giving">Learn More</Link>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Legacy Giving</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                Discover ways to create a lasting impact through estate
-                planning, trusts, and other legacy giving options that ensure
-                our future.
-              </p>
-              <Button variant="outline" asChild>
-                <Link href="/legacy-giving">Explore Opportunities</Link>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Legacy Brick</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                The engraved bricks will be a permanent memorial to our
-                residents, volunteers, families and businesses that wish to
-                support Gateway Home.
-              </p>
-              <div className="flex gap-2">
-                <Button variant="outline" asChild>
-                  <Link
-                    target="_blank"
-                    href="https://gatewayhomeattica.networkforgood.com/projects/199955-legacy-brick-sale"
-                  >
-                    Purchase Brick
-                  </Link>
-                </Button>
-                <Button variant="secondary" asChild>
-                  <Link target="_blank" href="/legacy-brick-sale-form.pdf">
-                    Brick Form
-                  </Link>
-                </Button>
+      {/* Donation Options Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <h2 className="text-2xl font-semibold text-center mb-6">
+                How Your Donation Helps
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {donationOptions.map((option) => (
+                  <Card key={option.amount}>
+                    <CardHeader>
+                      <CardTitle>${option.amount}</CardTitle>
+                    </CardHeader>
+                    <CardContent>{option.description}</CardContent>
+                  </Card>
+                ))}
               </div>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Raffle Baskets</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                We always happily accept premade baskets, but we are also happy
-                to make a basket for you! Thank you for your constant support of
-                our mission.
-              </p>
-              <Button variant="outline" asChild>
-                <Link
-                  target="_blank"
-                  href="https://gatewayhomeattica.networkforgood.com/projects/232986-basket-raffle-page"
-                >
-                  Make Basket
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Wish List</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4">
-                We are always in need of items. Please consider patronizing our
-                kind partner, Attica Pharmacy for many of the resident care
-                items. We also have an Amazon Wish List for your convenience.
-              </p>
-              <div className="flex gap-2">
-                <Button variant="outline" asChild>
-                  <Link href="/wish-list">View Wish List</Link>
-                </Button>
-                <Button variant="secondary" asChild>
-                  <Link
-                    target="_blank"
-                    href="https://www.amazon.com/registries/gl/guest-view/2R4ZT42FVZQW1"
-                  >
-                    Amazon
-                  </Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
+
+      {/* Impact Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <h2 className="text-2xl font-semibold text-center mb-6">
+                The Impact of Your Generosity
+              </h2>
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="md:w-1/2">
+                  <Image
+                    src="/va.jpg"
+                    alt="Residents enjoying activities"
+                    width={600}
+                    height={400}
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="md:w-1/2">
+                  <p className="text-lg">
+                    Your donations directly improve the lives of our residents.
+                    From enhancing our facilities to providing engaging
+                    activities and therapies, every contribution helps create a
+                    more comfortable and enriching environment for those in our
+                    care.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* Other Ways to Give Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <h2 className="text-2xl font-semibold text-center mb-6">
+                Other Ways to Give
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle>Charitable Giving</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">
+                      Learn about tax-advantaged giving options through IRA
+                      distributions and other charitable giving programs that
+                      support our mission.
+                    </p>
+                    <Button variant="outline" asChild>
+                      <Link href="/charitable-giving">Learn More</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Legacy Giving</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">
+                      Discover ways to create a lasting impact through estate
+                      planning, trusts, and other legacy giving options that
+                      ensure our future.
+                    </p>
+                    <Button variant="outline" asChild>
+                      <Link href="/legacy-giving">Explore Opportunities</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Legacy Brick</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">
+                      The engraved bricks will be a permanent memorial to our
+                      residents, volunteers, families and businesses that wish
+                      to support Gateway Home.
+                    </p>
+                    <div className="flex gap-2">
+                      <Button variant="outline" asChild>
+                        <Link
+                          target="_blank"
+                          href="https://gatewayhomeattica.networkforgood.com/projects/199955-legacy-brick-sale"
+                        >
+                          Purchase Brick
+                        </Link>
+                      </Button>
+                      <Button variant="secondary" asChild>
+                        <Link
+                          target="_blank"
+                          href="/legacy-brick-sale-form.pdf"
+                        >
+                          Brick Form
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Raffle Baskets</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">
+                      We always happily accept premade baskets, but we are also
+                      happy to make a basket for you! Thank you for your
+                      constant support of our mission.
+                    </p>
+                    <Button variant="outline" asChild>
+                      <Link
+                        target="_blank"
+                        href="https://gatewayhomeattica.networkforgood.com/projects/232986-basket-raffle-page"
+                      >
+                        Make Basket
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Wish List</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="mb-4">
+                      We are always in need of items. Please consider
+                      patronizing our kind partner, Attica Pharmacy for many of
+                      the resident care items. We also have an Amazon Wish List
+                      for your convenience.
+                    </p>
+                    <div className="flex gap-2">
+                      <Button variant="outline" asChild>
+                        <Link href="/wish-list">View Wish List</Link>
+                      </Button>
+                      <Button variant="secondary" asChild>
+                        <Link
+                          target="_blank"
+                          href="https://www.amazon.com/registries/gl/guest-view/2R4ZT42FVZQW1"
+                        >
+                          Amazon
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
   );
 }
