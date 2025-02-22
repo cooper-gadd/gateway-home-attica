@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { SubscribeForm } from "@/components/subscribe-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import {
   Facebook,
   FileText,
@@ -141,14 +140,7 @@ export default function ContactPage() {
             <p className="mb-4">
               Subscribe to our newsletter for updates and resources.
             </p>
-            <form className="flex gap-4 mb-6">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-grow"
-              />
-              <Button type="submit">Subscribe</Button>
-            </form>
+            <SubscribeForm />
             <div className="mt-6">
               <p className="font-medium mb-4">
                 Check out our recent newsletters.
