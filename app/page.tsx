@@ -30,51 +30,6 @@ export default function Home() {
     },
   ];
 
-  const leadershipTeam = [
-    {
-      name: "Doug Domes",
-      role: "Board President",
-      page: "/leadership/doug-domes",
-      image: "/doug-domes.jpeg",
-    },
-    {
-      name: "Jim Russell",
-      role: "Board Vice President",
-      page: "/leadership/jim-russell",
-      image: "/jim-russell.jpeg",
-    },
-    {
-      name: "Todd Gadd",
-      role: "Board Treasurer",
-      page: "/leadership/todd-gadd",
-      image: "/todd-gadd.jpeg",
-    },
-    {
-      name: "Donna Ferry",
-      role: "Board Member",
-      page: "/leadership/donna-ferry",
-      image: "/donna-ferry.jpg",
-    },
-    {
-      name: "Kimberly Kadziolka",
-      role: "Board Member",
-      page: "/leadership/kimberly-kadziolka",
-      image: "/kimberly-kadziolka.jpg",
-    },
-    {
-      name: "Sara Brunner",
-      role: "Director",
-      page: "/leadership/sara-brunner",
-      image: "/sara-brunner.jpg",
-    },
-    {
-      name: "Sue Herman",
-      role: "Office Manager",
-      page: "/leadership/sue-herman",
-      image: "/sue-herman.jpeg",
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-background">
       <div className="border-grid border-b">
@@ -350,43 +305,6 @@ export default function Home() {
                     </Button>
                   </CardContent>
                 </Card>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <section className="py-24">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">
-                Our Leadership Team
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {leadershipTeam.map((leader) => (
-                  <Link href={leader.page} key={leader.name}>
-                    <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-lg">
-                      <div className="aspect-[3/4]">
-                        <Image
-                          src={
-                            leader.image ??
-                            "/placeholder.svg?height=400&width=300"
-                          }
-                          alt={leader.name}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-                        <h3 className="text-lg font-semibold mb-1">
-                          {leader.name}
-                        </h3>
-                        <p className="text-sm text-gray-200">{leader.role}</p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
               </div>
             </div>
           </section>
