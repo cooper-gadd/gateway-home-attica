@@ -20,13 +20,11 @@ export default function Home() {
   const events = [
     {
       title: "Spring Chicken BBQ",
-      date: "May",
-      description: "Join us for our annual Spring Chicken BBQ.",
+      date: "April 27, 2025",
     },
     {
       title: "First Annual Gateway to Summer",
-      date: "June",
-      description: "Celebrate the start of summer with Gateway Home.",
+      date: "June 7, 2025",
     },
   ];
 
@@ -241,14 +239,11 @@ export default function Home() {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {events.map((event) => (
-                  <Card key={event.title} className="flex flex-col">
+                  <Card key={event.title} className="flex flex-col bg-muted/40">
                     <CardHeader>
                       <CardTitle>{event.title}</CardTitle>
                       <CardDescription>{event.date}</CardDescription>
                     </CardHeader>
-                    <CardContent className="flex-grow">
-                      {event.description}
-                    </CardContent>
                   </Card>
                 ))}
               </div>
