@@ -62,23 +62,25 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-center mb-8">
                 Our Mission
               </h2>
-              <p className="text-lg mb-6">
-                Gateway Home is established to give comfort care to people who
-                are medically deemed to be in their last stages of life (three
-                months or less). Our organization will provide both medical and
-                spiritual care to support the residents as they pass from this
-                life to the next.
-              </p>
-              <p className="text-lg mb-6">
-                Gateway Home staff and volunteers are committed to provide
-                dignified care, comfort, and support for our residents and their
-                families. Gateway Home is a nonprofit organization, and does not
-                charge for services provided.
-              </p>
-              <p className="text-lg mb-6">
-                Funding is accomplished through donations, bequests, and
-                community support. Admission is based solely on need.
-              </p>
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-lg mb-6">
+                  Gateway Home is established to give comfort care to people who
+                  are medically deemed to be in their last stages of life (three
+                  months or less). Our organization will provide both medical
+                  and spiritual care to support the residents as they pass from
+                  this life to the next.
+                </p>
+                <p className="text-lg mb-6">
+                  Gateway Home staff and volunteers are committed to provide
+                  dignified care, comfort, and support for our residents and
+                  their families. Gateway Home is a nonprofit organization, and
+                  does not charge for services provided.
+                </p>
+                <p className="text-lg mb-6">
+                  Funding is accomplished through donations, bequests, and
+                  community support. Admission is based solely on need.
+                </p>
+              </div>
             </div>
           </section>
         </div>
