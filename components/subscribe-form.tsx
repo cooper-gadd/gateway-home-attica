@@ -9,30 +9,37 @@ import {
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { sendSubscriptionEmail } from "@/lib/actions";
+import { emailSchema } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
 
-const formSchema = z.object({
-  email: z
-    .string()
-    .email("Please enter a valid email address")
-    .min(1, "Email is required"),
-});
-
 export function SubscribeForm() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const [subscribed, setSubscribed] = useState(false);
+
+  const form = useForm<z.infer<typeof emailSchema>>({
+    resolver: zodResolver(emailSchema),
     defaultValues: {
       email: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("Thank you for subscribing!");
-    form.reset();
+  async function onSubmit(values: z.infer<typeof emailSchema>) {
+    try {
+      await sendSubscriptionEmail({
+        email: values.email,
+      });
+      form.reset();
+      toast.success("Thank you for subscribing!");
+      setSubscribed(true);
+    } catch (error) {
+      toast.error(
+        error instanceof Error ? error.message : "Something went wrong",
+      );
+    }
   }
 
   return (
@@ -58,7 +65,11 @@ export function SubscribeForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="whitespace-nowrap">
+        <Button
+          type="submit"
+          disabled={subscribed}
+          className="whitespace-nowrap"
+        >
           Subscribe
         </Button>
       </form>
