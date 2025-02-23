@@ -128,7 +128,7 @@ export function VolunteerForm() {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         {/* Contact Details */}
-        <Card className="border-0">
+        <Card className="border-0 shadow-none">
           <CardHeader>
             <CardTitle>Contact Details</CardTitle>
           </CardHeader>
