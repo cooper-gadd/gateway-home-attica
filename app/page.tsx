@@ -439,14 +439,13 @@ export default function Home() {
                       physician must have determined that the person has a
                       terminal illness and is in their last three months of
                       life. We are not able to accept every person who is
-                      referred and can only care for up to two dying residents
-                      at one time. Each case is evaluated carefully by our
-                      Assessment Caregivers and Director of Resident Care and
-                      priority is given to those people who have the greatest
-                      need at the time; i.e., those who are at home with limited
-                      adequate care giving support. Other considerations involve
-                      the complexity of nursing care that some people may
-                      require.
+                      referred and can only care for up to two residents at one
+                      time. Each case is evaluated carefully by our Assessment
+                      Caregivers and Director of Resident Care and priority is
+                      given to those people who have the greatest need at the
+                      time; i.e., those who are at home with limited adequate
+                      care giving support. Other considerations involve the
+                      complexity of nursing care that some people may require.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
                       We do not use intravenous fluids, feeding tubes or CPR
