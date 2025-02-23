@@ -96,7 +96,7 @@ export default function BlogPage() {
               <div className="grid grid-cols-1 gap-8">
                 {blogPosts.map((post) => (
                   <Link href={post.link} key={post.title} className="group">
-                    <Card className="h-full transition-shadow hover:shadow-lg flex flex-col">
+                    <Card className="h-full transition-shadow hover:shadow-lg flex flex-col bg-muted/40">
                       <CardHeader className="flex-none pb-4">
                         <CardTitle className="group-hover:text-primary transition-colors text-2xl">
                           {post.title}

@@ -111,7 +111,7 @@ export default function DonatePage() {
                   </figure>
                 </div>
                 <div className="md:w-1/2">
-                  <p className="text-lg text-end">
+                  <p className="text-lg md:text-end">
                     Your donations directly improve the lives of our residents.
                     From enhancing our facilities to providing engaging
                     activities and therapies, every contribution helps create a
@@ -144,7 +144,7 @@ export default function DonatePage() {
                       distributions and other charitable giving programs that
                       support our mission.
                     </p>
-                    <Button variant="outline" asChild>
+                    <Button asChild>
                       <Link href="/charitable-giving">Learn More</Link>
                     </Button>
                   </CardContent>
@@ -159,7 +159,7 @@ export default function DonatePage() {
                       planning, trusts, and other legacy giving options that
                       ensure our future.
                     </p>
-                    <Button variant="outline" asChild>
+                    <Button asChild>
                       <Link href="/legacy-giving">Explore Opportunities</Link>
                     </Button>
                   </CardContent>
@@ -175,7 +175,7 @@ export default function DonatePage() {
                       to support Gateway Home.
                     </p>
                     <div className="flex gap-2">
-                      <Button variant="outline" asChild>
+                      <Button asChild>
                         <Link
                           target="_blank"
                           href="https://gatewayhomeattica.networkforgood.com/projects/199955-legacy-brick-sale"
@@ -204,7 +204,7 @@ export default function DonatePage() {
                       happy to make a basket for you! Thank you for your
                       constant support of our mission.
                     </p>
-                    <Button variant="outline" asChild>
+                    <Button asChild>
                       <Link
                         target="_blank"
                         href="https://gatewayhomeattica.networkforgood.com/projects/232986-basket-raffle-page"
@@ -226,7 +226,7 @@ export default function DonatePage() {
                       for your convenience.
                     </p>
                     <div className="flex gap-2">
-                      <Button variant="outline" asChild>
+                      <Button asChild>
                         <Link href="/wish-list">View Wish List</Link>
                       </Button>
                       <Button variant="secondary" asChild>
