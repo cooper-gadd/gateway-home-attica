@@ -260,7 +260,7 @@ export default function Home() {
                 Get Involved
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Volunteer with Us</CardTitle>
                   </CardHeader>
@@ -274,7 +274,7 @@ export default function Home() {
                     </Button>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Support Our Mission</CardTitle>
                   </CardHeader>
@@ -288,7 +288,7 @@ export default function Home() {
                     </Button>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Join Our Team</CardTitle>
                   </CardHeader>

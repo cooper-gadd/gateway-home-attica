@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -39,6 +40,7 @@ export default function RootLayout({
         >
           <Navbar />
           <div className="flex-1">{children}</div>
+          <Analytics />
           <Toaster />
         </ThemeProvider>
       </body>
