@@ -6,28 +6,25 @@ export default function VolunteerPage() {
   const volunteerOpportunities = [
     {
       title: "Resident Care",
-      description:
-        "Experience in providing direct care and support to individuals in need.",
+      description: "Providing direct care and support to individuals in need.",
     },
     {
       title: "End of Life Doula",
       description:
-        "Experience in providing emotional and spiritual support to individuals nearing the end of their lives.",
+        "Trained to provide emotional and spiritual support to individuals nearing the end of their lives.",
     },
     {
       title: "Household Needs/Cleaning",
-      description:
-        "Experience in maintaining clean and organized living spaces and facilities.",
+      description: "Cleaning and organizing spaces within the home.",
     },
     {
       title: "Grounds/Maintenance",
-      description:
-        "Experience in maintaining outdoor spaces, landscaping, and garden care.",
+      description: "Maintaining outdoor spaces, landscaping, and garden care.",
     },
     {
       title: "Fundraising Support",
       description:
-        "Experience in fundraising and community outreach to support Gateway Home's mission.",
+        "Fundraising and community outreach to support Gateway Home's mission.",
     },
   ];
 
@@ -62,18 +59,20 @@ export default function VolunteerPage() {
               <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="md:w-1/2">
                   <p className="text-lg mb-6">
-                    Volunteers are the heart of Gateway Home. Your dedication
-                    and compassion make a world of difference to our residents,
-                    providing comfort, companionship, and support during a
-                    crucial time in their lives. Whether you have a few hours a
-                    week or a few hours a month, your time is invaluable to us
-                    and those we serve.
+                    At Gateway Home, we rely heavily on community fundraising
+                    and volunteer support. Our organization&apos;s success comes
+                    from dedicated individuals and groups who organize events,
+                    participate in campaigns, and help us raise vital funds.
+                    These efforts ensure we can continue providing essential
+                    care services while maintaining our facility and programs.
                   </p>
                   <p className="text-lg">
-                    By volunteering, you not only enrich the lives of our
-                    residents but also gain a profound and rewarding experience.
-                    Join our community of caring individuals and help us create
-                    a warm, loving environment for those in our care.
+                    By participating in our fundraising initiatives, you become
+                    part of our mission to provide comfort and care. From annual
+                    events to ongoing campaigns, every effort helps sustain our
+                    services and enhance the quality of life for our residents.
+                    Join us in making a lasting impact through your fundraising
+                    support.
                   </p>
                 </div>
                 <div className="md:w-1/2">
@@ -101,7 +100,7 @@ export default function VolunteerPage() {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {volunteerOpportunities.map((opportunity, index) => (
-                  <Card key={index}>
+                  <Card key={index} className="bg-muted/40">
                     <CardHeader>
                       <CardTitle>{opportunity.title}</CardTitle>
                     </CardHeader>

@@ -26,7 +26,7 @@ const donationOptions = [
     description: "Three months of cable television and internet connectivity",
   },
   {
-    amount: 250,
+    amount: 300,
     description: "Three months of vital electricity service for our home",
   },
 ];
@@ -73,7 +73,7 @@ export default function DonatePage() {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {donationOptions.map((option) => (
-                  <Card key={option.amount}>
+                  <Card key={option.amount} className="bg-muted/40">
                     <CardHeader>
                       <CardTitle>${option.amount}</CardTitle>
                     </CardHeader>
@@ -96,16 +96,22 @@ export default function DonatePage() {
               </h2>
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/2">
-                  <Image
-                    src="/va.jpg"
-                    alt="Residents enjoying activities"
-                    width={600}
-                    height={400}
-                    className="rounded-lg"
-                  />
+                  <figure>
+                    <Image
+                      src="/donate.jpg"
+                      alt="Residents enjoying activities"
+                      width={600}
+                      height={400}
+                      className="rounded-lg"
+                    />
+                    <figcaption className="text-sm text-center text-muted-foreground mt-2">
+                      A big thank you to Wyoming County Correctional Facility
+                      Employees for their generous annual donation.
+                    </figcaption>
+                  </figure>
                 </div>
                 <div className="md:w-1/2">
-                  <p className="text-lg">
+                  <p className="text-lg text-end">
                     Your donations directly improve the lives of our residents.
                     From enhancing our facilities to providing engaging
                     activities and therapies, every contribution helps create a
@@ -128,7 +134,7 @@ export default function DonatePage() {
                 Other Ways to Give
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
-                <Card className="md:col-span-2">
+                <Card className="md:col-span-2 bg-muted/40">
                   <CardHeader>
                     <CardTitle>Charitable Giving</CardTitle>
                   </CardHeader>
@@ -143,7 +149,7 @@ export default function DonatePage() {
                     </Button>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Legacy Giving</CardTitle>
                   </CardHeader>
@@ -158,7 +164,7 @@ export default function DonatePage() {
                     </Button>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Legacy Brick</CardTitle>
                   </CardHeader>
@@ -188,7 +194,7 @@ export default function DonatePage() {
                     </div>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Raffle Baskets</CardTitle>
                   </CardHeader>
@@ -208,7 +214,7 @@ export default function DonatePage() {
                     </Button>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-muted/40">
                   <CardHeader>
                     <CardTitle>Wish List</CardTitle>
                   </CardHeader>
