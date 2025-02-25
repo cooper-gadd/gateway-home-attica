@@ -1,15 +1,15 @@
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { Video } from "@/components/video";
 import Image from "next/image";
 import Link from "next/link";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
@@ -228,7 +228,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
-                      Make a difference in the lives of our residents by
+                      Make a difference in the lives of residents by
                       volunteering your time and skills.
                     </p>
                     <Button asChild>
@@ -277,7 +277,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-center mb-8">
                 Our Generous Donors
               </h2>
-              
+
               <div className="grid grid-cols-1 gap-8 mt-12 max-w-4xl mx-auto">
                 {/* Platinum Donors - Full width at top with names in a row */}
                 <Card className="bg-muted/40">
