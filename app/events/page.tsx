@@ -19,8 +19,7 @@ const events = [
 
 export default function EventsPage() {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
+    <main>
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -36,7 +35,6 @@ export default function EventsPage() {
         </div>
       </div>
 
-      {/* Events Section */}
       <div className="border-grid border-b border-border">
         <div className="container-wrapper">
           <section className="py-24">

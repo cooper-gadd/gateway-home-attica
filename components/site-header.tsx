@@ -13,7 +13,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function Navbar() {
+export function SiteHeader() {
   const pathname = usePathname();
 
   const navItems = [

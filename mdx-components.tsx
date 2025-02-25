@@ -5,7 +5,21 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
     wrapper: ({ children }) => (
-      <article className="max-w-4xl mx-auto px-4 py-8">{children}</article>
+      <main className="min-h-screen">
+        <div className="border-grid border-b">
+          <div className="container-wrapper">
+            <section className="py-24">
+              <div className="container">
+                <div className="max-w-3xl mx-auto">
+                  <article className="prose prose-zinc dark:prose-invert max-w-none">
+                    {children}
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
     ),
     h1: ({ className, ...props }) => (
       <h1

@@ -44,8 +44,7 @@ const newsletters = [
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
+    <main className="flex flex-col">
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -65,7 +64,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Contact Information Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">

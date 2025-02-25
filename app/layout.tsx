@@ -1,4 +1,5 @@
-import { Navbar } from "@/components/navbar";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@vercel/analytics/react";
@@ -38,8 +39,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <div className="flex-1">{children}</div>
+          <div className="border-grid flex flex-1 flex-col">
+            <SiteHeader />
+            <div className="flex-1 flex flex-col">{children}</div>
+            <SiteFooter />
+          </div>
           <Analytics />
           <Toaster />
         </ThemeProvider>
