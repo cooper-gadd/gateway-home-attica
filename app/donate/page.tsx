@@ -104,7 +104,7 @@ export default function DonatePage() {
                       height={400}
                       className="rounded-lg"
                     />
-                    <figcaption className="text-sm text-center text-muted-foreground mt-2">
+                    <figcaption className="text-sm text-start text-muted-foreground mt-2">
                       Thanks Wyoming County Correctional Facility Employees for
                       their generous annual donation.
                     </figcaption>

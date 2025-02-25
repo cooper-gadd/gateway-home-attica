@@ -70,7 +70,7 @@ export default function BlogPage() {
   const blogPosts = getBlogPosts();
 
   return (
-    <main className="min-h-screen">
+    <main>
       {/* Header Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
@@ -96,7 +96,7 @@ export default function BlogPage() {
               <div className="grid grid-cols-1 gap-8">
                 {blogPosts.map((post) => (
                   <Link href={post.link} key={post.title} className="group">
-                    <Card className="h-full transition-shadow hover:shadow-lg flex flex-col bg-muted/40">
+                    <Card className="h-full transition-shadow hover:shadow-lg flex flex-col">
                       <CardHeader className="flex-none pb-4">
                         <CardTitle className="group-hover:text-primary transition-colors text-2xl">
                           {post.title}
