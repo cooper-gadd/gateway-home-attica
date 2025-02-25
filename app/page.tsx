@@ -81,7 +81,7 @@ export default function Home() {
                     Gateway Home is an empathetic and loving comfort care home
                     for the terminally ill. It is a home-like setting that
                     offers free comfort care for those in their last three
-                    months of a terminal illness. Gateway Home's staff and
+                    months of a terminal illness. Gateway Home&apos;s staff and
                     trained volunteers are able to care for two residents at a
                     time, 24 hours a day, 365 days a year.
                   </p>
@@ -478,7 +478,7 @@ export default function Home() {
                       needs. Hospice care is a specialized form of palliative
                       care designed to support those in the final stages of a
                       terminal illness. Comfort Care is available during the
-                      last 90 days of someone's life with the resident and
+                      last 90 days of someone&apos;s life with the resident and
                       family agreeing there will be no heroic measures taken to
                       prolong life.
                     </p>
@@ -490,7 +490,7 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Our services are provided free-of-charge to our home's
+                      Our services are provided free-of-charge to our home&apos;s
                       residents. We are an independent, not-for-profit
                       organization and money to run Gateway Home is generated
                       entirely through community support, donations and grants.
@@ -503,10 +503,10 @@ export default function Home() {
                       A nonprofit grant is financial support given to nonprofits
                       by corporations, foundations, or government agencies. They
                       are beneficial for nonprofits because they provide the
-                      opportunity for additional funding that doesn't need to be
+                      opportunity for additional funding that doesn&apos;t need to be
                       paid back and they increase awareness of their
                       organization. Grants have also allowed us to make some
-                      improvements to our property that wouldn't have been
+                      improvements to our property that wouldn&apos;t have been
                       possible without the additional funding. Gateway Home
                       relies solely on fundraising, memorials, donations, and
                       grants for funding. With operating expenses exceeding
@@ -613,33 +613,33 @@ export default function Home() {
                       friend, or other healthcare provider. Once a referral is
                       received, our Assessment team will contact the person who
                       is referred to schedule an assessment. The assessment is
-                      done in the person's home or hospital room and takes about
-                      an hour. During the assessment, the person's medical
+                      done in the person&apos;s home or hospital room and takes about
+                      an hour. During the assessment, the person&apos;s medical
                       history, current symptoms, and care needs are discussed.
-                      The person's family members or caregivers are also
+                      The person&apos;s family members or caregivers are also
                       encouraged to participate in the assessment. After the
                       assessment is completed, the person is placed on our
                       waiting list. When a bed becomes available, the person is
-                      admitted to Gateway Home. The person's family members or
+                      admitted to Gateway Home. The person&apos;s family members or
                       caregivers are encouraged to visit Gateway Home before the
                       person is admitted to become familiar with the facility
                       and meet the staff. Once the person is admitted, the
-                      person's family members or caregivers are encouraged to
+                      person&apos;s family members or caregivers are encouraged to
                       visit as often as they like. We also encourage family
-                      members or caregivers to participate in the person's care
+                      members or caregivers to participate in the person&apos;s care
                       as much as they are able. We believe that family members
-                      and caregivers are an important part of the person's care
+                      and caregivers are an important part of the person&apos;s care
                       team and we welcome their involvement. We also provide
                       support and education to family members and caregivers to
                       help them care for their loved one. We believe that
-                      involving family members and caregivers in the person's
-                      care helps to improve the person's quality of life and
+                      involving family members and caregivers in the person&apos;s
+                      care helps to improve the person&apos;s quality of life and
                       provides comfort and support to the person and their
                       family members or caregivers. We also provide support and
                       education to family members and caregivers to help them
                       care for their loved one. We believe that involving family
-                      members and caregivers in the person's care helps to
-                      improve the person's quality of life and provides comfort
+                      members and caregivers in the person&apos;s care helps to
+                      improve the person&apos;s quality of life and provides comfort
                       and support to the person and their family members or
                       caregivers.
                     </p>
@@ -678,10 +678,10 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      At times there may be remission of a person's disease, and
+                      At times there may be remission of a person&apos;s disease, and
                       it may be necessary to be discharged from Gateway Home to
                       an alternative placement: such as home, or moving in with
-                      a family member, or to a Nursing home. It's amazing to
+                      a family member, or to a Nursing home. It&apos;s amazing to
                       see, and such a blessing, that with some conditions,
                       proper symptom control management, socialization and
                       tender loving care, people do go into remission and live
