@@ -29,7 +29,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
