@@ -30,8 +30,7 @@ export default function VolunteerPage() {
   ];
 
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
+    <main>
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -52,16 +51,15 @@ export default function VolunteerPage() {
         </div>
       </div>
 
-      {/* Impact Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <h2 className="text-3xl font-bold text-center mb-8">
-                The Impact of Your Time
-              </h2>
-              <div className="flex flex-col md:flex-row items-center gap-12">
-                <div className="md:w-1/2">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                <div className="lg:w-1/2">
+                  <h2 className="text-2xl font-semibold mb-6">
+                    The Impact of Your Time
+                  </h2>
                   <p className="text-lg mb-6">
                     At Gateway Home, we rely heavily on community fundraising
                     and volunteer support. Our organization&apos;s success comes
@@ -70,7 +68,7 @@ export default function VolunteerPage() {
                     These efforts ensure we can continue providing essential
                     care services while maintaining our facility and programs.
                   </p>
-                  <p className="text-lg">
+                  <p className="text-lg mb-6">
                     By participating in our fundraising initiatives, you become
                     part of our mission to provide comfort and care. From annual
                     events to ongoing campaigns, every effort helps sustain our
@@ -79,7 +77,7 @@ export default function VolunteerPage() {
                     support.
                   </p>
                 </div>
-                <div className="md:w-1/2">
+                <div className="lg:w-1/2">
                   <Image
                     src="/concert.jpg"
                     alt="Volunteer with Resident"
@@ -94,7 +92,6 @@ export default function VolunteerPage() {
         </div>
       </div>
 
-      {/* Opportunities Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -119,7 +116,6 @@ export default function VolunteerPage() {
         </div>
       </div>
 
-      {/* Application Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section id="application" className="py-24">

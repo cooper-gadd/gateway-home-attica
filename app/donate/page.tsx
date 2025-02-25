@@ -33,8 +33,7 @@ const donationOptions = [
 
 export default function DonatePage() {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
+    <main>
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -63,7 +62,6 @@ export default function DonatePage() {
         </div>
       </div>
 
-      {/* Donation Options Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -86,16 +84,24 @@ export default function DonatePage() {
         </div>
       </div>
 
-      {/* Impact Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <h2 className="text-2xl font-semibold text-center mb-6">
-                The Impact of Your Generosity
-              </h2>
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="md:w-1/2">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                <div className="lg:w-1/2">
+                  <h2 className="text-2xl font-semibold mb-6">
+                    The Impact of Your Generosity
+                  </h2>
+                  <p className="text-lg mb-6">
+                    Your donations directly improve the lives of our residents.
+                    From enhancing our facilities to providing engaging
+                    activities and therapies, every contribution helps create a
+                    more comfortable and enriching environment for those in our
+                    care.
+                  </p>
+                </div>
+                <div className="lg:w-1/2">
                   <figure>
                     <Image
                       src="/donate.jpg"
@@ -110,22 +116,12 @@ export default function DonatePage() {
                     </figcaption>
                   </figure>
                 </div>
-                <div className="md:w-1/2">
-                  <p className="text-lg md:text-end">
-                    Your donations directly improve the lives of our residents.
-                    From enhancing our facilities to providing engaging
-                    activities and therapies, every contribution helps create a
-                    more comfortable and enriching environment for those in our
-                    care.
-                  </p>
-                </div>
               </div>
             </div>
           </section>
         </div>
       </div>
 
-      {/* Other Ways to Give Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
