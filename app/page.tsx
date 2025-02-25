@@ -278,8 +278,7 @@ export default function Home() {
                 Our Generous Donors
               </h2>
 
-              <div className="grid grid-cols-1 gap-8 mt-12 max-w-4xl mx-auto">
-                {/* Platinum Donors - Full width at top with names in a row */}
+              <div className="grid grid-cols-1 gap-8 mt-12">
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
                     <CardTitle className="text-2xl font-bold text-center">
@@ -298,9 +297,7 @@ export default function Home() {
                   </CardContent>
                 </Card>
 
-                {/* Gold and Silver Donors - Side by side in middle */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {/* Gold Donors */}
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
                       <CardTitle className="text-2xl font-bold text-center">
@@ -343,7 +340,6 @@ export default function Home() {
                     </CardContent>
                   </Card>
 
-                  {/* Silver Donors */}
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
                       <CardTitle className="text-2xl font-bold text-center">
@@ -380,7 +376,6 @@ export default function Home() {
                   </Card>
                 </div>
 
-                {/* Bronze Donors - Full width at bottom with multi-column layout */}
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
                     <CardTitle className="text-2xl font-bold text-center">
