@@ -1,8 +1,8 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -282,12 +282,16 @@ export default function Home() {
                 {/* Platinum Donors - Full width at top with names in a row */}
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl font-bold text-center">Platinum</CardTitle>
+                    <CardTitle className="text-2xl font-bold text-center">
+                      Platinum
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap justify-center gap-4">
                       <div className="p-2 text-center">Attica Lions Club</div>
-                      <div className="p-2 text-center">Attica Package Company, Inc.</div>
+                      <div className="p-2 text-center">
+                        Attica Package Company, Inc.
+                      </div>
                       <div className="p-2 text-center">Donna Ferry</div>
                       <div className="p-2 text-center">Louise M Schiltz</div>
                     </div>
@@ -299,22 +303,42 @@ export default function Home() {
                   {/* Gold Donors */}
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-2xl font-bold text-center">Gold</CardTitle>
+                      <CardTitle className="text-2xl font-bold text-center">
+                        Gold
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
-                        <li className="p-2 text-center">Advanced Dairy Services, Inc.</li>
+                        <li className="p-2 text-center">
+                          Advanced Dairy Services, Inc.
+                        </li>
                         <li className="p-2 text-center">Doug & Rosie Domes</li>
-                        <li className="p-2 text-center">Dr. Joseph & Marcy Craddock</li>
-                        <li className="p-2 text-center">James & Jane Frankenberger</li>
-                        <li className="p-2 text-center">L Toal Plumbing, LLC</li>
-                        <li className="p-2 text-center">Marley Funeral Home LLC</li>
-                        <li className="p-2 text-center">Providence Fellowship</li>
+                        <li className="p-2 text-center">
+                          Dr. Joseph & Marcy Craddock
+                        </li>
+                        <li className="p-2 text-center">
+                          James & Jane Frankenberger
+                        </li>
+                        <li className="p-2 text-center">
+                          L Toal Plumbing, LLC
+                        </li>
+                        <li className="p-2 text-center">
+                          Marley Funeral Home LLC
+                        </li>
+                        <li className="p-2 text-center">
+                          Providence Fellowship
+                        </li>
                         <li className="p-2 text-center">Ralph A. Janes</li>
-                        <li className="p-2 text-center">Robinson & Hackemer Funeral Home</li>
-                        <li className="p-2 text-center">S.J.F. Construction, Inc</li>
+                        <li className="p-2 text-center">
+                          Robinson & Hackemer Funeral Home
+                        </li>
+                        <li className="p-2 text-center">
+                          S.J.F. Construction, Inc
+                        </li>
                         <li className="p-2 text-center">Shirley Teachen</li>
-                        <li className="p-2 text-center">Todd & Brittany Gadd</li>
+                        <li className="p-2 text-center">
+                          Todd & Brittany Gadd
+                        </li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -322,21 +346,35 @@ export default function Home() {
                   {/* Silver Donors */}
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-2xl font-bold text-center">Silver</CardTitle>
+                      <CardTitle className="text-2xl font-bold text-center">
+                        Silver
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
                         <li className="p-2 text-center">Connie Tartick</li>
-                        <li className="p-2 text-center">County Line Stone Co., Inc.</li>
-                        <li className="p-2 text-center">Durin Rogers & Paula Campbell</li>
-                        <li className="p-2 text-center">Harding&apos;s Attica Furniture</li>
+                        <li className="p-2 text-center">
+                          County Line Stone Co., Inc.
+                        </li>
+                        <li className="p-2 text-center">
+                          Durin Rogers & Paula Campbell
+                        </li>
+                        <li className="p-2 text-center">
+                          Harding&apos;s Attica Furniture
+                        </li>
                         <li className="p-2 text-center">Joseph & Carol Pilc</li>
-                        <li className="p-2 text-center">Michael & Marybeth Whiting</li>
-                        <li className="p-2 text-center">Paul & Diane Luderman</li>
+                        <li className="p-2 text-center">
+                          Michael & Marybeth Whiting
+                        </li>
+                        <li className="p-2 text-center">
+                          Paul & Diane Luderman
+                        </li>
                         <li className="p-2 text-center">Ron & Peach Merrill</li>
                         <li className="p-2 text-center">Sandy Ewert</li>
                         <li className="p-2 text-center">Shirley F. Peters</li>
-                        <li className="p-2 text-center">Zehler Excavating, LLC</li>
+                        <li className="p-2 text-center">
+                          Zehler Excavating, LLC
+                        </li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -345,104 +383,228 @@ export default function Home() {
                 {/* Bronze Donors - Full width at bottom with multi-column layout */}
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl font-bold text-center">Bronze</CardTitle>
+                    <CardTitle className="text-2xl font-bold text-center">
+                      Bronze
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ScrollArea className="h-[600px] pr-4">
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-2">
-                        <div className="p-2 text-center">Alan & Kelly Heizmann</div>
-                        <div className="p-2 text-center">Alfonso J. Ficarella</div>
-                        <div className="p-2 text-center">Andrew & Carla Gasiewicz</div>
-                        <div className="p-2 text-center">Angela Milillo & Doug Patti</div>
-                        <div className="p-2 text-center">Ann & Deane Foster</div>
+                        <div className="p-2 text-center">
+                          Alan & Kelly Heizmann
+                        </div>
+                        <div className="p-2 text-center">
+                          Alfonso J. Ficarella
+                        </div>
+                        <div className="p-2 text-center">
+                          Andrew & Carla Gasiewicz
+                        </div>
+                        <div className="p-2 text-center">
+                          Angela Milillo & Doug Patti
+                        </div>
+                        <div className="p-2 text-center">
+                          Ann & Deane Foster
+                        </div>
                         <div className="p-2 text-center">Anna Nutty</div>
-                        <div className="p-2 text-center">Arch & Peggy Snyder</div>
-                        <div className="p-2 text-center">Barbara C. Schiltz</div>
+                        <div className="p-2 text-center">
+                          Arch & Peggy Snyder
+                        </div>
+                        <div className="p-2 text-center">
+                          Barbara C. Schiltz
+                        </div>
                         <div className="p-2 text-center">Barbara Myers</div>
-                        <div className="p-2 text-center">Bernard & Janet Meinweiser</div>
-                        <div className="p-2 text-center">Brennan & Shelly Burdett</div>
-                        <div className="p-2 text-center">Can Can Redemption</div>
-                        <div className="p-2 text-center">Charles & J. Terri Woodruff</div>
-                        <div className="p-2 text-center">Clarence & Mary Weaver</div>
+                        <div className="p-2 text-center">
+                          Bernard & Janet Meinweiser
+                        </div>
+                        <div className="p-2 text-center">
+                          Brennan & Shelly Burdett
+                        </div>
+                        <div className="p-2 text-center">
+                          Can Can Redemption
+                        </div>
+                        <div className="p-2 text-center">
+                          Charles & J. Terri Woodruff
+                        </div>
+                        <div className="p-2 text-center">
+                          Clarence & Mary Weaver
+                        </div>
                         <div className="p-2 text-center">Connie Holt</div>
-                        <div className="p-2 text-center">Cooke & Steffan - Mr. Tom Steffan</div>
-                        <div className="p-2 text-center">Daniel & Barbara Krazmien</div>
-                        <div className="p-2 text-center">Daniel & Jean Burling</div>
-                        <div className="p-2 text-center">Daniel & Shannon Ford</div>
-                        <div className="p-2 text-center">Daniel & Susan Boss</div>
-                        <div className="p-2 text-center">Dave & Joanne Thornton</div>
-                        <div className="p-2 text-center">David & Connie Rethlake</div>
-                        <div className="p-2 text-center">David & Judith Brockner</div>
-                        <div className="p-2 text-center">Dennis & Carol Piechowiak</div>
+                        <div className="p-2 text-center">
+                          Cooke & Steffan - Mr. Tom Steffan
+                        </div>
+                        <div className="p-2 text-center">
+                          Daniel & Barbara Krazmien
+                        </div>
+                        <div className="p-2 text-center">
+                          Daniel & Jean Burling
+                        </div>
+                        <div className="p-2 text-center">
+                          Daniel & Shannon Ford
+                        </div>
+                        <div className="p-2 text-center">
+                          Daniel & Susan Boss
+                        </div>
+                        <div className="p-2 text-center">
+                          Dave & Joanne Thornton
+                        </div>
+                        <div className="p-2 text-center">
+                          David & Connie Rethlake
+                        </div>
+                        <div className="p-2 text-center">
+                          David & Judith Brockner
+                        </div>
+                        <div className="p-2 text-center">
+                          Dennis & Carol Piechowiak
+                        </div>
                         <div className="p-2 text-center">Diane Phelps</div>
-                        <div className="p-2 text-center">Don & Jude Carpenter</div>
-                        <div className="p-2 text-center">Don & Patti Almeter</div>
-                        <div className="p-2 text-center">Donald & Linda Schmidt</div>
-                        <div className="p-2 text-center">Donald and Jane Beechler</div>
+                        <div className="p-2 text-center">
+                          Don & Jude Carpenter
+                        </div>
+                        <div className="p-2 text-center">
+                          Don & Patti Almeter
+                        </div>
+                        <div className="p-2 text-center">
+                          Donald & Linda Schmidt
+                        </div>
+                        <div className="p-2 text-center">
+                          Donald and Jane Beechler
+                        </div>
                         <div className="p-2 text-center">Empire Access</div>
-                        <div className="p-2 text-center">Gary & Carol Barrow</div>
-                        <div className="p-2 text-center">Gary & Karen Beideck</div>
-                        <div className="p-2 text-center">Gary & Renee Hanley</div>
-                        <div className="p-2 text-center">Gerald & Deborah Landowski</div>
+                        <div className="p-2 text-center">
+                          Gary & Carol Barrow
+                        </div>
+                        <div className="p-2 text-center">
+                          Gary & Karen Beideck
+                        </div>
+                        <div className="p-2 text-center">
+                          Gary & Renee Hanley
+                        </div>
+                        <div className="p-2 text-center">
+                          Gerald & Deborah Landowski
+                        </div>
                         <div className="p-2 text-center">Gina M. Morrison</div>
                         <div className="p-2 text-center">Grace Strollo</div>
                         <div className="p-2 text-center">Helen Leonard</div>
                         <div className="p-2 text-center">Helen Nichols</div>
                         <div className="p-2 text-center">Herbert Hammond</div>
-                        <div className="p-2 text-center">Howard & Muriel Herman</div>
-                        <div className="p-2 text-center">J & S Agen, Inc. - Design Art</div>
+                        <div className="p-2 text-center">
+                          Howard & Muriel Herman
+                        </div>
+                        <div className="p-2 text-center">
+                          J & S Agen, Inc. - Design Art
+                        </div>
                         <div className="p-2 text-center">Janet Romesser</div>
                         <div className="p-2 text-center">Jeannie K. Bates</div>
-                        <div className="p-2 text-center">Jerry & Sue Elmore</div>
+                        <div className="p-2 text-center">
+                          Jerry & Sue Elmore
+                        </div>
                         <div className="p-2 text-center">Jerilyn Clark</div>
                         <div className="p-2 text-center">John E. Jaszko</div>
-                        <div className="p-2 text-center">Joseph & Laura Schmieder</div>
+                        <div className="p-2 text-center">
+                          Joseph & Laura Schmieder
+                        </div>
                         <div className="p-2 text-center">Kelly Nelson</div>
-                        <div className="p-2 text-center">Kevin & Lisa Cochrane</div>
-                        <div className="p-2 text-center">Kirk & Nina Reisdorf</div>
+                        <div className="p-2 text-center">
+                          Kevin & Lisa Cochrane
+                        </div>
+                        <div className="p-2 text-center">
+                          Kirk & Nina Reisdorf
+                        </div>
                         <div className="p-2 text-center">Laurie Valenti</div>
-                        <div className="p-2 text-center">Logel Appliance, Inc.</div>
-                        <div className="p-2 text-center">Lor-Rob Dairy Farm</div>
+                        <div className="p-2 text-center">
+                          Logel Appliance, Inc.
+                        </div>
+                        <div className="p-2 text-center">
+                          Lor-Rob Dairy Farm
+                        </div>
                         <div className="p-2 text-center">Lynn & Linda Camp</div>
                         <div className="p-2 text-center">Lynn Herman</div>
-                        <div className="p-2 text-center">Martha Whittington</div>
-                        <div className="p-2 text-center">Matthew & Mary Mest</div>
+                        <div className="p-2 text-center">
+                          Martha Whittington
+                        </div>
+                        <div className="p-2 text-center">
+                          Matthew & Mary Mest
+                        </div>
                         <div className="p-2 text-center">Melissa Spink</div>
-                        <div className="p-2 text-center">Michael & Peggy Morrissey</div>
-                        <div className="p-2 text-center">Mike & Karen Shadbolt</div>
+                        <div className="p-2 text-center">
+                          Michael & Peggy Morrissey
+                        </div>
+                        <div className="p-2 text-center">
+                          Mike & Karen Shadbolt
+                        </div>
                         <div className="p-2 text-center">M&M Meats</div>
-                        <div className="p-2 text-center">Norb & Marilyn Fuest</div>
+                        <div className="p-2 text-center">
+                          Norb & Marilyn Fuest
+                        </div>
                         <div className="p-2 text-center">Norma Gerhardt</div>
-                        <div className="p-2 text-center">Orangeville Immanuel United Church of Chr</div>
-                        <div className="p-2 text-center">Pat Forsha Truck and Auto Collision, Inc.</div>
+                        <div className="p-2 text-center">
+                          Orangeville Immanuel United Church of Chr
+                        </div>
+                        <div className="p-2 text-center">
+                          Pat Forsha Truck and Auto Collision, Inc.
+                        </div>
                         <div className="p-2 text-center">Patricia Herman</div>
-                        <div className="p-2 text-center">Paul & Carol George</div>
-                        <div className="p-2 text-center">Paul & Maryann Simonsen</div>
+                        <div className="p-2 text-center">
+                          Paul & Carol George
+                        </div>
+                        <div className="p-2 text-center">
+                          Paul & Maryann Simonsen
+                        </div>
                         <div className="p-2 text-center">Peter & Dawn Mark</div>
-                        <div className="p-2 text-center">Randy & Mary Szczesniak</div>
-                        <div className="p-2 text-center">Richard & Linda VanDette</div>
-                        <div className="p-2 text-center">Richard H. & Maria Walczak</div>
-                        <div className="p-2 text-center">Robert & Barbara Peters</div>
-                        <div className="p-2 text-center">Robert & Eileen Disinger</div>
-                        <div className="p-2 text-center">Robert & Maureen Kirby</div>
-                        <div className="p-2 text-center">Robert A. Koerner Construction</div>
+                        <div className="p-2 text-center">
+                          Randy & Mary Szczesniak
+                        </div>
+                        <div className="p-2 text-center">
+                          Richard & Linda VanDette
+                        </div>
+                        <div className="p-2 text-center">
+                          Richard H. & Maria Walczak
+                        </div>
+                        <div className="p-2 text-center">
+                          Robert & Barbara Peters
+                        </div>
+                        <div className="p-2 text-center">
+                          Robert & Eileen Disinger
+                        </div>
+                        <div className="p-2 text-center">
+                          Robert & Maureen Kirby
+                        </div>
+                        <div className="p-2 text-center">
+                          Robert A. Koerner Construction
+                        </div>
                         <div className="p-2 text-center">Ronald J. Demers</div>
                         <div className="p-2 text-center">Rose Bartz</div>
                         <div className="p-2 text-center">Sandra C. Green</div>
                         <div className="p-2 text-center">Sandra Urquhart</div>
-                        <div className="p-2 text-center">Sons of the American Legion Post 1720</div>
-                        <div className="p-2 text-center">Springtyme Landscaping & Design Inc.</div>
-                        <div className="p-2 text-center">Stuart & Janis Hempel</div>
+                        <div className="p-2 text-center">
+                          Sons of the American Legion Post 1720
+                        </div>
+                        <div className="p-2 text-center">
+                          Springtyme Landscaping & Design Inc.
+                        </div>
+                        <div className="p-2 text-center">
+                          Stuart & Janis Hempel
+                        </div>
                         <div className="p-2 text-center">Susan Grew</div>
                         <div className="p-2 text-center">The Greenery</div>
-                        <div className="p-2 text-center">Tim & Louise Royce</div>
-                        <div className="p-2 text-center">Timothy J. & Donna Embt</div>
+                        <div className="p-2 text-center">
+                          Tim & Louise Royce
+                        </div>
+                        <div className="p-2 text-center">
+                          Timothy J. & Donna Embt
+                        </div>
                         <div className="p-2 text-center">Toshmin D. Duncan</div>
-                        <div className="p-2 text-center">Virginia & Burt Fugle</div>
+                        <div className="p-2 text-center">
+                          Virginia & Burt Fugle
+                        </div>
                         <div className="p-2 text-center">Warsaw Pennysaver</div>
-                        <div className="p-2 text-center">Wilkins Insurance Agency, Inc</div>
+                        <div className="p-2 text-center">
+                          Wilkins Insurance Agency, Inc
+                        </div>
                         <div className="p-2 text-center">William Errington</div>
-                        <div className="p-2 text-center">William J. Renz Jr.</div>
+                        <div className="p-2 text-center">
+                          William J. Renz Jr.
+                        </div>
                       </div>
                     </ScrollArea>
                   </CardContent>
@@ -490,21 +652,21 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Our services are provided free-of-charge to our home&apos;s
-                      residents. We are an independent, not-for-profit
-                      organization and money to run Gateway Home is generated
-                      entirely through community support, donations and grants.
-                      Our annual operating expenses must be covered by monies
-                      received from memorials, honorary donations, bequests,
-                      donations from people, corporations, service
+                      Our services are provided free-of-charge to our
+                      home&apos;s residents. We are an independent,
+                      not-for-profit organization and money to run Gateway Home
+                      is generated entirely through community support, donations
+                      and grants. Our annual operating expenses must be covered
+                      by monies received from memorials, honorary donations,
+                      bequests, donations from people, corporations, service
                       organizations, plus grants and fund-raising events.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
                       A nonprofit grant is financial support given to nonprofits
                       by corporations, foundations, or government agencies. They
                       are beneficial for nonprofits because they provide the
-                      opportunity for additional funding that doesn&apos;t need to be
-                      paid back and they increase awareness of their
+                      opportunity for additional funding that doesn&apos;t need
+                      to be paid back and they increase awareness of their
                       organization. Grants have also allowed us to make some
                       improvements to our property that wouldn&apos;t have been
                       possible without the additional funding. Gateway Home
@@ -613,34 +775,35 @@ export default function Home() {
                       friend, or other healthcare provider. Once a referral is
                       received, our Assessment team will contact the person who
                       is referred to schedule an assessment. The assessment is
-                      done in the person&apos;s home or hospital room and takes about
-                      an hour. During the assessment, the person&apos;s medical
-                      history, current symptoms, and care needs are discussed.
-                      The person&apos;s family members or caregivers are also
-                      encouraged to participate in the assessment. After the
-                      assessment is completed, the person is placed on our
-                      waiting list. When a bed becomes available, the person is
-                      admitted to Gateway Home. The person&apos;s family members or
-                      caregivers are encouraged to visit Gateway Home before the
-                      person is admitted to become familiar with the facility
-                      and meet the staff. Once the person is admitted, the
-                      person&apos;s family members or caregivers are encouraged to
-                      visit as often as they like. We also encourage family
-                      members or caregivers to participate in the person&apos;s care
-                      as much as they are able. We believe that family members
-                      and caregivers are an important part of the person&apos;s care
-                      team and we welcome their involvement. We also provide
-                      support and education to family members and caregivers to
-                      help them care for their loved one. We believe that
-                      involving family members and caregivers in the person&apos;s
-                      care helps to improve the person&apos;s quality of life and
-                      provides comfort and support to the person and their
-                      family members or caregivers. We also provide support and
+                      done in the person&apos;s home or hospital room and takes
+                      about an hour. During the assessment, the person&apos;s
+                      medical history, current symptoms, and care needs are
+                      discussed. The person&apos;s family members or caregivers
+                      are also encouraged to participate in the assessment.
+                      After the assessment is completed, the person is placed on
+                      our waiting list. When a bed becomes available, the person
+                      is admitted to Gateway Home. The person&apos;s family
+                      members or caregivers are encouraged to visit Gateway Home
+                      before the person is admitted to become familiar with the
+                      facility and meet the staff. Once the person is admitted,
+                      the person&apos;s family members or caregivers are
+                      encouraged to visit as often as they like. We also
+                      encourage family members or caregivers to participate in
+                      the person&apos;s care as much as they are able. We
+                      believe that family members and caregivers are an
+                      important part of the person&apos;s care team and we
+                      welcome their involvement. We also provide support and
                       education to family members and caregivers to help them
                       care for their loved one. We believe that involving family
                       members and caregivers in the person&apos;s care helps to
-                      improve the person&apos;s quality of life and provides comfort
-                      and support to the person and their family members or
+                      improve the person&apos;s quality of life and provides
+                      comfort and support to the person and their family members
+                      or caregivers. We also provide support and education to
+                      family members and caregivers to help them care for their
+                      loved one. We believe that involving family members and
+                      caregivers in the person&apos;s care helps to improve the
+                      person&apos;s quality of life and provides comfort and
+                      support to the person and their family members or
                       caregivers.
                     </p>
                   </AccordionContent>
@@ -678,18 +841,19 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      At times there may be remission of a person&apos;s disease, and
-                      it may be necessary to be discharged from Gateway Home to
-                      an alternative placement: such as home, or moving in with
-                      a family member, or to a Nursing home. It&apos;s amazing to
-                      see, and such a blessing, that with some conditions,
-                      proper symptom control management, socialization and
-                      tender loving care, people do go into remission and live
-                      longer than what was expected. The staff at Gateway Home
-                      will work closely with the Hospice team and family to
-                      determine the best alternative placement for our resident.
-                      Residents may return to Gateway Home and die peacefully
-                      when that time is appropriate and a bed is available.
+                      At times there may be remission of a person&apos;s
+                      disease, and it may be necessary to be discharged from
+                      Gateway Home to an alternative placement: such as home, or
+                      moving in with a family member, or to a Nursing home.
+                      It&apos;s amazing to see, and such a blessing, that with
+                      some conditions, proper symptom control management,
+                      socialization and tender loving care, people do go into
+                      remission and live longer than what was expected. The
+                      staff at Gateway Home will work closely with the Hospice
+                      team and family to determine the best alternative
+                      placement for our resident. Residents may return to
+                      Gateway Home and die peacefully when that time is
+                      appropriate and a bed is available.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
