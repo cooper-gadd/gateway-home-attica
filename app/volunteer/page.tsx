@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { VolunteerForm } from "@/components/volunteer-form";
 import Image from "next/image";
@@ -39,9 +40,12 @@ export default function VolunteerPage() {
                 <h1 className="text-4xl font-bold mb-4">
                   Volunteer at Gateway Home
                 </h1>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground mb-6">
                   Make a difference in the lives of our residents
                 </p>
+                <Button asChild>
+                  <a href="#application">Apply Now</a>
+                </Button>
               </div>
             </div>
           </section>
@@ -118,7 +122,7 @@ export default function VolunteerPage() {
       {/* Application Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
-          <section className="py-24">
+          <section id="application" className="py-24">
             <div className="container">
               <h2 className="text-3xl font-bold text-center mb-4">
                 Ready to Make a Difference?
