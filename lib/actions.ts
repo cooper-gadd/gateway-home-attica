@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendSubscriptionEmail({ email }: { email: string }) {
   const { data, error } = await resend.emails.send({
-    from: "Gateway Home <info@gatewayhomeattica.org>",
+    from: "Gateway Home <no-reply@gatewayhomeattica.org>",
     to: ["info@gatewayhomeattica.org"],
     bcc: ["coopergadd@yahoo.com"],
     subject: `Email Subscription Update`,
