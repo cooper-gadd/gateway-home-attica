@@ -29,7 +29,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen">
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -186,15 +186,15 @@ export default function Home() {
                       className="rounded-lg w-full h-full object-cover"
                     />
                     <Image
-                      src="/hallway.jpg"
-                      alt="Volunteer organizing an activity"
+                      src="/kitchen.jpg"
+                      alt="Volunteer gardening"
                       width={300}
                       height={300}
                       className="rounded-lg w-full h-full object-cover"
                     />
                     <Image
-                      src="/kitchen.jpg"
-                      alt="Volunteer gardening"
+                      src="/resident-room-2.jpeg"
+                      alt="Volunteer organizing an activity"
                       width={300}
                       height={300}
                       className="rounded-lg w-full h-full object-cover"
