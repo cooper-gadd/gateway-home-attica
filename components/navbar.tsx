@@ -18,6 +18,10 @@ export function Navbar() {
 
   const navItems = [
     {
+      title: "Events",
+      href: "/events",
+    },
+    {
       title: "Volunteer",
       href: "/volunteer",
     },
@@ -44,7 +48,7 @@ export function Navbar() {
   ];
 
   return (
-    <div className="sticky top-0 z-50 w-full border-b border-border/70 dark:border-border bg-background">
+    <div className="sticky top-0 z-50 w-full border-dashed border-b border-border/70 dark:border-dashed bg-background">
       <div className="border-grid">
         <div className="container-wrapper">
           <header className="container h-16 flex items-center md:justify-center gap-4">

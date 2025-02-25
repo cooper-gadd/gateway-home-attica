@@ -5,29 +5,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video } from "@/components/video";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const events = [
-    {
-      title: "Spring Chicken BBQ",
-      date: "April 27, 2025",
-    },
-    {
-      title: "First Annual Gateway to Summer",
-      date: "June 7, 2025",
-    },
-  ];
-
   return (
     <main className="min-h-screen">
       <div className="border-grid border-b">
@@ -225,28 +208,6 @@ export default function Home() {
                 Hear from families about the quality of care.
               </p>
               <Video />
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <section className="py-24">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">
-                Upcoming Events
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {events.map((event) => (
-                  <Card key={event.title} className="flex flex-col bg-muted/40">
-                    <CardHeader>
-                      <CardTitle>{event.title}</CardTitle>
-                      <CardDescription>{event.date}</CardDescription>
-                    </CardHeader>
-                  </Card>
-                ))}
-              </div>
             </div>
           </section>
         </div>
