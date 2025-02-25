@@ -1,24 +1,21 @@
 import {
-    Facebook,
-    Instagram,
-    Mail,
-    MapPin,
-    Phone,
-    Printer
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  Printer,
 } from "lucide-react";
-import { Logo } from "./logo";
 
 export function SiteFooter() {
   return (
-    <footer className="border-grid">
+    <footer className="border-grid border-t py-6">
       <div className="container-wrapper">
-        <div className="container py-12">
-          <div className="flex flex-col items-center space-y-6 text-center">
-            <Logo className="h-16 w-auto" />
-
-            <p className="text-muted-foreground">
-              A place of comfort, care, and compassion
-            </p>
+        <div className="container py-4">
+          <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
+            <div className="text-balance text-sm leading-loose text-muted-foreground">
+              Gateway Home - A place of comfort, care, and compassion
+            </div>
 
             <div className="flex gap-4">
               <a
