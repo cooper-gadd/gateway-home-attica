@@ -127,7 +127,7 @@ export default function VolunteerPage() {
                 Join our team of compassionate volunteers and help us provide
                 comfort and care to those who need it most.
               </p>
-              <Card className="max-w-2xl mx-auto">
+              <Card className="max-w-2xl mx-auto bg-muted/40">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-center">
                     Volunteer Application

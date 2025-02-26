@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
@@ -14,13 +13,13 @@ import {
 import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
+import { sendVolunteerApplication } from "@/lib/actions";
+import { volunteerFormSchema } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
-import { useState } from "react";
-import { sendVolunteerApplication } from "@/lib/actions";
-import { volunteerFormSchema } from "@/lib/schemas";
 
 const roles = [
   "Resident Care",
@@ -100,38 +99,38 @@ export function VolunteerForm() {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         {/* Contact Details */}
-        <Card className="border-0 shadow-none">
-          <CardHeader>
-            <CardTitle>Contact Details</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-8">
-            <FormField
-              control={form.control}
-              name="firstName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>First Name</FormLabel>
-                  <FormControl>
-                    <Input {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+        <div className="space-y-6">
+          <h3 className="text-lg font-medium">Contact Details</h3>
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="firstName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>First Name</FormLabel>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="lastName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Last Name</FormLabel>
-                  <FormControl>
-                    <Input {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Last Name</FormLabel>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <FormField
               control={form.control}
@@ -147,19 +146,35 @@ export function VolunteerForm() {
               )}
             />
 
-            <FormField
-              control={form.control}
-              name="dateOfBirth"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Date of Birth</FormLabel>
-                  <FormControl>
-                    <Input {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="dateOfBirth"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Date of Birth</FormLabel>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="mobilePhone"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Mobile Phone</FormLabel>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <FormField
               control={form.control}
@@ -177,23 +192,9 @@ export function VolunteerForm() {
 
             <FormField
               control={form.control}
-              name="mobilePhone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Mobile Phone</FormLabel>
-                  <FormControl>
-                    <Input {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
               name="streetAddress"
               render={({ field }) => (
-                <FormItem className="col-span-2">
+                <FormItem>
                   <FormLabel>Street Address</FormLabel>
                   <FormControl>
                     <Input {...field} />
@@ -203,7 +204,7 @@ export function VolunteerForm() {
               )}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
               <FormField
                 control={form.control}
                 name="city"
@@ -246,15 +247,13 @@ export function VolunteerForm() {
                 )}
               />
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
         {/* Volunteer Preferences */}
-        <Card className="border-0">
-          <CardHeader>
-            <CardTitle>Volunteer Preferences</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-8">
+        <div className="space-y-6">
+          <h3 className="text-lg font-medium">Volunteer Preferences</h3>
+          <div className="space-y-4">
             <FormField
               control={form.control}
               name="interestedRoles"
@@ -421,227 +420,220 @@ export function VolunteerForm() {
                 </FormItem>
               )}
             />
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
         {/* Experience Questions */}
-        <Card className="border-0">
-          <CardHeader>
-            <CardTitle>Experience & Background</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-6">
-              <FormField
-                control={form.control}
-                name="volunteerReason"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      Why do you want to become a Gateway Home Volunteer?
-                    </FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="Please share your motivation..."
-                        className="min-h-[100px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+        <div className="space-y-6">
+          <h3 className="text-lg font-medium">Experience & Background</h3>
+          <div className="space-y-4">
+            <FormField
+              control={form.control}
+              name="volunteerReason"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Why do you want to become a Gateway Home Volunteer?
+                  </FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder="Please share your motivation..."
+                      className="min-h-[100px]"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="caregiverExperience"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      Please describe your experience as a caregiver (if any)
-                    </FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="Share your caregiving experience..."
-                        className="min-h-[100px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="caregiverExperience"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Please describe your experience as a caregiver (if any)
+                  </FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder="Share your caregiving experience..."
+                      className="min-h-[100px]"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="specialTalents"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>What special talents can you share?</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="List your special skills or talents..."
-                        className="min-h-[100px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="specialTalents"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>What special talents can you share?</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder="List your special skills or talents..."
+                      className="min-h-[100px]"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="hobbies"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>What are your hobbies and interests?</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="Share your hobbies and interests..."
-                        className="min-h-[100px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="hobbies"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>What are your hobbies and interests?</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder="Share your hobbies and interests..."
+                      className="min-h-[100px]"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="lossExperience"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      Please describe your experience with loss (if any)
-                    </FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="Share your experience with loss..."
-                        className="min-h-[100px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-          </CardContent>
-        </Card>
+            <FormField
+              control={form.control}
+              name="lossExperience"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Please describe your experience with loss (if any)
+                  </FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder="Share your experience with loss..."
+                      className="min-h-[100px]"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+        </div>
 
         {/* References */}
-        <Card className="border-0">
-          <CardHeader>
-            <CardTitle>References</CardTitle>
-            <p className="text-sm text-muted-foreground">
-              Please provide two personal or professional references
-            </p>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-8">
-              {/* Reference 1 */}
-              <div>
-                <h4 className="font-medium mb-4">Reference 1</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <FormField
-                    control={form.control}
-                    name="reference1FirstName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>First Name</FormLabel>
-                        <FormControl>
-                          <Input {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+        <div className="space-y-6">
+          <h3 className="text-lg font-medium">References</h3>
+          <p className="text-sm text-muted-foreground">
+            Please provide two personal or professional references
+          </p>
+          <div className="space-y-6">
+            {/* Reference 1 */}
+            <div>
+              <h4 className="font-medium mb-4">Reference 1</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <FormField
+                  control={form.control}
+                  name="reference1FirstName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>First Name</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                  <FormField
-                    control={form.control}
-                    name="reference1LastName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Last Name</FormLabel>
-                        <FormControl>
-                          <Input {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                <FormField
+                  control={form.control}
+                  name="reference1LastName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Last Name</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                  <FormField
-                    control={form.control}
-                    name="reference1Phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Phone</FormLabel>
-                        <FormControl>
-                          <Input {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-              </div>
-
-              {/* Reference 2 */}
-              <div>
-                <h4 className="font-medium mb-4">Reference 2</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <FormField
-                    control={form.control}
-                    name="reference2FirstName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>First Name</FormLabel>
-                        <FormControl>
-                          <Input {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="reference2LastName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Last Name</FormLabel>
-                        <FormControl>
-                          <Input {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="reference2Phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Phone</FormLabel>
-                        <FormControl>
-                          <Input {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+                <FormField
+                  control={form.control}
+                  name="reference1Phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Phone</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               </div>
             </div>
-          </CardContent>
-        </Card>
+
+            {/* Reference 2 */}
+            <div>
+              <h4 className="font-medium mb-4">Reference 2</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <FormField
+                  control={form.control}
+                  name="reference2FirstName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>First Name</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="reference2LastName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Last Name</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="reference2Phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Phone</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
         <Button 
           type="submit" 
           disabled={submitted}
+          className="w-full"
         >
           Submit Application
         </Button>

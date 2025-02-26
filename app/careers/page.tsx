@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Metadata } from "next";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Careers",
+  description: "Join our team of dedicated healthcare professionals at Gateway Home.",
+};
 
 export default function EmploymentPage() {
   const careerOpportunities = [
@@ -41,15 +48,59 @@ export default function EmploymentPage() {
       {/* Header Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
-          <section className="py-16">
+          <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="text-4xl font-bold mb-4">
                   Careers at Gateway Home
                 </h1>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground mb-6">
                   Join our team of dedicated healthcare professionals
                 </p>
+                <Button asChild>
+                  <a href="#openings">View Open Positions</a>
+                </Button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* Why Work With Us Section */}
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                <div className="lg:w-1/2">
+                  <h2 className="text-2xl font-semibold mb-6">
+                    Why Work With Us
+                  </h2>
+                  <p className="text-lg mb-6">
+                    At Gateway Home, we believe in creating a supportive
+                    environment where our team members can thrive while making a
+                    meaningful difference in the lives of our residents. Our
+                    staff members are the heart of our organization, bringing
+                    compassion, dedication, and expertise to their roles every
+                    day.
+                  </p>
+                  <p className="text-lg mb-6">
+                    We value each team member&apos;s contribution and provide
+                    opportunities for professional growth and development. By
+                    joining Gateway Home, you become part of a community
+                    committed to providing exceptional end-of-life care with
+                    dignity and respect.
+                  </p>
+                </div>
+                <div className="lg:w-1/2">
+                  <Image
+                    src="/placeholder.svg?height=400&width=300"
+                    alt="Caring staff at Gateway Home"
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg"
+                  />
+                </div>
               </div>
             </div>
           </section>
@@ -59,14 +110,17 @@ export default function EmploymentPage() {
       {/* Current Openings Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
-          <section className="py-16">
+          <section id="openings" className="py-24">
             <div className="container">
               <h2 className="text-3xl font-bold text-center mb-12">
                 Current Openings
               </h2>
               <div className="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
                 {careerOpportunities.map((opportunity, index) => (
-                  <Card key={index} className="flex flex-col h-full">
+                  <Card
+                    key={index}
+                    className="flex flex-col h-full bg-muted/40"
+                  >
                     <CardHeader>
                       <CardTitle className="text-xl">
                         {opportunity.title}
@@ -77,11 +131,14 @@ export default function EmploymentPage() {
                         {opportunity.description}
                       </p>
                       <h4 className="font-semibold mb-2">Responsibilities:</h4>
-                      <ul className="list-disc pl-5 space-y-1">
+                      <ul className="list-disc pl-5 space-y-1 mb-6">
                         {opportunity.details.map((detail, i) => (
                           <li key={i}>{detail}</li>
                         ))}
                       </ul>
+                      <Button asChild>
+                        <a href="#application">Apply Now</a>
+                      </Button>
                     </CardContent>
                   </Card>
                 ))}
@@ -94,7 +151,7 @@ export default function EmploymentPage() {
       {/* Application Section */}
       <div className="border-grid">
         <div className="container-wrapper">
-          <section className="py-16">
+          <section id="application" className="py-24">
             <div className="container">
               <h2 className="text-3xl font-bold text-center mb-4">
                 Apply Today
@@ -102,7 +159,7 @@ export default function EmploymentPage() {
               <p className="text-xl text-center mb-8">
                 Take the first step towards a rewarding career in healthcare
               </p>
-              <Card className="max-w-2xl mx-auto">
+              <Card className="max-w-2xl mx-auto bg-muted/40">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-center">
                     Employment Application
