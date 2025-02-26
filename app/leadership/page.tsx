@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Leadership",
   description:
-    "Meet the dedicated team of professionals and board members who guide Gateway Home's mission to provide exceptional care and support for our residents.",
+    "Meet the dedicated team who guide Gateway Home's mission to provide exceptional care and support for our residents.",
 };
 
 const leadershipTeam = [
@@ -93,9 +93,8 @@ export default function LeadershipPage() {
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="text-4xl font-bold mb-4">Our Leadership Team</h1>
                 <p className="text-lg text-muted-foreground">
-                  Meet the dedicated team of professionals and board members who
-                  guide Gateway Home&apos;s mission to provide exceptional care
-                  and support for our residents.
+                  Meet the dedicated team who guide Gateway Home&apos;s mission
+                  to provide exceptional care and support for our residents.
                 </p>
               </div>
             </div>
