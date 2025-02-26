@@ -1,7 +1,6 @@
+import { EmploymentForm } from "@/components/employment-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -166,107 +165,7 @@ export default function EmploymentPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <form className="space-y-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div>
-                        <label
-                          htmlFor="firstName"
-                          className="block text-sm font-medium text-foreground mb-1"
-                        >
-                          First Name
-                        </label>
-                        <Input
-                          id="firstName"
-                          placeholder="Enter your first name"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="lastName"
-                          className="block text-sm font-medium text-foreground mb-1"
-                        >
-                          Last Name
-                        </label>
-                        <Input
-                          id="lastName"
-                          placeholder="Enter your last name"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-medium text-foreground mb-1"
-                      >
-                        Email
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="Enter your email"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="block text-sm font-medium text-foreground mb-1"
-                      >
-                        Phone Number
-                      </label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="Enter your phone number"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="position"
-                        className="block text-sm font-medium text-foreground mb-1"
-                      >
-                        Position Applied For
-                      </label>
-                      <Input
-                        id="position"
-                        placeholder="Enter the position you're applying for"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="experience"
-                        className="block text-sm font-medium text-foreground mb-1"
-                      >
-                        Work Experience
-                      </label>
-                      <Textarea
-                        id="experience"
-                        placeholder="Describe your relevant work experience"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="resume"
-                        className="block text-sm font-medium text-foreground mb-1"
-                      >
-                        Resume/CV
-                      </label>
-                      <Input
-                        id="resume"
-                        type="file"
-                        accept=".pdf,.doc,.docx"
-                        required
-                      />
-                    </div>
-                    <Button type="submit" className="w-full">
-                      Submit Application
-                    </Button>
-                  </form>
+                  <EmploymentForm />
                 </CardContent>
               </Card>
             </div>
