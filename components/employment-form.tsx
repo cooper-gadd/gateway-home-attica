@@ -537,7 +537,7 @@ export function EmploymentForm() {
                               <Button
                                 variant={"outline"}
                                 className={cn(
-                                  "w-full pl-3 text-left font-normal",
+                                  "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
                                   !field.value && "text-muted-foreground"
                                 )}
                               >
@@ -579,7 +579,7 @@ export function EmploymentForm() {
                               <Button
                                 variant={"outline"}
                                 className={cn(
-                                  "w-full pl-3 text-left font-normal",
+                                  "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
                                   !field.value && "text-muted-foreground"
                                 )}
                               >
@@ -656,7 +656,7 @@ export function EmploymentForm() {
                               <Button
                                 variant={"outline"}
                                 className={cn(
-                                  "w-full pl-3 text-left font-normal",
+                                  "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
                                   !field.value && "text-muted-foreground"
                                 )}
                               >
@@ -698,7 +698,7 @@ export function EmploymentForm() {
                               <Button
                                 variant={"outline"}
                                 className={cn(
-                                  "w-full pl-3 text-left font-normal",
+                                  "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
                                   !field.value && "text-muted-foreground"
                                 )}
                               >
@@ -775,7 +775,7 @@ export function EmploymentForm() {
                               <Button
                                 variant={"outline"}
                                 className={cn(
-                                  "w-full pl-3 text-left font-normal",
+                                  "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
                                   !field.value && "text-muted-foreground"
                                 )}
                               >
@@ -817,7 +817,7 @@ export function EmploymentForm() {
                               <Button
                                 variant={"outline"}
                                 className={cn(
-                                  "w-full pl-3 text-left font-normal",
+                                  "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
                                   !field.value && "text-muted-foreground"
                                 )}
                               >
