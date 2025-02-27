@@ -17,105 +17,18 @@ export default function Home() {
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-8">
-                Gateway Home
-              </h2>
-              <p className="text-xl text-center max-w-3xl mx-auto mb-8">
-                A place of comfort, care, and compassion
-              </p>
-              <div className="relative w-full aspect-video bg-muted rounded-lg overflow-hidden">
-                <Image
-                  src="/front.jpg"
-                  alt="Gateway Home Mission"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <section className="py-24">
-            <div className="container mx-auto px-4">
-              <h2 className="text-4xl font-bold text-center mb-8">
-                Our Mission
-              </h2>
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="text-lg mb-6">
-                  Gateway Home is established to give comfort care to people who
-                  are medically deemed to be in their last stages of life (three
-                  months or less). Our organization will provide both medical
-                  and spiritual care to support the residents as they pass from
-                  this life to the next.
-                </p>
-                <p className="text-lg mb-6">
-                  Gateway Home staff and volunteers are committed to provide
-                  dignified care, comfort, and support for our residents and
-                  their families. Gateway Home is a nonprofit organization, and
-                  does not charge for services provided.
-                </p>
-                <p className="text-lg mb-6">
-                  Funding is accomplished through donations, bequests, and
-                  community support. Admission is based solely on need.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <section className="py-24">
             <div className="container">
-              <div className="flex flex-col lg:flex-row items-center gap-12">
-                <div className="lg:w-1/2">
-                  <h2 className="text-3xl font-bold mb-6">
-                    Our Approach to Resident Care
-                  </h2>
-                  <p className="text-lg mb-6">
-                    Gateway Home is an empathetic and loving comfort care home
-                    for the terminally ill. It is a home-like setting that
-                    offers free comfort care for those in their last three
-                    months of a terminal illness. Gateway Home&apos;s staff and
-                    trained volunteers are able to care for two residents at a
-                    time, 24 hours a day, 365 days a year.
-                  </p>
-                  <p className="text-lg mb-6">
-                    Our primary goal is to provide comfort care, symptom control
-                    and pain management for our residents, as well as to be a
-                    source of respite care for the families and friends.
-                    Hands-on resident care is provided around the clock, along
-                    with meals, laundry, companionship, as well as emotional,
-                    and spiritual support. Comfort care honors the well-being of
-                    every person and respects the dignity of human life.
-                  </p>
-                  <p className="text-lg mb-6">
-                    Admission to Gateway Home is based solely on need,
-                    regardless of age, sex, race, religion or other distinctions
-                    . Referrals come from several sources: Hospice, health care
-                    agencies, hospitals, physicians, social workers, clergy,
-                    family, friends or the person themselves. Priority is given
-                    to those who cannot receive adequate care at home.
-                  </p>
-                  <p className="text-lg mb-6">
-                    There is no cost to the families that we serve, nor do we
-                    receive any reimbursement from insurance companies. Gateway
-                    Home is funded solely by donations, fundraising, memorial
-                    contributions and through the generosity of our community.
-                  </p>
-                </div>
-                <div className="lg:w-1/2">
+              <div className="text-center">
+                <h1 className="text-4xl font-bold mb-4">Gateway Home</h1>
+                <p className="text-lg text-muted-foreground mb-6">
+                  A place of comfort, care, and compassion
+                </p>
+                <div className="relative w-full aspect-video bg-muted rounded-lg overflow-hidden">
                   <Image
-                    src="/cake.jpg"
-                    alt="Resident Care"
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-lg"
+                    src="/front.jpg"
+                    alt="Gateway Home Mission"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
@@ -128,43 +41,128 @@ export default function Home() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <div className="flex flex-col lg:flex-row items-center gap-12">
+              <h2 className="text-3xl font-semibold mb-8">Our Mission</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Gateway Home is established to give comfort care to people who
+                are medically deemed to be in their last stages of life (three
+                months or less). Our organization will provide both medical and
+                spiritual care to support the residents as they pass from this
+                life to the next.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Gateway Home staff and volunteers are committed to provide
+                dignified care, comfort, and support for our residents and their
+                families. Gateway Home is a nonprofit organization, and does not
+                charge for services provided.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Funding is accomplished through donations, bequests, and
+                community support. Admission is based solely on need.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="flex flex-col lg:flex-row items-start gap-12">
                 <div className="lg:w-1/2">
-                  <h2 className="text-3xl font-bold mb-6">
+                  <h2 className="text-3xl font-semibold mb-6">
+                    Our Approach to Resident Care
+                  </h2>
+                  <div className="space-y-6">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Gateway Home is an empathetic and loving comfort care home
+                      for the terminally ill. It is a home-like setting that
+                      offers free comfort care for those in their last three
+                      months of a terminal illness.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      Our primary goal is to provide comfort care, symptom control
+                      and pain management for our residents, as well as to be a
+                      source of respite care for the families and friends.
+                      Hands-on resident care is provided around the clock, along
+                      with meals, laundry, companionship, as well as emotional,
+                      and spiritual support. Comfort care honors the well-being of
+                      every person and respects the dignity of human life.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      Admission to Gateway Home is based solely on need,
+                      regardless of age, sex, race, religion or other distinctions
+                      . Referrals come from several sources: Hospice, health care
+                      agencies, hospitals, physicians, social workers, clergy,
+                      family, friends or the person themselves. Priority is given
+                      to those who cannot receive adequate care at home.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      There is no cost to the families that we serve, nor do we
+                      receive any reimbursement from insurance companies. Gateway
+                      Home is funded solely by donations, fundraising, memorial
+                      contributions and through the generosity of our community.
+                    </p>
+                  </div>
+                </div>
+                <div className="lg:w-1/2">
+                  <Image
+                    src="/cake.jpg"
+                    alt="Resident Care"
+                    width={600}
+                    height={400}
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="flex flex-col lg:flex-row items-start gap-12">
+                <div className="lg:w-1/2">
+                  <h2 className="text-3xl font-semibold mb-6">
                     Living at Gateway Home
                   </h2>
-                  <p className="text-lg mb-6">
-                    Gateway Home is a place where residents can live out their
-                    final days in comfort and dignity. Our staff and volunteers
-                    are dedicated to providing the highest quality care to our
-                    residents, and we strive to create a warm and welcoming
-                    environment where residents can feel at home. We offer a
-                    range of services to meet the unique needs of each resident,
-                    including medical care, emotional support, and spiritual
-                    care. Our goal is to create a sense of community and
-                    belonging for all who live here, and we are committed to
-                    providing personalized care that meets the individual needs
-                    of each resident.
-                  </p>
-                  <p className="text-lg mb-6">
-                    At Gateway Home, we believe that every person deserves to
-                    live their final days with dignity and respect. We are
-                    dedicated to providing compassionate care to our residents
-                    and their families, and we strive to create a peaceful and
-                    supportive environment where residents can feel safe and
-                    cared for. Our staff and volunteers are committed to
-                    providing the highest quality care to our residents, and we
-                    work closely with families to ensure that their loved ones
-                    receive the care and support they need. We are proud to be a
-                    part of the Gateway Home family, and we look forward to
-                    welcoming you to our community.
-                  </p>
+                  <div className="space-y-6">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Gateway Home is a place where residents can live out their
+                      final days in comfort and dignity. Our staff and volunteers
+                      are dedicated to providing the highest quality care to our
+                      residents, and we strive to create a warm and welcoming
+                      environment where residents can feel at home. We offer a
+                      range of services to meet the unique needs of each resident,
+                      including medical care, emotional support, and spiritual
+                      care. Our goal is to create a sense of community and
+                      belonging for all who live here, and we are committed to
+                      providing personalized care that meets the individual needs
+                      of each resident.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      At Gateway Home, we believe that every person deserves to
+                      live their final days with dignity and respect. We are
+                      dedicated to providing compassionate care to our residents
+                      and their families, and we strive to create a peaceful and
+                      supportive environment where residents can feel safe and
+                      cared for. Our staff and volunteers are committed to
+                      providing the highest quality care to our residents, and we
+                      work closely with families to ensure that their loved ones
+                      receive the care and support they need. We are proud to be a
+                      part of the Gateway Home family, and we look forward to
+                      welcoming you to our community.
+                    </p>
+                  </div>
                 </div>
                 <div className="lg:w-1/2">
                   <div className="grid grid-cols-2 gap-4">
                     <Image
                       src="/resident-room.jpg"
-                      alt="Volunteer helping a resident"
+                      alt="Resident Room"
                       width={300}
                       height={300}
                       className="rounded-lg w-full h-full object-cover"
@@ -201,11 +199,11 @@ export default function Home() {
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-8">
+            <div className="container">
+              <h2 className="text-3xl font-semibold text-center mb-8">
                 Experience Our Compassionate Care
               </h2>
-              <p className="text-xl text-center max-w-3xl mx-auto mb-8">
+              <p className="text-lg text-muted-foreground text-center mb-12">
                 Hear from families about the quality of care.
               </p>
               <Video />
@@ -218,7 +216,7 @@ export default function Home() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">
+              <h2 className="text-3xl font-bold text-center mb-8">
                 Get Involved
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -273,15 +271,14 @@ export default function Home() {
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
-            <div className="container mx-auto px-4">
-              <h2 className="text-4xl font-bold text-center mb-8">
+            <div className="container">
+              <h2 className="text-3xl font-semibold text-center mb-12">
                 Our Generous Donors
               </h2>
-
-              <div className="grid grid-cols-1 gap-8 mt-12">
+              <div className="space-y-8">
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl font-bold text-center">
+                    <CardTitle className="text-2xl font-semibold text-center">
                       Platinum
                     </CardTitle>
                   </CardHeader>

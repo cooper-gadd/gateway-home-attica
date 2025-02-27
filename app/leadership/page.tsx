@@ -14,8 +14,8 @@ const leadershipTeam = [
     role: "Board President",
     image: "/doug-domes.jpeg",
     bio: [
-      "Doug has lived his life as a resident of Attica with wife Rosie of 55 years. He has four children who have blessed him with 16 beautiful grandchildren. As a businessman in the timber industry, Doug knows trees to be God’s only renewable natural resource for all of us to use wisely and has learned to respect this resource.",
-      "Doug recognizes the value of a human's heart, soul, and body and as a result sees “Gateway Home” as a chance to give back or pass onto those in need the blessing God has bestowed on him. He wants to help those who are facing their last days, weeks, or possible months on this earth not fearing their ultimate departure from this earth. Doug believes it is important for them to know they are loved and valued by being cared for physically, emotionally, and spiritually. The bible states the Golden Rule as “Do unto others as you would have them do unto you.” Showing love and caring for others is the means by which we all should live.",
+      "Doug has lived his life as a resident of Attica with wife Rosie of 55 years. He has four children who have blessed him with 16 beautiful grandchildren. As a businessman in the timber industry, Doug knows trees to be God's only renewable natural resource for all of us to use wisely and has learned to respect this resource.",
+      "Doug recognizes the value of a human's heart, soul, and body and as a result sees 'Gateway Home' as a chance to give back or pass onto those in need the blessing God has bestowed on him. He wants to help those who are facing their last days, weeks, or possible months on this earth not fearing their ultimate departure from this earth. Doug believes it is important for them to know they are loved and valued by being cared for physically, emotionally, and spiritually. The bible states the Golden Rule as 'Do unto others as you would have them do unto you.' Showing love and caring for others is the means by which we all should live.",
     ],
   },
   {
@@ -25,7 +25,7 @@ const leadershipTeam = [
     image: "/jim-russell.jpeg",
     bio: [
       "Jim has lived in Batavia for over 50 years, many of which he owned and operated a fire and safety company. He has 3 children and 4 grandchildren. Over the years he has volunteered and served on many committees such as Volunteer Firefighter for the Town of Stafford and Town of Batavia Fire Departments, Batavia City Councilman, City of Batavia Zoning Board and Knights of Columbus Council 11728.",
-      "Jim first became involved with Gateway Home in February 2020 when he brought his wife, Judy of 47 years to Gateway Home as her battle with lung cancer was coming to an end. After Judy’s passing Jim wanted to give back to Gateway Home for the support they provided. Jim organized a Chicken BBQ fundraiser that summer at Gateway Home. After that he began serving on the Board of Directors in 2021.  Jim continues to honor Judy’s memory by organizing and cooking two Chicken BBQ fundraisers each year for Gateway Home. In July 2022, he also started the First Annual Judy Russell Memorial Golf Tournament with all the proceeds raised donated to Gateway Home.",
+      "Jim first became involved with Gateway Home in February 2020 when he brought his wife, Judy of 47 years to Gateway Home as her battle with lung cancer was coming to an end. After Judy's passing Jim wanted to give back to Gateway Home for the support they provided. Jim organized a Chicken BBQ fundraiser that summer at Gateway Home. After that he began serving on the Board of Directors in 2021.  Jim continues to honor Judy's memory by organizing and cooking two Chicken BBQ fundraisers each year for Gateway Home. In July 2022, he also started the First Annual Judy Russell Memorial Golf Tournament with all the proceeds raised donated to Gateway Home.",
     ],
   },
   {
@@ -57,7 +57,7 @@ const leadershipTeam = [
       "Kimberly Kadziolka, BA, MS, EdD, is a seasoned human services professional who has a long career working with vulnerable populations in WNY. Currently, she is the executive director of Parent Network of WNY, however her experience includes working with children and adults with disabilities, children in the child welfare system, survivors of domestic violence, County, and individuals returning to WNY following incarceration in the federal prison system. Kimberly has a deep sense of equity and works for the day when everyone in our community has access to all they need to reach their full potential throughout their life.",
       "Kimberly was introduced to Gateway Home when her sister, Jammie, was a resident in July 2023. Witnessing the compassionate care provided to her sister and family, she felt moved to offer her skills in helping to spread the mission of Gateway Home. Recognizing that comfort care is an incredible gift to our community, she is excited to be a part of Gateway Home.",
       "In addition to the various leadership positions held, Kimberly sits on the boards of several local and statewide organizations that empower people: Unique Theatre Company, BRICK Buffalo Academy, the Care Management Coalition of WNY, and Families Together in NYS. She is well respected in the social services fields in Western New York and throughout New York State.",
-      "Kimberly grew up in Pembroke NY and continues to have ties in the GLOW region. She earned her BA in Social Sciences and Community Mental Health from SUNY Buffalo, an MS in Human Services Administration from SUNY Buffalo State College, and an EdD in Health Administration from D’Youville University. Her dissertation focused on the impact of compassion satisfaction and compassion fatigue on human service workers and how it impacts their decision to change jobs; this research influences her leadership decisions in her many roles.",
+      "Kimberly grew up in Pembroke NY and continues to have ties in the GLOW region. She earned her BA in Social Sciences and Community Mental Health from SUNY Buffalo, an MS in Human Services Administration from SUNY Buffalo State College, and an EdD in Health Administration from D'Youville University. Her dissertation focused on the impact of compassion satisfaction and compassion fatigue on human service workers and how it impacts their decision to change jobs; this research influences her leadership decisions in her many roles.",
     ],
   },
   {
@@ -77,15 +77,14 @@ const leadershipTeam = [
     image: "/sue-herman.jpeg",
     bio: [
       "Sue joined our team when we opened our doors in December 2019 and handles the day to day office tasks such as bookkeeping, mail and telephone. She also helps coordinate our volunteer scheduling and is often the voice behind the One Call messaging system. She is a graduate of Canisius College and is a certified public accountant. She previously worked for Farm Credit East as an agricultural income tax preparer. Sue keeps her hands in agriculture by continuing to do some on-farm bookkeeping as time permits. She enjoys volunteering with Attica Youth Athletics and is a member of the Attica Central School Board of Education.",
-      "Sue lives in Attica with her husband, Don and son, Isaac. Sue and Don also have 3 adult children and 4 grandchildren. She is excited to add her creativity and enthusiasm to help promote Gateway Home’s mission.",
+      "Sue lives in Attica with her husband, Don and son, Isaac. Sue and Don also have 3 adult children and 4 grandchildren. She is excited to add her creativity and enthusiasm to help promote Gateway Home's mission.",
     ],
   },
 ];
 
 export default function LeadershipPage() {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
+    <main>
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -102,44 +101,38 @@ export default function LeadershipPage() {
         </div>
       </div>
 
-      {/* Leadership Sections */}
       {leadershipTeam.map((member) => (
         <div key={member.name} className="border-grid border-b">
           <div className="container-wrapper">
             <section className="py-24">
               <div className="container">
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="w-full md:w-[250px] flex-shrink-0">
-                    <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-lg">
-                      <div className="aspect-[3/4]">
-                        <Image
-                          src={
-                            member.image ??
-                            "/placeholder.svg?height=400&width=300"
-                          }
-                          alt={member.name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-                        <h3 className="text-lg font-semibold mb-1">
-                          {member.name}
-                        </h3>
-                        <p className="text-sm text-gray-200">{member.role}</p>
+                  <div className="flex flex-col md:flex-row gap-12">
+                    <div className="w-full md:w-[300px] flex-shrink-0">
+                      <div className="relative overflow-hidden rounded-lg">
+                        <div className="aspect-[3/4]">
+                          <Image
+                            src={member.image ?? "/placeholder.svg?height=400&width=300"}
+                            alt={member.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+                          <h2 className="text-2xl font-semibold mb-1">{member.name}</h2>
+                          <p className="text-lg text-gray-200">{member.role}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="flex-grow">
-                    {member.bio?.map((paragraph, index) => (
-                      <p
-                        key={index}
-                        className="leading-7 [&:not(:first-child)]:mt-6"
-                      >
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
+                    <div className="flex-grow">
+                      {member.bio?.map((paragraph, index) => (
+                        <p
+                          key={index}
+                          className="text-muted-foreground text-lg leading-relaxed [&:not(:first-child)]:mt-6"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
                 </div>
               </div>
             </section>

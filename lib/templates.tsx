@@ -73,7 +73,7 @@ export const EmploymentApplicationTemplate: FC<{ formData: z.infer<typeof employ
     <p><strong>Position Applied For:</strong> {formData.position}</p>
     <p><strong>Legally Eligible to Work:</strong> {formData.isLegallyEligible}</p>
     <p><strong>Criminal Record:</strong> {formData.isFelonOrMisdemeanant}</p>
-    <p><strong>Previous Gateway Home Employment:</strong> {formData.isEmployedOrVolunteeredAtCrossroads}</p>
+    <p><strong>Previous Crossroads Experience:</strong> {formData.isEmployedOrVolunteeredAtCrossroads}</p>
     
     <h2>Education & Qualifications</h2>
     <p><strong>Education Level:</strong> {formData.educationLevel}</p>

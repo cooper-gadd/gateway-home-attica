@@ -12,7 +12,7 @@ export function Video() {
   };
 
   return (
-    <div className="relative w-full aspect-video bg-muted rounded-lg overflow-hidden">
+    <div className="relative w-full aspect-video bg-muted/40 rounded-lg overflow-hidden">
       {!isPlaying ? (
         <div className="absolute inset-0 flex items-center justify-center">
           <Button size="lg" onClick={handlePlay}>

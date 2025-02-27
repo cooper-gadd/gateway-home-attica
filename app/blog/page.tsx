@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { format } from "date-fns";
 import fs from "fs";
 import { Metadata } from "next";
@@ -10,13 +9,6 @@ export const metadata: Metadata = {
   description:
     "Read about the latest news and updates from Gateway Home Attica.",
 };
-
-function calculateReadTime(content: string): string {
-  const wordsPerMinute = 200;
-  const words = content.trim().split(/\s+/).length;
-  const minutes = Math.ceil(words / wordsPerMinute);
-  return `${minutes} min read`;
-}
 
 function formatDate(dateString: string): string {
   return format(new Date(dateString), "MMMM d, yyyy");
@@ -55,7 +47,6 @@ function getBlogPosts() {
       author: author,
       date: metadata.date,
       formattedDate: formatDate(metadata.date),
-      readTime: calculateReadTime(mainContent),
       link: `/blog/${dir}`,
     };
   });
@@ -89,49 +80,37 @@ export default function BlogPage() {
       </div>
 
       {/* Blog Posts Section */}
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <section className="py-24">
-            <div className="container">
-              <div className="grid grid-cols-1 gap-8">
-                {blogPosts.map((post) => (
-                  <Link href={post.link} key={post.title} className="group">
-                    <Card className="h-full transition-shadow hover:shadow-lg flex flex-col">
-                      <CardHeader className="flex-none pb-4">
-                        <CardTitle className="group-hover:text-primary transition-colors text-2xl">
-                          {post.title}
-                        </CardTitle>
-                        <div className="flex items-center gap-2 text-sm mt-2">
-                          <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                            {post.author}
-                          </span>
-                          <span className="text-muted-foreground">•</span>
-                          <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                            {post.formattedDate}
-                          </span>
-                        </div>
-                      </CardHeader>
-                      <CardContent className="flex-1 flex flex-col justify-between">
-                        <p className="text-muted-foreground group-hover:text-foreground transition-colors mb-4 line-clamp-3">
-                          {post.excerpt}
-                        </p>
-                        <div className="flex items-center gap-2 text-sm mt-auto pt-4 border-t">
-                          <span className="text-muted-foreground group-hover:text-foreground transition-colors">
-                            {post.readTime}
-                          </span>
-                          <span className="text-muted-foreground group-hover:text-primary transition-colors">
-                            →
-                          </span>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
+      {blogPosts.map((post) => (
+        <div key={post.title} className="border-grid border-b">
+          <div className="container-wrapper">
+            <section className="py-24">
+              <div className="container">
+                <Link href={post.link} className="group">
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="flex-grow">
+                      <h2 className="text-2xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h2>
+                      <div className="flex items-center gap-2 text-sm mb-4">
+                        <span className="text-muted-foreground">
+                          {post.author}
+                        </span>
+                        <span className="text-muted-foreground">•</span>
+                        <span className="text-muted-foreground">
+                          {post.formattedDate}
+                        </span>
+                      </div>
+                      <p className="text-muted-foreground group-hover:text-foreground transition-colors">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
-      </div>
+      ))}
     </main>
   );
 }

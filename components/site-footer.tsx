@@ -9,7 +9,7 @@ import {
 
 export function SiteFooter() {
   return (
-    <footer className="border-grid border-t py-6">
+    <footer className="border-grid border-t">
       <div className="container-wrapper">
         <div className="container py-4">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">

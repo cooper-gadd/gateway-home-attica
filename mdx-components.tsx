@@ -5,7 +5,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
     wrapper: ({ children }) => (
-      <main className="min-h-screen">
+      <main>
         <div className="border-grid border-b">
           <div className="container-wrapper">
             <section className="py-24">
@@ -24,7 +24,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h1: ({ className, ...props }) => (
       <h1
         className={cn(
-          "mt-2 scroll-m-20 text-4xl font-bold tracking-tight",
+          "text-4xl font-bold mb-4",
           className,
         )}
         {...props}
@@ -33,7 +33,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h2: ({ className, ...props }) => (
       <h2
         className={cn(
-          "mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0",
+          "text-3xl font-semibold mb-6 mt-12 first:mt-0",
           className,
         )}
         {...props}
@@ -42,7 +42,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h3: ({ className, ...props }) => (
       <h3
         className={cn(
-          "mt-8 scroll-m-20 text-2xl font-semibold tracking-tight",
+          "text-2xl font-semibold mb-4 mt-8",
           className,
         )}
         {...props}
@@ -50,22 +50,22 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     p: ({ className, ...props }) => (
       <p
-        className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
+        className={cn("text-lg text-muted-foreground leading-relaxed mb-6", className)}
         {...props}
       />
     ),
     ul: ({ className, ...props }) => (
-      <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
+      <ul className={cn("space-y-2 mb-6", className)} {...props} />
     ),
     ol: ({ className, ...props }) => (
-      <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
+      <ol className={cn("space-y-2 mb-6", className)} {...props} />
     ),
     li: ({ className, ...props }) => (
-      <li className={cn("mt-2", className)} {...props} />
+      <li className={cn("text-lg text-muted-foreground", className)} {...props} />
     ),
     blockquote: ({ className, ...props }) => (
       <blockquote
-        className={cn("mt-6 border-l-2 pl-6 italic", className)}
+        className={cn("border-l-2 pl-6 italic text-lg text-muted-foreground mb-6", className)}
         {...props}
       />
     ),
@@ -73,7 +73,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <a
         href={href}
         className={cn(
-          "font-medium text-primary underline underline-offset-4",
+          "font-medium text-primary underline underline-offset-4 hover:text-primary/80",
           className,
         )}
         {...props}
@@ -84,12 +84,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     img: ({ className, alt, ...props }) => (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        className={cn("rounded-md border", className)}
+        className={cn("rounded-lg border my-6", className)}
         alt={alt}
         {...props}
       />
     ),
-    hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
+    hr: ({ ...props }) => <hr className="my-12" {...props} />,
     table: ({ className, ...props }) => (
       <div className="my-6 w-full overflow-y-auto">
         <table className={cn("w-full", className)} {...props} />
@@ -115,7 +115,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     td: ({ className, ...props }) => (
       <td
         className={cn(
-          "border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+          "border px-4 py-2 text-left text-muted-foreground [&[align=center]]:text-center [&[align=right]]:text-right",
           className,
         )}
         {...props}
