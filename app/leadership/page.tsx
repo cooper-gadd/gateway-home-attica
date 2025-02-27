@@ -106,33 +106,38 @@ export default function LeadershipPage() {
           <div className="container-wrapper">
             <section className="py-24">
               <div className="container">
-                  <div className="flex flex-col md:flex-row gap-12">
-                    <div className="w-full md:w-[300px] flex-shrink-0">
-                      <div className="relative overflow-hidden rounded-lg">
-                        <div className="aspect-[3/4]">
-                          <Image
-                            src={member.image ?? "/placeholder.svg?height=400&width=300"}
-                            alt={member.name}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-                          <h2 className="text-2xl font-semibold mb-1">{member.name}</h2>
-                          <p className="text-lg text-gray-200">{member.role}</p>
-                        </div>
+                <div className="flex flex-col md:flex-row gap-12">
+                  <div className="w-full md:w-[300px] flex-shrink-0">
+                    <div className="relative overflow-hidden rounded-lg">
+                      <div className="aspect-[3/4]">
+                        <Image
+                          src={
+                            member.image ??
+                            "/placeholder.svg?height=400&width=300"
+                          }
+                          alt={member.name}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+                        <h2 className="text-2xl font-semibold mb-1">
+                          {member.name}
+                        </h2>
+                        <p className="text-lg text-gray-200">{member.role}</p>
                       </div>
                     </div>
-                    <div className="flex-grow">
-                      {member.bio?.map((paragraph, index) => (
-                        <p
-                          key={index}
-                          className="text-muted-foreground text-lg leading-relaxed [&:not(:first-child)]:mt-6"
-                        >
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
+                  </div>
+                  <div className="flex-grow">
+                    {member.bio?.map((paragraph, index) => (
+                      <p
+                        key={index}
+                        className="text-muted-foreground text-lg leading-relaxed [&:not(:first-child)]:mt-6"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>

@@ -13,7 +13,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "We're always here to answer your questions and provide support.",
+  description:
+    "We're always here to answer your questions and provide support.",
 };
 
 const newsletters = [
@@ -48,7 +49,9 @@ export default function ContactPage() {
           <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto text-center">
-                <h1 className="text-4xl font-bold mb-4">Contact Gateway Home</h1>
+                <h1 className="text-4xl font-bold mb-4">
+                  Contact Gateway Home
+                </h1>
                 <p className="text-lg text-muted-foreground">
                   We&apos;re always here to answer your questions and provide
                   support. Don&apos;t hesitate to reach out to us through any of
@@ -66,7 +69,9 @@ export default function ContactPage() {
           <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl font-semibold mb-8">Contact Information</h2>
+                <h2 className="text-3xl font-semibold mb-8">
+                  Contact Information
+                </h2>
                 <div className="space-y-6">
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=91 Main Street, Attica, NY 14011"

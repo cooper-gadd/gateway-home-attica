@@ -6,7 +6,8 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Careers",
-  description: "Join our team of dedicated healthcare professionals at Gateway Home.",
+  description:
+    "Join our team of dedicated healthcare professionals at Gateway Home.",
 };
 
 export default function EmploymentPage() {
@@ -69,15 +70,15 @@ export default function EmploymentPage() {
           <section className="py-24">
             <div className="container">
               <div className="flex flex-col lg:flex-row items-start gap-12">
-                <div className="lg:w-1/2">
+                <div className="lg:w-1/2 text-center md:text-start">
                   <h2 className="text-3xl font-semibold mb-6">
                     Why Work With Us
                   </h2>
                   <div className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       At Gateway Home, we believe in creating a supportive
-                      environment where our team members can thrive while making a
-                      meaningful difference in the lives of our residents. Our
+                      environment where our team members can thrive while making
+                      a meaningful difference in the lives of our residents. Our
                       staff members are the heart of our organization, bringing
                       compassion, dedication, and expertise to their roles every
                       day.
@@ -119,16 +120,22 @@ export default function EmploymentPage() {
                 {careerOpportunities.map((opportunity, index) => (
                   <Card key={index} className="bg-muted/40">
                     <CardHeader>
-                      <CardTitle className="text-2xl">{opportunity.title}</CardTitle>
+                      <CardTitle className="text-2xl">
+                        {opportunity.title}
+                      </CardTitle>
                       <p className="text-lg text-muted-foreground">
                         {opportunity.description}
                       </p>
                     </CardHeader>
                     <CardContent>
-                      <h4 className="text-xl font-semibold mb-4">Responsibilities:</h4>
+                      <h4 className="text-xl font-semibold mb-4">
+                        Responsibilities:
+                      </h4>
                       <ul className="list-disc pl-5 space-y-2 text-muted-foreground mb-6">
                         {opportunity.details.map((detail, i) => (
-                          <li key={i} className="text-lg">{detail}</li>
+                          <li key={i} className="text-lg">
+                            {detail}
+                          </li>
                         ))}
                       </ul>
                       <Button asChild>

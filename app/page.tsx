@@ -46,15 +46,15 @@ export default function Home() {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Gateway Home is established to give comfort care to people who
                   are medically deemed to be in their last stages of life (three
-                  months or less). Our organization will provide both medical and
-                  spiritual care to support the residents as they pass from this
-                  life to the next.
+                  months or less). Our organization will provide both medical
+                  and spiritual care to support the residents as they pass from
+                  this life to the next.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Gateway Home staff and volunteers are committed to provide
-                  dignified care, comfort, and support for our residents and their
-                  families. Gateway Home is a nonprofit organization, and does not
-                  charge for services provided.
+                  dignified care, comfort, and support for our residents and
+                  their families. Gateway Home is a nonprofit organization, and
+                  does not charge for services provided.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Funding is accomplished through donations, bequests, and
@@ -148,16 +148,16 @@ export default function Home() {
                       needs of each resident.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      At Gateway Home, we are dedicated to providing compassionate
-                      care to our residents and their families, and we strive to
-                      create a peaceful and supportive environment where
-                      residents can feel safe and cared for. Our staff and
-                      volunteers are committed to providing the highest quality
-                      care to our residents, and we work closely with families to
-                      ensure that their loved ones receive the care and support
-                      they need. We are proud to be a part of the Gateway Home
-                      family, and we look forward to welcoming you to our
-                      community.
+                      At Gateway Home, we are dedicated to providing
+                      compassionate care to our residents and their families,
+                      and we strive to create a peaceful and supportive
+                      environment where residents can feel safe and cared for.
+                      Our staff and volunteers are committed to providing the
+                      highest quality care to our residents, and we work closely
+                      with families to ensure that their loved ones receive the
+                      care and support they need. We are proud to be a part of
+                      the Gateway Home family, and we look forward to welcoming
+                      you to our community.
                     </p>
                   </div>
                 </div>

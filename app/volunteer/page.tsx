@@ -63,7 +63,7 @@ export default function VolunteerPage() {
           <section className="py-24">
             <div className="container">
               <div className="flex flex-col lg:flex-row items-start gap-12">
-                <div className="lg:w-1/2">
+                <div className="lg:w-1/2 text-center md:text-start">
                   <h2 className="text-3xl font-semibold mb-6">
                     The Impact of Your Time
                   </h2>
