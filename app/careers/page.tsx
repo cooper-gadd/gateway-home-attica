@@ -96,8 +96,9 @@ export default function EmploymentPage() {
                     <Image
                       src="/placeholder.svg?height=400&width=300"
                       alt="Caring staff at Gateway Home"
-                      fill
-                      className="object-cover"
+                      width={800}
+                      height={600}
+                      className="object-cover w-full h-full"
                     />
                   </div>
                 </div>

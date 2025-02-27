@@ -112,8 +112,9 @@ export default function DonatePage() {
                       <Image
                         src="/donate.jpg"
                         alt="Residents enjoying activities"
-                        fill
-                        className="object-cover"
+                        width={600}
+                        height={800}
+                        className="object-cover w-full h-full"
                       />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                         <p className="text-sm text-white">

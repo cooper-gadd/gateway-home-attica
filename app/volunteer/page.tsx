@@ -89,8 +89,9 @@ export default function VolunteerPage() {
                     <Image
                       src="/concert.jpg"
                       alt="Volunteer with Resident"
-                      fill
-                      className="object-cover"
+                      width={800}
+                      height={600}
+                      className="object-cover w-full h-full"
                     />
                   </div>
                 </div>
