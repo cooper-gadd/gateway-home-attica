@@ -87,15 +87,14 @@ export default function Home() {
                       control and pain management for our residents, as well as
                       to be a source of respite care for the families and
                       friends. Hands-on resident care is provided around the
-                      clock, along with meals, laundry, companionship, as well
-                      as emotional, and spiritual support. Comfort care honors
-                      the well-being of every person and respects the dignity of
-                      human life.
+                      clock, along with companionship, emotional and spiritual
+                      support. Comfort care honors the well-being of every
+                      person and respects the dignity of human life.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                       Admission to Gateway Home is based solely on need,
                       regardless of age, sex, race, religion or other
-                      distinctions . Referrals come from several sources:
+                      distinctions. Referrals come from several sources:
                       Hospice, health care agencies, hospitals, physicians,
                       social workers, clergy, family, friends or the person
                       themselves. Priority is given to those who cannot receive
@@ -149,17 +148,16 @@ export default function Home() {
                       needs of each resident.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      At Gateway Home, we believe that every person deserves to
-                      live their final days with dignity and respect. We are
-                      dedicated to providing compassionate care to our residents
-                      and their families, and we strive to create a peaceful and
-                      supportive environment where residents can feel safe and
-                      cared for. Our staff and volunteers are committed to
-                      providing the highest quality care to our residents, and
-                      we work closely with families to ensure that their loved
-                      ones receive the care and support they need. We are proud
-                      to be a part of the Gateway Home family, and we look
-                      forward to welcoming you to our community.
+                      At Gateway Home, we are dedicated to providing compassionate
+                      care to our residents and their families, and we strive to
+                      create a peaceful and supportive environment where
+                      residents can feel safe and cared for. Our staff and
+                      volunteers are committed to providing the highest quality
+                      care to our residents, and we work closely with families to
+                      ensure that their loved ones receive the care and support
+                      they need. We are proud to be a part of the Gateway Home
+                      family, and we look forward to welcoming you to our
+                      community.
                     </p>
                   </div>
                 </div>

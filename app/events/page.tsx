@@ -30,7 +30,7 @@ const events: {
     title: "First Annual Gateway to Summer",
     date: "June 7, 2025",
     description:
-      "Celebrate the beginning of summer with Gateway Home. This family-friendly event features live music, food vendors, activities for children, and opportunities to learn about our services.",
+      "Celebrate the beginning of summer with Gateway Home. This family-friendly event features live music, local breweries, food vendors, activities for children, and opportunities to learn about our services.",
     icon: Music,
   },
 ];

@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function EmploymentPage() {
   const careerOpportunities = [
     {
-      title: "Registered Nurse/Licensed Practical Nurse",
+      title: "Nurse",
       description:
-        "24-hour shift position, reports to Director of Resident Care. Work under direction of the VNA/Hospice.",
+        "Per diem position, reports to Director of Resident Care. Work under direction of the VNA/Hospice.",
       details: [
         "Coordinate care of residents for 24-hour periods (8am-8am)",
         "Maintain, document narcotic inventory, and prepare medication doses",
@@ -28,7 +28,7 @@ export default function EmploymentPage() {
     {
       title: "Care Aide",
       description:
-        "Hourly position, reports to Director of Resident Care. Work under the direction of the nurse in charge.",
+        "Per diem position, reports to Director of Resident Care. Work under the direction of the nurse in charge.",
       details: [
         "Provide basic personal care (bathing, oral hygiene, toileting, skin care)",
         "Monitor and record vital signs when ordered",
@@ -92,9 +92,9 @@ export default function EmploymentPage() {
                   </div>
                 </div>
                 <div className="lg:w-1/2">
-                  <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
+                  <div className="aspect-[3/4] relative overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=400&width=300"
+                      src="/sue-sara.jpg"
                       alt="Caring staff at Gateway Home"
                       width={800}
                       height={600}
