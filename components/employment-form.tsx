@@ -114,7 +114,7 @@ export function EmploymentForm() {
                 <FormItem>
                   <FormLabel>First Name</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input placeholder="John" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -127,7 +127,7 @@ export function EmploymentForm() {
                 <FormItem>
                   <FormLabel>Middle Name (Optional)</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input placeholder="Michael" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -140,7 +140,7 @@ export function EmploymentForm() {
                 <FormItem>
                   <FormLabel>Last Name</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input placeholder="Smith" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -157,7 +157,11 @@ export function EmploymentForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input type="email" {...field} />
+                    <Input
+                      type="email"
+                      placeholder="john.smith@gmail.com"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -170,7 +174,7 @@ export function EmploymentForm() {
                 <FormItem>
                   <FormLabel>Phone</FormLabel>
                   <FormControl>
-                    <Input type="tel" {...field} />
+                    <Input type="tel" placeholder="5851234567" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -187,7 +191,7 @@ export function EmploymentForm() {
                 <FormItem>
                   <FormLabel>Street Address</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input placeholder="123 Main Street" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -201,7 +205,7 @@ export function EmploymentForm() {
                   <FormItem className="md:col-span-3">
                     <FormLabel>City</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="Rochester" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -214,7 +218,7 @@ export function EmploymentForm() {
                   <FormItem className="md:col-span-1">
                     <FormLabel>State</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="NY" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -227,7 +231,7 @@ export function EmploymentForm() {
                   <FormItem className="md:col-span-2">
                     <FormLabel>Zip Code</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="14623" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -452,7 +456,7 @@ export function EmploymentForm() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="List any relevant licenses or certifications"
+                      placeholder="RN License, CNA Certification, etc."
                     />
                   </FormControl>
                   <FormMessage />
@@ -477,7 +481,10 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Company Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input
+                          placeholder="Rochester General Hospital"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -490,7 +497,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Position</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Registered Nurse" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -596,7 +603,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Company Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Unity Hospital" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -609,7 +616,10 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Position</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input
+                          placeholder="Licensed Practical Nurse"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -715,7 +725,10 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Company Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input
+                          placeholder="Strong Memorial Hospital"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -728,7 +741,10 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Position</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input
+                          placeholder="Certified Nursing Assistant"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -843,7 +859,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>First Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Jane" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -856,7 +872,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Last Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Doe" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -869,7 +885,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Phone</FormLabel>
                       <FormControl>
-                        <Input {...field} type="tel" />
+                        <Input type="tel" placeholder="5852345678" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -889,7 +905,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>First Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Robert" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -902,7 +918,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Last Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Johnson" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -915,7 +931,7 @@ export function EmploymentForm() {
                     <FormItem>
                       <FormLabel>Phone</FormLabel>
                       <FormControl>
-                        <Input {...field} type="tel" />
+                        <Input type="tel" placeholder="5853456789" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

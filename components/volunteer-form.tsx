@@ -50,7 +50,7 @@ const volunteerOptions = ["Yes", "No"] as const;
 
 export function VolunteerForm() {
   const [submitted, setSubmitted] = useState(false);
-  
+
   const form = useForm<z.infer<typeof volunteerFormSchema>>({
     resolver: zodResolver(volunteerFormSchema),
     defaultValues: {
@@ -90,7 +90,7 @@ export function VolunteerForm() {
       setSubmitted(true);
     } catch (error) {
       toast.error(
-        error instanceof Error ? error.message : "Something went wrong"
+        error instanceof Error ? error.message : "Something went wrong",
       );
     }
   }
@@ -110,7 +110,7 @@ export function VolunteerForm() {
                   <FormItem>
                     <FormLabel>First Name</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="John" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -124,7 +124,7 @@ export function VolunteerForm() {
                   <FormItem>
                     <FormLabel>Last Name</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="Smith" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -139,7 +139,11 @@ export function VolunteerForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input type="email" {...field} />
+                    <Input
+                      type="email"
+                      placeholder="john.smith@gmail.com"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -154,7 +158,7 @@ export function VolunteerForm() {
                   <FormItem>
                     <FormLabel>Date of Birth</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="February 28, 2000" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -168,7 +172,7 @@ export function VolunteerForm() {
                   <FormItem>
                     <FormLabel>Mobile Phone</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="5851234567" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -183,7 +187,7 @@ export function VolunteerForm() {
                 <FormItem>
                   <FormLabel>Home Phone</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input placeholder="5859876543" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -197,7 +201,7 @@ export function VolunteerForm() {
                 <FormItem>
                   <FormLabel>Street Address</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input placeholder="123 Main Street" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -212,7 +216,7 @@ export function VolunteerForm() {
                   <FormItem className="md:col-span-3">
                     <FormLabel>City</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="Rochester" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -226,7 +230,7 @@ export function VolunteerForm() {
                   <FormItem className="md:col-span-1">
                     <FormLabel>State</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="NY" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -240,7 +244,7 @@ export function VolunteerForm() {
                   <FormItem className="md:col-span-2">
                     <FormLabel>Zip Code</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input placeholder="14623" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -437,7 +441,7 @@ export function VolunteerForm() {
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Please share your motivation..."
+                      placeholder="I want to make a difference in people's lives by..."
                       className="min-h-[100px]"
                       {...field}
                     />
@@ -457,7 +461,7 @@ export function VolunteerForm() {
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Share your caregiving experience..."
+                      placeholder="I have experience caring for elderly family members..."
                       className="min-h-[100px]"
                       {...field}
                     />
@@ -475,7 +479,7 @@ export function VolunteerForm() {
                   <FormLabel>What special talents can you share?</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="List your special skills or talents..."
+                      placeholder="I am skilled in music therapy, gardening..."
                       className="min-h-[100px]"
                       {...field}
                     />
@@ -493,7 +497,7 @@ export function VolunteerForm() {
                   <FormLabel>What are your hobbies and interests?</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Share your hobbies and interests..."
+                      placeholder="I enjoy reading, cooking, and spending time outdoors..."
                       className="min-h-[100px]"
                       {...field}
                     />
@@ -513,7 +517,7 @@ export function VolunteerForm() {
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Share your experience with loss..."
+                      placeholder="I have experienced the loss of a loved one and understand..."
                       className="min-h-[100px]"
                       {...field}
                     />
@@ -543,7 +547,7 @@ export function VolunteerForm() {
                     <FormItem>
                       <FormLabel>First Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Jane" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -557,7 +561,7 @@ export function VolunteerForm() {
                     <FormItem>
                       <FormLabel>Last Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Doe" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -571,7 +575,7 @@ export function VolunteerForm() {
                     <FormItem>
                       <FormLabel>Phone</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="5852345678" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -591,7 +595,7 @@ export function VolunteerForm() {
                     <FormItem>
                       <FormLabel>First Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Robert" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -605,7 +609,7 @@ export function VolunteerForm() {
                     <FormItem>
                       <FormLabel>Last Name</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="Johnson" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -619,7 +623,7 @@ export function VolunteerForm() {
                     <FormItem>
                       <FormLabel>Phone</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input placeholder="5853456789" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -630,11 +634,7 @@ export function VolunteerForm() {
           </div>
         </div>
 
-        <Button 
-          type="submit" 
-          disabled={submitted}
-          className="w-full"
-        >
+        <Button type="submit" disabled={submitted} className="w-full">
           Submit Application
         </Button>
       </form>
