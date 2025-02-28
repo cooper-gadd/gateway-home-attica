@@ -55,7 +55,7 @@ export function SubscribeForm() {
             <FormItem className="flex-grow">
               <FormControl>
                 <Input
-                  placeholder="Enter your email"
+                  placeholder="me@gmail.com"
                   type="email"
                   {...field}
                   className="w-full"
