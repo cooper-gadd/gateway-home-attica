@@ -59,7 +59,6 @@ export const employmentFormSchema = z.object({
   zipCode: z.string().regex(/^\d{5}(-\d{4})?$/, "Invalid zip code format"),
   is18YearsOld: z.string().min(1, "Please select an option"),
   isEmployed: z.string().min(1, "Please select an option"),
-  position: z.string().min(1, "Please select a position"),
   isLegallyEligible: z.string().min(1, "Please select an option"),
   isFelonOrMisdemeanant: z.string().min(1, "Please select an option"),
   isEmployedOrVolunteeredAtCrossroads: z

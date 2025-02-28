@@ -17,7 +17,13 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { sendEmploymentApplication } from "@/lib/actions";
 import { employmentFormSchema } from "@/lib/schemas";
 import { cn } from "@/lib/utils";
@@ -28,11 +34,6 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
-
-const positions = [
-  "Nurse",
-  "Care Aide",
-] as const;
 
 const yesNoOptions = ["Yes", "No"] as const;
 
@@ -60,7 +61,6 @@ export function EmploymentForm() {
       zipCode: "",
       is18YearsOld: "",
       isEmployed: "",
-      position: "",
       isLegallyEligible: "",
       isFelonOrMisdemeanant: "",
       isEmployedOrVolunteeredAtCrossroads: "",
@@ -95,7 +95,7 @@ export function EmploymentForm() {
       setSubmitted(true);
     } catch (error) {
       toast.error(
-        error instanceof Error ? error.message : "Something went wrong"
+        error instanceof Error ? error.message : "Something went wrong",
       );
     }
   }
@@ -241,34 +241,6 @@ export function EmploymentForm() {
         <div className="space-y-6">
           <h3 className="text-lg font-medium">Employment Information</h3>
           <div className="space-y-4">
-            <FormField
-              control={form.control}
-              name="position"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Position Applied For</FormLabel>
-                  <Select
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a position" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      {positions.map((position) => (
-                        <SelectItem key={position} value={position}>
-                          {position}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
             <FormField
               control={form.control}
               name="is18YearsOld"
@@ -538,7 +510,7 @@ export function EmploymentForm() {
                                 variant={"outline"}
                                 className={cn(
                                   "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
-                                  !field.value && "text-muted-foreground"
+                                  !field.value && "text-muted-foreground",
                                 )}
                               >
                                 {field.value ? (
@@ -580,7 +552,7 @@ export function EmploymentForm() {
                                 variant={"outline"}
                                 className={cn(
                                   "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
-                                  !field.value && "text-muted-foreground"
+                                  !field.value && "text-muted-foreground",
                                 )}
                               >
                                 {field.value ? (
@@ -657,7 +629,7 @@ export function EmploymentForm() {
                                 variant={"outline"}
                                 className={cn(
                                   "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
-                                  !field.value && "text-muted-foreground"
+                                  !field.value && "text-muted-foreground",
                                 )}
                               >
                                 {field.value ? (
@@ -699,7 +671,7 @@ export function EmploymentForm() {
                                 variant={"outline"}
                                 className={cn(
                                   "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
-                                  !field.value && "text-muted-foreground"
+                                  !field.value && "text-muted-foreground",
                                 )}
                               >
                                 {field.value ? (
@@ -776,7 +748,7 @@ export function EmploymentForm() {
                                 variant={"outline"}
                                 className={cn(
                                   "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
-                                  !field.value && "text-muted-foreground"
+                                  !field.value && "text-muted-foreground",
                                 )}
                               >
                                 {field.value ? (
@@ -818,7 +790,7 @@ export function EmploymentForm() {
                                 variant={"outline"}
                                 className={cn(
                                   "w-full h-9 px-3 py-2 text-left font-normal bg-transparent border border-input",
-                                  !field.value && "text-muted-foreground"
+                                  !field.value && "text-muted-foreground",
                                 )}
                               >
                                 {field.value ? (

@@ -261,7 +261,7 @@ export default function Home() {
                       to join our team.
                     </p>
                     <Button asChild>
-                      <Link href="/careers">View Open Positions</Link>
+                      <Link href="/employment">View Open Positions</Link>
                     </Button>
                   </CardContent>
                 </Card>

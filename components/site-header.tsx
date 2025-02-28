@@ -30,8 +30,8 @@ export function SiteHeader() {
       href: "/donate",
     },
     {
-      title: "Careers",
-      href: "/careers",
+      title: "Employment",
+      href: "/employment",
     },
     {
       title: "Blog",

@@ -1,13 +1,23 @@
 "use server";
 
-import { emailSchema, employmentFormSchema, volunteerFormSchema } from "@/lib/schemas";
-import { EmploymentApplicationTemplate, SubscribeTemplate, VolunteerApplicationTemplate } from "@/lib/templates";
+import {
+  emailSchema,
+  employmentFormSchema,
+  volunteerFormSchema,
+} from "@/lib/schemas";
+import {
+  EmploymentApplicationTemplate,
+  SubscribeTemplate,
+  VolunteerApplicationTemplate,
+} from "@/lib/templates";
 import { Resend } from "resend";
 import { z } from "zod";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function sendSubscriptionEmail({ email }: z.infer<typeof emailSchema>) {
+export async function sendSubscriptionEmail({
+  email,
+}: z.infer<typeof emailSchema>) {
   const { data, error } = await resend.emails.send({
     from: "Gateway Home <no-reply@gatewayhomeattica.org>",
     to: ["info@gatewayhomeattica.org"],
@@ -25,7 +35,9 @@ export async function sendSubscriptionEmail({ email }: z.infer<typeof emailSchem
   }
 }
 
-export async function sendVolunteerApplication(formData: z.infer<typeof volunteerFormSchema>) {
+export async function sendVolunteerApplication(
+  formData: z.infer<typeof volunteerFormSchema>,
+) {
   const { data, error } = await resend.emails.send({
     from: "Gateway Home <no-reply@gatewayhomeattica.org>",
     to: ["info@gatewayhomeattica.org"],
@@ -43,7 +55,9 @@ export async function sendVolunteerApplication(formData: z.infer<typeof voluntee
   }
 }
 
-export async function sendEmploymentApplication(formData: z.infer<typeof employmentFormSchema>) {
+export async function sendEmploymentApplication(
+  formData: z.infer<typeof employmentFormSchema>,
+) {
   const { data, error } = await resend.emails.send({
     from: "Gateway Home <no-reply@gatewayhomeattica.org>",
     to: ["info@gatewayhomeattica.org"],
