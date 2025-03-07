@@ -115,7 +115,7 @@ export default function EventsPage() {
                 <h2 className="text-3xl font-bold mb-6">
                   Host Your Own Fundraiser
                 </h2>
-                <p className="text-lg mb-8">
+                <p className="text-lg text-muted-foreground mb-6">
                   Interested in organizing a fundraiser to support Gateway Home?
                   We welcome community-led initiatives that help us continue our
                   mission.
