@@ -1,8 +1,8 @@
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -438,7 +438,7 @@ export default function Home() {
                     <CardContent>
                       <ScrollArea className="h-[350px] pr-4">
                         <ul className="space-y-2">
-                          {donors.platinum.map((donor) => (
+                          {[...donors.platinum].sort().map((donor) => (
                             <li key={donor} className="p-2 text-center">
                               {donor}
                             </li>
@@ -457,7 +457,7 @@ export default function Home() {
                     <CardContent>
                       <ScrollArea className="h-[350px] pr-4">
                         <ul className="space-y-2">
-                          {donors.gold.map((donor) => (
+                          {[...donors.gold].sort().map((donor) => (
                             <li key={donor} className="p-2 text-center">
                               {donor}
                             </li>
@@ -476,7 +476,7 @@ export default function Home() {
                     <CardContent>
                       <ScrollArea className="h-[350px] pr-4">
                         <ul className="space-y-2">
-                          {donors.silver.map((donor) => (
+                          {[...donors.silver].sort().map((donor) => (
                             <li key={donor} className="p-2 text-center">
                               {donor}
                             </li>
@@ -496,7 +496,7 @@ export default function Home() {
                   <CardContent>
                     <ScrollArea className="h-[350px] pr-4">
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-2">
-                        {donors.community.map((donor) => (
+                        {[...donors.community].sort().map((donor) => (
                           <div key={donor} className="p-2 text-center">
                             {donor}
                           </div>
