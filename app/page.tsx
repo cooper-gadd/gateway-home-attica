@@ -11,6 +11,155 @@ import { Video } from "@/components/video";
 import Image from "next/image";
 import Link from "next/link";
 
+const donors = {
+  platinum: [
+    "Attica Lions Club",
+    "Tim & Krista Beechler and Josh Beechler",
+    "Donna Ferry",
+    "Louie & Rosie Janes",
+    "Dan & Bobette McCormick",
+    "Jewel & Linda Metcalf",
+    "Louise M Schiltz",
+  ],
+  gold: [
+    "Advanced Dairy Services, Inc.",
+    "Attica Package Company, Inc.",
+    "Jerianne Barnes",
+    "Dr. Joseph & Marcy Craddock",
+    "Doug & Rosemary Domes",
+    "Todd & Brittany Gadd",
+    "David & Diana Hoy",
+    "Ralph A. Janes",
+    "John E. Jaszko",
+    "Robert Kirby",
+    "Marley Funeral Home LLC",
+    "Providence Fellowship",
+    "David & Wende Reiner",
+    "James & Helene Schlick",
+    "Anne Westermeier",
+  ],
+  silver: [
+    "Brian & Lori Anauo",
+    "Attica Rodeo Show & Association",
+    "Donald & Jane Beechler",
+    "Charities Aid Foundation America",
+    "County Line Stone Co., Inc.",
+    "Rustie Dimitriadis",
+    "James & Sandy Ewert",
+    "John Kadziolka, Kimberly Kadziolka, & Tracy Sutherland",
+    "Russ & Kathleen Kadziolka",
+    "Janet Klotzbach",
+    "Arend Koers",
+    "L&L Transmissions, Inc.",
+    "L Toal Plumbing, LLC",
+    "Lor-Rob Dairy Farm",
+    "Paul & Diane Luderman",
+    "Sue Moreis",
+    "Shirley F. Peters",
+    "Joseph & Carol Pilc",
+    "Shirley Teachen",
+    "Connie Tartick",
+    "Michael & Marybeth Whiting",
+    "Jerry & Amy Willard",
+    "Zehler Excavating, LLC",
+  ],
+  community: [
+    "Mooch and Shellie Acquard",
+    "Alden State Bank",
+    "Don & Patti Almeter",
+    "Joseph & Elaine Amedick",
+    "Gary & Carol Barrow",
+    "Daniel & Patricia Bartz",
+    "Rose Bartz",
+    "Jeannie K. Bates",
+    "Richard & Linda Beeman",
+    "Gary & Karen Beideck",
+    "Barton R. Bigsby",
+    "Richie Billings",
+    "Harold Bowen",
+    "David & Judith Brockner",
+    "Barbara Brown",
+    "Mary Brown",
+    "Betty Ann Burry",
+    "Lynn & Linda Camp",
+    "Leonard Carfley Jr",
+    "Don & Jude Carpenter",
+    "Kimberly Christensen",
+    "Jerilyn Clark",
+    "Doris Cole",
+    "Cooke & Steffan - Mr. Tom Steffan",
+    "Cozy Calf Company LLC",
+    "Alfred & Annette Doktor",
+    "Phyllis Drier",
+    "Jerry & Sue Elmore",
+    "Francis Fuest",
+    "Norbert & Marilyn Fuest",
+    "Burt & Virginia Fugle",
+    "Paul & Carol George",
+    "George & Susan Giambrone",
+    "Larry & Susan Good",
+    "Herbert Hammond",
+    "Betty Hardie",
+    "Luke P. Harding",
+    "Alan & Kelly Heizmann",
+    "Howard & Muriel Herman",
+    "Lynn Herman",
+    "Patricia Herman",
+    "Linda Herrmann",
+    "Holland High Lift, Inc.",
+    "Jodi Hollwedel",
+    "J & S Agen, Inc. - Design Art",
+    "Irene Kapatos",
+    "Dorothy Keizer",
+    "King Bros. Construction, LLC",
+    "Keith & Judith Klossner",
+    "William & Ruth Lang",
+    "Marilyn Lange",
+    "Helen Leonard",
+    "Peter & Dawn Mark",
+    "William & Jo Marie McMullen",
+    "Randall Meidenbauer",
+    "Ron & Peach Merrill",
+    "Dan & Brenda Miller",
+    "Edward Mingle",
+    "Tami Moore",
+    "Gina M. Morrison",
+    "Noreen Novak",
+    "Anna Nutty",
+    "Mary Jo Oldham",
+    "Orangeville Immanuel United Church of Christ",
+    "Judith Perl",
+    "Robert & Barbara Peters",
+    "Dennis & Carol Piechowiak",
+    "Kathy Popielarz",
+    "David & Connie Rethlake",
+    "Robert Reyes Jr.",
+    "Bonnie Reynolds",
+    "Durin Rogers & Paula Campbell",
+    "Janet Romesser",
+    "Allen & Sue Russell",
+    "Gary Ryan",
+    "Salem UCC Women's Guild",
+    "Jerome & Stacy Scharlau",
+    "Donald & Linda Schmidt",
+    "Tracy & H. Dean Smith",
+    "Barbara Sobczak",
+    "Sons of the American Legion Post 1720",
+    "Edward & June Spencer",
+    "Sharon Spencer/Whey Moor Farm",
+    "David & Teri Tanenhaus",
+    "The Greenery",
+    "Bruce & Peggy Tyrell",
+    "Margaret Unger",
+    "Clarence & Mary Weaver",
+    "Thomas & Frances Wigton",
+    "Wilkins Insurance Agency, Inc",
+    "Dave & Gerry Williams",
+    "Bob & Wendy Wood",
+    "Edward Ziegler",
+  ],
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -279,25 +428,26 @@ export default function Home() {
                 Our Generous Donors
               </h2>
               <div className="space-y-8">
-                <Card className="bg-muted/40">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl font-semibold text-center">
-                      Platinum
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap justify-center gap-4">
-                      <div className="p-2 text-center">Attica Lions Club</div>
-                      <div className="p-2 text-center">
-                        Attica Package Company, Inc.
-                      </div>
-                      <div className="p-2 text-center">Donna Ferry</div>
-                      <div className="p-2 text-center">Louise M Schiltz</div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <Card className="bg-muted/40">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-2xl font-bold text-center">
+                        Platinum
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ScrollArea className="h-[350px] pr-4">
+                        <ul className="space-y-2">
+                          {donors.platinum.map((donor) => (
+                            <li key={donor} className="p-2 text-center">
+                              {donor}
+                            </li>
+                          ))}
+                        </ul>
+                      </ScrollArea>
+                    </CardContent>
+                  </Card>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
                       <CardTitle className="text-2xl font-bold text-center">
@@ -305,38 +455,15 @@ export default function Home() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <ul className="space-y-2">
-                        <li className="p-2 text-center">
-                          Advanced Dairy Services, Inc.
-                        </li>
-                        <li className="p-2 text-center">Doug & Rosie Domes</li>
-                        <li className="p-2 text-center">
-                          Dr. Joseph & Marcy Craddock
-                        </li>
-                        <li className="p-2 text-center">
-                          James & Jane Frankenberger
-                        </li>
-                        <li className="p-2 text-center">
-                          L Toal Plumbing, LLC
-                        </li>
-                        <li className="p-2 text-center">
-                          Marley Funeral Home LLC
-                        </li>
-                        <li className="p-2 text-center">
-                          Providence Fellowship
-                        </li>
-                        <li className="p-2 text-center">Ralph A. Janes</li>
-                        <li className="p-2 text-center">
-                          Robinson & Hackemer Funeral Home
-                        </li>
-                        <li className="p-2 text-center">
-                          S.J.F. Construction, Inc
-                        </li>
-                        <li className="p-2 text-center">Shirley Teachen</li>
-                        <li className="p-2 text-center">
-                          Todd & Brittany Gadd
-                        </li>
-                      </ul>
+                      <ScrollArea className="h-[350px] pr-4">
+                        <ul className="space-y-2">
+                          {donors.gold.map((donor) => (
+                            <li key={donor} className="p-2 text-center">
+                              {donor}
+                            </li>
+                          ))}
+                        </ul>
+                      </ScrollArea>
                     </CardContent>
                   </Card>
 
@@ -347,31 +474,15 @@ export default function Home() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <ul className="space-y-2">
-                        <li className="p-2 text-center">Connie Tartick</li>
-                        <li className="p-2 text-center">
-                          County Line Stone Co., Inc.
-                        </li>
-                        <li className="p-2 text-center">
-                          Durin Rogers & Paula Campbell
-                        </li>
-                        <li className="p-2 text-center">
-                          Harding&apos;s Attica Furniture
-                        </li>
-                        <li className="p-2 text-center">Joseph & Carol Pilc</li>
-                        <li className="p-2 text-center">
-                          Michael & Marybeth Whiting
-                        </li>
-                        <li className="p-2 text-center">
-                          Paul & Diane Luderman
-                        </li>
-                        <li className="p-2 text-center">Ron & Peach Merrill</li>
-                        <li className="p-2 text-center">Sandy Ewert</li>
-                        <li className="p-2 text-center">Shirley F. Peters</li>
-                        <li className="p-2 text-center">
-                          Zehler Excavating, LLC
-                        </li>
-                      </ul>
+                      <ScrollArea className="h-[350px] pr-4">
+                        <ul className="space-y-2">
+                          {donors.silver.map((donor) => (
+                            <li key={donor} className="p-2 text-center">
+                              {donor}
+                            </li>
+                          ))}
+                        </ul>
+                      </ScrollArea>
                     </CardContent>
                   </Card>
                 </div>
@@ -379,227 +490,17 @@ export default function Home() {
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
                     <CardTitle className="text-2xl font-bold text-center">
-                      Bronze
+                      Community
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ScrollArea className="h-[600px] pr-4">
+                    <ScrollArea className="h-[350px] pr-4">
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-2">
-                        <div className="p-2 text-center">
-                          Alan & Kelly Heizmann
-                        </div>
-                        <div className="p-2 text-center">
-                          Alfonso J. Ficarella
-                        </div>
-                        <div className="p-2 text-center">
-                          Andrew & Carla Gasiewicz
-                        </div>
-                        <div className="p-2 text-center">
-                          Angela Milillo & Doug Patti
-                        </div>
-                        <div className="p-2 text-center">
-                          Ann & Deane Foster
-                        </div>
-                        <div className="p-2 text-center">Anna Nutty</div>
-                        <div className="p-2 text-center">
-                          Arch & Peggy Snyder
-                        </div>
-                        <div className="p-2 text-center">
-                          Barbara C. Schiltz
-                        </div>
-                        <div className="p-2 text-center">Barbara Myers</div>
-                        <div className="p-2 text-center">
-                          Bernard & Janet Meinweiser
-                        </div>
-                        <div className="p-2 text-center">
-                          Brennan & Shelly Burdett
-                        </div>
-                        <div className="p-2 text-center">
-                          Can Can Redemption
-                        </div>
-                        <div className="p-2 text-center">
-                          Charles & J. Terri Woodruff
-                        </div>
-                        <div className="p-2 text-center">
-                          Clarence & Mary Weaver
-                        </div>
-                        <div className="p-2 text-center">Connie Holt</div>
-                        <div className="p-2 text-center">
-                          Cooke & Steffan - Mr. Tom Steffan
-                        </div>
-                        <div className="p-2 text-center">
-                          Daniel & Barbara Krazmien
-                        </div>
-                        <div className="p-2 text-center">
-                          Daniel & Jean Burling
-                        </div>
-                        <div className="p-2 text-center">
-                          Daniel & Shannon Ford
-                        </div>
-                        <div className="p-2 text-center">
-                          Daniel & Susan Boss
-                        </div>
-                        <div className="p-2 text-center">
-                          Dave & Joanne Thornton
-                        </div>
-                        <div className="p-2 text-center">
-                          David & Connie Rethlake
-                        </div>
-                        <div className="p-2 text-center">
-                          David & Judith Brockner
-                        </div>
-                        <div className="p-2 text-center">
-                          Dennis & Carol Piechowiak
-                        </div>
-                        <div className="p-2 text-center">Diane Phelps</div>
-                        <div className="p-2 text-center">
-                          Don & Jude Carpenter
-                        </div>
-                        <div className="p-2 text-center">
-                          Don & Patti Almeter
-                        </div>
-                        <div className="p-2 text-center">
-                          Donald & Linda Schmidt
-                        </div>
-                        <div className="p-2 text-center">
-                          Donald and Jane Beechler
-                        </div>
-                        <div className="p-2 text-center">Empire Access</div>
-                        <div className="p-2 text-center">
-                          Gary & Carol Barrow
-                        </div>
-                        <div className="p-2 text-center">
-                          Gary & Karen Beideck
-                        </div>
-                        <div className="p-2 text-center">
-                          Gary & Renee Hanley
-                        </div>
-                        <div className="p-2 text-center">
-                          Gerald & Deborah Landowski
-                        </div>
-                        <div className="p-2 text-center">Gina M. Morrison</div>
-                        <div className="p-2 text-center">Grace Strollo</div>
-                        <div className="p-2 text-center">Helen Leonard</div>
-                        <div className="p-2 text-center">Helen Nichols</div>
-                        <div className="p-2 text-center">Herbert Hammond</div>
-                        <div className="p-2 text-center">
-                          Howard & Muriel Herman
-                        </div>
-                        <div className="p-2 text-center">
-                          J & S Agen, Inc. - Design Art
-                        </div>
-                        <div className="p-2 text-center">Janet Romesser</div>
-                        <div className="p-2 text-center">Jeannie K. Bates</div>
-                        <div className="p-2 text-center">
-                          Jerry & Sue Elmore
-                        </div>
-                        <div className="p-2 text-center">Jerilyn Clark</div>
-                        <div className="p-2 text-center">John E. Jaszko</div>
-                        <div className="p-2 text-center">
-                          Joseph & Laura Schmieder
-                        </div>
-                        <div className="p-2 text-center">Kelly Nelson</div>
-                        <div className="p-2 text-center">
-                          Kevin & Lisa Cochrane
-                        </div>
-                        <div className="p-2 text-center">
-                          Kirk & Nina Reisdorf
-                        </div>
-                        <div className="p-2 text-center">Laurie Valenti</div>
-                        <div className="p-2 text-center">
-                          Logel Appliance, Inc.
-                        </div>
-                        <div className="p-2 text-center">
-                          Lor-Rob Dairy Farm
-                        </div>
-                        <div className="p-2 text-center">Lynn & Linda Camp</div>
-                        <div className="p-2 text-center">Lynn Herman</div>
-                        <div className="p-2 text-center">
-                          Martha Whittington
-                        </div>
-                        <div className="p-2 text-center">
-                          Matthew & Mary Mest
-                        </div>
-                        <div className="p-2 text-center">Melissa Spink</div>
-                        <div className="p-2 text-center">
-                          Michael & Peggy Morrissey
-                        </div>
-                        <div className="p-2 text-center">
-                          Mike & Karen Shadbolt
-                        </div>
-                        <div className="p-2 text-center">M&M Meats</div>
-                        <div className="p-2 text-center">
-                          Norb & Marilyn Fuest
-                        </div>
-                        <div className="p-2 text-center">Norma Gerhardt</div>
-                        <div className="p-2 text-center">
-                          Orangeville Immanuel United Church of Chr
-                        </div>
-                        <div className="p-2 text-center">
-                          Pat Forsha Truck and Auto Collision, Inc.
-                        </div>
-                        <div className="p-2 text-center">Patricia Herman</div>
-                        <div className="p-2 text-center">
-                          Paul & Carol George
-                        </div>
-                        <div className="p-2 text-center">
-                          Paul & Maryann Simonsen
-                        </div>
-                        <div className="p-2 text-center">Peter & Dawn Mark</div>
-                        <div className="p-2 text-center">
-                          Randy & Mary Szczesniak
-                        </div>
-                        <div className="p-2 text-center">
-                          Richard & Linda VanDette
-                        </div>
-                        <div className="p-2 text-center">
-                          Richard H. & Maria Walczak
-                        </div>
-                        <div className="p-2 text-center">
-                          Robert & Barbara Peters
-                        </div>
-                        <div className="p-2 text-center">
-                          Robert & Eileen Disinger
-                        </div>
-                        <div className="p-2 text-center">
-                          Robert & Maureen Kirby
-                        </div>
-                        <div className="p-2 text-center">
-                          Robert A. Koerner Construction
-                        </div>
-                        <div className="p-2 text-center">Ronald J. Demers</div>
-                        <div className="p-2 text-center">Rose Bartz</div>
-                        <div className="p-2 text-center">Sandra C. Green</div>
-                        <div className="p-2 text-center">Sandra Urquhart</div>
-                        <div className="p-2 text-center">
-                          Sons of the American Legion Post 1720
-                        </div>
-                        <div className="p-2 text-center">
-                          Springtyme Landscaping & Design Inc.
-                        </div>
-                        <div className="p-2 text-center">
-                          Stuart & Janis Hempel
-                        </div>
-                        <div className="p-2 text-center">Susan Grew</div>
-                        <div className="p-2 text-center">The Greenery</div>
-                        <div className="p-2 text-center">
-                          Tim & Louise Royce
-                        </div>
-                        <div className="p-2 text-center">
-                          Timothy J. & Donna Embt
-                        </div>
-                        <div className="p-2 text-center">Toshmin D. Duncan</div>
-                        <div className="p-2 text-center">
-                          Virginia & Burt Fugle
-                        </div>
-                        <div className="p-2 text-center">Warsaw Pennysaver</div>
-                        <div className="p-2 text-center">
-                          Wilkins Insurance Agency, Inc
-                        </div>
-                        <div className="p-2 text-center">William Errington</div>
-                        <div className="p-2 text-center">
-                          William J. Renz Jr.
-                        </div>
+                        {donors.community.map((donor) => (
+                          <div key={donor} className="p-2 text-center">
+                            {donor}
+                          </div>
+                        ))}
                       </div>
                     </ScrollArea>
                   </CardContent>
