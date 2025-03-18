@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   Calendar,
   Clock,
@@ -7,6 +8,7 @@ import {
   Utensils,
 } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 export const metadata: Metadata = {
@@ -23,6 +25,8 @@ const events: {
   >;
   location?: string;
   time?: string;
+  link?: string;
+  linkText?: string;
 }[] = [
   {
     title: "Spring Chicken BBQ",
@@ -32,6 +36,8 @@ const events: {
     icon: Utensils,
     location: "Attica Elementary School parking lot",
     time: "Noon - 2:00 PM",
+    link: "https://gatewayhomeattica.networkforgood.com/events/84448-spring-chicken-bbq-sunday-april-27th",
+    linkText: "Buy Tickets",
   },
   {
     title: "First Annual Gateway to Summer",
@@ -45,7 +51,6 @@ const events: {
 export default function EventsPage() {
   return (
     <main>
-      {/* Header Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
@@ -61,7 +66,6 @@ export default function EventsPage() {
         </div>
       </div>
 
-      {/* Events Section */}
       {events.map((event) => (
         <div key={event.title} className="border-grid border-b">
           <div className="container-wrapper">
@@ -98,6 +102,17 @@ export default function EventsPage() {
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       {event.description}
                     </p>
+                    {event.link && event.linkText && (
+                      <Button asChild className="mt-6 px-6">
+                        <Link
+                          href={event.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {event.linkText}
+                        </Link>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -106,7 +121,6 @@ export default function EventsPage() {
         </div>
       ))}
 
-      {/* Host Your Own Section */}
       <div className="border-grid border-b">
         <div className="container-wrapper">
           <section className="py-24">
