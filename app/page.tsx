@@ -1,8 +1,8 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -64,6 +64,7 @@ const donors = {
     "Zehler Excavating, LLC",
   ],
   community: [
+    "Msgr Kirby Council #325 Knights of Colombus",
     "Mooch and Shellie Acquard",
     "Alden State Bank",
     "Don & Patti Almeter",
