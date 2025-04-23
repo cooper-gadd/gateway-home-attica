@@ -4,7 +4,6 @@ import {
   Clock,
   LucideProps,
   MapPin,
-  Music,
   Utensils,
 } from "lucide-react";
 import { Metadata } from "next";
@@ -38,13 +37,6 @@ const events: {
     time: "Noon - 2:00 PM",
     link: "https://gatewayhomeattica.networkforgood.com/events/84448-spring-chicken-bbq-sunday-april-27th",
     linkText: "Buy Tickets",
-  },
-  {
-    title: "First Annual Gateway to Summer",
-    date: "June 7, 2025",
-    description:
-      "Celebrate the beginning of summer with Gateway Home. This family-friendly event features live music, local breweries, food vendors, activities for children, and opportunities to learn about our services.",
-    icon: Music,
   },
 ];
 
