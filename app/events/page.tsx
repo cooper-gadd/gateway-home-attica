@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Clock, DollarSign, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,7 +20,17 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [];
+}[] = [
+  {
+    title: "Matching Campaign",
+    date: "March 19, 2025 — May 22, 2025",
+    description:
+      "An anonymous donor is offering to match every donation made to our campaign, dollar-for-dollar, up to $10,000! This is your chance to double the impact of your generosity and help us reach our goal even faster. Every contribution, big or small, will be matched, so there’s never been a better time to give. Don’t miss out—your gift will go twice as far and make a real difference in our cause. Join us today and make your donation count!",
+    icon: DollarSign,
+    link: "https://gatewayhomeattica.networkforgood.com/events/84782-matching-campaign-2025",
+    linkText: "Donate Now",
+  },
+];
 
 export default function EventsPage() {
   return (
