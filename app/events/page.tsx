@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, DollarSign, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Clock, DollarSign, Flag, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -23,12 +23,20 @@ const events: {
 }[] = [
   {
     title: "Matching Campaign",
-    date: "March 19, 2025 — May 22, 2025",
+    date: "April 2, 2025 — May 31, 2025",
     description:
-      "An anonymous donor is offering to match every donation made to our campaign, dollar-for-dollar, up to $10,000! This is your chance to double the impact of your generosity and help us reach our goal even faster. Every contribution, big or small, will be matched, so there’s never been a better time to give. Don’t miss out—your gift will go twice as far and make a real difference in our cause. Join us today and make your donation count!",
+      "An anonymous donor is offering to match every donation made to our campaign, dollar-for-dollar, up to $10,000! This is your chance to double the impact of your generosity and help us reach our goal even faster. Every contribution, big or small, will be matched, so there's never been a better time to give. Don't miss out—your gift will go twice as far and make a real difference in our cause. Join us today and make your donation count!",
     icon: DollarSign,
     link: "https://gatewayhomeattica.networkforgood.com/events/84782-matching-campaign-2025",
     linkText: "Donate Now",
+  },
+  {
+    title: "Golfing for Gateway Home Comfort Care 7th Annual Golf Tournament",
+    date: "July 24, 2025",
+    description: "Join us for our 7th Annual Golf Tournament! This 18-hole scramble format tournament costs $100 per golfer or $400 per team. Your entry fee includes 18 holes of golf, a cart, a hot dog at the turn, dinner by 'A Sweet Ending Bakery', and prizes immediately following the tournament. The entry deadline is July 15th or until sold out (only 22 teams available). Dinner and awards will follow the tournament, with dinner-only tickets available for $25. Don't miss this opportunity to support Gateway Home while enjoying a great day of golf!",
+    icon: Flag,
+    location: "Quiet Times Golf Course, 2220 Stedman Rd., Attica, NY 14011",
+    time: "8:00 AM - 9:15 AM Registration, 9:30 AM Shot Gun Start",
   },
 ];
 
