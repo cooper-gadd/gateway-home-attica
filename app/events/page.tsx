@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, DollarSign, Flag, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Car, Clock, DollarSign, Flag, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -31,12 +31,28 @@ const events: {
     linkText: "Donate Now",
   },
   {
+    title: "4th Annual Judy Russell Memorial Golf Tournament",
+    date: "July 12, 2025",
+    description: "Join us for the 4th Annual Judy Russell Memorial Golf Tournament! This four-person scramble format tournament costs $100 per golfer or $400 per team. Entry deadline is June 30, 2025 or until sold out (only 32 teams available). Dinner and awards will follow the tournament, with dinner-only tickets available for $35.",
+    icon: Flag,
+    location: "Batavia Country Club, 7909 Batavia Byron Rd., Byron, NY 14020",
+    time: "11:30 AM - 12:30 PM Registration, 1:00 PM Sharp Shot Gun Start",
+  },
+  {
     title: "Golfing for Gateway Home Comfort Care 7th Annual Golf Tournament",
     date: "July 24, 2025",
     description: "Join us for our 7th Annual Golf Tournament! This 18-hole scramble format tournament costs $100 per golfer or $400 per team. Your entry fee includes 18 holes of golf, a cart, a hot dog at the turn, dinner by 'A Sweet Ending Bakery', and prizes immediately following the tournament. The entry deadline is July 15th or until sold out (only 22 teams available). Dinner and awards will follow the tournament, with dinner-only tickets available for $25. Don't miss this opportunity to support Gateway Home while enjoying a great day of golf!",
     icon: Flag,
     location: "Quiet Times Golf Course, 2220 Stedman Rd., Attica, NY 14011",
     time: "8:00 AM - 9:15 AM Registration, 9:30 AM Shot Gun Start",
+  },
+  {
+    title: "Junkyard Reunion",
+    date: "July 27, 2025",
+    description: "All antique/classic vehicles of any kind are welcome! No fees, no judging, just plain fun! This event benefits Gateway Home and spectators are welcome. Join us for a day celebrating classic automobiles with 50/50 drawings and basket raffle. It's a great opportunity to show off your vintage ride or simply enjoy seeing amazing classic vehicles while supporting a great cause.",
+    icon: Car,
+    location: "Vincent Almeter Memorial Park, Route 98, Varysburg, NY",
+    time: "11:00 AM - 4:00 PM",
   },
 ];
 
