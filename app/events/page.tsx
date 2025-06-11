@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Car, Clock, DollarSign, Flag, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Car, Clock, Flag, LucideProps, MapPin, MicVocal } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -22,13 +22,14 @@ const events: {
   linkText?: string;
 }[] = [
   {
-    title: "Matching Campaign",
-    date: "April 2, 2025 — May 31, 2025",
-    description:
-      "An anonymous donor is offering to match every donation made to our campaign, dollar-for-dollar, up to $10,000! This is your chance to double the impact of your generosity and help us reach our goal even faster. Every contribution, big or small, will be matched, so there's never been a better time to give. Don't miss out—your gift will go twice as far and make a real difference in our cause. Join us today and make your donation count!",
-    icon: DollarSign,
-    link: "https://gatewayhomeattica.networkforgood.com/events/84782-matching-campaign-2025",
-    linkText: "Donate Now",
+    title: "VIP Concert Raffle",
+    time: "10:00 AM - 10:00 AM",
+    date: "June 5, 2025 - June 25, 2025",
+    description: "There's nothing better than music... except LIVE MUSIC! Win a VIP experience at Darien Lake Ampitheatre from LIVE NATION. Prize includes: 4 VIP box seats plus VIP parking and access to the VIP lounge. Ticket sales close at 10 am on June 25th. We will draw the winner LIVE on Facebook June 25th at Noon.",
+    icon: MicVocal,
+    location: "Gateway Home Attica: 91 Main Street Attica, NY 14011",
+    link: "https://gatewayhomeattica.networkforgood.com/events/87939-vip-concert-raffle-2025",
+    linkText: "Purchase Tickets",
   },
   {
     title: "4th Annual Judy Russell Memorial Golf Tournament",
@@ -39,12 +40,14 @@ const events: {
     time: "11:30 AM - 12:30 PM Registration, 1:00 PM Sharp Shot Gun Start",
   },
   {
-    title: "Golfing for Gateway Home Comfort Care 8th Annual Golf Tournament",
+    title: "8th Annual Golfing for Gateway",
     date: "July 24, 2025",
-    description: "Join us for our 8th Annual Golf Tournament! This 18-hole scramble format tournament costs $100 per golfer or $400 per team. Your entry fee includes 18 holes of golf, a cart, a hot dog at the turn, dinner by 'A Sweet Ending Bakery', and prizes immediately following the tournament. The entry deadline is July 14th or until sold out (only 22 teams available). Dinner and awards will follow the tournament, with dinner-only tickets available for $25. Don't miss this opportunity to support Gateway Home while enjoying a great day of golf!",
+    description: "Join us for our 8th Annual Golf Tournament! This 18-hole, 4-person scramble format tournament costs $100.00 per golfer or $400.00 per team. Your entry fee includes 18 holes of golf, cart, hot dog at turn, catered dinner immediately following golf & prizes. Not interested in golf but would like to help support the cause? Dinner only tickets are available for $25.00. Sponsorship or Memorial Signs are available for $100.00 per sign (signs will be displayed at the Attica Football/Gary Fredericks Memorial Tournament and the Gateway Home Golf Tournament). Click the link below to print and complete the registration form. Please return the form and your check payable to: Gateway Home, 91 Main St, Attica, NY 14011.",
     icon: Flag,
     location: "Quiet Times Golf Course, 2220 Stedman Rd., Attica, NY 14011",
-    time: "8:00 AM - 9:15 AM Registration, 9:30 AM Shot Gun Start",
+    time: "8:00-9:15 AM Registration, 9:30 AM Shotgun Start",
+    link: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bad438d-0bc6-4972-b0ed-11c72b0e53f9?x_api_client_id=edge_extension_viewer&x_api_client_location=share",
+    linkText: "Download Registration Form",
   },
   {
     title: "Junkyard Reunion",
