@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Car, Clock, Flag, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,28 +20,7 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [
-  {
-    title: "8th Annual Golfing for Gateway",
-    date: "July 24, 2025",
-    description: "Join us for our 8th Annual Golf Tournament! This 18-hole, 4-person scramble format tournament costs $100.00 per golfer or $400.00 per team. Your entry fee includes 18 holes of golf, cart, hot dog at turn, catered dinner immediately following golf & prizes. Not interested in golf but would like to help support the cause? Dinner only tickets are available for $25.00. Sponsorship or Memorial Signs are available for $100.00 per sign (signs will be displayed at the Attica Football/Gary Fredericks Memorial Tournament and the Gateway Home Golf Tournament). Click the link below to print and complete the registration form. Please return the form and your check payable to: Gateway Home, 91 Main St, Attica, NY 14011.",
-    icon: Flag,
-    location: "Quiet Times Golf Course, 2220 Stedman Rd., Attica, NY 14011",
-    time: "8:00-9:15 AM Registration, 9:30 AM Shotgun Start",
-    link: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3bad438d-0bc6-4972-b0ed-11c72b0e53f9?x_api_client_id=edge_extension_viewer&x_api_client_location=share",
-    linkText: "Download Registration Form",
-  },
-  {
-    title: "Junkyard Reunion",
-    date: "July 27, 2025",
-    description: "All antique/classic vehicles of any kind are welcome! No fees, no judging, just plain fun! This event benefits Gateway Home and spectators are welcome. Join us for a day celebrating classic automobiles with 50/50 drawings and basket raffle. It's a great opportunity to show off your vintage ride or simply enjoy seeing amazing classic vehicles while supporting a great cause.",
-    icon: Car,
-    location: "Vincent Almeter Memorial Park, Route 98, Varysburg, NY",
-    time: "11:00 AM - 4:00 PM",
-    link: "/car-cruise-reg-flyer-2025.jpg",
-    linkText: "Register",
-  },
-];
+}[] = [];
 
 export default function EventsPage() {
   return (
