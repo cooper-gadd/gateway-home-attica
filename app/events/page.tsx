@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Clock, Drumstick, LucideProps, MapPin, Ticket } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,7 +20,22 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [];
+}[] = [
+  {
+    title: "Chicken BBQ",
+    date: "September 21st, 2025",
+    description: "Join us for a delicious chicken BBQ!",
+    icon: Drumstick,
+  },
+  {
+    title: "Meat Raffle",
+    date: "October 18th, 2025",
+    description: "Join us for a meat raffle!",
+    icon: Ticket,
+    location: "Cowlesville Fire Company Inc.",
+    time: "6:00 PM"
+  },
+];
 
 export default function EventsPage() {
   return (
