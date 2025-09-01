@@ -24,16 +24,20 @@ const events: {
   {
     title: "Chicken BBQ",
     date: "September 21st, 2025",
-    description: "Join us for a delicious chicken BBQ!",
+    description: "Time for a fall BBQ! The $15 dinner includes ½ chicken, 2 sides, roll, & cookie. THANK YOU SO MUCH TO OUR FAITHFUL BBQ SUPPORTERS! Can't wait to see you all on Sunday!",
+    time: "Noon - 2:00 PM",
+    location: "Prospect Elementary Parking Lot",
     icon: Drumstick,
+    link: "https://gatewayhomeattica.networkforgood.com/events/90764-2025-fall-chicken-bbq",
+    linkText: "Buy Tickets",
   },
   {
     title: "Meat Raffle",
-    date: "October 18th, 2025",
-    description: "Join us for a meat raffle!",
+    date: "November 15th, 2025",
+    time: "6:00 PM",
+    description: "Join us for a meat raffle! The tickets are $15 per person. This includes door prize entry, slice of pizza, and unlimited water or pop.",
     icon: Ticket,
-    location: "Cowlesville Fire Company Inc.",
-    time: "6:00 PM"
+    location: "Alexander Fire Hall",
   },
 ];
 
