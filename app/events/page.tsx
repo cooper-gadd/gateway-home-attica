@@ -38,6 +38,8 @@ const events: {
     description: "Join us for a meat raffle! The tickets are $15 per person. This includes door prize entry, slice of pizza, and unlimited water or pop.",
     icon: Ticket,
     location: "Alexander Fire Hall",
+    link: "https://gatewayhomeattica.networkforgood.com/events/91517-2025-meat-raffle",
+    linkText: "Buy Tickets",
   },
 ];
 
