@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, Drumstick, LucideProps, MapPin, Ticket } from "lucide-react";
+import { Calendar, Clock, LucideProps, MapPin, Ticket } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -21,16 +21,6 @@ const events: {
   link?: string;
   linkText?: string;
 }[] = [
-  {
-    title: "Chicken BBQ",
-    date: "September 21st, 2025",
-    description: "Time for a fall BBQ! The $15 dinner includes ½ chicken, 2 sides, roll, & cookie. THANK YOU SO MUCH TO OUR FAITHFUL BBQ SUPPORTERS! Can't wait to see you all on Sunday!",
-    time: "Noon - 2:00 PM",
-    location: "Prospect Elementary Parking Lot",
-    icon: Drumstick,
-    link: "https://gatewayhomeattica.networkforgood.com/events/90764-2025-fall-chicken-bbq",
-    linkText: "Buy Tickets",
-  },
   {
     title: "Meat Raffle",
     date: "November 15th, 2025",
