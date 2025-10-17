@@ -21,6 +21,7 @@ const events: {
   link?: string;
   linkText?: string;
 }[] = [
+  
   {
     title: "Meat Raffle",
     date: "November 15th, 2025",
@@ -29,6 +30,15 @@ const events: {
     icon: Ticket,
     location: "Alexander Fire Hall",
     link: "https://gatewayhomeattica.networkforgood.com/events/91517-2025-meat-raffle",
+    linkText: "Buy Tickets",
+  },{
+    title: "2025 Gateway Home Holiday Cash Raffle",
+    date: "December 13th, 2025",
+    time: "4:00 PM",
+    description: "Support Gateway Home and get a chance to win some holiday cash! Only 500 tickets will be sold. Tickets are available online and in person until December 12th at 12 PM, or at Gateway Home during Winterfest from 11 AM – 3:30 PM. The drawing will be held at Gateway Home – Attica's Winterfest and live-streamed on our Facebook page. Prizes include: 1st Prize – $1,500, 2nd Prize – $1,000, 3rd Prize – $500, 2 Prizes – $250 each, 3 Prizes – $100 each, and 4 Prizes – $50 each.",
+    icon: Ticket,
+    location: "Gateway Home - Attica's Winterfest",
+    link: "https://gatewayhomeattica.networkforgood.com/events/93067-2025-cash-raffle",
     linkText: "Buy Tickets",
   },
 ];
