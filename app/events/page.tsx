@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, LucideProps, MapPin, Ticket } from "lucide-react";
+import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,19 +20,7 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [
-  {
-    title: "2025 Gateway Home Holiday Cash Raffle",
-    date: "December 13th, 2025",
-    time: "4:00 PM",
-    description:
-      "Support Gateway Home and get a chance to win some holiday cash! Only 500 tickets will be sold. Tickets are available online and in person until December 12th at 12 PM, or at Gateway Home during Winterfest from 11 AM – 3:30 PM. The drawing will be held at Gateway Home – Attica's Winterfest and live-streamed on our Facebook page. Prizes include: 1st Prize – $1,500, 2nd Prize – $1,000, 3rd Prize – $500, 2 Prizes – $250 each, 3 Prizes – $100 each, and 4 Prizes – $50 each.",
-    icon: Ticket,
-    location: "Gateway Home - Attica's Winterfest",
-    link: "https://gatewayhomeattica.networkforgood.com/events/93067-2025-cash-raffle",
-    linkText: "Buy Tickets",
-  },
-];
+}[] = [];
 
 export default function EventsPage() {
   return (
