@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "bun --bun next dev",
+    "build": "bun --bun next build",
+    "start": "bun --bun next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -31,7 +31,7 @@
     "date-fns": "^4.1.0",
     "lucide-react": "^0.475.0",
     "motion": "^12.23.26",
-    "next": "15.1.6",
+    "next": "15.1.11",
     "next-themes": "^0.4.6",
     "react": "^19.2.3",
     "react-day-picker": "8.10.1",
