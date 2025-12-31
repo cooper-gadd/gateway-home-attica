@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
+import { Calendar, Clock, LucideProps, MapPin, Utensils } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,7 +20,15 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [];
+}[] = [
+  {
+    title: "Pancake Breakfast",
+    date: "Saturday, February 21, 2026",
+    description: "Come join us for breakfast!",
+    icon: Utensils,
+    location: "Town Line Lutheran Church",
+  },
+];
 
 export default function EventsPage() {
   return (
