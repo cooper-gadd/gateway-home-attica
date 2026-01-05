@@ -24,9 +24,13 @@ const events: {
   {
     title: "Pancake Breakfast",
     date: "Saturday, February 21, 2026",
-    description: "Come join us for breakfast!",
+    time: "8am - 1pm",
+    description:
+      "Come join us for pancakes, eggs, sausage, coffee, milk and orange juice! Tickets for Raffle Items will also be available. There will be a Free Will Offering at the door.",
     icon: Utensils,
     location: "Town Line Lutheran Church",
+    link: "/gateway-home-pancake-breaksfast-flyer-2026-townline-lutheran-church.pdf",
+    linkText: "Learn more",
   },
 ];
 
