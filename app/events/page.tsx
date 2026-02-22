@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, LucideProps, MapPin, Utensils } from "lucide-react";
+import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,19 +20,7 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [
-  {
-    title: "Pancake Breakfast",
-    date: "Saturday, February 21, 2026",
-    time: "8am - 1pm",
-    description:
-      "Come join us for pancakes, eggs, sausage, coffee, milk and orange juice! Tickets for Raffle Items will also be available. There will be a Free Will Offering at the door.",
-    icon: Utensils,
-    location: "Town Line Lutheran Church",
-    link: "/gateway-home-pancake-breaksfast-flyer-2026-townline-lutheran-church.pdf",
-    linkText: "Learn more",
-  },
-];
+}[] = [];
 
 export default function EventsPage() {
   return (
