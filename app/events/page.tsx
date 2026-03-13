@@ -1,5 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, LucideProps, MapPin } from "lucide-react";
+import {
+  Beef,
+  Calendar,
+  Car,
+  Clock,
+  Drumstick,
+  Flag,
+  LucideProps,
+  MapPin,
+  Trophy,
+} from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,7 +30,38 @@ const events: {
   time?: string;
   link?: string;
   linkText?: string;
-}[] = [];
+}[] = [
+  {
+    title: "Spring Chicken BBQ",
+    date: "May 3, 2025",
+    description: "Come get BBQ for lunch!",
+    icon: Drumstick,
+  },
+  {
+    title: "5th Annual Judy Russell Memorial Golf Tournament",
+    date: "July 11, 2025",
+    description: "In memory of Judy Russell.",
+    icon: Trophy,
+  },
+  {
+    title: "Golfing for Gateway",
+    date: "July 23, 2025",
+    description: "4 person scramble, 18 holes.",
+    icon: Flag,
+  },
+  {
+    title: "Junkyard Reunion",
+    date: "July 26, 2025",
+    description: "All antique & classic vehicles welcome. No fees, no judging.",
+    icon: Car,
+  },
+  {
+    title: "Meat Raffle",
+    date: "November 14, 2025",
+    description: "Got meat?",
+    icon: Beef,
+  },
+];
 
 export default function EventsPage() {
   return (
