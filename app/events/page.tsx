@@ -68,8 +68,13 @@ const events: {
   {
     title: "Junkyard Reunion",
     date: "July 26, 2026",
-    description: "All antique & classic vehicles welcome. No fees, no judging.",
+    description:
+      "All antique & classic vehicles of any kind welcome. No fees, no judging, just plain fun! Dash plaques for first 100 vehicles. Spectators welcome. Food, drinks, 50/50 drawings & basket raffle. Proceeds benefit Gateway Home. Thanks to sponsors: Folsom Trailblazers Snowmobile Club & ProX Window & Doors.",
     icon: Car,
+    time: "11:00 AM - 4:00 PM",
+    location: "Vincent Almeter Memorial Park, Route 98, Varysburg, NY",
+    link: "/gateway-car-show-reg-flyer-2026.pdf",
+    linkText: "Registration Form",
   },
   {
     title: "Meat Raffle",
