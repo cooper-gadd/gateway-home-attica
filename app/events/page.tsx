@@ -66,8 +66,13 @@ const events: {
   {
     title: "5th Annual Judy Russell Memorial Golf Tournament",
     date: "July 11, 2026",
-    description: "In memory of Judy Russell.",
+    description:
+      "Join us at Batavia Country Club to honor Judy Russell's memory while supporting Gateway Home Comfort Care. 4-person scramble with sponsorship opportunities available. All donations received by June 20th will be acknowledged on the sponsor board.",
     icon: Trophy,
+    time: "11:30 AM Registration | 1:00 PM Shotgun Start",
+    location: "Batavia Country Club, 7909 Batavia-Byron Rd., Batavia, NY",
+    link: "/judy-russell-golf-2026.pdf",
+    linkText: "Registration Form",
   },
   {
     title: "Golfing for Gateway",
