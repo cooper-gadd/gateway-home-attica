@@ -10,8 +10,16 @@ export const metadata: Metadata = {
 
 const leadershipTeam = [
   {
+    name: "Todd Gadd",
+    role: "President",
+    image: "/todd-gadd.jpeg",
+    bio: [
+      "Todd Gadd was led to be involved with a comfort care facility following an opportunity to serve others on a short-term mission trip to the Dominican Republic. This was following the passing of his mother during her illness in which her family had the privilege to take care of her at home until her passing. He has been part of the group that has organized Gateway Home and is now serving on the Board of Directors. Todd is married to Brittany and has two children, Cooper and Chloe. He grew up in Attica and currently lives in Cowlesville, NY. Being involved with such a much-needed organization whose purpose is to only help others has been very rewarding.",
+    ],
+  },
+  {
     name: "Doug Domes",
-    role: "Board President",
+    role: "Vice President",
     image: "/doug-domes.jpeg",
     bio: [
       "Doug has lived his life as a resident of Attica with wife Rosie of 55 years. He has four children who have blessed him with 16 beautiful grandchildren. As a businessman in the timber industry, Doug knows trees to be God's only renewable natural resource for all of us to use wisely and has learned to respect this resource.",
@@ -19,31 +27,23 @@ const leadershipTeam = [
     ],
   },
   {
-    name: "Jim Russell",
-    role: "Board Vice President",
-    image: "/jim-russell.jpeg",
-    bio: [
-      "Jim has lived in Batavia for over 50 years, many of which he owned and operated a fire and safety company. He has 3 children and 4 grandchildren. Over the years he has volunteered and served on many committees such as Volunteer Firefighter for the Town of Stafford and Town of Batavia Fire Departments, Batavia City Councilman, City of Batavia Zoning Board and Knights of Columbus Council 11728.",
-      "Jim first became involved with Gateway Home in February 2020 when he brought his wife, Judy of 47 years to Gateway Home as her battle with lung cancer was coming to an end. After Judy's passing Jim wanted to give back to Gateway Home for the support they provided. Jim organized a Chicken BBQ fundraiser that summer at Gateway Home. After that he began serving on the Board of Directors in 2021.  Jim continues to honor Judy's memory by organizing and cooking two Chicken BBQ fundraisers each year for Gateway Home. In July 2022, he also started the First Annual Judy Russell Memorial Golf Tournament with all the proceeds raised donated to Gateway Home.",
-    ],
-  },
-  {
-    name: "Todd Gadd",
-    role: "Board Treasurer",
-    image: "/todd-gadd.jpeg",
-    bio: [
-      "Todd Gadd was led to be involved with a comfort care facility following an opportunity to serve others on a short-term mission trip to the Dominican Republic. This was following the passing of his mother during her illness in which her family had the privilege to take care of her at home until her passing. He has been part of the group that has organized Gateway Home and is now serving on the Board of Directors. Todd is married to Brittany and has two children, Cooper and Chloe. He grew up in Attica and currently lives in Cowlesville, NY. Being involved with such a much-needed organization whose purpose is to only help others has been very rewarding.",
-    ],
-  },
-  {
     name: "Kimberly Kadziolka",
-    role: "Board Member",
+    role: "Secretary",
     image: "/kimberly-kadziolka.jpg",
     bio: [
       "Kimberly Kadziolka, BA, MS, EdD, is a seasoned human services professional who has a long career working with vulnerable populations in WNY. Currently, she is the executive director of Parent Network of WNY, however her experience includes working with children and adults with disabilities, children in the child welfare system, survivors of domestic violence, County, and individuals returning to WNY following incarceration in the federal prison system. Kimberly has a deep sense of equity and works for the day when everyone in our community has access to all they need to reach their full potential throughout their life.",
       "Kimberly was introduced to Gateway Home when her sister, Jammie, was a resident in July 2023. Witnessing the compassionate care provided to her sister and family, she felt moved to offer her skills in helping to spread the mission of Gateway Home. Recognizing that comfort care is an incredible gift to our community, she is excited to be a part of Gateway Home.",
       "In addition to the various leadership positions held, Kimberly sits on the boards of several local and statewide organizations that empower people: Unique Theatre Company, BRICK Buffalo Academy, the Care Management Coalition of WNY, and Families Together in NYS. She is well respected in the social services fields in Western New York and throughout New York State.",
       "Kimberly grew up in Pembroke NY and continues to have ties in the GLOW region. She earned her BA in Social Sciences and Community Mental Health from SUNY Buffalo, an MS in Human Services Administration from SUNY Buffalo State College, and an EdD in Health Administration from D'Youville University. Her dissertation focused on the impact of compassion satisfaction and compassion fatigue on human service workers and how it impacts their decision to change jobs; this research influences her leadership decisions in her many roles.",
+    ],
+  },
+  {
+    name: "Jim Russell",
+    role: "Treasurer",
+    image: "/jim-russell.jpeg",
+    bio: [
+      "Jim has lived in Batavia for over 50 years, many of which he owned and operated a fire and safety company. He has 3 children and 4 grandchildren. Over the years he has volunteered and served on many committees such as Volunteer Firefighter for the Town of Stafford and Town of Batavia Fire Departments, Batavia City Councilman, City of Batavia Zoning Board and Knights of Columbus Council 11728.",
+      "Jim first became involved with Gateway Home in February 2020 when he brought his wife, Judy of 47 years to Gateway Home as her battle with lung cancer was coming to an end. After Judy's passing Jim wanted to give back to Gateway Home for the support they provided. Jim organized a Chicken BBQ fundraiser that summer at Gateway Home. After that he began serving on the Board of Directors in 2021.  Jim continues to honor Judy's memory by organizing and cooking two Chicken BBQ fundraisers each year for Gateway Home. In July 2022, he also started the First Annual Judy Russell Memorial Golf Tournament with all the proceeds raised donated to Gateway Home.",
     ],
   },
   {
@@ -66,7 +66,7 @@ const leadershipTeam = [
     ],
   },
   {
-    name: "Rick Trauch",
+    name: "Rick Trauscht",
     role: "Board Member",
   },
   {
