@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -9,7 +10,6 @@ export const metadata: Metadata = {
 
 const leadershipTeam = [
   {
-    id: 1,
     name: "Doug Domes",
     role: "Board President",
     image: "/doug-domes.jpeg",
@@ -19,7 +19,6 @@ const leadershipTeam = [
     ],
   },
   {
-    id: 2,
     name: "Jim Russell",
     role: "Board Vice President",
     image: "/jim-russell.jpeg",
@@ -29,7 +28,6 @@ const leadershipTeam = [
     ],
   },
   {
-    id: 3,
     name: "Todd Gadd",
     role: "Board Treasurer",
     image: "/todd-gadd.jpeg",
@@ -38,18 +36,6 @@ const leadershipTeam = [
     ],
   },
   {
-    id: 6,
-    name: "Donna Ferry",
-    role: "Board Member",
-    image: "/donna-ferry.jpg",
-    bio: [
-      "Donna Ferry lives in Darien and retired several years ago from S.J.F. Construction, Inc.  She has volunteered for several organizations that have allowed her to connect with the community including serving on the Board of Trustees at Genesee Community College.   ",
-      "After losing her mother to a short illness in 2021 her thoughts turned to the importance of end-of-life care and she began volunteering at Gateway Home in 2022 along with assisting with fundraising endeavors.   ",
-      "Serving alongside amazing volunteers and care givers has been a truly humbling experience for Donna and has strengthen her resolve to support Gateway Home in their mission. Donna joined the board in January 2023 and looks forward to working with the staff, volunteers, care givers, and fellow board members.",
-    ],
-  },
-  {
-    id: 7,
     name: "Kimberly Kadziolka",
     role: "Board Member",
     image: "/kimberly-kadziolka.jpg",
@@ -61,7 +47,29 @@ const leadershipTeam = [
     ],
   },
   {
-    id: 8,
+    name: "Angela Zymowski",
+    role: "Board Member",
+    image: "/angela-zymowski.jpg",
+    bio: [
+      "Angela Zymowski is a dedicated professional and community supporter residing in Bennington, New York with her husband, Steven Zymowski, and their three children.",
+      "Angela's career began in the legal field working for a local attorney before she chose to take time off to focus on raising her children. Upon returning to the workforce, she joined Attica Package Company Inc.",
+      "Her journey with Gateway Home began through her workplace's involvement with the organization. Her passion for the cause quickly grew; she transitioned from a volunteer to a member of the fundraising committee, where she organized an annual car show and she now serves as a dedicated member of the Board of Directors. In this leadership role, Angela works to ensure families in Western New York have access to compassionate, dignified and supportive end-of-life care that her own family experienced.",
+    ],
+  },
+  {
+    name: "Jodi Nichols",
+    role: "Board Member",
+    image: "/jodi-nichols.jpg",
+    bio: [
+      "Jodi Nichols resides in Wyoming, NY, with her husband of 30 years, Scott. They are the proud parents of two children, Brett and McKenzie. Jodi has built a long and distinguished career in the financial industry, where she has been employed with the same firm for 34 years.",
+      "Jodi has long been committed to supporting youth sports throughout Genesee and Wyoming Counties, serving in various volunteer capacities, including coaching and Board of Directors roles. While seeking new ways to give back to her community, she was introduced to Gateway Home by a friend. Jodi is honored to contribute to and help further the mission of Gateway Home, recognizing the meaningful impact it has within the community.",
+    ],
+  },
+  {
+    name: "Rick Trauch",
+    role: "Board Member",
+  },
+  {
     name: "Sara Brunner",
     role: "Director",
     image: "/sara-brunner.jpg",
@@ -71,7 +79,6 @@ const leadershipTeam = [
     ],
   },
   {
-    id: 9,
     name: "Sue Herman",
     role: "Office Manager",
     image: "/sue-herman.jpeg",
@@ -109,7 +116,13 @@ export default function LeadershipPage() {
                 <div className="flex flex-col md:flex-row gap-12">
                   <div className="w-full md:w-[300px] flex-shrink-0">
                     <div className="relative overflow-hidden rounded-lg">
-                      <div className="aspect-[3/4]">
+                      <div
+                        className={cn(
+                          "aspect-[3/4]",
+                          !member.image &&
+                            "dark:brightness-[0.2] dark:grayscale",
+                        )}
+                      >
                         <Image
                           src={
                             member.image ??
