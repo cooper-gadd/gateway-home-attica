@@ -68,6 +68,7 @@ const leadershipTeam = [
   {
     name: "Rick Trauscht",
     role: "Board Member",
+    image: "/rick-trauscht.jpg",
   },
   {
     name: "Sara Brunner",

@@ -63,7 +63,6 @@ export function EmploymentForm() {
       isEmployed: "",
       isLegallyEligible: "",
       isFelonOrMisdemeanant: "",
-      isEmployedOrVolunteeredAtCrossroads: "",
       educationLevel: "",
       specialLicenseOrCertification: "",
       companyName1: "",
@@ -351,41 +350,6 @@ export function EmploymentForm() {
                   <FormLabel>
                     Have you ever been convicted of a felony or misdemeanor in
                     the past 7 years?
-                  </FormLabel>
-                  <FormControl>
-                    <RadioGroup
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                      className="flex gap-4"
-                    >
-                      {yesNoOptions.map((option) => (
-                        <FormItem
-                          key={option}
-                          className="flex items-center space-x-3"
-                        >
-                          <FormControl>
-                            <RadioGroupItem value={option} />
-                          </FormControl>
-                          <FormLabel className="font-normal">
-                            {option}
-                          </FormLabel>
-                        </FormItem>
-                      ))}
-                    </RadioGroup>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="isEmployedOrVolunteeredAtCrossroads"
-              render={({ field }) => (
-                <FormItem className="space-y-3">
-                  <FormLabel>
-                    Have you ever been employed or volunteered at Crossroads
-                    House?
                   </FormLabel>
                   <FormControl>
                     <RadioGroup

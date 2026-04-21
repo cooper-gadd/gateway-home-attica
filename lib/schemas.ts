@@ -61,9 +61,6 @@ export const employmentFormSchema = z.object({
   isEmployed: z.string().min(1, "Please select an option"),
   isLegallyEligible: z.string().min(1, "Please select an option"),
   isFelonOrMisdemeanant: z.string().min(1, "Please select an option"),
-  isEmployedOrVolunteeredAtCrossroads: z
-    .string()
-    .min(1, "Please select an option"),
   educationLevel: z.string().min(1, "Please select an option"),
   specialLicenseOrCertification: z.string().min(1, "Please select an option"),
   companyName1: z.string().min(1, "Please enter a company name"),

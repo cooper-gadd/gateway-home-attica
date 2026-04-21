@@ -134,10 +134,6 @@ export const EmploymentApplicationTemplate: FC<{
     <p>
       <strong>Criminal Record:</strong> {formData.isFelonOrMisdemeanant}
     </p>
-    <p>
-      <strong>Previous Crossroads Experience:</strong>{" "}
-      {formData.isEmployedOrVolunteeredAtCrossroads}
-    </p>
 
     <h2>Education & Qualifications</h2>
     <p>
