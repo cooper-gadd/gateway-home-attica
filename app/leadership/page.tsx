@@ -69,6 +69,14 @@ const leadershipTeam = [
     name: "Rick Trauscht",
     role: "Board Member",
     image: "/rick-trauscht.jpg",
+    bio: [
+      "Rick has been an Attica resident for 64 years. In 1986, he married his wife, Sharon, and together they raised four children who have blessed them with six grandchildren.",
+      "He chose a career as a craftsman and joined Carpenters Local 276 in September of 1991. He worked in the heavy highway industry, building and repairing bridges and dams throughout New York State. After 32 years of service, he retired in February of 2023 as a Project Manager/Estimator.",
+      "Over the years, he has been involved with AYA sports, served as a session member at the First Presbyterian Church in Attica, and was a Village Trustee for six years. He was also a member of the Gateway team that helped with the initial restoration design of the current Home.",
+      "The loss of his father in 2023 guided his decision to retire and assist his mother with the maintenance work his father had always handled. His father volunteered as a hospice worker for over 20 years, serving at Crossroads House and the VA nursing home in Batavia, and often shared stories about the meaningful experiences he had helping others.",
+      "When asked to consider a position on the Board of Directors at Gateway Home, he saw it as an opportunity to give back to the Attica community and experience the same kind of rewarding moments his father often spoke about.",
+      "He looks forward to being part of the Gateway team once again.",
+    ],
   },
   {
     name: "Sara Brunner",
