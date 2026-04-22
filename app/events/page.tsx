@@ -34,10 +34,10 @@ const events: {
   linkText?: string;
 }[] = [
   {
-    title: "April Matching Gift Challenge",
+    title: "Matching Campaign",
     date: "April 1 - May 15, 2026",
     description:
-      "A generous donor will match every gift up to $20,000 — but only through April 30th! Your donation doubles in impact, helping Gateway Home continue providing compassionate, no-cost end-of-life care.",
+      "A generous donor will match every gift up to $20,000 — but only through May 15th! Your donation doubles in impact, helping Gateway Home continue providing compassionate, no-cost end-of-life care.",
     icon: HandHeart,
     link: "https://gatewayhomeattica.networkforgood.com/projects/298367-matching-gifts-april-2026",
     linkText: "Double My Gift",

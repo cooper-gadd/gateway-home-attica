@@ -1,5 +1,12 @@
+import {
+  Alert,
+  AlertTitle,
+  AlertDescription,
+  AlertAction,
+} from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { HandHeart } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,6 +63,25 @@ export default function DonatePage() {
                     Donate Now
                   </Link>
                 </Button>
+
+                <Alert className="border-border bg-muted mt-6">
+                  <HandHeart className="h-4 w-4" />
+                  <AlertTitle>Matching Campaign</AlertTitle>
+                  <AlertDescription>
+                    A generous donor will match every gift up to $20,000 —
+                    through May 15th.
+                  </AlertDescription>
+                  <AlertAction>
+                    <Button variant="outline" size="sm" asChild>
+                      <Link
+                        target="_blank"
+                        href="https://gatewayhomeattica.networkforgood.com/projects/298367-matching-gifts-april-2026"
+                      >
+                        Double My Gift
+                      </Link>
+                    </Button>
+                  </AlertAction>
+                </Alert>
               </div>
             </div>
           </section>
