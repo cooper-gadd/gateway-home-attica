@@ -67,7 +67,7 @@ export default function DonatePage() {
                 <Alert className="border-border bg-muted mt-6">
                   <HandHeart className="h-4 w-4" />
                   <AlertTitle>Matching Campaign</AlertTitle>
-                  <AlertDescription>
+                  <AlertDescription className="sm:max-w-none max-w-56">
                     A generous donor will match every gift up to $20,000 —
                     through May 15th.
                   </AlertDescription>
