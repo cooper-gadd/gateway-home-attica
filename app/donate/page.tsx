@@ -115,48 +115,6 @@ export default function DonatePage() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <div className="flex flex-col lg:flex-row items-start gap-12">
-                <div className="lg:w-1/2 text-center md:text-start">
-                  <h2 className="text-3xl font-semibold mb-6">
-                    The Impact of Your Generosity
-                  </h2>
-                  <div className="space-y-6">
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      Your donations directly improve the lives of our
-                      residents. From enhancing our facilities to providing
-                      engaging activities and therapies, every contribution
-                      helps create a more comfortable and enriching environment
-                      for those in our care.
-                    </p>
-                  </div>
-                </div>
-                <div className="lg:w-1/2">
-                  <div className="aspect-[3/4] relative overflow-hidden rounded-lg">
-                    <Image
-                      src="/donate.jpg"
-                      alt="Residents enjoying activities"
-                      width={600}
-                      height={800}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                      <p className="text-sm text-white">
-                        Thanks Wyoming County Correctional Facility Employees
-                        for their generous annual donation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <section className="py-24">
-            <div className="container">
               <h2 className="text-3xl font-semibold text-center mb-12">
                 Other Ways to Give
               </h2>
@@ -269,6 +227,48 @@ export default function DonatePage() {
                     </div>
                   </CardContent>
                 </Card>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div className="border-grid border-b">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <div className="flex flex-col lg:flex-row items-start gap-12">
+                <div className="lg:w-1/2 text-center md:text-start">
+                  <h2 className="text-3xl font-semibold mb-6">
+                    The Impact of Your Generosity
+                  </h2>
+                  <div className="space-y-6">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Your donations directly improve the lives of our
+                      residents. From enhancing our facilities to providing
+                      engaging activities and therapies, every contribution
+                      helps create a more comfortable and enriching environment
+                      for those in our care.
+                    </p>
+                  </div>
+                </div>
+                <div className="lg:w-1/2">
+                  <div className="aspect-[3/4] relative overflow-hidden rounded-lg">
+                    <Image
+                      src="/donate.jpg"
+                      alt="Residents enjoying activities"
+                      width={600}
+                      height={800}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                      <p className="text-sm text-white">
+                        Thanks Wyoming County Correctional Facility Employees
+                        for their generous annual donation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
