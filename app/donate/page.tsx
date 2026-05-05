@@ -19,11 +19,6 @@ export const metadata: Metadata = {
 
 const donationOptions = [
   {
-    amount: 105,
-    description:
-      "Three months of essential trash and waste collection services",
-  },
-  {
     amount: 180,
     description:
       "Three months of fresh linen and bedding services for a resident",
@@ -95,7 +90,7 @@ export default function DonatePage() {
               <h2 className="text-3xl font-semibold text-center mb-12">
                 How Your Donation Helps
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {donationOptions.map((option) => (
                   <Card key={option.amount} className="bg-muted/40">
                     <CardHeader>
