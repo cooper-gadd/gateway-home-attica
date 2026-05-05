@@ -644,6 +644,16 @@ export default function Home() {
                       has the greatest need; not who is next on the list for
                       admission.
                     </p>
+                    <p className="leading-7 [&:not(:first-child)]:mt-6">
+                      Not every referral qualifies for residency at Gateway Home
+                      — but every person deserves comfort, dignity, and support.
+                      Gateway Casa Care is our newest program, created to help
+                      individuals remain safely cared for in their own homes
+                      when admission isn&apos;t possible. Through this program,
+                      families and caregivers can receive essential
+                      comfort-focused supplies and support to ease the journey
+                      of end-of-life at home.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
