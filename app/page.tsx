@@ -36,7 +36,6 @@ const donors = {
     "Robert Kirby",
     "Marley Funeral Home LLC",
     "Ron Merrill",
-    "Jewel & Linda Metcalf",
     "Patricia Pope",
     "Providence Fellowship",
     "David & Wende Reiner",
