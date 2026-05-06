@@ -21,19 +21,26 @@ const newsletters = [
   {
     id: 1,
     title: "Newsletter",
+    season: "Spring/Summer",
+    year: "2026",
+    pdfUrl: "/spring-summer-2026.pdf",
+  },
+  {
+    id: 2,
+    title: "Newsletter",
     season: "Fall/Winter",
     year: "2024-25",
     pdfUrl: "/fall-2024-winter-2025.pdf",
   },
   {
-    id: 2,
+    id: 3,
     title: "Newsletter",
     season: "Spring/Summer",
     year: "2024",
     pdfUrl: "/spring-summer-2024.pdf",
   },
   {
-    id: 3,
+    id: 4,
     title: "Newsletter",
     season: "Spring",
     year: "2023",
