@@ -4,7 +4,6 @@ import {
   Calendar,
   Car,
   Clock,
-  Drumstick,
   Flag,
   HandHeart,
   LandPlot,
@@ -41,17 +40,6 @@ const events: {
     icon: HandHeart,
     link: "https://gatewayhomeattica.networkforgood.com/projects/298367-matching-gifts-april-2026",
     linkText: "Double My Gift",
-  },
-  {
-    title: "Spring Chicken BBQ",
-    date: "May 3, 2026",
-    description:
-      "Drive thru chicken BBQ! $15 dinner includes ½ chicken, 2 side dishes, roll & cookie. Pickup at Prospect Elementary Parking Lot.",
-    icon: Drumstick,
-    time: "12:00 PM - 2:00 PM (or sold out)",
-    link: "https://gatewayhomeattica.networkforgood.com/events/99499-2026-spring-chicken-bbq-sunday-may-3rd?hid=MjExMTYwODc=&utm_campaign=dms_email_blast_4563323",
-    linkText: "Order Tickets",
-    location: "Prospect Elementary Parking Lot",
   },
   {
     title: "Letchworth Masonic Council Benefit Golf Tournament",
