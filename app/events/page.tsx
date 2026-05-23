@@ -32,16 +32,6 @@ const events: {
   linkText?: string;
 }[] = [
   {
-    title: "Letchworth Masonic Council Benefit Golf Tournament",
-    date: "May 23, 2026",
-    description:
-      "4-person scramble benefiting Gateway Home and other Comfort Care Facilities. $100/person (by May 9th). Dinner only: $40. Sponsor a hole: $50/sign.",
-    icon: LandPlot,
-    time: "9:00 AM Registration, 10:00 AM Scramble",
-    link: "https://d2dgo7ivtbkyn1.cloudfront.net/images/gatewayhomeattica/MASONS%20FORM-combined.pdf",
-    linkText: "Registration Form",
-  },
-  {
     title: "5th Annual Judy Russell Memorial Golf Tournament",
     date: "July 11, 2026",
     description:
