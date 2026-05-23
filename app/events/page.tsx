@@ -5,7 +5,6 @@ import {
   Car,
   Clock,
   Flag,
-  LandPlot,
   LucideProps,
   MapPin,
   Trophy,
