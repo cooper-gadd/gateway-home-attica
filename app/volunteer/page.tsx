@@ -30,8 +30,7 @@ export default function VolunteerPage() {
     },
     {
       title: "Fundraising Support",
-      description:
-        "Fundraising and community outreach to support Gateway Home's mission.",
+      description: "Fundraising and community outreach to support Gateway Home's mission.",
     },
   ];
 
@@ -42,12 +41,10 @@ export default function VolunteerPage() {
           <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto text-center">
-                <h1 className="text-4xl font-bold mb-4">
-                  Volunteer at Gateway Home
-                </h1>
+                <h1 className="text-4xl font-bold mb-4">Volunteer at Gateway Home</h1>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Make a difference in the lives of our residents by joining our
-                  team of compassionate volunteers.
+                  Make a difference in the lives of our residents by joining our team of
+                  compassionate volunteers.
                 </p>
                 <Button asChild>
                   <a href="#application">Apply Now</a>
@@ -64,23 +61,19 @@ export default function VolunteerPage() {
             <div className="container">
               <div className="flex flex-col lg:flex-row items-start gap-12">
                 <div className="lg:w-1/2 text-center md:text-start">
-                  <h2 className="text-3xl font-semibold mb-6">
-                    The Impact of Your Time
-                  </h2>
+                  <h2 className="text-3xl font-semibold mb-6">The Impact of Your Time</h2>
                   <div className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      At Gateway Home, we rely heavily on community fundraising
-                      and volunteer support. Our organization&apos;s success
-                      comes from dedicated individuals and groups who organize
-                      events, participate in campaigns, and help us raise vital
+                      At Gateway Home, we rely heavily on community fundraising and volunteer
+                      support. Our organization&apos;s success comes from dedicated individuals and
+                      groups who organize events, participate in campaigns, and help us raise vital
                       funds.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      By participating in our fundraising initiatives, you
-                      become part of our mission to provide comfort and care.
-                      From annual events to ongoing campaigns, every effort
-                      helps sustain our services and enhance the quality of life
-                      for our residents.
+                      By participating in our fundraising initiatives, you become part of our
+                      mission to provide comfort and care. From annual events to ongoing campaigns,
+                      every effort helps sustain our services and enhance the quality of life for
+                      our residents.
                     </p>
                   </div>
                 </div>
@@ -105,9 +98,7 @@ export default function VolunteerPage() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <h2 className="text-3xl font-semibold text-center mb-12">
-                Volunteer Opportunities
-              </h2>
+              <h2 className="text-3xl font-semibold text-center mb-12">Volunteer Opportunities</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {volunteerOpportunities.map((opportunity, index) => (
                   <Card key={index} className="bg-muted/40">
@@ -115,9 +106,7 @@ export default function VolunteerPage() {
                       <CardTitle>{opportunity.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">
-                        {opportunity.description}
-                      </p>
+                      <p className="text-muted-foreground">{opportunity.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -136,14 +125,12 @@ export default function VolunteerPage() {
                   Ready to Make a Difference?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 text-center">
-                  Join our team of compassionate volunteers and help us provide
-                  comfort and care to those who need it most.
+                  Join our team of compassionate volunteers and help us provide comfort and care to
+                  those who need it most.
                 </p>
                 <Card className="bg-muted/40">
                   <CardHeader>
-                    <CardTitle className="text-2xl text-center">
-                      Volunteer Application
-                    </CardTitle>
+                    <CardTitle className="text-2xl text-center">Volunteer Application</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6">
                     <VolunteerForm />

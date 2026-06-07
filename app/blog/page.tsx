@@ -6,8 +6,7 @@ import path from "path";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description:
-    "Read about the latest news and updates from Gateway Home Attica.",
+  description: "Read about the latest news and updates from Gateway Home Attica.",
 };
 
 function formatDate(dateString: string): string {
@@ -23,9 +22,7 @@ function getBlogPosts() {
   const posts = directories.map((dir) => {
     const filePath = path.join(blogDir, dir, "page.mdx");
     const content = fs.readFileSync(filePath, "utf8");
-    const metadataMatch = content.match(
-      /export const metadata = ({[\s\S]*?});/,
-    );
+    const metadataMatch = content.match(/export const metadata = ({[\s\S]*?});/);
     const metadata = metadataMatch ? eval(`(${metadataMatch[1]})`) : {};
     const contentAfterHeader = content.split("<BlogHeader")[1];
     const mainContent = contentAfterHeader.split("/>")[1];
@@ -52,9 +49,7 @@ function getBlogPosts() {
   });
 
   // Sort posts by date (newest first)
-  return posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
+  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export default function BlogPage() {
@@ -70,8 +65,7 @@ export default function BlogPage() {
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="text-4xl font-bold mb-4">Gateway Home Blog</h1>
                 <p className="text-lg text-muted-foreground">
-                  Stay updated with the latest news, stories, and updates from
-                  our community
+                  Stay updated with the latest news, stories, and updates from our community
                 </p>
               </div>
             </div>
@@ -92,13 +86,9 @@ export default function BlogPage() {
                         {post.title}
                       </h2>
                       <div className="flex items-center gap-2 text-sm mb-4">
-                        <span className="text-muted-foreground">
-                          {post.author}
-                        </span>
+                        <span className="text-muted-foreground">{post.author}</span>
                         <span className="text-muted-foreground">•</span>
-                        <span className="text-muted-foreground">
-                          {post.formattedDate}
-                        </span>
+                        <span className="text-muted-foreground">{post.formattedDate}</span>
                       </div>
                       <p className="text-muted-foreground group-hover:text-foreground transition-colors">
                         {post.excerpt}

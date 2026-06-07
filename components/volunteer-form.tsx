@@ -89,9 +89,7 @@ export function VolunteerForm() {
       toast.success("Thank you for your application!");
       setSubmitted(true);
     } catch (error) {
-      toast.error(
-        error instanceof Error ? error.message : "Something went wrong",
-      );
+      toast.error(error instanceof Error ? error.message : "Something went wrong");
     }
   }
 
@@ -139,11 +137,7 @@ export function VolunteerForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input
-                      type="email"
-                      placeholder="john.smith@gmail.com"
-                      {...field}
-                    />
+                    <Input type="email" placeholder="john.smith@gmail.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -263,9 +257,7 @@ export function VolunteerForm() {
               name="interestedRoles"
               render={() => (
                 <FormItem className="space-y-3">
-                  <FormLabel className="text-base font-medium">
-                    Interested Roles
-                  </FormLabel>
+                  <FormLabel className="text-base font-medium">Interested Roles</FormLabel>
                   <div className="space-y-2">
                     {roles.map((role) => (
                       <FormField
@@ -273,10 +265,7 @@ export function VolunteerForm() {
                         control={form.control}
                         name="interestedRoles"
                         render={({ field }) => (
-                          <FormItem
-                            key={role}
-                            className="flex items-center space-x-3"
-                          >
+                          <FormItem key={role} className="flex items-center space-x-3">
                             <FormControl>
                               <Checkbox
                                 checked={field.value?.includes(role)}
@@ -284,16 +273,12 @@ export function VolunteerForm() {
                                   return checked
                                     ? field.onChange([...field.value, role])
                                     : field.onChange(
-                                        field.value?.filter(
-                                          (value) => value !== role,
-                                        ),
+                                        field.value?.filter((value) => value !== role),
                                       );
                                 }}
                               />
                             </FormControl>
-                            <FormLabel className="font-normal">
-                              {role}
-                            </FormLabel>
+                            <FormLabel className="font-normal">{role}</FormLabel>
                           </FormItem>
                         )}
                       />
@@ -318,16 +303,11 @@ export function VolunteerForm() {
                       className="flex gap-4"
                     >
                       {volunteerOptions.map((option) => (
-                        <FormItem
-                          key={option}
-                          className="flex items-center space-x-3"
-                        >
+                        <FormItem key={option} className="flex items-center space-x-3">
                           <FormControl>
                             <RadioGroupItem value={option} />
                           </FormControl>
-                          <FormLabel className="font-normal">
-                            {option}
-                          </FormLabel>
+                          <FormLabel className="font-normal">{option}</FormLabel>
                         </FormItem>
                       ))}
                     </RadioGroup>
@@ -341,9 +321,7 @@ export function VolunteerForm() {
               name="availableDays"
               render={() => (
                 <FormItem className="space-y-3">
-                  <FormLabel className="text-base font-medium">
-                    Available Days
-                  </FormLabel>
+                  <FormLabel className="text-base font-medium">Available Days</FormLabel>
                   <div className="space-y-2">
                     {days.map((day) => (
                       <FormField
@@ -351,21 +329,14 @@ export function VolunteerForm() {
                         control={form.control}
                         name="availableDays"
                         render={({ field }) => (
-                          <FormItem
-                            key={day}
-                            className="flex items-center space-x-3"
-                          >
+                          <FormItem key={day} className="flex items-center space-x-3">
                             <FormControl>
                               <Checkbox
                                 checked={field.value?.includes(day)}
                                 onCheckedChange={(checked) => {
                                   return checked
                                     ? field.onChange([...field.value, day])
-                                    : field.onChange(
-                                        field.value?.filter(
-                                          (value) => value !== day,
-                                        ),
-                                      );
+                                    : field.onChange(field.value?.filter((value) => value !== day));
                                 }}
                               />
                             </FormControl>
@@ -384,9 +355,7 @@ export function VolunteerForm() {
               name="availableTimes"
               render={() => (
                 <FormItem className="space-y-3">
-                  <FormLabel className="text-base font-medium">
-                    Available Times
-                  </FormLabel>
+                  <FormLabel className="text-base font-medium">Available Times</FormLabel>
                   <div className="space-y-2">
                     {times.map((time) => (
                       <FormField
@@ -394,10 +363,7 @@ export function VolunteerForm() {
                         control={form.control}
                         name="availableTimes"
                         render={({ field }) => (
-                          <FormItem
-                            key={time}
-                            className="flex items-center space-x-3"
-                          >
+                          <FormItem key={time} className="flex items-center space-x-3">
                             <FormControl>
                               <Checkbox
                                 checked={field.value?.includes(time)}
@@ -405,16 +371,12 @@ export function VolunteerForm() {
                                   return checked
                                     ? field.onChange([...field.value, time])
                                     : field.onChange(
-                                        field.value?.filter(
-                                          (value) => value !== time,
-                                        ),
+                                        field.value?.filter((value) => value !== time),
                                       );
                                 }}
                               />
                             </FormControl>
-                            <FormLabel className="font-normal">
-                              {time}
-                            </FormLabel>
+                            <FormLabel className="font-normal">{time}</FormLabel>
                           </FormItem>
                         )}
                       />
@@ -436,9 +398,7 @@ export function VolunteerForm() {
               name="volunteerReason"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Why do you want to become a Gateway Home Volunteer?
-                  </FormLabel>
+                  <FormLabel>Why do you want to become a Gateway Home Volunteer?</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="I want to make a difference in people's lives by..."
@@ -456,9 +416,7 @@ export function VolunteerForm() {
               name="caregiverExperience"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Please describe your experience as a caregiver (if any)
-                  </FormLabel>
+                  <FormLabel>Please describe your experience as a caregiver (if any)</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="I have experience caring for elderly family members..."
@@ -512,9 +470,7 @@ export function VolunteerForm() {
               name="lossExperience"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Please describe your experience with loss (if any)
-                  </FormLabel>
+                  <FormLabel>Please describe your experience with loss (if any)</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="I have experienced the loss of a loved one and understand..."

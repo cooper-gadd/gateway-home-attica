@@ -25,16 +25,8 @@ interface BlogImageProps {
 export function BlogImage({ src, alt, caption }: BlogImageProps) {
   return (
     <figure className="my-8">
-      <AspectRatio
-        ratio={16 / 9}
-        className="bg-muted rounded-lg overflow-hidden"
-      >
-        <Image
-          src={src || "/placeholder.svg"}
-          alt={alt}
-          fill
-          className="object-cover"
-        />
+      <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
+        <Image src={src || "/placeholder.svg"} alt={alt} fill className="object-cover" />
       </AspectRatio>
       {caption && (
         <figcaption className="text-sm text-center text-muted-foreground mt-2">

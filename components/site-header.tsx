@@ -2,12 +2,7 @@
 
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
@@ -53,10 +48,7 @@ export function SiteHeader() {
         <div className="container-wrapper">
           <header className="container h-16 flex items-center md:justify-center gap-4">
             <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-              <Link
-                href="/"
-                className="flex items-center gap-2 text-lg font-semibold md:text-base"
-              >
+              <Link href="/" className="flex items-center gap-2 text-lg font-semibold md:text-base">
                 <Logo className="h-12 w-12" />
                 <span className="sr-only">Gateway Home</span>
               </Link>
@@ -66,9 +58,7 @@ export function SiteHeader() {
                   href={item.href}
                   className={cn(
                     "hover:text-foreground",
-                    pathname === item.href
-                      ? "text-foreground"
-                      : "text-muted-foreground",
+                    pathname === item.href ? "text-foreground" : "text-muted-foreground",
                   )}
                 >
                   {item.title}
@@ -77,11 +67,7 @@ export function SiteHeader() {
             </nav>
             <Sheet>
               <SheetTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="shrink-0 md:hidden"
-                >
+                <Button variant="outline" size="icon" className="shrink-0 md:hidden">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
@@ -103,9 +89,7 @@ export function SiteHeader() {
                         href={item.href}
                         className={cn(
                           "hover:text-foreground",
-                          pathname === item.href
-                            ? "text-foreground"
-                            : "text-muted-foreground",
+                          pathname === item.href ? "text-foreground" : "text-muted-foreground",
                         )}
                       >
                         {item.title}

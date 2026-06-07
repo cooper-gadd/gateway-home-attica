@@ -23,12 +23,7 @@ export function Video() {
       ) : (
         <video className="w-full h-full" controls autoPlay preload="none">
           <source src="/promo.mp4" type="video/mp4" />
-          <track
-            src="/promo.vtt"
-            kind="subtitles"
-            srcLang="en"
-            label="English"
-          />
+          <track src="/promo.vtt" kind="subtitles" srcLang="en" label="English" />
         </video>
       )}
     </div>

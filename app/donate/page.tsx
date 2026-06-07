@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 const donationOptions = [
   {
     amount: 180,
-    description:
-      "Three months of fresh linen and bedding services for a resident",
+    description: "Three months of fresh linen and bedding services for a resident",
   },
   {
     amount: 225,
@@ -34,14 +33,11 @@ export default function DonatePage() {
           <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto text-center">
-                <h1 className="text-4xl font-bold mb-4">
-                  Support Gateway Home
-                </h1>
+                <h1 className="text-4xl font-bold mb-4">Support Gateway Home</h1>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Your generous donations help us continue providing exceptional
-                  care and creating a nurturing environment for our residents.
-                  Every contribution, no matter the size, makes a significant
-                  impact on the lives of those we serve.
+                  Your generous donations help us continue providing exceptional care and creating a
+                  nurturing environment for our residents. Every contribution, no matter the size,
+                  makes a significant impact on the lives of those we serve.
                 </p>
                 <Button asChild>
                   <Link
@@ -61,21 +57,15 @@ export default function DonatePage() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <h2 className="text-3xl font-semibold text-center mb-12">
-                How Your Donation Helps
-              </h2>
+              <h2 className="text-3xl font-semibold text-center mb-12">How Your Donation Helps</h2>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {donationOptions.map((option) => (
                   <Card key={option.amount} className="bg-muted/40">
                     <CardHeader>
-                      <CardTitle className="text-2xl">
-                        ${option.amount}
-                      </CardTitle>
+                      <CardTitle className="text-2xl">${option.amount}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg text-muted-foreground">
-                        {option.description}
-                      </p>
+                      <p className="text-lg text-muted-foreground">{option.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -89,21 +79,16 @@ export default function DonatePage() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <h2 className="text-3xl font-semibold text-center mb-12">
-                Other Ways to Give
-              </h2>
+              <h2 className="text-3xl font-semibold text-center mb-12">Other Ways to Give</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <Card className="md:col-span-2 bg-muted/40">
                   <CardHeader>
-                    <CardTitle className="text-2xl">
-                      Charitable Giving
-                    </CardTitle>
+                    <CardTitle className="text-2xl">Charitable Giving</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg text-muted-foreground mb-6">
-                      Learn about tax-advantaged giving options through IRA
-                      distributions and other charitable giving programs that
-                      support our mission.
+                      Learn about tax-advantaged giving options through IRA distributions and other
+                      charitable giving programs that support our mission.
                     </p>
                     <Button asChild>
                       <Link href="/charitable-giving">Learn More</Link>
@@ -116,9 +101,8 @@ export default function DonatePage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg text-muted-foreground mb-6">
-                      Discover ways to create a lasting impact through estate
-                      planning, trusts, and other legacy giving options that
-                      ensure our future.
+                      Discover ways to create a lasting impact through estate planning, trusts, and
+                      other legacy giving options that ensure our future.
                     </p>
                     <Button asChild>
                       <Link href="/legacy-giving">Explore Opportunities</Link>
@@ -131,9 +115,8 @@ export default function DonatePage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg text-muted-foreground mb-6">
-                      The engraved bricks will be a permanent memorial to our
-                      residents, volunteers, families and businesses that wish
-                      to support Gateway Home.
+                      The engraved bricks will be a permanent memorial to our residents, volunteers,
+                      families and businesses that wish to support Gateway Home.
                     </p>
                     <div className="flex gap-2">
                       <Button asChild>
@@ -145,10 +128,7 @@ export default function DonatePage() {
                         </Link>
                       </Button>
                       <Button variant="secondary" asChild>
-                        <Link
-                          target="_blank"
-                          href="/legacy-brick-sale-form.pdf"
-                        >
+                        <Link target="_blank" href="/legacy-brick-sale-form.pdf">
                           Brick Form
                         </Link>
                       </Button>
@@ -161,9 +141,8 @@ export default function DonatePage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg text-muted-foreground mb-6">
-                      We always happily accept premade baskets, but we are also
-                      happy to make a basket for you! Thank you for your
-                      constant support of our mission.
+                      We always happily accept premade baskets, but we are also happy to make a
+                      basket for you! Thank you for your constant support of our mission.
                     </p>
                     <Button asChild>
                       <Link
@@ -181,10 +160,9 @@ export default function DonatePage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg text-muted-foreground mb-6">
-                      We are always in need of items. Please consider
-                      patronizing our kind partner, Attica Pharmacy for many of
-                      the resident care items. We also have an Amazon Wish List
-                      for your convenience.
+                      We are always in need of items. Please consider patronizing our kind partner,
+                      Attica Pharmacy for many of the resident care items. We also have an Amazon
+                      Wish List for your convenience.
                     </p>
                     <div className="flex gap-2">
                       <Button asChild>
@@ -213,16 +191,13 @@ export default function DonatePage() {
             <div className="container">
               <div className="flex flex-col lg:flex-row items-start gap-12">
                 <div className="lg:w-1/2 text-center md:text-start">
-                  <h2 className="text-3xl font-semibold mb-6">
-                    The Impact of Your Generosity
-                  </h2>
+                  <h2 className="text-3xl font-semibold mb-6">The Impact of Your Generosity</h2>
                   <div className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Your donations directly improve the lives of our
-                      residents. From enhancing our facilities to providing
-                      engaging activities and therapies, every contribution
-                      helps create a more comfortable and enriching environment
-                      for those in our care.
+                      Your donations directly improve the lives of our residents. From enhancing our
+                      facilities to providing engaging activities and therapies, every contribution
+                      helps create a more comfortable and enriching environment for those in our
+                      care.
                     </p>
                   </div>
                 </div>
@@ -237,8 +212,8 @@ export default function DonatePage() {
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                       <p className="text-sm text-white">
-                        Thanks Wyoming County Correctional Facility Employees
-                        for their generous annual donation.
+                        Thanks Wyoming County Correctional Facility Employees for their generous
+                        annual donation.
                       </p>
                     </div>
                   </div>

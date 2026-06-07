@@ -1,10 +1,7 @@
 import { z } from "zod";
 
 export const emailSchema = z.object({
-  email: z
-    .string()
-    .email("Please enter a valid email address")
-    .min(1, "Email is required"),
+  email: z.string().email("Please enter a valid email address").min(1, "Email is required"),
 });
 
 export const volunteerFormSchema = z.object({
@@ -18,21 +15,15 @@ export const volunteerFormSchema = z.object({
   homePhone: z.string().optional(),
   mobilePhone: z.string().optional(),
   email: z.string().email("Invalid email address"),
-  interestedRoles: z
-    .array(z.string())
-    .refine((value) => value.some((item) => item), {
-      message: "Please select at least one role.",
-    }),
-  availableDays: z
-    .array(z.string())
-    .refine((value) => value.some((item) => item), {
-      message: "Please select at least one day.",
-    }),
-  availableTimes: z
-    .array(z.string())
-    .refine((value) => value.some((item) => item), {
-      message: "Please select at least one time.",
-    }),
+  interestedRoles: z.array(z.string()).refine((value) => value.some((item) => item), {
+    message: "Please select at least one role.",
+  }),
+  availableDays: z.array(z.string()).refine((value) => value.some((item) => item), {
+    message: "Please select at least one day.",
+  }),
+  availableTimes: z.array(z.string()).refine((value) => value.some((item) => item), {
+    message: "Please select at least one time.",
+  }),
   hasVolunteeredBefore: z.string().min(1, "Please select an option"),
   volunteerReason: z.string().min(1, "Please provide more detail"),
   caregiverExperience: z.string().min(1, "Please provide more detail"),

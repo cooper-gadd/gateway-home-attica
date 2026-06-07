@@ -1,11 +1,4 @@
-import {
-  Facebook,
-  Instagram,
-  Mail,
-  MapPin,
-  Phone,
-  Printer,
-} from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, Printer } from "lucide-react";
 
 export function SiteFooter() {
   return (

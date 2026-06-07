@@ -1,14 +1,8 @@
-import {
-  emailSchema,
-  employmentFormSchema,
-  volunteerFormSchema,
-} from "@/lib/schemas";
+import { emailSchema, employmentFormSchema, volunteerFormSchema } from "@/lib/schemas";
 import { FC } from "react";
 import { z } from "zod";
 
-export const SubscribeTemplate: FC<Readonly<z.infer<typeof emailSchema>>> = ({
-  email,
-}) => (
+export const SubscribeTemplate: FC<Readonly<z.infer<typeof emailSchema>>> = ({ email }) => (
   <div>
     <h1>New Mailing List Subscription</h1>
     <p>A new user has requested to join the mailing list:</p>
@@ -45,8 +39,8 @@ export const VolunteerApplicationTemplate: FC<{
       <strong>Mobile Phone:</strong> {formData.mobilePhone || "Not provided"}
     </p>
     <p>
-      <strong>Address:</strong> {formData.streetAddress}, {formData.city},{" "}
-      {formData.state} {formData.zipCode}
+      <strong>Address:</strong> {formData.streetAddress}, {formData.city}, {formData.state}{" "}
+      {formData.zipCode}
     </p>
 
     <h2>Volunteer Preferences</h2>
@@ -82,19 +76,16 @@ export const VolunteerApplicationTemplate: FC<{
 
     <h2>References</h2>
     <p>
-      <strong>Reference 1:</strong> {formData.reference1FirstName}{" "}
-      {formData.reference1LastName} - {formData.reference1Phone}
+      <strong>Reference 1:</strong> {formData.reference1FirstName} {formData.reference1LastName} -{" "}
+      {formData.reference1Phone}
     </p>
     <p>
-      <strong>Reference 2:</strong> {formData.reference2FirstName}{" "}
-      {formData.reference2LastName} - {formData.reference2Phone}
+      <strong>Reference 2:</strong> {formData.reference2FirstName} {formData.reference2LastName} -{" "}
+      {formData.reference2Phone}
     </p>
 
     <hr />
-    <p>
-      This is an automated message from your website volunteer application
-      system.
-    </p>
+    <p>This is an automated message from your website volunteer application system.</p>
   </div>
 );
 
@@ -107,8 +98,7 @@ export const EmploymentApplicationTemplate: FC<{
 
     <h2>Personal Information</h2>
     <p>
-      <strong>Name:</strong> {formData.firstName} {formData.middleName || ""}{" "}
-      {formData.lastName}
+      <strong>Name:</strong> {formData.firstName} {formData.middleName || ""} {formData.lastName}
     </p>
     <p>
       <strong>Email:</strong> {formData.email}
@@ -117,8 +107,8 @@ export const EmploymentApplicationTemplate: FC<{
       <strong>Phone:</strong> {formData.phone}
     </p>
     <p>
-      <strong>Address:</strong> {formData.address}, {formData.city},{" "}
-      {formData.state} {formData.zipCode}
+      <strong>Address:</strong> {formData.address}, {formData.city}, {formData.state}{" "}
+      {formData.zipCode}
     </p>
 
     <h2>Eligibility</h2>
@@ -140,8 +130,7 @@ export const EmploymentApplicationTemplate: FC<{
       <strong>Education Level:</strong> {formData.educationLevel}
     </p>
     <p>
-      <strong>Special License/Certification:</strong>{" "}
-      {formData.specialLicenseOrCertification}
+      <strong>Special License/Certification:</strong> {formData.specialLicenseOrCertification}
     </p>
 
     <h2>Work History</h2>
@@ -153,8 +142,7 @@ export const EmploymentApplicationTemplate: FC<{
       <strong>Position:</strong> {formData.position1}
     </p>
     <p>
-      <strong>Duration:</strong>{" "}
-      {formData.startDate1?.toLocaleDateString() || "Not provided"} -{" "}
+      <strong>Duration:</strong> {formData.startDate1?.toLocaleDateString() || "Not provided"} -{" "}
       {formData.endDate1?.toLocaleDateString() || "Not provided"}
     </p>
 
@@ -166,8 +154,7 @@ export const EmploymentApplicationTemplate: FC<{
       <strong>Position:</strong> {formData.position2}
     </p>
     <p>
-      <strong>Duration:</strong>{" "}
-      {formData.startDate2?.toLocaleDateString() || "Not provided"} -{" "}
+      <strong>Duration:</strong> {formData.startDate2?.toLocaleDateString() || "Not provided"} -{" "}
       {formData.endDate2?.toLocaleDateString() || "Not provided"}
     </p>
 
@@ -179,25 +166,21 @@ export const EmploymentApplicationTemplate: FC<{
       <strong>Position:</strong> {formData.position3}
     </p>
     <p>
-      <strong>Duration:</strong>{" "}
-      {formData.startDate3?.toLocaleDateString() || "Not provided"} -{" "}
+      <strong>Duration:</strong> {formData.startDate3?.toLocaleDateString() || "Not provided"} -{" "}
       {formData.endDate3?.toLocaleDateString() || "Not provided"}
     </p>
 
     <h2>References</h2>
     <p>
-      <strong>Reference 1:</strong> {formData.reference1FirstName}{" "}
-      {formData.reference1LastName} - {formData.reference1Phone}
+      <strong>Reference 1:</strong> {formData.reference1FirstName} {formData.reference1LastName} -{" "}
+      {formData.reference1Phone}
     </p>
     <p>
-      <strong>Reference 2:</strong> {formData.reference2FirstName}{" "}
-      {formData.reference2LastName} - {formData.reference2Phone}
+      <strong>Reference 2:</strong> {formData.reference2FirstName} {formData.reference2LastName} -{" "}
+      {formData.reference2Phone}
     </p>
 
     <hr />
-    <p>
-      This is an automated message from your website employment application
-      system.
-    </p>
+    <p>This is an automated message from your website employment application system.</p>
   </div>
 );

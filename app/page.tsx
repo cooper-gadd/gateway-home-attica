@@ -178,21 +178,19 @@ export default function Home() {
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl font-semibold mb-8">Our Mission</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Gateway Home is established to give comfort care to people who
-                  are medically deemed to be in their last stages of life (three
-                  months or less). Our organization will provide both medical
-                  and spiritual care to support the residents as they pass from
-                  this life to the next.
+                  Gateway Home is established to give comfort care to people who are medically
+                  deemed to be in their last stages of life (three months or less). Our organization
+                  will provide both medical and spiritual care to support the residents as they pass
+                  from this life to the next.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Gateway Home staff and volunteers are committed to provide
-                  dignified care, comfort, and support for our residents and
-                  their families. Gateway Home is a nonprofit organization, and
-                  does not charge for services provided.
+                  Gateway Home staff and volunteers are committed to provide dignified care,
+                  comfort, and support for our residents and their families. Gateway Home is a
+                  nonprofit organization, and does not charge for services provided.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Funding is accomplished through donations, bequests, and
-                  community support. Admission is based solely on need.
+                  Funding is accomplished through donations, bequests, and community support.
+                  Admission is based solely on need.
                 </p>
               </div>
             </div>
@@ -206,40 +204,32 @@ export default function Home() {
             <div className="container">
               <div className="flex flex-col lg:flex-row items-start gap-12">
                 <div className="lg:w-1/2 text-center md:text-start">
-                  <h2 className="text-3xl font-semibold mb-6">
-                    Our Approach to Resident Care
-                  </h2>
+                  <h2 className="text-3xl font-semibold mb-6">Our Approach to Resident Care</h2>
                   <div className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Gateway Home is an empathetic and loving comfort care home
-                      for the terminally ill. It is a home-like setting that
-                      offers free comfort care for those in their last three
-                      months of a terminal illness.
+                      Gateway Home is an empathetic and loving comfort care home for the terminally
+                      ill. It is a home-like setting that offers free comfort care for those in
+                      their last three months of a terminal illness.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      Our primary goal is to provide comfort care, symptom
-                      control and pain management for our residents, as well as
-                      to be a source of respite care for the families and
-                      friends. Hands-on resident care is provided around the
-                      clock, along with companionship, emotional and spiritual
-                      support. Comfort care honors the well-being of every
-                      person and respects the dignity of human life.
+                      Our primary goal is to provide comfort care, symptom control and pain
+                      management for our residents, as well as to be a source of respite care for
+                      the families and friends. Hands-on resident care is provided around the clock,
+                      along with companionship, emotional and spiritual support. Comfort care honors
+                      the well-being of every person and respects the dignity of human life.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      Admission to Gateway Home is based solely on need,
-                      regardless of age, sex, race, religion or other
-                      distinctions. Referrals come from several sources:
-                      Hospice, health care agencies, hospitals, physicians,
-                      social workers, clergy, family, friends or the person
-                      themselves. Priority is given to those who cannot receive
-                      adequate care at home.
+                      Admission to Gateway Home is based solely on need, regardless of age, sex,
+                      race, religion or other distinctions. Referrals come from several sources:
+                      Hospice, health care agencies, hospitals, physicians, social workers, clergy,
+                      family, friends or the person themselves. Priority is given to those who
+                      cannot receive adequate care at home.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      There is no cost to the families that we serve, nor do we
-                      receive any reimbursement from insurance companies.
-                      Gateway Home is funded solely by donations, fundraising,
-                      memorial contributions and through the generosity of our
-                      community.
+                      There is no cost to the families that we serve, nor do we receive any
+                      reimbursement from insurance companies. Gateway Home is funded solely by
+                      donations, fundraising, memorial contributions and through the generosity of
+                      our community.
                     </p>
                   </div>
                 </div>
@@ -264,34 +254,26 @@ export default function Home() {
             <div className="container">
               <div className="flex flex-col lg:flex-row items-start gap-12">
                 <div className="lg:w-1/2 text-center md:text-start">
-                  <h2 className="text-3xl font-semibold mb-6">
-                    Living at Gateway Home
-                  </h2>
+                  <h2 className="text-3xl font-semibold mb-6">Living at Gateway Home</h2>
                   <div className="space-y-6">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Gateway Home is a place where residents can live out their
-                      final days in comfort and dignity. Our staff and
-                      volunteers are dedicated to providing the highest quality
-                      care to our residents, and we strive to create a warm and
-                      welcoming environment where residents can feel at home. We
-                      offer a range of services to meet the unique needs of each
-                      resident, including medical care, emotional support, and
-                      spiritual care. Our goal is to create a sense of community
-                      and belonging for all who live here, and we are committed
-                      to providing personalized care that meets the individual
-                      needs of each resident.
+                      Gateway Home is a place where residents can live out their final days in
+                      comfort and dignity. Our staff and volunteers are dedicated to providing the
+                      highest quality care to our residents, and we strive to create a warm and
+                      welcoming environment where residents can feel at home. We offer a range of
+                      services to meet the unique needs of each resident, including medical care,
+                      emotional support, and spiritual care. Our goal is to create a sense of
+                      community and belonging for all who live here, and we are committed to
+                      providing personalized care that meets the individual needs of each resident.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      At Gateway Home, we are dedicated to providing
-                      compassionate care to our residents and their families,
-                      and we strive to create a peaceful and supportive
-                      environment where residents can feel safe and cared for.
-                      Our staff and volunteers are committed to providing the
-                      highest quality care to our residents, and we work closely
-                      with families to ensure that their loved ones receive the
-                      care and support they need. We are proud to be a part of
-                      the Gateway Home family, and we look forward to welcoming
-                      you to our community.
+                      At Gateway Home, we are dedicated to providing compassionate care to our
+                      residents and their families, and we strive to create a peaceful and
+                      supportive environment where residents can feel safe and cared for. Our staff
+                      and volunteers are committed to providing the highest quality care to our
+                      residents, and we work closely with families to ensure that their loved ones
+                      receive the care and support they need. We are proud to be a part of the
+                      Gateway Home family, and we look forward to welcoming you to our community.
                     </p>
                   </div>
                 </div>
@@ -353,9 +335,7 @@ export default function Home() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-8">
-                Get Involved
-              </h2>
+              <h2 className="text-3xl font-bold text-center mb-8">Get Involved</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <Card className="bg-muted/40">
                   <CardHeader>
@@ -363,8 +343,8 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
-                      Make a difference in the lives of residents by
-                      volunteering your time and skills.
+                      Make a difference in the lives of residents by volunteering your time and
+                      skills.
                     </p>
                     <Button asChild>
                       <Link href="/volunteer">Learn About Volunteering</Link>
@@ -377,8 +357,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
-                      Your donations help us continue providing exceptional care
-                      to our residents.
+                      Your donations help us continue providing exceptional care to our residents.
                     </p>
                     <Button asChild>
                       <Link href="/donate">Make a Donation</Link>
@@ -391,8 +370,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
-                      We&apos;re always looking for compassionate professionals
-                      to join our team.
+                      We&apos;re always looking for compassionate professionals to join our team.
                     </p>
                     <Button asChild>
                       <Link href="/employment">View Open Positions</Link>
@@ -409,16 +387,12 @@ export default function Home() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container">
-              <h2 className="text-3xl font-semibold text-center mb-12">
-                Our Generous Donors
-              </h2>
+              <h2 className="text-3xl font-semibold text-center mb-12">Our Generous Donors</h2>
               <div className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-2xl font-bold text-center">
-                        Platinum
-                      </CardTitle>
+                      <CardTitle className="text-2xl font-bold text-center">Platinum</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ScrollArea className="h-[350px] pr-4">
@@ -435,9 +409,7 @@ export default function Home() {
 
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-2xl font-bold text-center">
-                        Gold
-                      </CardTitle>
+                      <CardTitle className="text-2xl font-bold text-center">Gold</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ScrollArea className="h-[350px] pr-4">
@@ -454,9 +426,7 @@ export default function Home() {
 
                   <Card className="bg-muted/40">
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-2xl font-bold text-center">
-                        Silver
-                      </CardTitle>
+                      <CardTitle className="text-2xl font-bold text-center">Silver</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ScrollArea className="h-[350px] pr-4">
@@ -474,9 +444,7 @@ export default function Home() {
 
                 <Card className="bg-muted/40">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-2xl font-bold text-center">
-                      Community
-                    </CardTitle>
+                    <CardTitle className="text-2xl font-bold text-center">Community</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ScrollArea className="h-[350px] pr-4">
@@ -500,116 +468,86 @@ export default function Home() {
         <div className="container-wrapper">
           <section className="py-24">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-8">
-                Frequently Asked Questions
-              </h2>
-              <Accordion
-                type="single"
-                collapsible
-                className="max-w-2xl mx-auto"
-              >
+              <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+              <Accordion type="single" collapsible className="max-w-2xl mx-auto">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
                     What are Palliative Care, Hospice and Comfort Care?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Palliative care can be appropriate at any stage of an
-                      illness. It is a holistic approach to health care that
-                      goes beyond the physical wellbeing of the resident,
-                      attending to their spiritual, emotional and psychological
-                      needs. Hospice care is a specialized form of palliative
-                      care designed to support those in the final stages of a
-                      terminal illness. Comfort Care is available during the
-                      last 90 days of someone&apos;s life with the resident and
-                      family agreeing there will be no heroic measures taken to
-                      prolong life.
+                      Palliative care can be appropriate at any stage of an illness. It is a
+                      holistic approach to health care that goes beyond the physical wellbeing of
+                      the resident, attending to their spiritual, emotional and psychological needs.
+                      Hospice care is a specialized form of palliative care designed to support
+                      those in the final stages of a terminal illness. Comfort Care is available
+                      during the last 90 days of someone&apos;s life with the resident and family
+                      agreeing there will be no heroic measures taken to prolong life.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>
-                    How is Gateway Home Funded?
-                  </AccordionTrigger>
+                  <AccordionTrigger>How is Gateway Home Funded?</AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Our services are provided free-of-charge to our
-                      home&apos;s residents. We are an independent,
-                      not-for-profit organization and money to run Gateway Home
-                      is generated entirely through community support, donations
-                      and grants. Our annual operating expenses must be covered
-                      by monies received from memorials, honorary donations,
-                      bequests, donations from people, corporations, service
+                      Our services are provided free-of-charge to our home&apos;s residents. We are
+                      an independent, not-for-profit organization and money to run Gateway Home is
+                      generated entirely through community support, donations and grants. Our annual
+                      operating expenses must be covered by monies received from memorials, honorary
+                      donations, bequests, donations from people, corporations, service
                       organizations, plus grants and fund-raising events.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      A nonprofit grant is financial support given to nonprofits
-                      by corporations, foundations, or government agencies. They
-                      are beneficial for nonprofits because they provide the
-                      opportunity for additional funding that doesn&apos;t need
-                      to be paid back and they increase awareness of their
-                      organization. Grants have also allowed us to make some
-                      improvements to our property that wouldn&apos;t have been
-                      possible without the additional funding. Gateway Home
-                      relies solely on fundraising, memorials, donations, and
-                      grants for funding. With operating expenses exceeding
-                      $200k per year a lot of hard work and research is done to
-                      apply for grants in hopes of receiving funds to help keep
-                      our doors open. Gateway Home has been fortunate enough to
-                      be granted several grants over the years that allowed the
-                      doors to open and that have helped make it possible for us
-                      to serve our community.
+                      A nonprofit grant is financial support given to nonprofits by corporations,
+                      foundations, or government agencies. They are beneficial for nonprofits
+                      because they provide the opportunity for additional funding that doesn&apos;t
+                      need to be paid back and they increase awareness of their organization. Grants
+                      have also allowed us to make some improvements to our property that
+                      wouldn&apos;t have been possible without the additional funding. Gateway Home
+                      relies solely on fundraising, memorials, donations, and grants for funding.
+                      With operating expenses exceeding $200k per year a lot of hard work and
+                      research is done to apply for grants in hopes of receiving funds to help keep
+                      our doors open. Gateway Home has been fortunate enough to be granted several
+                      grants over the years that allowed the doors to open and that have helped make
+                      it possible for us to serve our community.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      We have been generously supported by various grant
-                      sources. The <strong>Hope</strong> grant was used for home
-                      improvement. The{" "}
+                      We have been generously supported by various grant sources. The{" "}
+                      <strong>Hope</strong> grant was used for home improvement. The{" "}
                       <strong>Conable Family Foundation</strong> and the{" "}
-                      <strong>East Hill Foundation</strong> grants were utilized
-                      for renovations. The{" "}
-                      <strong>William F. Thiel Trust</strong> provided us with
-                      funds for medical equipment. The{" "}
-                      <strong>Ralph C. Wilson Legacy Funds</strong> were used
-                      for caregiver training and operating expenses.{" "}
-                      <strong>Home Depot</strong> provided us with a grant for
-                      an ADA compliant ramp. The{" "}
-                      <strong>Garman Family Foundation</strong> funded a
-                      generator for us. <strong>United Way</strong> contributed
-                      to our operating expenses, and the{" "}
-                      <strong>Odd Fellow & Rebekah</strong> grant was used for
-                      nurses and care aid payroll. These grants have played a
-                      significant role in helping us continue to fulfill our
-                      mission.
+                      <strong>East Hill Foundation</strong> grants were utilized for renovations.
+                      The <strong>William F. Thiel Trust</strong> provided us with funds for medical
+                      equipment. The <strong>Ralph C. Wilson Legacy Funds</strong> were used for
+                      caregiver training and operating expenses. <strong>Home Depot</strong>{" "}
+                      provided us with a grant for an ADA compliant ramp. The{" "}
+                      <strong>Garman Family Foundation</strong> funded a generator for us.{" "}
+                      <strong>United Way</strong> contributed to our operating expenses, and the{" "}
+                      <strong>Odd Fellow & Rebekah</strong> grant was used for nurses and care aid
+                      payroll. These grants have played a significant role in helping us continue to
+                      fulfill our mission.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>
-                    Do you receive help from the government?
-                  </AccordionTrigger>
+                  <AccordionTrigger>Do you receive help from the government?</AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      We do not receive any financial funding from the
-                      government or from insurance companies.
+                      We do not receive any financial funding from the government or from insurance
+                      companies.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>
-                    Who provides direct care at Gateway Home?
-                  </AccordionTrigger>
+                  <AccordionTrigger>Who provides direct care at Gateway Home?</AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      All care given at Gateway Home is provided by volunteers
-                      or staff members who are trained to provide the best
-                      possible care. We change caregivers every two hours during
-                      our day and evening shifts so our caregivers come in
-                      renewed and refreshed. Our overnight shift from 10-8 is
-                      usually manned by one caregiver. Interested individuals do
-                      not need to have any healthcare experience to become a
-                      volunteer – just an open heart and a willingness to learn
-                      how to care for another person. We help volunteers do the
-                      rest!
+                      All care given at Gateway Home is provided by volunteers or staff members who
+                      are trained to provide the best possible care. We change caregivers every two
+                      hours during our day and evening shifts so our caregivers come in renewed and
+                      refreshed. Our overnight shift from 10-8 is usually manned by one caregiver.
+                      Interested individuals do not need to have any healthcare experience to become
+                      a volunteer – just an open heart and a willingness to learn how to care for
+                      another person. We help volunteers do the rest!
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -619,39 +557,31 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Admission to Gateway Home is based on an assessment of
-                      those who have the greatest need and the fewest options. A
-                      physician must have determined that the person has a
-                      terminal illness and is in their last three months of
-                      life. We are not able to accept every person who is
-                      referred and can only care for up to two residents at one
-                      time. Each case is evaluated carefully by our Assessment
-                      Caregivers and Director of Resident Care and priority is
-                      given to those people who have the greatest need at the
-                      time; i.e., those who are at home with limited adequate
-                      care giving support. Other considerations involve the
-                      complexity of nursing care that some people may require.
+                      Admission to Gateway Home is based on an assessment of those who have the
+                      greatest need and the fewest options. A physician must have determined that
+                      the person has a terminal illness and is in their last three months of life.
+                      We are not able to accept every person who is referred and can only care for
+                      up to two residents at one time. Each case is evaluated carefully by our
+                      Assessment Caregivers and Director of Resident Care and priority is given to
+                      those people who have the greatest need at the time; i.e., those who are at
+                      home with limited adequate care giving support. Other considerations involve
+                      the complexity of nursing care that some people may require.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      We do not use intravenous fluids, feeding tubes or CPR
-                      (resuscitation). It ensures that comfort care, pain
-                      management, and symptom control will accompany a natural
-                      death process, in an atmosphere filled with love. It is
-                      not uncommon to have multiple people waiting for the next
-                      available bed. When a bed is available, our Assessment
-                      team evaluates all who are waiting, and choose the one who
-                      has the greatest need; not who is next on the list for
-                      admission.
+                      We do not use intravenous fluids, feeding tubes or CPR (resuscitation). It
+                      ensures that comfort care, pain management, and symptom control will accompany
+                      a natural death process, in an atmosphere filled with love. It is not uncommon
+                      to have multiple people waiting for the next available bed. When a bed is
+                      available, our Assessment team evaluates all who are waiting, and choose the
+                      one who has the greatest need; not who is next on the list for admission.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Not every referral qualifies for residency at Gateway Home
-                      — but every person deserves comfort, dignity, and support.
-                      Gateway Casa Care is our newest program, created to help
-                      individuals remain safely cared for in their own homes
-                      when admission isn&apos;t possible. Through this program,
-                      families and caregivers can receive essential
-                      comfort-focused supplies and support to ease the journey
-                      of end-of-life at home.
+                      Not every referral qualifies for residency at Gateway Home — but every person
+                      deserves comfort, dignity, and support. Gateway Casa Care is our newest
+                      program, created to help individuals remain safely cared for in their own
+                      homes when admission isn&apos;t possible. Through this program, families and
+                      caregivers can receive essential comfort-focused supplies and support to ease
+                      the journey of end-of-life at home.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -661,41 +591,32 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      The process for admission to Gateway Home begins with a
-                      referral from a physician, social worker, family member,
-                      friend, or other healthcare provider. Once a referral is
-                      received, our Assessment team will contact the person who
-                      is referred to schedule an assessment. The assessment is
-                      done in the person&apos;s home or hospital room and takes
-                      about an hour. During the assessment, the person&apos;s
-                      medical history, current symptoms, and care needs are
-                      discussed. The person&apos;s family members or caregivers
-                      are also encouraged to participate in the assessment.
-                      After the assessment is completed, the person is placed on
-                      our waiting list. When a bed becomes available, the person
-                      is admitted to Gateway Home. The person&apos;s family
-                      members or caregivers are encouraged to visit Gateway Home
-                      before the person is admitted to become familiar with the
-                      facility and meet the staff. Once the person is admitted,
-                      the person&apos;s family members or caregivers are
-                      encouraged to visit as often as they like. We also
-                      encourage family members or caregivers to participate in
-                      the person&apos;s care as much as they are able. We
-                      believe that family members and caregivers are an
-                      important part of the person&apos;s care team and we
-                      welcome their involvement. We also provide support and
-                      education to family members and caregivers to help them
-                      care for their loved one. We believe that involving family
-                      members and caregivers in the person&apos;s care helps to
-                      improve the person&apos;s quality of life and provides
-                      comfort and support to the person and their family members
-                      or caregivers. We also provide support and education to
-                      family members and caregivers to help them care for their
-                      loved one. We believe that involving family members and
-                      caregivers in the person&apos;s care helps to improve the
-                      person&apos;s quality of life and provides comfort and
-                      support to the person and their family members or
-                      caregivers.
+                      The process for admission to Gateway Home begins with a referral from a
+                      physician, social worker, family member, friend, or other healthcare provider.
+                      Once a referral is received, our Assessment team will contact the person who
+                      is referred to schedule an assessment. The assessment is done in the
+                      person&apos;s home or hospital room and takes about an hour. During the
+                      assessment, the person&apos;s medical history, current symptoms, and care
+                      needs are discussed. The person&apos;s family members or caregivers are also
+                      encouraged to participate in the assessment. After the assessment is
+                      completed, the person is placed on our waiting list. When a bed becomes
+                      available, the person is admitted to Gateway Home. The person&apos;s family
+                      members or caregivers are encouraged to visit Gateway Home before the person
+                      is admitted to become familiar with the facility and meet the staff. Once the
+                      person is admitted, the person&apos;s family members or caregivers are
+                      encouraged to visit as often as they like. We also encourage family members or
+                      caregivers to participate in the person&apos;s care as much as they are able.
+                      We believe that family members and caregivers are an important part of the
+                      person&apos;s care team and we welcome their involvement. We also provide
+                      support and education to family members and caregivers to help them care for
+                      their loved one. We believe that involving family members and caregivers in
+                      the person&apos;s care helps to improve the person&apos;s quality of life and
+                      provides comfort and support to the person and their family members or
+                      caregivers. We also provide support and education to family members and
+                      caregivers to help them care for their loved one. We believe that involving
+                      family members and caregivers in the person&apos;s care helps to improve the
+                      person&apos;s quality of life and provides comfort and support to the person
+                      and their family members or caregivers.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -705,61 +626,51 @@ export default function Home() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      For essential documents, please bring current medications,
-                      insurance and Social Security cards, and DNR, Health Care
-                      Proxy, and MOLST forms.
+                      For essential documents, please bring current medications, insurance and
+                      Social Security cards, and DNR, Health Care Proxy, and MOLST forms.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Personal care items should include comfortable clothing
-                      such as pajamas and undergarments, as well as favorite
-                      blankets and pillows.
+                      Personal care items should include comfortable clothing such as pajamas and
+                      undergarments, as well as favorite blankets and pillows.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      For comfort and entertainment, we recommend bringing
-                      special pictures and photos, favorite foods, snacks, and
-                      drinks, as well as music/media players and headphones.
+                      For comfort and entertainment, we recommend bringing special pictures and
+                      photos, favorite foods, snacks, and drinks, as well as music/media players and
+                      headphones.
                     </p>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      Please also bring contact information including addresses,
-                      phone numbers, and emails for family and friends.
+                      Please also bring contact information including addresses, phone numbers, and
+                      emails for family and friends.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-8">
                   <AccordionTrigger>
-                    What if my loved one who is residing at Gateway Home lives
-                    beyond three months?
+                    What if my loved one who is residing at Gateway Home lives beyond three months?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      At times there may be remission of a person&apos;s
-                      disease, and it may be necessary to be discharged from
-                      Gateway Home to an alternative placement: such as home, or
-                      moving in with a family member, or to a Nursing home.
-                      It&apos;s amazing to see, and such a blessing, that with
-                      some conditions, proper symptom control management,
-                      socialization and tender loving care, people do go into
-                      remission and live longer than what was expected. The
-                      staff at Gateway Home will work closely with the Hospice
-                      team and family to determine the best alternative
-                      placement for our resident. Residents may return to
-                      Gateway Home and die peacefully when that time is
-                      appropriate and a bed is available.
+                      At times there may be remission of a person&apos;s disease, and it may be
+                      necessary to be discharged from Gateway Home to an alternative placement: such
+                      as home, or moving in with a family member, or to a Nursing home. It&apos;s
+                      amazing to see, and such a blessing, that with some conditions, proper symptom
+                      control management, socialization and tender loving care, people do go into
+                      remission and live longer than what was expected. The staff at Gateway Home
+                      will work closely with the Hospice team and family to determine the best
+                      alternative placement for our resident. Residents may return to Gateway Home
+                      and die peacefully when that time is appropriate and a bed is available.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-9">
-                  <AccordionTrigger>
-                    Are volunteer opportunities available?
-                  </AccordionTrigger>
+                  <AccordionTrigger>Are volunteer opportunities available?</AccordionTrigger>
                   <AccordionContent>
                     <p className="leading-7 [&:not(:first-child)]:mt-6">
-                      YES! In fact, we could not operate without volunteers.
-                      There are many volunteer roles, so please consider your
-                      individual gifts and how you might utilize those to
-                      support the Gateway Home. The greatest need is resident
-                      care volunteers. If you prefer not to work with residents,
-                      there are numerous other opportunities available.
+                      YES! In fact, we could not operate without volunteers. There are many
+                      volunteer roles, so please consider your individual gifts and how you might
+                      utilize those to support the Gateway Home. The greatest need is resident care
+                      volunteers. If you prefer not to work with residents, there are numerous other
+                      opportunities available.
                     </p>
                   </AccordionContent>
                 </AccordionItem>

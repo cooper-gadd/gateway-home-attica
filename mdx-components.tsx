@@ -22,31 +22,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </main>
     ),
     h1: ({ className, ...props }) => (
-      <h1
-        className={cn(
-          "text-4xl font-bold mb-4",
-          className,
-        )}
-        {...props}
-      />
+      <h1 className={cn("text-4xl font-bold mb-4", className)} {...props} />
     ),
     h2: ({ className, ...props }) => (
-      <h2
-        className={cn(
-          "text-3xl font-semibold mb-6 mt-12 first:mt-0",
-          className,
-        )}
-        {...props}
-      />
+      <h2 className={cn("text-3xl font-semibold mb-6 mt-12 first:mt-0", className)} {...props} />
     ),
     h3: ({ className, ...props }) => (
-      <h3
-        className={cn(
-          "text-2xl font-semibold mb-4 mt-8",
-          className,
-        )}
-        {...props}
-      />
+      <h3 className={cn("text-2xl font-semibold mb-4 mt-8", className)} {...props} />
     ),
     p: ({ className, ...props }) => (
       <p
@@ -54,12 +36,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {...props}
       />
     ),
-    ul: ({ className, ...props }) => (
-      <ul className={cn("space-y-2 mb-6", className)} {...props} />
-    ),
-    ol: ({ className, ...props }) => (
-      <ol className={cn("space-y-2 mb-6", className)} {...props} />
-    ),
+    ul: ({ className, ...props }) => <ul className={cn("space-y-2 mb-6", className)} {...props} />,
+    ol: ({ className, ...props }) => <ol className={cn("space-y-2 mb-6", className)} {...props} />,
     li: ({ className, ...props }) => (
       <li className={cn("text-lg text-muted-foreground", className)} {...props} />
     ),
@@ -83,11 +61,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     img: ({ className, alt, ...props }) => (
       // eslint-disable-next-line @next/next/no-img-element
-      <img
-        className={cn("rounded-lg border my-6", className)}
-        alt={alt}
-        {...props}
-      />
+      <img className={cn("rounded-lg border my-6", className)} alt={alt} {...props} />
     ),
     hr: ({ ...props }) => <hr className="my-12" {...props} />,
     table: ({ className, ...props }) => (
@@ -98,10 +72,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     thead: ({ children }) => <thead>{children}</thead>,
     tbody: ({ children }) => <tbody>{children}</tbody>,
     tr: ({ className, ...props }) => (
-      <tr
-        className={cn("m-0 border-t p-0 even:bg-muted", className)}
-        {...props}
-      />
+      <tr className={cn("m-0 border-t p-0 even:bg-muted", className)} {...props} />
     ),
     th: ({ className, ...props }) => (
       <th

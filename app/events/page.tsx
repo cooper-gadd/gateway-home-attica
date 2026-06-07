@@ -1,14 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Beef,
-  Calendar,
-  Car,
-  Clock,
-  Flag,
-  LucideProps,
-  MapPin,
-  Trophy,
-} from "lucide-react";
+import { Beef, Calendar, Car, Clock, Flag, LucideProps, MapPin, Trophy } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -22,9 +13,7 @@ const events: {
   title: string;
   date: string;
   description: string;
-  icon: ForwardRefExoticComponent<
-    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
-  >;
+  icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
   location?: string;
   time?: string;
   link?: string;
@@ -96,9 +85,7 @@ export default function EventsPage() {
                     </div>
                   </div>
                   <div className="flex-grow">
-                    <h2 className="text-3xl font-semibold mb-4">
-                      No Upcoming Events
-                    </h2>
+                    <h2 className="text-3xl font-semibold mb-4">No Upcoming Events</h2>
                     <div className="flex flex-wrap items-center gap-4 text-sm mb-6">
                       <span className="flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full">
                         <Calendar className="h-4 w-4" />
@@ -106,10 +93,9 @@ export default function EventsPage() {
                       </span>
                     </div>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      There are currently no upcoming events scheduled. Please
-                      check back later for future events supporting Gateway
-                      Home. We regularly organize fundraisers and community
-                      gatherings to support our mission.
+                      There are currently no upcoming events scheduled. Please check back later for
+                      future events supporting Gateway Home. We regularly organize fundraisers and
+                      community gatherings to support our mission.
                     </p>
                   </div>
                 </div>
@@ -130,9 +116,7 @@ export default function EventsPage() {
                       </div>
                     </div>
                     <div className="flex-grow">
-                      <h2 className="text-3xl font-semibold mb-4">
-                        {event.title}
-                      </h2>
+                      <h2 className="text-3xl font-semibold mb-4">{event.title}</h2>
                       <div className="flex flex-wrap items-center gap-4 text-sm mb-6">
                         <span className="flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full">
                           <Calendar className="h-4 w-4" />
@@ -156,11 +140,7 @@ export default function EventsPage() {
                       </p>
                       {event.link && event.linkText && (
                         <Button asChild className="mt-6 px-6">
-                          <Link
-                            href={event.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
+                          <Link href={event.link} target="_blank" rel="noopener noreferrer">
                             {event.linkText}
                           </Link>
                         </Button>
@@ -179,13 +159,10 @@ export default function EventsPage() {
           <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-6">
-                  Host Your Own Fundraiser
-                </h2>
+                <h2 className="text-3xl font-bold mb-6">Host Your Own Fundraiser</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Interested in organizing a fundraiser to support Gateway Home?
-                  We welcome community-led initiatives that help us continue our
-                  mission.
+                  Interested in organizing a fundraiser to support Gateway Home? We welcome
+                  community-led initiatives that help us continue our mission.
                 </p>
                 <a
                   href="/contact"

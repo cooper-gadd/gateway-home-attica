@@ -108,8 +108,8 @@ export default function LeadershipPage() {
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="text-4xl font-bold mb-4">Our Leadership Team</h1>
                 <p className="text-lg text-muted-foreground">
-                  Meet the dedicated team who guide Gateway Home&apos;s mission
-                  to provide exceptional care and support for our residents.
+                  Meet the dedicated team who guide Gateway Home&apos;s mission to provide
+                  exceptional care and support for our residents.
                 </p>
               </div>
             </div>
@@ -128,24 +128,18 @@ export default function LeadershipPage() {
                       <div
                         className={cn(
                           "aspect-[3/4]",
-                          !member.image &&
-                            "dark:brightness-[0.2] dark:grayscale",
+                          !member.image && "dark:brightness-[0.2] dark:grayscale",
                         )}
                       >
                         <Image
-                          src={
-                            member.image ??
-                            "/placeholder.svg?height=400&width=300"
-                          }
+                          src={member.image ?? "/placeholder.svg?height=400&width=300"}
                           alt={member.name}
                           fill
                           className="object-cover"
                         />
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-                        <h2 className="text-2xl font-semibold mb-1">
-                          {member.name}
-                        </h2>
+                        <h2 className="text-2xl font-semibold mb-1">{member.name}</h2>
                         <p className="text-lg text-gray-200">{member.role}</p>
                       </div>
                     </div>
