@@ -31,10 +31,13 @@ const events: {
     linkText: "Registration Form",
   },
   {
-    title: "Golfing for Gateway",
+    title: "Golfing for Gateway Home Comfort Care — 9th Annual Golf Tournament",
     date: "July 23, 2026",
-    description: "4 person scramble, 18 holes.",
+    description:
+      "18-hole scramble — $100 per golfer or $400 per team. Fee includes 18 holes with cart, hot dog at the turn, catered dinner immediately following golf, and prizes. Entry deadline July 13 or until sold out (22 teams max). Dinner & awards to follow; dinner-only tickets available for $25. Contact Sara or Sue at 585-708-4331.",
     icon: Flag,
+    time: "8:00 - 9:15 AM Registration | 9:30 AM Shotgun Start",
+    location: "Quiet Times Golf Course, 2220 Stedman Rd., Attica, NY 14011",
   },
   {
     title: "Junkyard Reunion",
