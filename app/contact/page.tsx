@@ -1,4 +1,3 @@
-import { SubscribeForm } from "@/components/subscribe-form";
 import { Facebook, FileText, Instagram, Mail, MapPinHouse, Phone, Printer } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -148,32 +147,26 @@ export default function ContactPage() {
           <section className="py-24">
             <div className="container">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl font-semibold mb-6">Stay Connected</h2>
-                <p className="text-lg mb-8">
-                  Subscribe to our newsletter for updates and resources.
-                </p>
-                <SubscribeForm />
-                <div className="mt-12">
-                  <p className="font-medium mb-6 text-xl">Check out our recent newsletters</p>
-                  <div className="grid gap-4">
-                    {newsletters.map((newsletter) => (
-                      <Link
-                        key={newsletter.id}
-                        href={newsletter.pdfUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-between p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
-                      >
-                        <div className="flex items-center">
-                          <FileText className="h-5 w-5 mr-3 text-primary" />
-                          <div className="flex items-center gap-2">
-                            <span className="font-medium text-lg">{newsletter.season}</span>
-                            <span className="text-muted-foreground">{newsletter.year}</span>
-                          </div>
+                <h2 className="text-3xl font-semibold mb-6">Newsletters</h2>
+                <p className="font-medium mb-6 text-xl">Check out our recent newsletters</p>
+                <div className="grid gap-4">
+                  {newsletters.map((newsletter) => (
+                    <Link
+                      key={newsletter.id}
+                      href={newsletter.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-4 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
+                    >
+                      <div className="flex items-center">
+                        <FileText className="h-5 w-5 mr-3 text-primary" />
+                        <div className="flex items-center gap-2">
+                          <span className="font-medium text-lg">{newsletter.season}</span>
+                          <span className="text-muted-foreground">{newsletter.year}</span>
                         </div>
-                      </Link>
-                    ))}
-                  </div>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
