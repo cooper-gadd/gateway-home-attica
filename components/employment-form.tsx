@@ -39,6 +39,8 @@ import {
 } from "@/components/ui/empty";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
+const positions = ["RN/LPN", "Care Aide"] as const;
+
 const yesNoOptions = ["Yes", "No"] as const;
 
 const educationLevels = [
@@ -65,6 +67,7 @@ export function EmploymentForm() {
       zipCode: "",
       is18YearsOld: "",
       isEmployed: "",
+      position: "",
       isLegallyEligible: "",
       isFelonOrMisdemeanant: "",
       educationLevel: "",
@@ -262,6 +265,31 @@ export function EmploymentForm() {
             <div className="space-y-6">
               <h3 className="text-lg font-medium">Employment Information</h3>
               <div className="space-y-4">
+                <FormField
+                  control={form.control}
+                  name="position"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Position Applied For</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select a position" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          {positions.map((position) => (
+                            <SelectItem key={position} value={position}>
+                              {position}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
                 <FormField
                   control={form.control}
                   name="is18YearsOld"

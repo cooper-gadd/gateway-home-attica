@@ -106,6 +106,9 @@ export const EmploymentApplicationTemplate: FC<{
       <strong>Currently Employed:</strong> {formData.isEmployed}
     </p>
     <p>
+      <strong>Position Applied For:</strong> {formData.position}
+    </p>
+    <p>
       <strong>Legally Eligible to Work:</strong> {formData.isLegallyEligible}
     </p>
     <p>

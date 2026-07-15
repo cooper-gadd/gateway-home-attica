@@ -72,18 +72,20 @@ export default function EmploymentPage() {
         <div className="container-wrapper">
           <section id="openings" className="py-24">
             <div className="container">
-              <h2 className="text-3xl font-semibold text-center mb-12">RN/LPN Position</h2>
-              <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-semibold text-center mb-12">Open Positions</h2>
+              <div className="max-w-3xl mx-auto space-y-16">
                 <div className="space-y-8">
+                  <h3 className="text-2xl font-semibold">RN/LPN Position</h3>
+
                   <div>
-                    <h3 className="text-2xl font-semibold mb-4">Position Overview</h3>
+                    <h4 className="text-xl font-semibold mb-4">Position Overview</h4>
                     <p className="text-lg text-muted-foreground mb-4">
                       24 Hour Shift position, reports to Director of Resident Care.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-semibold mb-4">Responsibilities</h3>
+                    <h4 className="text-xl font-semibold mb-4">Responsibilities</h4>
                     <p className="text-lg text-muted-foreground leading-relaxed italic mb-6">
                       The following statements outline primary functions of the job and are not
                       intended as a comprehensive list of all responsibilities.
@@ -116,7 +118,7 @@ export default function EmploymentPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-semibold mb-4">Schedule Details</h3>
+                    <h4 className="text-xl font-semibold mb-4">Schedule Details</h4>
                     <ul className="list-disc pl-6 space-y-3 text-lg text-muted-foreground">
                       <li>
                         Nurses coordinate resident care for a 24-hour period, from 8am to 8am,
@@ -131,6 +133,81 @@ export default function EmploymentPage() {
                         Any shift changes or call-ins must be reported to the director in advance.
                       </li>
                     </ul>
+                  </div>
+                </div>
+
+                <div className="space-y-8">
+                  <h3 className="text-2xl font-semibold">Care Aide</h3>
+
+                  <div>
+                    <h4 className="text-xl font-semibold mb-4">Duties and Responsibilities</h4>
+                    <p className="text-lg text-muted-foreground leading-relaxed italic mb-6">
+                      The following statements reflect the general duties considered necessary to
+                      describe the principal functions of the job as identified and shall not be
+                      considered as a detailed description of all work requirements that may be
+                      inherent in the position.
+                    </p>
+                    <ul className="list-disc pl-6 space-y-3 text-lg text-muted-foreground">
+                      <li>
+                        Works under the direction of the nurse in charge, according to the
+                        instructions in the resident care plan.
+                      </li>
+                      <li>
+                        Provides basic personal care such as assisting with bathing, oral hygiene,
+                        toileting, skin care, ambulating and exercise.
+                      </li>
+                      <li>
+                        Measures and records oral, rectal or axillary temperature, pulse and
+                        respiration rates, and blood pressure when ordered (within the training
+                        limitations of the aide).
+                      </li>
+                      <li>
+                        Assists with household tasks directly essential to the resident&apos;s
+                        health and as directed in the Daily Chore Book.
+                      </li>
+                      <li>
+                        Provides a clean and safe environment within the home, including safe use
+                        of the equipment: e.g. foot stools, side rails, wheelchairs, oxygen, etc.
+                      </li>
+                      <li>
+                        Prepares meals based on resident preference and prescribed medical regimen.
+                      </li>
+                      <li>
+                        Assists resident with prescribed medication regimen, as directed in the
+                        resident care plan.
+                      </li>
+                      <li>
+                        Performs range of motion and other simple procedures as an extension of
+                        therapy services as ordered (within the limitations of the aide).
+                      </li>
+                      <li>
+                        Immediately reports any changes in the resident&apos;s mental, physical or
+                        environmental condition and relates these changes to the nurse in charge
+                        and/or On-call nurse.
+                      </li>
+                      <li>
+                        Accurately documents the following in a timely manner:
+                        <ul className="list-disc pl-6 mt-3 space-y-2">
+                          <li>
+                            Services provided in accordance with agency policies and procedures on
+                            the day of services are rendered.
+                          </li>
+                          <li>All resident-related activities</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Reacts to change productively and performs other job-related tasks and
+                        duties assigned.
+                      </li>
+                      <li>Attends appropriate In-Service and Continuing Education Programs.</li>
+                    </ul>
+                    <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                      <strong>
+                        The Care Aide does NOT take physician&apos;s orders or perform any
+                        procedures requiring the knowledge/skill of a licensed nurse. The On-call
+                        nurse is available at all times.
+                      </strong>
+                    </p>
                   </div>
                 </div>
               </div>
