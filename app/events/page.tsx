@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Beef, Calendar, Car, Clock, Flag, LucideProps, MapPin, Trophy } from "lucide-react";
+import { Beef, Calendar, Clock, Drumstick, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -20,40 +20,17 @@ const events: {
   linkText?: string;
 }[] = [
   {
-    title: "5th Annual Judy Russell Memorial Golf Tournament",
-    date: "July 11, 2026",
+    title: "Fall Chicken BBQ",
+    date: "September 20, 2026",
     description:
-      "Join us at Batavia Country Club to honor Judy Russell's memory while supporting Gateway Home Comfort Care. 4-person scramble with sponsorship opportunities available. All donations received by June 20th will be acknowledged on the sponsor board.",
-    icon: Trophy,
-    time: "11:30 AM Registration | 1:00 PM Shotgun Start",
-    location: "Batavia Country Club, 7909 Batavia-Byron Rd., Batavia, NY",
-    link: "/judy-russell-golf-2026.pdf",
-    linkText: "Registration Form",
-  },
-  {
-    title: "Golfing for Gateway Home Comfort Care — 9th Annual Golf Tournament",
-    date: "July 23, 2026",
-    description:
-      "18-hole scramble — $100 per golfer or $400 per team. Fee includes 18 holes with cart, hot dog at the turn, catered dinner immediately following golf, and prizes. Entry deadline July 13 or until sold out (22 teams max). Dinner & awards to follow; dinner-only tickets available for $25. Contact Sara or Sue at 585-708-4331.",
-    icon: Flag,
-    time: "8:00 - 9:15 AM Registration | 9:30 AM Shotgun Start",
-    location: "Quiet Times Golf Course, 2220 Stedman Rd., Attica, NY 14011",
-  },
-  {
-    title: "Junkyard Reunion",
-    date: "July 26, 2026",
-    description:
-      "All antique & classic vehicles of any kind welcome. No fees, no judging, just plain fun! Dash plaques for first 100 vehicles. Spectators welcome. Food, drinks, 50/50 drawings & basket raffle. Proceeds benefit Gateway Home. Thanks to sponsors: Folsom Trailblazers Snowmobile Club & ProX Window & Doors.",
-    icon: Car,
-    time: "11:00 AM - 4:00 PM",
-    location: "Vincent Almeter Memorial Park, Route 98, Varysburg, NY",
-    link: "/gateway-car-show-reg-flyer-2026.pdf",
-    linkText: "Registration Form",
+      "Join us for our Fall Chicken BBQ fundraiser supporting Gateway Home Comfort Care. Delicious chicken dinners with all the proceeds benefiting Gateway Home.",
+    icon: Drumstick,
   },
   {
     title: "Meat Raffle",
     date: "November 14, 2026",
-    description: "Got meat?",
+    description:
+      "Join us for our Meat Raffle fundraiser supporting Gateway Home Comfort Care. Good fun, and all proceeds benefit Gateway Home.",
     icon: Beef,
   },
 ];
