@@ -22,9 +22,13 @@ const events: {
   {
     title: "Fall Chicken BBQ",
     date: "September 20, 2026",
+    time: "12:00 PM – 2:00 PM",
+    location: "Prospect Elementary Parking Lot",
     description:
-      "Join us for our Fall Chicken BBQ fundraiser supporting Gateway Home Comfort Care. Delicious chicken dinners with all the proceeds benefiting Gateway Home.",
+      "Drive-thru chicken BBQ supporting Gateway Home Comfort Care. $15 dinner includes ½ chicken, 2 side dishes, roll, and cookie. Presale strongly encouraged — now with 2 lanes for quicker pickup!",
     icon: Drumstick,
+    link: "https://gatewayhomeattica.networkforgood.com/events/104058-2026-fall-chicken-bbq",
+    linkText: "Buy Tickets",
   },
   {
     title: "Meat Raffle",
