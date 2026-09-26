@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Beef, Calendar, Clock, Drumstick, LucideProps, MapPin } from "lucide-react";
+import { Beef, Calendar, Clock, LucideProps, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -19,17 +19,6 @@ const events: {
   link?: string;
   linkText?: string;
 }[] = [
-  {
-    title: "Fall Chicken BBQ",
-    date: "September 20, 2026",
-    time: "12:00 PM – 2:00 PM",
-    location: "Prospect Elementary Parking Lot",
-    description:
-      "Drive-thru chicken BBQ supporting Gateway Home Comfort Care. $15 dinner includes ½ chicken, 2 side dishes, roll, and cookie. Presale strongly encouraged — now with 2 lanes for quicker pickup!",
-    icon: Drumstick,
-    link: "https://gatewayhomeattica.networkforgood.com/events/104058-2026-fall-chicken-bbq",
-    linkText: "Buy Tickets",
-  },
   {
     title: "Meat Raffle",
     date: "November 14, 2026",
