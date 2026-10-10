@@ -16,15 +16,35 @@ const events: {
   icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
   location?: string;
   time?: string;
-  link?: string;
-  linkText?: string;
+  links?: {
+    label: string;
+    href: string;
+    variant?: "default" | "outline";
+  }[];
 }[] = [
   {
     title: "Meat Raffle",
     date: "November 14, 2026",
+    time: "6:00–10:00 PM",
+    location: "Alexander Fireman's Recreation Hall, 10708 Alexander Rd, Alexander, NY",
     description:
-      "Join us for our Meat Raffle fundraiser supporting Gateway Home Comfort Care. Good fun, and all proceeds benefit Gateway Home.",
+      "We will MEAT you there. Doors at 6pm, drawings at 7pm. $15 includes a door-prize chance and unlimited beer, wine, and soda, plus a basket raffle and 50/50. Sabres raffle chances are $10, or 3 for $20. Bring snacks and a cooler. No outside alcohol.",
     icon: Beef,
+    links: [
+      {
+        label: "Get Tickets",
+        href: "https://gatewayhomeattica.networkforgood.com/events/106046-2026-meat-raffle-saturday-nov-14th",
+      },
+      {
+        label: "Sponsor",
+        href: "/donate#sponsorship",
+      },
+      {
+        label: "Sabres Raffle",
+        href: "https://gatewayhomeattica.networkforgood.com/events/106063-sabres-game-raffle",
+        variant: "outline",
+      },
+    ],
   },
 ];
 
@@ -111,12 +131,29 @@ export default function EventsPage() {
                       <p className="text-muted-foreground text-lg leading-relaxed">
                         {event.description}
                       </p>
-                      {event.link && event.linkText && (
-                        <Button asChild className="mt-6 px-6">
-                          <Link href={event.link} target="_blank" rel="noopener noreferrer">
-                            {event.linkText}
-                          </Link>
-                        </Button>
+                      {event.links && event.links.length > 0 && (
+                        <div className="mt-6 flex flex-wrap gap-3">
+                          {event.links.map((link, index) => {
+                            const external = link.href.startsWith("http");
+                            return (
+                              <Button
+                                key={link.href}
+                                asChild
+                                variant={link.variant ?? (index === 0 ? "default" : "outline")}
+                                className="px-6"
+                              >
+                                <Link
+                                  href={link.href}
+                                  {...(external
+                                    ? { target: "_blank", rel: "noopener noreferrer" }
+                                    : {})}
+                                >
+                                  {link.label}
+                                </Link>
+                              </Button>
+                            );
+                          })}
+                        </div>
                       )}
                     </div>
                   </div>

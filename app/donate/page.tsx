@@ -1,5 +1,14 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +31,40 @@ const donationOptions = [
   {
     amount: 300,
     description: "Three months of vital electricity service for our home",
+  },
+];
+
+const sponsorshipTiers: {
+  name: string;
+  amount: number;
+  tickets: string;
+  badge?: string;
+}[] = [
+  {
+    name: "Porterhouse",
+    amount: 750,
+    tickets: "8",
+    badge: "Corporate & advertising",
+  },
+  {
+    name: "Prime Rib",
+    amount: 500,
+    tickets: "6",
+  },
+  {
+    name: "Sirloin",
+    amount: 375,
+    tickets: "4",
+  },
+  {
+    name: "Roast",
+    amount: 250,
+    tickets: "2",
+  },
+  {
+    name: "Chuck",
+    amount: 100,
+    tickets: "—",
   },
 ];
 
@@ -70,6 +113,53 @@ export default function DonatePage() {
                   </Card>
                 ))}
               </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="sponsorship" className="border-grid border-b scroll-mt-20">
+        <div className="container-wrapper">
+          <section className="py-24">
+            <div className="container">
+              <h2 className="text-3xl font-semibold text-center mb-4">Sponsorship Opportunities</h2>
+              <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Sponsors of the November 14 meat raffle are acknowledged before and during the
+                event. Gateway Home is a 501(c)(3) comfort care home.
+              </p>
+              <div className="overflow-hidden rounded-xl border shadow">
+                <Table>
+                  <TableHeader className="bg-muted/40">
+                    <TableRow>
+                      <TableHead className="px-3 whitespace-normal sm:px-4">Level</TableHead>
+                      <TableHead className="px-3 whitespace-normal sm:px-4">Amount</TableHead>
+                      <TableHead className="px-3 whitespace-normal sm:px-4">Tickets</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {sponsorshipTiers.map((tier) => (
+                      <TableRow key={tier.name}>
+                        <TableCell className="px-3 font-medium whitespace-normal sm:px-4">
+                          <span className="inline-flex flex-wrap items-center gap-2">
+                            {tier.name}
+                            {tier.badge && <Badge variant="secondary">{tier.badge}</Badge>}
+                          </span>
+                        </TableCell>
+                        <TableCell className="px-3 whitespace-normal sm:px-4">
+                          ${tier.amount}
+                        </TableCell>
+                        <TableCell className="px-3 whitespace-normal text-muted-foreground sm:px-4">
+                          {tier.tickets}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+              <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mt-12">
+                Mail a check to Gateway Home, 91 Main Street, Attica, NY 14011. Include the sponsor
+                name, contact name, phone, address, and amount.
+              </p>
             </div>
           </section>
         </div>
